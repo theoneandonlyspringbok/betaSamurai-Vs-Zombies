@@ -1,0 +1,1250 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  serializedVersion: 2
+  m_ObjectHideFlags: 1
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1158224950246443}
+  m_IsPrefabParent: 1
+  m_IsExploded: 0
+--- !u!1 &1158224950246443
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4202191214688661}
+  - 111: {fileID: 111552535462313991}
+  - 114: {fileID: 114935276780739827}
+  m_Layer: 0
+  m_Name: nobunaga@idle
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4202191214688661
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1158224950246443}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+  m_Children:
+  - {fileID: 4473669888668560}
+  - {fileID: 4580107554716920}
+  m_Father: {fileID: 0}
+--- !u!111 &111552535462313991
+Animation:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1158224950246443}
+  m_Enabled: 1
+  m_Animation: {fileID: 7400000, guid: 33858362861617d4888af046fb86fb8a, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: 33858362861617d4888af046fb86fb8a, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
+  m_UserAABB:
+    m_Center: {x: 0, y: 0, z: 0}
+    m_Extent: {x: 0, y: 0, z: 0}
+--- !u!114 &114935276780739827
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1158224950246443}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbee05443b9b67f14985305ef056de27, type: 3}
+  m_Name:
+  sourcePrefabPath: Assets/Resources/Characters/Nobunaga/nobunaga@idle.fbx
+  basePrefabPath:
+  exemptObjects: []
+--- !u!1 &1656379721035478
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4473669888668560}
+  m_Layer: 0
+  m_Name: nobunaga:charName_rig_grp
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4473669888668560
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1656379721035478}
+  m_LocalRotation: {x: 0, y: -0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children:
+  - {fileID: 4907546850363487}
+  - {fileID: 4422508846942941}
+  m_Father: {fileID: 4202191214688661}
+--- !u!1 &1310453271129367
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4907546850363487}
+  m_Layer: 0
+  m_Name: nobunaga:charName_root_ctrl
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4907546850363487
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1310453271129367}
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0, y: 0, z: -0.096870095}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 4473669888668560}
+--- !u!1 &1324105063324974
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4422508846942941}
+  m_Layer: 0
+  m_Name: nobunaga:charName_spine_rig_grp
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4422508846942941
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1324105063324974}
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: 0}
+  m_Children:
+  - {fileID: 4004366767588012}
+  m_Father: {fileID: 4473669888668560}
+--- !u!1 &1498134007756830
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4004366767588012}
+  m_Layer: 0
+  m_Name: nobunaga:charName_lowSpineCtrl_space_grp
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4004366767588012
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1498134007756830}
+  m_LocalRotation: {x: 0.16642228, y: 0.5518874, z: 0.06336739, w: 0.81468314}
+  m_LocalPosition: {x: -2.9533732, y: -3.5748184, z: -12.965569}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 45.479168, y: -61.418217, z: -36.853992}
+  m_Children:
+  - {fileID: 4042709468491523}
+  m_Father: {fileID: 4422508846942941}
+--- !u!1 &1822359934058441
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4042709468491523}
+  m_Layer: 0
+  m_Name: nobunaga:charName_spineLow_ctrl
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4042709468491523
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1822359934058441}
+  m_LocalRotation: {x: 0.05523985, y: -0.019480241, z: -0.022104423, w: 0.9980383}
+  m_LocalPosition: {x: -0, y: 37.82164, z: -0.096870095}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 6.3843813, y: 2.088433, z: 2.654033}
+  m_Children: []
+  m_Father: {fileID: 4004366767588012}
+--- !u!1 &1357283574066164
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4580107554716920}
+  m_Layer: 0
+  m_Name: nobunaga:charName_Skeleton_grp
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4580107554716920
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1357283574066164}
+  m_LocalRotation: {x: 0, y: -0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children:
+  - {fileID: 4650916175308906}
+  m_Father: {fileID: 4202191214688661}
+--- !u!1 &1953744044294358
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4650916175308906}
+  m_Layer: 0
+  m_Name: nobunaga:charName_spine_low_jnt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4650916175308906
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1953744044294358}
+  m_LocalRotation: {x: 0.24170199, y: -0.03866316, z: -0.7548743, w: 0.6084818}
+  m_LocalPosition: {x: 1.3322676E-15, y: 31.867529, z: -0.096870095}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 21.82643, y: -18.53341, z: 98.65378}
+  m_Children:
+  - {fileID: 4363768817561168}
+  - {fileID: 4737807946849336}
+  m_Father: {fileID: 4580107554716920}
+--- !u!1 &1256102096476435
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4363768817561168}
+  m_Layer: 0
+  m_Name: nobunaga:charName_hip_jnt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4363768817561168
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1256102096476435}
+  m_LocalRotation: {x: -0.018734723, y: 0.022739742, z: 0.026453327, w: 0.9992158}
+  m_LocalPosition: {x: 4.7357354, y: 0.24692129, z: -0.22044037}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: -2.0789242, y: -2.661487, z: -2.9847}
+  m_Children:
+  - {fileID: 4514212462365050}
+  - {fileID: 4175088466824628}
+  - {fileID: 4333711202987169}
+  - {fileID: 4584542350139777}
+  m_Father: {fileID: 4650916175308906}
+--- !u!1 &1599154980115490
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4514212462365050}
+  m_Layer: 0
+  m_Name: nobunaga:charName_lf_upLeg_jnt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4514212462365050
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1599154980115490}
+  m_LocalRotation: {x: 0.3904362, y: 0.35488117, z: -0.6469951, w: 0.5504691}
+  m_LocalPosition: {x: 4.979812, y: 1.0234762, z: 11.732347}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: -3.7905812, y: -63.627216, z: 101.56918}
+  m_Children:
+  - {fileID: 4858495821287225}
+  m_Father: {fileID: 4363768817561168}
+--- !u!1 &1761927877258082
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4858495821287225}
+  m_Layer: 0
+  m_Name: nobunaga:charName_lf_knee_jnt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4858495821287225
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1761927877258082}
+  m_LocalRotation: {x: -0.043178935, y: -0.044173576, z: -0.69767517, w: 0.7137463}
+  m_LocalPosition: {x: -15.4831705, y: 0.97185993, z: 0.08795901}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 2.1062593E-07, y: 7.083008, z: 88.69526}
+  m_Children:
+  - {fileID: 4445733642687211}
+  m_Father: {fileID: 4514212462365050}
+--- !u!1 &1974226692366597
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4445733642687211}
+  m_Layer: 0
+  m_Name: nobunaga:charName_lf_ankle_jnt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4445733642687211
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1974226692366597}
+  m_LocalRotation: {x: 0.7166306, y: 0.68978935, z: 0.054371726, w: -0.087606765}
+  m_LocalPosition: {x: -10.304146, y: 7.0639345E-16, z: 1.5861726E-15}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: -177.04321, y: 11.46617, z: -87.516396}
+  m_Children:
+  - {fileID: 4657135282329645}
+  m_Father: {fileID: 4858495821287225}
+--- !u!1 &1784705058921426
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4657135282329645}
+  m_Layer: 0
+  m_Name: nobunaga:charName_lf_ball_jnt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4657135282329645
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1784705058921426}
+  m_LocalRotation: {x: 0.0072213425, y: 0.02839973, z: -0.21030748, w: 0.97719604}
+  m_LocalPosition: {x: -4.1550817, y: 2.1094237E-15, z: 9.208679E-17}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0.12442979, y: -3.356106, z: 24.28769}
+  m_Children: []
+  m_Father: {fileID: 4445733642687211}
+--- !u!1 &1450163980792842
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4175088466824628}
+  m_Layer: 0
+  m_Name: nobunaga:charName_rt_upLeg_jnt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4175088466824628
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1450163980792842}
+  m_LocalRotation: {x: -0.0027422335, y: 0.07089948, z: 0.12315917, w: 0.98984724}
+  m_LocalPosition: {x: 4.979768, y: 1.0234764, z: -11.7323}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0.69653714, y: -8.107728, z: -14.234223}
+  m_Children:
+  - {fileID: 4306082324304501}
+  m_Father: {fileID: 4363768817561168}
+--- !u!1 &1028235720238667
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4306082324304501}
+  m_Layer: 0
+  m_Name: nobunaga:charName_rt_knee_jnt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4306082324304501
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1028235720238667}
+  m_LocalRotation: {x: -0.00011092043, y: -0.0013798687, z: -0.08009039, w: 0.99678665}
+  m_LocalPosition: {x: 15.6532, y: -0.97185695, z: -0.088013835}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: -5.704847E-06, y: 0.1586314, z: 9.187531}
+  m_Children:
+  - {fileID: 4748153427859186}
+  m_Father: {fileID: 4175088466824628}
+--- !u!1 &1842739312782357
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4748153427859186}
+  m_Layer: 0
+  m_Name: nobunaga:charName_rt_ankle_jnt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4748153427859186
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1842739312782357}
+  m_LocalRotation: {x: -0.47036192, y: 0.7912191, z: -0.39041758, w: 0.017491862}
+  m_LocalPosition: {x: 10.417313, y: 5.27512E-06, z: -3.238059E-05}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: -137.59694, y: 19.852224, z: 126.305786}
+  m_Children:
+  - {fileID: 4897730405955646}
+  m_Father: {fileID: 4306082324304501}
+--- !u!1 &1609994638685730
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4897730405955646}
+  m_Layer: 0
+  m_Name: nobunaga:charName_rt_ball_jnt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4897730405955646
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1609994638685730}
+  m_LocalRotation: {x: -0.0014224737, y: -0.005642474, z: -0.21043172, w: 0.9775913}
+  m_LocalPosition: {x: -4.1550775, y: 1.2401747E-15, z: -1.4652992E-16}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: -0.023291426, y: 0.6664069, z: 24.295588}
+  m_Children: []
+  m_Father: {fileID: 4748153427859186}
+--- !u!1 &1958222703431612
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4333711202987169}
+  m_Layer: 0
+  m_Name: nobunaga:LeftSkirt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4333711202987169
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1958222703431612}
+  m_LocalRotation: {x: -0.32184017, y: 0.6670098, z: 0.6507053, w: 0.16762961}
+  m_LocalPosition: {x: -0.66019076, y: -0.35907558, z: 12.845622}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 97.26946, y: -39.976044, z: 164.00299}
+  m_Children:
+  - {fileID: 4133149853520309}
+  m_Father: {fileID: 4363768817561168}
+--- !u!1 &1971983748767365
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4133149853520309}
+  m_Layer: 0
+  m_Name: nobunaga:LeftSkirt1
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4133149853520309
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1971983748767365}
+  m_LocalRotation: {x: 0, y: 0, z: -0.57467747, w: 0.81838006}
+  m_LocalPosition: {x: -18.961432, y: -1.2196354, z: -0.056480724}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: 70.15409}
+  m_Children: []
+  m_Father: {fileID: 4333711202987169}
+--- !u!1 &1132642197274994
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4584542350139777}
+  m_Layer: 0
+  m_Name: nobunaga:RightSkirt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4584542350139777
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1132642197274994}
+  m_LocalRotation: {x: 0.043120917, y: 0.7060959, z: 0.70542145, w: -0.04415628}
+  m_LocalPosition: {x: 3.920013, y: 0.60379267, z: -12.186441}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 90.04974, y: 7.076472, z: 179.91902}
+  m_Children:
+  - {fileID: 4793734695821688}
+  m_Father: {fileID: 4363768817561168}
+--- !u!1 &1932082756386213
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4793734695821688}
+  m_Layer: 0
+  m_Name: nobunaga:RightSkirt1
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4793734695821688
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1932082756386213}
+  m_LocalRotation: {x: 0, y: 0, z: -0.60979706, w: 0.7925576}
+  m_LocalPosition: {x: -18.261023, y: -3.9143512, z: -1.5880438}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: 75.14966}
+  m_Children: []
+  m_Father: {fileID: 4584542350139777}
+--- !u!1 &1567996251077846
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4737807946849336}
+  m_Layer: 0
+  m_Name: nobunaga:charName_spine_mid_jnt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4737807946849336
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1567996251077846}
+  m_LocalRotation: {x: 0.9976148, y: -0.062423665, z: 0.02313952, w: -0.018238623}
+  m_LocalPosition: {x: -7.9714713, y: 1.7763568E-15, z: -6.217249E-15}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: -177.74672, y: 2.5156121, z: 7.2104726}
+  m_Children:
+  - {fileID: 4820933300659055}
+  m_Father: {fileID: 4650916175308906}
+--- !u!1 &1097829952829247
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4820933300659055}
+  m_Layer: 0
+  m_Name: nobunaga:charName_spine_hi_jnt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4820933300659055
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1097829952829247}
+  m_LocalRotation: {x: 0.3001426, y: 0.010996556, z: -0.10155036, w: 0.9484098}
+  m_LocalPosition: {x: -10.355139, y: -7.983125E-11, z: 2.2683277E-10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 34.67986, y: -4.693052, z: 10.7571945}
+  m_Children:
+  - {fileID: 4264117443294330}
+  m_Father: {fileID: 4737807946849336}
+--- !u!1 &1522891282037762
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4264117443294330}
+  m_Layer: 0
+  m_Name: nobunaga:charName_spine_end_jnt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4264117443294330
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1522891282037762}
+  m_LocalRotation: {x: 0, y: 0, z: 0.08567042, w: 0.9963235}
+  m_LocalPosition: {x: -5.7804327, y: 6.5780087E-15, z: 2.5670278E-15}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -9.829155}
+  m_Children:
+  - {fileID: 4576006197755694}
+  - {fileID: 4078307483776433}
+  - {fileID: 4643288760259770}
+  m_Father: {fileID: 4820933300659055}
+--- !u!1 &1353866934826848
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4576006197755694}
+  m_Layer: 0
+  m_Name: nobunaga:charName_lf_clavicle_jnt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4576006197755694
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1353866934826848}
+  m_LocalRotation: {x: -0.16352935, y: 0.69801337, z: -0.61442727, w: -0.32941568}
+  m_LocalPosition: {x: 1.928716, y: -7.6625476, z: -5.1525087}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: -92.13257, y: 41.362965, z: -166.39769}
+  m_Children:
+  - {fileID: 4015581414517066}
+  m_Father: {fileID: 4264117443294330}
+--- !u!1 &1061568748899134
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4015581414517066}
+  m_Layer: 0
+  m_Name: nobunaga:charName_lf_upArm_jnt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4015581414517066
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1061568748899134}
+  m_LocalRotation: {x: 0.087771356, y: 0.3835811, z: 0.0845076, w: 0.9154344}
+  m_LocalPosition: {x: -10.59761, y: 5.0639696, z: -7.1794925}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 18.09223, y: -43.42875, z: -17.804321}
+  m_Children:
+  - {fileID: 4171797367788120}
+  m_Father: {fileID: 4576006197755694}
+--- !u!1 &1148444372996313
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4171797367788120}
+  m_Layer: 0
+  m_Name: nobunaga:charName_lf_elbow_jnt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4171797367788120
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1148444372996313}
+  m_LocalRotation: {x: 0.0055882996, y: 0.29229766, z: -0.00050246686, w: 0.9563109}
+  m_LocalPosition: {x: -14.882292, y: -9.903054E-16, z: 1.043366E-15}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0.7183222, y: -33.990852, z: -0.15934412}
+  m_Children:
+  - {fileID: 4338859689558724}
+  m_Father: {fileID: 4015581414517066}
+--- !u!1 &1873885288399133
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4338859689558724}
+  m_Layer: 0
+  m_Name: nobunaga:charName_lf_wrist_jnt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4338859689558724
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1873885288399133}
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -12.079682, y: -3.5507926E-15, z: 6.2867823E-15}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: 0}
+  m_Children:
+  - {fileID: 4883108316517551}
+  m_Father: {fileID: 4171797367788120}
+--- !u!1 &1961133620346920
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4883108316517551}
+  m_Layer: 0
+  m_Name: nobunaga:charName_lf_hand_jnt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4883108316517551
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1961133620346920}
+  m_LocalRotation: {x: -0.028393451, y: 0.1538508, z: 0.079174906, w: 0.98450756}
+  m_LocalPosition: {x: 7.1054274E-15, y: 7.1054274E-15, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: -1.8997227, y: -17.904455, z: -8.896466}
+  m_Children:
+  - {fileID: 4442972076488888}
+  - {fileID: 4965085345805706}
+  m_Father: {fileID: 4338859689558724}
+--- !u!1 &1027694194376005
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4442972076488888}
+  m_Layer: 0
+  m_Name: nobunaga:charName_lf_index_a_jnt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4442972076488888
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1027694194376005}
+  m_LocalRotation: {x: -0.31334457, y: -0.6126003, z: 0.64760983, w: 0.32731873}
+  m_LocalPosition: {x: -7.1467643, y: 0.41236144, z: 1.141597}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: -86.95773, y: -0.27610517, z: -126.111755}
+  m_Children: []
+  m_Father: {fileID: 4883108316517551}
+--- !u!1 &1331014391222532
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4965085345805706}
+  m_Layer: 0
+  m_Name: nobunaga:charName_lf_thumb_a_jnt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4965085345805706
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1331014391222532}
+  m_LocalRotation: {x: -0.6955078, y: -0.1924219, z: 0.3387223, w: 0.60374653}
+  m_LocalPosition: {x: -2.4905682, y: -1.1326404, z: 2.3468301}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: -92.45024, y: -13.8169, z: -44.173244}
+  m_Children: []
+  m_Father: {fileID: 4883108316517551}
+--- !u!1 &1616796233419399
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4078307483776433}
+  m_Layer: 0
+  m_Name: nobunaga:charName_neck_jnt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4078307483776433
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1616796233419399}
+  m_LocalRotation: {x: 0.48998505, y: -0.50981826, z: 0.48998505, w: 0.50981826}
+  m_LocalPosition: {x: -5.3131185, y: 3.5527137E-15, z: 2.8865799E-15}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 87.727135, y: 90, z: 0}
+  m_Children:
+  - {fileID: 4015817742671397}
+  m_Father: {fileID: 4264117443294330}
+--- !u!1 &1209074922944292
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4015817742671397}
+  m_Layer: 0
+  m_Name: nobunaga:charName_head_a_jnt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4015817742671397
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1209074922944292}
+  m_LocalRotation: {x: 0.494639, y: -0.43988913, z: 0.5719331, w: -0.48448166}
+  m_LocalPosition: {x: 4.2188475E-15, y: 7.722441, z: -2.851064E-08}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: -82.826065, y: 8.022639, z: 92.38575}
+  m_Children:
+  - {fileID: 4732365118827090}
+  - {fileID: 4034996601109281}
+  m_Father: {fileID: 4078307483776433}
+--- !u!1 &1448669531131413
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4732365118827090}
+  m_Layer: 0
+  m_Name: nobunaga:charName_head_b_jnt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4732365118827090
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1448669531131413}
+  m_LocalRotation: {x: 0.4862913, y: -0.51334274, z: 0.4862913, w: 0.51334274}
+  m_LocalPosition: {x: -45.903885, y: -7.944636E-15, z: 8.479098E-15}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 86.89975, y: 90, z: 0}
+  m_Children: []
+  m_Father: {fileID: 4015817742671397}
+--- !u!1 &1792248426136318
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4034996601109281}
+  m_Layer: 0
+  m_Name: nobunaga:ponytail
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4034996601109281
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1792248426136318}
+  m_LocalRotation: {x: 0.46686894, y: -0.5310682, z: 0.46686894, w: 0.5310682}
+  m_LocalPosition: {x: -24.143383, y: 19.277824, z: 3.5166562E-07}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 82.638245, y: 90, z: 0}
+  m_Children: []
+  m_Father: {fileID: 4015817742671397}
+--- !u!1 &1014216257293450
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4643288760259770}
+  m_Layer: 0
+  m_Name: nobunaga:charName_rt_clavicle_jnt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4643288760259770
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1014216257293450}
+  m_LocalRotation: {x: 0.7050364, y: 0.3952965, z: 0.32060546, w: -0.49383852}
+  m_LocalPosition: {x: 1.9287264, y: -7.662552, z: 5.1525097}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: -124.70059, y: 57.40531, z: -26.545017}
+  m_Children:
+  - {fileID: 4259837840551795}
+  m_Father: {fileID: 4264117443294330}
+--- !u!1 &1087493263804815
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4259837840551795}
+  m_Layer: 0
+  m_Name: nobunaga:charName_rt_upArm_jnt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4259837840551795
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1087493263804815}
+  m_LocalRotation: {x: -0.45923376, y: -0.09042875, z: 0.23780993, w: 0.8511013}
+  m_LocalPosition: {x: 10.597614, y: -5.0640097, z: 7.179493}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: -55.734665, y: -3.697723, z: -29.266619}
+  m_Children:
+  - {fileID: 4199643719682694}
+  m_Father: {fileID: 4643288760259770}
+--- !u!1 &1106858785460894
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4199643719682694}
+  m_Layer: 0
+  m_Name: nobunaga:charName_rt_elbow_jnt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4199643719682694
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1106858785460894}
+  m_LocalRotation: {x: 0.0099884225, y: 0.94289434, z: 0.0014157696, w: 0.33293915}
+  m_LocalPosition: {x: 14.88229, y: 7.0914095E-05, z: -2.2616578E-06}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 179.31386, y: -38.88981, z: -178.5439}
+  m_Children:
+  - {fileID: 4887155180294121}
+  m_Father: {fileID: 4259837840551795}
+--- !u!1 &1571173740586822
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4887155180294121}
+  m_Layer: 0
+  m_Name: nobunaga:charName_rt_wrist_jnt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4887155180294121
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1571173740586822}
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 12.079645, y: -7.548375E-05, z: 4.801063E-06}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: 0}
+  m_Children:
+  - {fileID: 4900349644485503}
+  m_Father: {fileID: 4199643719682694}
+--- !u!1 &1773870085338076
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4900349644485503}
+  m_Layer: 0
+  m_Name: nobunaga:charName_rt_hand_jnt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4900349644485503
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1773870085338076}
+  m_LocalRotation: {x: -0.45016357, y: 0.374752, z: -0.27209476, w: 0.7634646}
+  m_LocalPosition: {x: 7.1054274E-15, y: 7.1054274E-15, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: -70.602875, y: -19.101673, z: 52.81969}
+  m_Children:
+  - {fileID: 4316314761673224}
+  - {fileID: 4721984556496407}
+  - {fileID: 4884253883510321}
+  m_Father: {fileID: 4887155180294121}
+--- !u!1 &1519575915193195
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4316314761673224}
+  m_Layer: 0
+  m_Name: nobunaga:charName_rt_index_a_jnt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4316314761673224
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1519575915193195}
+  m_LocalRotation: {x: -0.6351916, y: -0.30130038, z: 0.33780897, w: 0.62580734}
+  m_LocalPosition: {x: 7.1467557, y: -0.41232648, z: -1.1416003}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: -89.340225, y: -2.9827256, z: -53.7715}
+  m_Children: []
+  m_Father: {fileID: 4900349644485503}
+--- !u!1 &1265172954339194
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4721984556496407}
+  m_Layer: 0
+  m_Name: nobunaga:charName_rt_thumb_a_jnt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4721984556496407
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1265172954339194}
+  m_LocalRotation: {x: -0.5737543, y: -0.39192995, z: 0.4815102, w: 0.5341768}
+  m_LocalPosition: {x: 2.4905672, y: 1.1326715, z: -2.3468328}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: -88.01109, y: -7.690235, z: -76.63482}
+  m_Children: []
+  m_Father: {fileID: 4900349644485503}
+--- !u!1 &1881869380147247
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4884253883510321}
+  m_Layer: 0
+  m_Name: nobunaga:prop1
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4884253883510321
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1881869380147247}
+  m_LocalRotation: {x: 0.9973115, y: -0.068466246, z: 0.026058963, w: 0.0017889689}
+  m_LocalPosition: {x: 7.3310003, y: 3.1845398, z: 2.6870322}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: -180, y: 2.9935062, z: 7.8544807}
+  m_Children: []
+  m_Father: {fileID: 4900349644485503}

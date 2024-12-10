@@ -1,0 +1,102 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  serializedVersion: 2
+  m_ObjectHideFlags: 1
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1642019898045209}
+  m_IsPrefabParent: 1
+  m_IsExploded: 0
+--- !u!1 &1642019898045209
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4310382418847690}
+  - 33: {fileID: 33237468815694684}
+  - 23: {fileID: 23237497490334900}
+  - 111: {fileID: 111881186860090623}
+  - 114: {fileID: 114364238363719172}
+  m_Layer: 0
+  m_Name: tumblers@spin
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 4294967295
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4310382418847690
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1642019898045209}
+  m_LocalRotation: {x: 0, y: -0, z: -1.2246469E-16, w: 1}
+  m_LocalPosition: {x: 0.88471925, y: -0.6536521, z: 0.44321173}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: 1.4033419E-14}
+  m_Children: []
+  m_Father: {fileID: 0}
+--- !u!33 &33237468815694684
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1642019898045209}
+  m_Mesh: {fileID: 4300000, guid: 05683f69f5be13b4181a5f366cf57e8d, type: 2}
+--- !u!23 &23237497490334900
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1642019898045209}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 2100000, guid: 0496ec110eac42f4dbdd442fc62c59cf, type: 2}
+  m_SubsetIndices: []
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ScaleInLightmap: 1
+--- !u!111 &111881186860090623
+Animation:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1642019898045209}
+  m_Enabled: 1
+  m_Animation: {fileID: 7400000, guid: aecb6862cc595de4f902fed5172751d4, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: aecb6862cc595de4f902fed5172751d4, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
+  m_UserAABB:
+    m_Center: {x: 4.7683716E-07, y: 9.536743E-07, z: 0}
+    m_Extent: {x: 4.3498445, y: 4.349839, z: 0.7364629}
+--- !u!114 &114364238363719172
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1642019898045209}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbee05443b9b67f14985305ef056de27, type: 3}
+  m_Name:
+  sourcePrefabPath: Assets/Resources/Levels/Pachinko/Props/Tumblers/tumblers@spin.fbx
+  basePrefabPath:
+  exemptObjects: []

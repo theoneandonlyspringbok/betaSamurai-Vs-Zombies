@@ -1,0 +1,410 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  serializedVersion: 2
+  m_ObjectHideFlags: 1
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1219497942526396}
+  m_IsPrefabParent: 1
+  m_IsExploded: 0
+--- !u!1 &1219497942526396
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4279990790656456}
+  - 111: {fileID: 111543044947657540}
+  - 114: {fileID: 114086718606733281}
+  m_Layer: 0
+  m_Name: gatehell@die
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4279990790656456
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1219497942526396}
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: 0}
+  m_Children:
+  - {fileID: 4674768085631098}
+  - {fileID: 4744301262964258}
+  - {fileID: 4426482322401261}
+  - {fileID: 4318811687636451}
+  - {fileID: 4317477753433559}
+  - {fileID: 4798363851844421}
+  m_Father: {fileID: 0}
+--- !u!111 &111543044947657540
+Animation:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1219497942526396}
+  m_Enabled: 1
+  m_Animation: {fileID: 7400000, guid: adb74cf5ae0f1d14dac13ff242d9dd5d, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: adb74cf5ae0f1d14dac13ff242d9dd5d, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
+  m_UserAABB:
+    m_Center: {x: -3.0927277, y: 170.14723, z: 113.81891}
+    m_Extent: {x: 188.03954, y: 213.8495, z: 167.99481}
+--- !u!114 &114086718606733281
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1219497942526396}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbee05443b9b67f14985305ef056de27, type: 3}
+  m_Name:
+  sourcePrefabPath: Assets/Resources/Props/gatehell@die.fbx
+  basePrefabPath:
+  exemptObjects: []
+--- !u!1 &1391903535720226
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4674768085631098}
+  - 33: {fileID: 33513613618270785}
+  - 23: {fileID: 23264297440067883}
+  m_Layer: 0
+  m_Name: gatehell:HellGate1
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 4294967295
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4674768085631098
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1391903535720226}
+  m_LocalRotation: {x: 0.7729654, y: 0.057591, z: -0.16820054, w: 0.60902905}
+  m_LocalPosition: {x: 81.36974, y: 18.509686, z: 122.25981}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 102.331116, y: -19.279432, z: 7.049629}
+  m_Children: []
+  m_Father: {fileID: 4279990790656456}
+--- !u!33 &33513613618270785
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1391903535720226}
+  m_Mesh: {fileID: 4300000, guid: 5e9e6411c9699cf48b816f43c7a257c5, type: 2}
+--- !u!23 &23264297440067883
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1391903535720226}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 2100000, guid: 42b45b11d42fc6b458366e15331fa6f9, type: 2}
+  m_SubsetIndices: []
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ScaleInLightmap: 1
+--- !u!1 &1749481007545257
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4744301262964258}
+  - 33: {fileID: 33386107151940913}
+  - 23: {fileID: 23005149539708448}
+  m_Layer: 0
+  m_Name: gatehell:HellGate2
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 4294967295
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4744301262964258
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1749481007545257}
+  m_LocalRotation: {x: 0.5006543, y: -0.008335551, z: -0.34947395, w: 0.7919242}
+  m_LocalPosition: {x: -9.64416, y: 39.37028, z: 165.0746}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 58.030212, y: -19.67771, z: 36.634407}
+  m_Children: []
+  m_Father: {fileID: 4279990790656456}
+--- !u!33 &33386107151940913
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1749481007545257}
+  m_Mesh: {fileID: 4300000, guid: df4b9cf71667f344ba492c6a40f12b82, type: 2}
+--- !u!23 &23005149539708448
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1749481007545257}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 2100000, guid: 42b45b11d42fc6b458366e15331fa6f9, type: 2}
+  m_SubsetIndices: []
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ScaleInLightmap: 1
+--- !u!1 &1715209356631279
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4426482322401261}
+  - 33: {fileID: 33509843380439830}
+  - 23: {fileID: 23544758660083512}
+  m_Layer: 0
+  m_Name: gatehell:HellGate3
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 4294967295
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4426482322401261
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1715209356631279}
+  m_LocalRotation: {x: 0.9065406, y: -0.13245808, z: -0.21936063, w: 0.33544}
+  m_LocalPosition: {x: -101.96037, y: 28.04199, z: 43.56315}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 135.52948, y: -17.99025, z: 24.031061}
+  m_Children: []
+  m_Father: {fileID: 4279990790656456}
+--- !u!33 &33509843380439830
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1715209356631279}
+  m_Mesh: {fileID: 4300000, guid: 05d7ad863b9df43429bf1c5531146113, type: 2}
+--- !u!23 &23544758660083512
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1715209356631279}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 2100000, guid: 42b45b11d42fc6b458366e15331fa6f9, type: 2}
+  m_SubsetIndices: []
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ScaleInLightmap: 1
+--- !u!1 &1543957464033815
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4318811687636451}
+  - 33: {fileID: 33629533334371666}
+  - 23: {fileID: 23466606819601564}
+  m_Layer: 0
+  m_Name: gatehell:HellGate4
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 4294967295
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4318811687636451
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1543957464033815}
+  m_LocalRotation: {x: 0.1580642, y: -0.010311051, z: 0.0037991267, w: 0.9873677}
+  m_LocalPosition: {x: -7.711731, y: 69.91637, z: 20.815529}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 18.187593, y: 1.2355423, z: -0.24314341}
+  m_Children: []
+  m_Father: {fileID: 4279990790656456}
+--- !u!33 &33629533334371666
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1543957464033815}
+  m_Mesh: {fileID: 4300000, guid: a16eb9eb7eb641c4588ff998f620b1b6, type: 2}
+--- !u!23 &23466606819601564
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1543957464033815}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 2100000, guid: 42b45b11d42fc6b458366e15331fa6f9, type: 2}
+  m_SubsetIndices: []
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ScaleInLightmap: 1
+--- !u!1 &1357794920357434
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4317477753433559}
+  - 33: {fileID: 33460336808878373}
+  - 23: {fileID: 23473280323609651}
+  m_Layer: 0
+  m_Name: gatehell:HellGate5
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 4294967295
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4317477753433559
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1357794920357434}
+  m_LocalRotation: {x: 0.30731028, y: -0.0020823583, z: -0.579016, w: 0.7551798}
+  m_LocalPosition: {x: 86.3634, y: 21.16571, z: 7.3983006}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 29.90798, y: -20.654387, z: 69.38396}
+  m_Children: []
+  m_Father: {fileID: 4279990790656456}
+--- !u!33 &33460336808878373
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1357794920357434}
+  m_Mesh: {fileID: 4300000, guid: 01bc15bbf2e80e44c864dc3e9681402a, type: 2}
+--- !u!23 &23473280323609651
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1357794920357434}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 2100000, guid: 42b45b11d42fc6b458366e15331fa6f9, type: 2}
+  m_SubsetIndices: []
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ScaleInLightmap: 1
+--- !u!1 &1255602811258577
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4798363851844421}
+  - 33: {fileID: 33711220117576309}
+  - 23: {fileID: 23903417380951786}
+  m_Layer: 0
+  m_Name: gatehell:HellGate6
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 4294967295
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4798363851844421
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1255602811258577}
+  m_LocalRotation: {x: -0.044155568, y: 0.037054025, z: 0.00073310523, w: 0.99833703}
+  m_LocalPosition: {x: 74.013596, y: 12.203568, z: 1.597045}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: -5.0688357, y: -4.2466135, z: 0.10390536}
+  m_Children: []
+  m_Father: {fileID: 4279990790656456}
+--- !u!33 &33711220117576309
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1255602811258577}
+  m_Mesh: {fileID: 4300000, guid: b29b8f375256b4749a99e4006f57fbb6, type: 2}
+--- !u!23 &23903417380951786
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1255602811258577}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 2100000, guid: 42b45b11d42fc6b458366e15331fa6f9, type: 2}
+  m_SubsetIndices: []
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ScaleInLightmap: 1

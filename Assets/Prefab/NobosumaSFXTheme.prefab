@@ -1,0 +1,136 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  serializedVersion: 2
+  m_ObjectHideFlags: 1
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1515825665480035}
+  m_IsPrefabParent: 1
+  m_IsExploded: 0
+--- !u!1 &1515825665480035
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4448520115896617}
+  - 114: {fileID: 114164761018112897}
+  - 114: {fileID: 114181698255169505}
+  - 114: {fileID: 114990872836827771}
+  m_Layer: 0
+  m_Name: NobosumaSFXTheme
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4448520115896617
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1515825665480035}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 197.70033, y: 149.55113, z: 948.3019}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+  m_Children: []
+  m_Father: {fileID: 0}
+--- !u!114 &114164761018112897
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1515825665480035}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2a601efe3b0ca39d5e3b419a22b773e, type: 3}
+  m_Name:
+  baseTheme: {fileID: 114022824857558698, guid: 89fe65b1fb40a094280d3271dfb14830, type: 2}
+  events:
+  - name: IdleEmote
+    clips:
+    - {fileID: 8300000, guid: bdc2a89453097144284d8462dada9270, type: 3}
+    - {fileID: 8300000, guid: f15bd1b5721f37149affcb0c439ebc37, type: 3}
+    - {fileID: 8300000, guid: aee6a4cfab86743449383e9334940849, type: 3}
+    percentChanceNone: 90
+    pitchVariance: 0
+    volume: 0.5
+    isVoice: 1
+    playLimit: 0
+    priority: 0
+    trackPositionAndLifetime: 0
+    fadeInTime: 0
+    fadeOutTime: 0
+    customEffect: {fileID: 0}
+    loop: 0
+    minDistanceOverride: 0
+    maxDistanceOverride: 0
+    useLogarithmicRolloff: 0
+  - name: AtkEmote
+    clips:
+    - {fileID: 8300000, guid: f06b2b2aa71813d4fafba7d8a6b9fa18, type: 3}
+    - {fileID: 8300000, guid: e9aa6f78f4f4bf54da35b98b0db1dde3, type: 3}
+    - {fileID: 8300000, guid: 43c5f5a3e8d3646469776c460e9f8007, type: 3}
+    percentChanceNone: 0
+    pitchVariance: 0
+    volume: 0.5
+    isVoice: 1
+    playLimit: 0
+    priority: 0
+    trackPositionAndLifetime: 0
+    fadeInTime: 0
+    fadeOutTime: 0
+    customEffect: {fileID: 0}
+    loop: 0
+    minDistanceOverride: 0
+    maxDistanceOverride: 0
+    useLogarithmicRolloff: 0
+  - name: DeathEmote
+    clips:
+    - {fileID: 8300000, guid: e50607d301c5e2148928adfc7245d14f, type: 3}
+    - {fileID: 8300000, guid: 8eaecd1aa36306f4d9ab896647a5069b, type: 3}
+    - {fileID: 8300000, guid: eed89e4d09c2aee4a80eb757f6db6088, type: 3}
+    percentChanceNone: 0
+    pitchVariance: 0
+    volume: 0.5
+    isVoice: 1
+    playLimit: 0
+    priority: 0
+    trackPositionAndLifetime: 0
+    fadeInTime: 0
+    fadeOutTime: 0
+    customEffect: {fileID: 0}
+    loop: 0
+    minDistanceOverride: 0
+    maxDistanceOverride: 0
+    useLogarithmicRolloff: 0
+--- !u!114 &114181698255169505
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1515825665480035}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbee05443b9b67f14985305ef056de27, type: 3}
+  m_Name:
+  sourcePrefabPath: Assets/Game/Prefabs/SoundThemes/NobosumaSFXTheme.prefab
+  basePrefabPath:
+  exemptObjects: []
+--- !u!114 &114990872836827771
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1515825665480035}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name:

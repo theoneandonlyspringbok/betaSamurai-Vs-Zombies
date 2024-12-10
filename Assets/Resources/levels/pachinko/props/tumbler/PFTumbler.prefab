@@ -1,0 +1,286 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  serializedVersion: 2
+  m_ObjectHideFlags: 1
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1670668696302674}
+  m_IsPrefabParent: 1
+  m_IsExploded: 0
+--- !u!1 &1670668696302674
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4099140343859561}
+  - 114: {fileID: 114369567867253667}
+  - 111: {fileID: 111476206709240568}
+  - 114: {fileID: 114191884602702278}
+  - 114: {fileID: 114833360607078642}
+  - 114: {fileID: 114210349037286312}
+  m_Layer: 0
+  m_Name: PFTumbler
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4099140343859561
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1670668696302674}
+  m_LocalRotation: {x: 0, y: 0.70710665, z: 0, w: -0.707107}
+  m_LocalPosition: {x: -12.38517, y: 4.2062726, z: 12.844635}
+  m_LocalScale: {x: 5, y: 5, z: 5}
+  m_LocalEulerAnglesHint: {x: -0, y: 89.99997, z: 0}
+  m_Children:
+  - {fileID: 4923999465033018}
+  m_Father: {fileID: 0}
+--- !u!114 &114369567867253667
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1670668696302674}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbee05443b9b67f14985305ef056de27, type: 3}
+  m_Name:
+  sourcePrefabPath: Assets/Resources/Levels/Pachinko/Props/Tumbler/PFTumbler.prefab
+  basePrefabPath:
+  exemptObjects: []
+--- !u!111 &111476206709240568
+Animation:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1670668696302674}
+  m_Enabled: 1
+  m_Animation: {fileID: 7400000, guid: e2f53ba16f6112a4e83b9ed58bd9c960, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: e2f53ba16f6112a4e83b9ed58bd9c960, type: 2}
+  - {fileID: 7400000, guid: 9d33df10b7ca1ab46addaf82a22ec80e, type: 2}
+  - {fileID: 7400000, guid: e66a0ecca62c318478dc3d07cd9177aa, type: 2}
+  - {fileID: 7400000, guid: bd62f921e6091764f9ff61e750ed7785, type: 2}
+  - {fileID: 7400000, guid: 205254838c5f44f4d91eb6a046fa9330, type: 2}
+  - {fileID: 7400000, guid: 266e40b4aab0d934ab3e5ab3aaf1a162, type: 2}
+  - {fileID: 7400000, guid: ad58a3d3452737a4c888a450e1483cc0, type: 2}
+  - {fileID: 7400000, guid: ffde3be3726562c48b1cf72dfddb3938, type: 2}
+  - {fileID: 7400000, guid: 617e1ebb412fd1a45ac6f60edbf415be, type: 2}
+  - {fileID: 7400000, guid: 9b7c9134f3f7155469a3deb93d2407b4, type: 2}
+  - {fileID: 7400000, guid: a4e281ee6ebbd3e4b960dfb269da2fd7, type: 2}
+  - {fileID: 7400000, guid: 2944c5ad9e812614690c2f0a164d71c5, type: 2}
+  - {fileID: 7400000, guid: fc77a3ae83452d74183a012f98f23b88, type: 2}
+  - {fileID: 7400000, guid: a18fb99ef95422a4eaff62774ed1453b, type: 2}
+  - {fileID: 7400000, guid: 77fd2debcaa0e0a49b1c04dd4ac3884e, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 0
+  m_AnimatePhysics: 0
+  m_CullingType: 0
+  m_UserAABB:
+    m_Center: {x: 0, y: 0, z: 0}
+    m_Extent: {x: 0, y: 0, z: 0}
+--- !u!114 &114191884602702278
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1670668696302674}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd6245a8adae9bb55440fcfe8cafc69a, type: 3}
+  m_Name:
+  jointAnimation: {fileID: 111939284039943073}
+  defaultBlendSpeed: 0.3
+  specificAnimSettings: []
+  alsoPlayOnAllChildren: 0
+  animFrame: 0
+  extraAnimPlayers: []
+  extraTaggedAnimPlayers: []
+--- !u!114 &114833360607078642
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1670668696302674}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2a601efe3b0ca39d5e3b419a22b773e, type: 3}
+  m_Name:
+  baseTheme: {fileID: 0}
+  events:
+  - name: Spin
+    clips:
+    - {fileID: 8300000, guid: 6369723a265d822499281c24e65ddb1f, type: 3}
+    percentChanceNone: 0
+    pitchVariance: 0
+    volume: 0
+    isVoice: 0
+    playLimit: -1
+    priority: 0
+    trackPositionAndLifetime: 0
+    fadeInTime: 0
+    fadeOutTime: 0
+    customEffect: {fileID: 0}
+    loop: 0
+    minDistanceOverride: 0
+    maxDistanceOverride: 0
+    useLogarithmicRolloff: 0
+  - name: Stop
+    clips:
+    - {fileID: 8300000, guid: de6a3cd455e3e4f438f9e8678c607187, type: 3}
+    - {fileID: 8300000, guid: 596bc53089e7c6840afe6d98062433b8, type: 3}
+    - {fileID: 8300000, guid: c74fb33c4c336464eb83bfd4a2316b2f, type: 3}
+    percentChanceNone: 0
+    pitchVariance: 0
+    volume: 0
+    isVoice: 0
+    playLimit: 0
+    priority: 0
+    trackPositionAndLifetime: 0
+    fadeInTime: 0
+    fadeOutTime: 0
+    customEffect: {fileID: 0}
+    loop: 0
+    minDistanceOverride: 0
+    maxDistanceOverride: 0
+    useLogarithmicRolloff: 0
+  - name:
+    clips: []
+    percentChanceNone: 0
+    pitchVariance: 0
+    volume: 0
+    isVoice: 0
+    playLimit: 0
+    priority: 0
+    trackPositionAndLifetime: 0
+    fadeInTime: 0
+    fadeOutTime: 0
+    customEffect: {fileID: 0}
+    loop: 0
+    minDistanceOverride: 0
+    maxDistanceOverride: 0
+    useLogarithmicRolloff: 0
+--- !u!114 &114210349037286312
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1670668696302674}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name:
+--- !u!1 &1282001843925802
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4923999465033018}
+  - 33: {fileID: 33141806660147583}
+  - 23: {fileID: 23317205121604144}
+  - 111: {fileID: 111939284039943073}
+  - 114: {fileID: 114785447348000185}
+  m_Layer: 0
+  m_Name: tumbler
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 4294967295
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4923999465033018
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1282001843925802}
+  m_LocalRotation: {x: 0, y: -0, z: -0.008025485, w: 0.9999678}
+  m_LocalPosition: {x: 1.3954396, y: -0.55, z: 0.1271923}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: 0.9196627}
+  m_Children: []
+  m_Father: {fileID: 4099140343859561}
+--- !u!33 &33141806660147583
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1282001843925802}
+  m_Mesh: {fileID: 4300000, guid: fdbf1c68fe367d34188d5a452f96b48c, type: 2}
+--- !u!23 &23317205121604144
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1282001843925802}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 2100000, guid: 402c74f21baa0e64e90eafe1907f2b71, type: 2}
+  m_SubsetIndices: []
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ScaleInLightmap: 1
+--- !u!111 &111939284039943073
+Animation:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1282001843925802}
+  m_Enabled: 1
+  m_Animation: {fileID: 7400000, guid: 037d4494e6ff3c6419138fa49dbba357, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: 037d4494e6ff3c6419138fa49dbba357, type: 2}
+  - {fileID: 7400000, guid: 3fe3da110fb4aa24d9dc313cd490211a, type: 2}
+  - {fileID: 7400000, guid: 5c084135b07530c408b9063cd192f65e, type: 2}
+  - {fileID: 7400000, guid: 181550cd5536d564aaaa9164493d7ea8, type: 2}
+  - {fileID: 0}
+  - {fileID: 7400000, guid: 7606a1dec6c184245ac7e0aec199ac31, type: 2}
+  - {fileID: 0}
+  - {fileID: 7400000, guid: 0a9d1f65f6f3b354782a8771e062fcbc, type: 2}
+  - {fileID: 7400000, guid: 7c2557b885b89754d9ecafc44869ddc8, type: 2}
+  - {fileID: 7400000, guid: f4e3eaf75fac63241be8c63e19402ee1, type: 2}
+  - {fileID: 7400000, guid: ae391241e4a088a4a9d5f2021c1ce778, type: 2}
+  - {fileID: 7400000, guid: f250c583588a5a940bf7b3206c8792b1, type: 2}
+  - {fileID: 7400000, guid: 481ed2d9712966742b327691bd3cecfa, type: 2}
+  - {fileID: 7400000, guid: 1c8e24a6b1a62174fb88622ae3f581de, type: 2}
+  - {fileID: 7400000, guid: 6d5055109115161418b77a4bbdd85e53, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 0
+  m_AnimatePhysics: 0
+  m_CullingType: 0
+  m_UserAABB:
+    m_Center: {x: 0, y: 4.7683716E-07, z: -5.9604645E-08}
+    m_Extent: {x: 2.8569012, y: 2.8569012, z: 0.48363614}
+--- !u!114 &114785447348000185
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1282001843925802}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbee05443b9b67f14985305ef056de27, type: 3}
+  m_Name:
+  sourcePrefabPath: Assets/Resources/Levels/Pachinko/Props/Tumbler/tumbler.fbx
+  basePrefabPath:
+  exemptObjects:
+  - {fileID: 114785447348000185}

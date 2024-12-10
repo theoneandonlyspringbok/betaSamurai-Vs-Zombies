@@ -1,0 +1,1250 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  serializedVersion: 2
+  m_ObjectHideFlags: 1
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1896942945311991}
+  m_IsPrefabParent: 1
+  m_IsExploded: 0
+--- !u!1 &1896942945311991
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4134450829232162}
+  - 111: {fileID: 111950472742047152}
+  - 114: {fileID: 114875999461878632}
+  m_Layer: 0
+  m_Name: zombiehero@victory
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4134450829232162
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1896942945311991}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+  m_Children:
+  - {fileID: 4794601706064183}
+  m_Father: {fileID: 0}
+--- !u!111 &111950472742047152
+Animation:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1896942945311991}
+  m_Enabled: 1
+  m_Animation: {fileID: 7400000, guid: c3f693451157c724bbe6e3d888f9f8b0, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: c3f693451157c724bbe6e3d888f9f8b0, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
+  m_UserAABB:
+    m_Center: {x: 0, y: 0, z: 0}
+    m_Extent: {x: 0, y: 0, z: 0}
+--- !u!114 &114875999461878632
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1896942945311991}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbee05443b9b67f14985305ef056de27, type: 3}
+  m_Name:
+  sourcePrefabPath: Assets/Resources/Characters/ZombieHero/zombiehero@victory.fbx
+  basePrefabPath:
+  exemptObjects: []
+--- !u!1 &1415918080920267
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4794601706064183}
+  m_Layer: 0
+  m_Name: zombiehero:Hero_Skeleton_grp
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4794601706064183
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1415918080920267}
+  m_LocalRotation: {x: 0, y: -0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children:
+  - {fileID: 4860320865998433}
+  - {fileID: 4884539342668163}
+  m_Father: {fileID: 4134450829232162}
+--- !u!1 &1363088773463499
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4860320865998433}
+  m_Layer: 0
+  m_Name: zombiehero:Hero_spine_low_jnt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4860320865998433
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1363088773463499}
+  m_LocalRotation: {x: -0.6997429, y: 0.71028847, z: -0.07640912, w: 0.0034403692}
+  m_LocalPosition: {x: -0.0359889, y: 35.56897, z: 0.14984055}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: -173.45667, y: 5.85701, z: 91.19211}
+  m_Children:
+  - {fileID: 4309771032030511}
+  - {fileID: 4825568605784880}
+  m_Father: {fileID: 4794601706064183}
+--- !u!1 &1934151178107105
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4309771032030511}
+  m_Layer: 0
+  m_Name: zombiehero:Hero_hip_jnt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4309771032030511
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1934151178107105}
+  m_LocalRotation: {x: 0.0472647, y: -0.052931543, z: 0.04112742, w: 0.9966308}
+  m_LocalPosition: {x: 4.9572024, y: 0.38503638, z: 0.54720634}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 5.186594, y: 6.280392, z: -4.4413667}
+  m_Children:
+  - {fileID: 4595172317952222}
+  - {fileID: 4139700766895040}
+  - {fileID: 4512956472816096}
+  - {fileID: 4238238971358698}
+  m_Father: {fileID: 4860320865998433}
+--- !u!1 &1033976900964543
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4595172317952222}
+  m_Layer: 0
+  m_Name: zombiehero:Hero_LeftSkirt_Jnt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4595172317952222
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1033976900964543}
+  m_LocalRotation: {x: -0.19464843, y: 0.828154, z: 0.5166887, w: 0.09646653}
+  m_LocalPosition: {x: -0.78611934, y: 6.33755, z: 15.36691}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 118.671974, y: -21.156925, z: 166.18379}
+  m_Children: []
+  m_Father: {fileID: 4309771032030511}
+--- !u!1 &1370600350303449
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4139700766895040}
+  m_Layer: 0
+  m_Name: zombiehero:Hero_lf_upLeg_jnt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4139700766895040
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1370600350303449}
+  m_LocalRotation: {x: -0.0448235, y: 0.95872796, z: -0.22586666, w: 0.1667808}
+  m_LocalPosition: {x: 6.41757, y: -0.049005304, z: 10.8253975}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: -151.9914, y: -17.43037, z: 170.26741}
+  m_Children:
+  - {fileID: 4032556901627050}
+  m_Father: {fileID: 4309771032030511}
+--- !u!1 &1077009316899395
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4032556901627050}
+  m_Layer: 0
+  m_Name: zombiehero:Hero_lf_knee_jnt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4032556901627050
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1077009316899395}
+  m_LocalRotation: {x: 0.97961193, y: 3.533616E-05, z: -3.7771888E-06, w: 0.20089933}
+  m_LocalPosition: {x: -12.391037, y: 1.0675048E-15, z: -3.0587362E-17}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 156.82089, y: -0.0012374959, z: -0.0038797134}
+  m_Children:
+  - {fileID: 4716566676814309}
+  m_Father: {fileID: 4139700766895040}
+--- !u!1 &1749140912220555
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4716566676814309}
+  m_Layer: 0
+  m_Name: zombiehero:Hero_lf_ankle_jnt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4716566676814309
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1749140912220555}
+  m_LocalRotation: {x: -0.3094882, y: 0.039700035, z: 0.31696346, w: 0.89564234}
+  m_LocalPosition: {x: -9.640229, y: -1.1098949E-14, z: 1.04453825E-14}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: -33.312084, y: -15.504077, z: -34.312828}
+  m_Children:
+  - {fileID: 4297881015270783}
+  m_Father: {fileID: 4032556901627050}
+--- !u!1 &1511639433530736
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4297881015270783}
+  m_Layer: 0
+  m_Name: zombiehero:Hero_lf_ball_jnt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4297881015270783
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1511639433530736}
+  m_LocalRotation: {x: 0.005485467, y: -0.015276485, z: 0.21106263, w: 0.9773378}
+  m_LocalPosition: {x: -4.838491, y: 1.1324269E-15, z: 2.7060188E-16}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0.24499363, y: 1.8438745, z: -24.368582}
+  m_Children: []
+  m_Father: {fileID: 4716566676814309}
+--- !u!1 &1131132303476845
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4512956472816096}
+  m_Layer: 0
+  m_Name: zombiehero:Hero_RightSkirt_Jnt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4512956472816096
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1131132303476845}
+  m_LocalRotation: {x: -0.09875093, y: 0.72595507, z: 0.68006384, w: 0.027397716}
+  m_LocalPosition: {x: 1.120109, y: 0.43349594, z: -17.807444}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 94.28199, y: -10.025875, z: 173.81387}
+  m_Children: []
+  m_Father: {fileID: 4309771032030511}
+--- !u!1 &1681476354634575
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4238238971358698}
+  m_Layer: 0
+  m_Name: zombiehero:Hero_rt_upLeg_jnt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4238238971358698
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1681476354634575}
+  m_LocalRotation: {x: 0.97383314, y: -0.19432655, z: -0.10630021, w: -0.050858043}
+  m_LocalPosition: {x: 6.417614, y: -0.0490054, z: -10.8254}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: -176.6012, y: -13.108952, z: 22.179438}
+  m_Children:
+  - {fileID: 4456398210279199}
+  m_Father: {fileID: 4309771032030511}
+--- !u!1 &1837449455844713
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4456398210279199}
+  m_Layer: 0
+  m_Name: zombiehero:Hero_rt_knee_jnt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4456398210279199
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1837449455844713}
+  m_LocalRotation: {x: 0.9796119, y: 3.108081E-05, z: -5.4616676E-06, w: 0.20089945}
+  m_LocalPosition: {x: 12.345076, y: 1.06603375E-05, z: 3.4164955E-06}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 156.82088, y: -0.0013286241, z: -0.0033632491}
+  m_Children:
+  - {fileID: 4193546890642662}
+  m_Father: {fileID: 4238238971358698}
+--- !u!1 &1923827718823187
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4193546890642662}
+  m_Layer: 0
+  m_Name: zombiehero:Hero_rt_ankle_jnt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4193546890642662
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1923827718823187}
+  m_LocalRotation: {x: -0.3186716, y: -0.02710451, z: 0.50980586, w: 0.79863125}
+  m_LocalPosition: {x: 9.604567, y: 9.48685E-06, z: 1.2744452E-05}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: -34.005722, y: -16.357409, z: -60.071342}
+  m_Children:
+  - {fileID: 4737323329154842}
+  m_Father: {fileID: 4456398210279199}
+--- !u!1 &1152744582897493
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4737323329154842}
+  m_Layer: 0
+  m_Name: zombiehero:Hero_rt_ball_jnt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4737323329154842
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1152744582897493}
+  m_LocalRotation: {x: 0.005485467, y: -0.015276485, z: 0.21106263, w: 0.9773378}
+  m_LocalPosition: {x: 4.8384967, y: 8.209498E-07, z: 3.1879983E-05}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0.24499363, y: 1.8438745, z: -24.368582}
+  m_Children: []
+  m_Father: {fileID: 4193546890642662}
+--- !u!1 &1388116761763350
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4825568605784880}
+  m_Layer: 0
+  m_Name: zombiehero:Hero_spine_mid_jnt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4825568605784880
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1388116761763350}
+  m_LocalRotation: {x: 0.99820083, y: 0.04536351, z: 0.03694157, w: 0.013138253}
+  m_LocalPosition: {x: -3.9857357, y: 6.27276E-15, z: -8.881784E-15}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 178.30042, y: 4.160936, z: -5.2658095}
+  m_Children:
+  - {fileID: 4270932191230415}
+  m_Father: {fileID: 4860320865998433}
+--- !u!1 &1225745496440893
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4270932191230415}
+  m_Layer: 0
+  m_Name: zombiehero:Hero_spine_hi_jnt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4270932191230415
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1225745496440893}
+  m_LocalRotation: {x: 0.08740405, y: 0.01193014, z: -0.16303372, w: 0.98266894}
+  m_LocalPosition: {x: -5.1775694, y: 1.3322676E-14, z: 4.6629367E-15}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 9.678265, y: -2.977648, z: 18.588026}
+  m_Children:
+  - {fileID: 4787305984247974}
+  m_Father: {fileID: 4825568605784880}
+--- !u!1 &1446426365863404
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4787305984247974}
+  m_Layer: 0
+  m_Name: zombiehero:Hero_spine_end_jnt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4787305984247974
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1446426365863404}
+  m_LocalRotation: {x: 0, y: 0, z: 0.15341373, w: 0.98816204}
+  m_LocalPosition: {x: -9.169783, y: -1.3427302E-15, z: 3.9302583E-15}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -17.649618}
+  m_Children:
+  - {fileID: 4357682800250109}
+  - {fileID: 4938073342999451}
+  - {fileID: 4460694820817513}
+  m_Father: {fileID: 4270932191230415}
+--- !u!1 &1794396712136354
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4357682800250109}
+  m_Layer: 0
+  m_Name: zombiehero:Hero_lf_clavicle_jnt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4357682800250109
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1794396712136354}
+  m_LocalRotation: {x: 0.63916624, y: -0.41342765, z: 0.3456464, w: 0.5487008}
+  m_LocalPosition: {x: -0.8998299, y: 0.03893121, z: -2.5762544}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 110.924194, y: 63.578815, z: 19.589123}
+  m_Children:
+  - {fileID: 4555093547719356}
+  m_Father: {fileID: 4787305984247974}
+--- !u!1 &1476863969947574
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4555093547719356}
+  m_Layer: 0
+  m_Name: zombiehero:Hero_lf_upArm_jnt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4555093547719356
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1476863969947574}
+  m_LocalRotation: {x: -0.5810794, y: 0.043292616, z: 0.078614034, w: 0.80888337}
+  m_LocalPosition: {x: -13.244735, y: -1.1616575E-15, z: -3.7313855E-15}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: -71.02178, y: -9.288129, z: -4.467146}
+  m_Children:
+  - {fileID: 4526413620430482}
+  m_Father: {fileID: 4357682800250109}
+--- !u!1 &1951898838275704
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4526413620430482}
+  m_Layer: 0
+  m_Name: zombiehero:Hero_lf_elbow_jnt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4526413620430482
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1951898838275704}
+  m_LocalRotation: {x: 0.00049775036, y: 0.26974094, z: 8.0550926E-05, w: 0.9629328}
+  m_LocalPosition: {x: -14.287432, y: -2.331944E-16, z: -7.737298E-17}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0.06719129, y: -31.297693, z: -0.028407685}
+  m_Children:
+  - {fileID: 4799903035875506}
+  m_Father: {fileID: 4555093547719356}
+--- !u!1 &1357524201536550
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4799903035875506}
+  m_Layer: 0
+  m_Name: zombiehero:Hero_lf_wrist_jnt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4799903035875506
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1357524201536550}
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -14.055169, y: -8.820278E-15, z: 2.2990604E-14}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: 0}
+  m_Children:
+  - {fileID: 4824406130278382}
+  m_Father: {fileID: 4526413620430482}
+--- !u!1 &1602798818341672
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4824406130278382}
+  m_Layer: 0
+  m_Name: zombiehero:Hero_lf_hand_jnt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4824406130278382
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1602798818341672}
+  m_LocalRotation: {x: -0.17694439, y: -0.25134358, z: -0.1826208, w: 0.9338987}
+  m_LocalPosition: {x: 1.4210855E-14, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: -16.399662, y: 32.28197, z: 17.352629}
+  m_Children:
+  - {fileID: 4030623287217784}
+  - {fileID: 4552232431746204}
+  - {fileID: 4197779340585132}
+  m_Father: {fileID: 4799903035875506}
+--- !u!1 &1306954515206371
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4030623287217784}
+  m_Layer: 0
+  m_Name: zombiehero:Hero_lf_index_a_jnt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4030623287217784
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1306954515206371}
+  m_LocalRotation: {x: -0.6293675, y: -0.35201147, z: 0.3435029, w: 0.60165626}
+  m_LocalPosition: {x: -5.3163075, y: 0.20049326, z: -0.50403774}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: -92.29431, y: -0.50416946, z: -58.92181}
+  m_Children:
+  - {fileID: 4207451431186991}
+  m_Father: {fileID: 4824406130278382}
+--- !u!1 &1577903898983021
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4207451431186991}
+  m_Layer: 0
+  m_Name: zombiehero:Hero_lf_index_b_jnt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4207451431186991
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1577903898983021}
+  m_LocalRotation: {x: -0.022567991, y: -0.30386302, z: -0.018267328, w: 0.95227325}
+  m_LocalPosition: {x: -3.0907073, y: -1.1760341E-15, z: 6.3403533E-15}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: -2.2419698, y: 35.418594, z: 1.4819378}
+  m_Children: []
+  m_Father: {fileID: 4030623287217784}
+--- !u!1 &1644481907899848
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4552232431746204}
+  m_Layer: 0
+  m_Name: zombiehero:Hero_lf_thumb_a_jnt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4552232431746204
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1644481907899848}
+  m_LocalRotation: {x: 0.7283727, y: 0.15965396, z: -0.6585378, w: -0.101547256}
+  m_LocalPosition: {x: -3.0472105, y: -1.4507068, z: 2.1284823}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: -107.36762, y: -67.95617, z: -77.43057}
+  m_Children: []
+  m_Father: {fileID: 4824406130278382}
+--- !u!1 &1880220598496453
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4197779340585132}
+  m_Layer: 0
+  m_Name: zombiehero:Hero_Sword1_jnt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4197779340585132
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1880220598496453}
+  m_LocalRotation: {x: 0.44247591, y: 0.8930338, z: 0.053835593, w: 0.061704166}
+  m_LocalPosition: {x: -6.905981, y: -4.111631, z: -4.703202}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 171.31192, y: -3.5871053, z: -127.01289}
+  m_Children: []
+  m_Father: {fileID: 4824406130278382}
+--- !u!1 &1126185554055593
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4938073342999451}
+  m_Layer: 0
+  m_Name: zombiehero:Hero_neck_jnt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4938073342999451
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1126185554055593}
+  m_LocalRotation: {x: 0.52249485, y: -0.47644427, z: 0.52249485, w: 0.47644427}
+  m_LocalPosition: {x: -10.491785, y: 6.4392935E-15, z: 4.440892E-15}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 95.27888, y: 90, z: 0}
+  m_Children:
+  - {fileID: 4019613763977823}
+  m_Father: {fileID: 4787305984247974}
+--- !u!1 &1055237320540243
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4019613763977823}
+  m_Layer: 0
+  m_Name: zombiehero:Hero_head_a_jnt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4019613763977823
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1055237320540243}
+  m_LocalRotation: {x: 0.6873907, y: -0.330442, z: 0.59389555, w: -0.25610587}
+  m_LocalPosition: {x: -4.440892E-16, y: 3.7622733, z: 6.417541E-08}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: -102.3771, y: 40.332348, z: 84.2637}
+  m_Children:
+  - {fileID: 4870781268553113}
+  - {fileID: 4972621662203084}
+  - {fileID: 4948913716324051}
+  - {fileID: 4683627883515285}
+  m_Father: {fileID: 4938073342999451}
+--- !u!1 &1515330446971869
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4870781268553113}
+  m_Layer: 0
+  m_Name: zombiehero:Hero_eye_l_jnt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4870781268553113
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1515330446971869}
+  m_LocalRotation: {x: 0.65904444, y: -0.24898352, z: 0.23393527, w: 0.6700313}
+  m_LocalPosition: {x: -20.967733, y: -24.91067, z: -9.331768}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 89.45183, y: 39.94119, z: 1.0981874}
+  m_Children: []
+  m_Father: {fileID: 4019613763977823}
+--- !u!1 &1713428010905686
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4972621662203084}
+  m_Layer: 0
+  m_Name: zombiehero:Hero_eye_r_jnt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4972621662203084
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1713428010905686}
+  m_LocalRotation: {x: -0.26905054, y: 0.65392035, z: -0.6124923, w: -0.3533457}
+  m_LocalPosition: {x: -20.871767, y: -24.941385, z: 10.8101635}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: -90, y: 52.34491, z: -172.38377}
+  m_Children: []
+  m_Father: {fileID: 4019613763977823}
+--- !u!1 &1425574267553458
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4948913716324051}
+  m_Layer: 0
+  m_Name: zombiehero:Hero_jaw_jnt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4948913716324051
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1425574267553458}
+  m_LocalRotation: {x: 0.44417247, y: -0.55019164, z: 0.44417247, w: 0.55019164}
+  m_LocalPosition: {x: 1.1466899, y: -16.259285, z: 0.9509685}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 77.828224, y: 90, z: 0}
+  m_Children: []
+  m_Father: {fileID: 4019613763977823}
+--- !u!1 &1062385956418745
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4683627883515285}
+  m_Layer: 0
+  m_Name: zombiehero:zombiehero_HairJnt1
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4683627883515285
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1062385956418745}
+  m_LocalRotation: {x: -0.49303475, y: 0.85142624, z: -0.062160708, w: 0.16770841}
+  m_LocalPosition: {x: -44.00215, y: 9.634908, z: -8.577727}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: -163.84044, y: -12.961008, z: 118.00469}
+  m_Children:
+  - {fileID: 4909565271818916}
+  m_Father: {fileID: 4019613763977823}
+--- !u!1 &1292842930101566
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4909565271818916}
+  m_Layer: 0
+  m_Name: zombiehero:zombiehero_HairJnt2
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4909565271818916
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1292842930101566}
+  m_LocalRotation: {x: 0.012102348, y: 0.09267065, z: -0.02890373, w: 0.9952036}
+  m_LocalPosition: {x: -19.713095, y: 6.6676645, z: -1.0658141E-14}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 1.0921875, y: -10.669991, z: 3.2251558}
+  m_Children:
+  - {fileID: 4359191251921011}
+  m_Father: {fileID: 4683627883515285}
+--- !u!1 &1424807485460213
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4359191251921011}
+  m_Layer: 0
+  m_Name: zombiehero:zombiehero_HairJnt3
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4359191251921011
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1424807485460213}
+  m_LocalRotation: {x: 0.54876804, y: -0.14501247, z: 0.10740781, w: 0.81626505}
+  m_LocalPosition: {x: -16.524212, y: -10.436344, z: -3.5527137E-15}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 67.64338, y: 20.770227, z: -0.9921483}
+  m_Children: []
+  m_Father: {fileID: 4909565271818916}
+--- !u!1 &1359032439162927
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4460694820817513}
+  m_Layer: 0
+  m_Name: zombiehero:Hero_rt_clavicle_jnt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4460694820817513
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1359032439162927}
+  m_LocalRotation: {x: 0.34047836, y: 0.6477066, z: 0.58545685, w: -0.34898546}
+  m_LocalPosition: {x: -0.8998106, y: 0.038926486, z: 2.57625}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 97.75279, y: 58.29347, z: -176.46252}
+  m_Children:
+  - {fileID: 4334289824111545}
+  m_Father: {fileID: 4787305984247974}
+--- !u!1 &1988358351526553
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4334289824111545}
+  m_Layer: 0
+  m_Name: zombiehero:Hero_rt_upArm_jnt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4334289824111545
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1988358351526553}
+  m_LocalRotation: {x: -0.484766, y: -0.091473095, z: 0.106325924, w: 0.86332464}
+  m_LocalPosition: {x: 13.244698, y: -4.8677073E-05, z: 8.533656E-06}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: -59.06648, y: 3.1445708, z: -15.824059}
+  m_Children:
+  - {fileID: 4915928199056553}
+  m_Father: {fileID: 4460694820817513}
+--- !u!1 &1978627979581729
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4915928199056553}
+  m_Layer: 0
+  m_Name: zombiehero:Hero_rt_elbow_jnt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4915928199056553
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1978627979581729}
+  m_LocalRotation: {x: 0.03823759, y: 0.41685605, z: -0.038151994, w: 0.90736616}
+  m_LocalPosition: {x: 14.28749, y: 7.3425355E-05, z: 1.1619742E-05}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 3.3115256, y: -49.411316, z: 3.2915287}
+  m_Children:
+  - {fileID: 4294291393045203}
+  m_Father: {fileID: 4334289824111545}
+--- !u!1 &1304313448921383
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4294291393045203}
+  m_Layer: 0
+  m_Name: zombiehero:Hero_rt_wrist_jnt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4294291393045203
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1304313448921383}
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 14.055132, y: -2.9882796E-05, z: -1.05909585E-05}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: 0}
+  m_Children:
+  - {fileID: 4003886807108281}
+  - {fileID: 4393805370449550}
+  m_Father: {fileID: 4915928199056553}
+--- !u!1 &1671190407842259
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4003886807108281}
+  m_Layer: 0
+  m_Name: zombiehero:Hero_rt_hand_jnt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4003886807108281
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1671190407842259}
+  m_LocalRotation: {x: -0.20385133, y: -0.38527197, z: -0.04709707, w: 0.89877254}
+  m_LocalPosition: {x: 7.1054274E-15, y: -7.1054274E-15, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: -28.033918, y: 45.377098, z: -5.917381}
+  m_Children:
+  - {fileID: 4256023214047562}
+  - {fileID: 4144940875160269}
+  m_Father: {fileID: 4294291393045203}
+--- !u!1 &1210789629218494
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4256023214047562}
+  m_Layer: 0
+  m_Name: zombiehero:Hero_rt_index_a_jnt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4256023214047562
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1210789629218494}
+  m_LocalRotation: {x: -0.62234664, y: -0.36401576, z: 0.35606506, w: 0.5944702}
+  m_LocalPosition: {x: 5.3163295, y: -0.20053646, z: 0.5040458}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: -92.27225, y: -0.59581524, z: -61.220085}
+  m_Children: []
+  m_Father: {fileID: 4003886807108281}
+--- !u!1 &1084465739988272
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4144940875160269}
+  m_Layer: 0
+  m_Name: zombiehero:Hero_rt_thumb_a_jnt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4144940875160269
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1084465739988272}
+  m_LocalRotation: {x: -0.5800043, y: -0.32122007, z: 0.7285148, w: 0.17227575}
+  m_LocalPosition: {x: 3.0471973, y: 1.4507079, z: -2.1284802}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: -79.74542, y: -47.25709, z: -113.242256}
+  m_Children: []
+  m_Father: {fileID: 4003886807108281}
+--- !u!1 &1676509537643479
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4393805370449550}
+  m_Layer: 0
+  m_Name: zombiehero:Hero_Sword_jnt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4393805370449550
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1676509537643479}
+  m_LocalRotation: {x: 0.7299771, y: -0.48439378, z: 0.4797949, w: -0.047885478}
+  m_LocalPosition: {x: 9.65571, y: 2.9623396, z: 0.49375984}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: -135.01488, y: 40.85051, z: 84.6659}
+  m_Children: []
+  m_Father: {fileID: 4294291393045203}
+--- !u!1 &1637248890505823
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4884539342668163}
+  m_Layer: 0
+  m_Name: zombiehero:weightSpine_grp
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4884539342668163
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1637248890505823}
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 4794601706064183}

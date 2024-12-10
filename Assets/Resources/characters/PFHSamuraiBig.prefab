@@ -1,0 +1,1876 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  serializedVersion: 2
+  m_ObjectHideFlags: 1
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1756187767474027}
+  m_IsPrefabParent: 1
+  m_IsExploded: 0
+--- !u!1 &1756187767474027
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4585188749247267}
+  - 111: {fileID: 111051664209767623}
+  - 114: {fileID: 114938002035026890}
+  - 114: {fileID: 114064126230705674}
+  - 114: {fileID: 114968331761664545}
+  - 114: {fileID: 114977965510163374}
+  - 114: {fileID: 114401779317317898}
+  - 114: {fileID: 114664998905772207}
+  m_Layer: 0
+  m_Name: PFHSamuraiBig
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4585188749247267
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1756187767474027}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 51.993633, y: -0.77619934, z: 181.6648}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+  m_Children:
+  - {fileID: 4503783277425899}
+  m_Father: {fileID: 0}
+--- !u!111 &111051664209767623
+Animation:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1756187767474027}
+  m_Enabled: 1
+  m_Animation: {fileID: 7400000, guid: c0c34704e391efb4c8a5d0afb8966b13, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: c20e94cbf7ec4764e871b95c0c5c213c, type: 2}
+  - {fileID: 7400000, guid: ec867821d084b24498d14cee8430d8ba, type: 2}
+  - {fileID: 7400000, guid: 6bdef083c722b754888b5190e831a7e1, type: 2}
+  - {fileID: 7400000, guid: 9c0726016b046104f86aafd547107f2e, type: 2}
+  - {fileID: 7400000, guid: fd5b551cf72707d4ca4716eddb6a5575, type: 2}
+  - {fileID: 7400000, guid: 6924e56f3fcb0674f880a9e6fd6890e2, type: 2}
+  - {fileID: 7400000, guid: bfba59a6f677dd64a910fb83d957633a, type: 2}
+  - {fileID: 7400000, guid: c0c34704e391efb4c8a5d0afb8966b13, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
+  m_UserAABB:
+    m_Center: {x: 0, y: 0, z: 0}
+    m_Extent: {x: 0, y: 0, z: 0}
+--- !u!114 &114938002035026890
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1756187767474027}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd6245a8adae9bb55440fcfe8cafc69a, type: 3}
+  m_Name:
+  jointAnimation: {fileID: 111643778617460121}
+  defaultBlendSpeed: 0.1
+  specificAnimSettings: []
+  alsoPlayOnAllChildren: 0
+  animFrame: 0
+  extraAnimPlayers: []
+  extraTaggedAnimPlayers: []
+--- !u!114 &114064126230705674
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1756187767474027}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d23147a98738dd3f21f8523d6dbc0a95, type: 3}
+  m_Name:
+  joints:
+  - label: melee_weapon
+    joint: {fileID: 4793219203557693}
+    autoAttachPrefab: {fileID: 0}
+    transformOffset:
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0}
+      scale: {x: 0, y: 0, z: 0}
+  - label: impact_target
+    joint: {fileID: 4939844284864220}
+    autoAttachPrefab: {fileID: 0}
+    transformOffset:
+      position: {x: 0, y: 30, z: 15}
+      rotation: {x: 0, y: 0, z: 0}
+      scale: {x: 0, y: 0, z: 0}
+  - label: buff_icon
+    joint: {fileID: 4885786395065249}
+    autoAttachPrefab: {fileID: 0}
+    transformOffset:
+      position: {x: 0, y: 170, z: 0}
+      rotation: {x: 0, y: 0, z: 0}
+      scale: {x: 0, y: 0, z: 0}
+  - label: body_effect
+    joint: {fileID: 4412312036676668}
+    autoAttachPrefab: {fileID: 1749841313611811, guid: e48f1b971f5acc541a0a5b6de179614a, type: 2}
+    transformOffset:
+      position: {x: 0, y: 50, z: 0}
+      rotation: {x: 0, y: 0, z: 0}
+      scale: {x: 0, y: 0, z: 0}
+--- !u!114 &114968331761664545
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1756187767474027}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82ef4aa966cbc2b226b4b1bfbc09eb3d, type: 3}
+  m_Name:
+  attackActive: 0
+  animatedWalkSpeed: 100
+  randomAnimSets: []
+  arrowImpactEffect: {fileID: 0}
+  bladeImpactEffect: {fileID: 0}
+  bladeCriticalImpactEffect: {fileID: 0}
+  bluntImpactEffect: {fileID: 0}
+  bluntCriticalImpactEffect: {fileID: 0}
+  snapToGround: 1
+--- !u!114 &114977965510163374
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1756187767474027}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbee05443b9b67f14985305ef056de27, type: 3}
+  m_Name:
+  sourcePrefabPath: Assets/Resources/Characters/PFHSamuraiBig.prefab
+  basePrefabPath: Assets/Resources/Characters/PFHSamurai.prefab
+  exemptObjects:
+  - {fileID: 114064126230705674}
+  - {fileID: 137388901838414282}
+--- !u!114 &114401779317317898
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1756187767474027}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39dbae7d6e4503ccce4e243938d2e0ad, type: 3}
+  m_Name:
+  baseTheme: {fileID: 114591715254005744, guid: 2da67799e5035524cb45bcd78ca12c0d, type: 2}
+  defaultMinDistance: 1
+  defaultMaxDistance: 500
+  defaultCustomEffect: {fileID: 0}
+  positionOffset: {x: 0, y: 0, z: 0}
+  autoPlayEvent: Spawn
+  events: []
+--- !u!114 &114664998905772207
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1756187767474027}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name:
+--- !u!1 &1768446517649360
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4503783277425899}
+  - 111: {fileID: 111643778617460121}
+  - 114: {fileID: 114315912480427511}
+  m_Layer: 0
+  m_Name: heavysamurai
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4503783277425899
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1768446517649360}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+  m_Children:
+  - {fileID: 4412312036676668}
+  - {fileID: 4885786395065249}
+  m_Father: {fileID: 4585188749247267}
+--- !u!111 &111643778617460121
+Animation:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1768446517649360}
+  m_Enabled: 1
+  m_Animation: {fileID: 7400000, guid: 278a932edcb54634ab6a911c3ae11892, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: de82f3d04a2d27d4f8b7a6b44906e022, type: 2}
+  - {fileID: 7400000, guid: 58d3b61f92b389f49901e8afe1b8d26c, type: 2}
+  - {fileID: 7400000, guid: 3c983c8ed6685b0408640c539442a1e4, type: 2}
+  - {fileID: 7400000, guid: 90e683937b6727d43921337c094baab3, type: 2}
+  - {fileID: 7400000, guid: ee94a0e26e9205942a0e7b76e9da4064, type: 2}
+  - {fileID: 7400000, guid: a7d6b0f87a52bdd499f8f2ff3116490e, type: 2}
+  - {fileID: 7400000, guid: d3db6e451c28ca74d8594e03f5aff98f, type: 2}
+  - {fileID: 7400000, guid: 278a932edcb54634ab6a911c3ae11892, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 1
+  m_UserAABB:
+    m_Center: {x: 0, y: 0, z: 0}
+    m_Extent: {x: 0, y: 0, z: 0}
+--- !u!114 &114315912480427511
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1768446517649360}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbee05443b9b67f14985305ef056de27, type: 3}
+  m_Name:
+  sourcePrefabPath: Assets/Resources/Characters/HeavySamurai/heavysamurai.fbx
+  basePrefabPath:
+  exemptObjects:
+  - {fileID: 114315912480427511}
+  - {fileID: 137388901838414282}
+--- !u!1 &1025102568091490
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4412312036676668}
+  m_Layer: 0
+  m_Name: heavysamurai:Heavy_Samurai
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4412312036676668
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1025102568091490}
+  m_LocalRotation: {x: 0, y: -0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children:
+  - {fileID: 4413454062722639}
+  m_Father: {fileID: 4503783277425899}
+--- !u!1 &1399959523488626
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4413454062722639}
+  m_Layer: 0
+  m_Name: heavysamurai:Heavy_Samurai 1
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4413454062722639
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1399959523488626}
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 4412312036676668}
+--- !u!1 &1145772835594113
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4885786395065249}
+  m_Layer: 0
+  m_Name: heavysamurai:samurai_Skeleton_grp
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4885786395065249
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1145772835594113}
+  m_LocalRotation: {x: 0, y: -0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children:
+  - {fileID: 4618934210359180}
+  - {fileID: 4141061681729082}
+  m_Father: {fileID: 4503783277425899}
+--- !u!1 &1950206236726956
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4618934210359180}
+  - 137: {fileID: 137388901838414282}
+  m_Layer: 0
+  m_Name: heavysamurai:samurai_spine_low_jnt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 4294967295
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4618934210359180
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1950206236726956}
+  m_LocalRotation: {x: 0.48912638, y: -0.5106421, z: -0.48912638, w: 0.5106421}
+  m_LocalPosition: {x: -0, y: 39.283615, z: -0.048435047}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 90, y: 2.465711, z: 90}
+  m_Children:
+  - {fileID: 4437875213274812}
+  - {fileID: 4294044834452554}
+  m_Father: {fileID: 4885786395065249}
+--- !u!137 &137388901838414282
+SkinnedMeshRenderer:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1950206236726956}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 2100000, guid: fefa58924383a59499a51301754c29f2, type: 2}
+  m_SubsetIndices: []
+  m_StaticBatchRoot: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_Quality: 0
+  m_UpdateWhenOffscreen: 0
+  m_Mesh: {fileID: 4300000, guid: 92aabdf416e2e1a43b09e405b9443f8e, type: 2}
+  m_Bones:
+  - {fileID: 4618934210359180}
+  - {fileID: 4294044834452554}
+  - {fileID: 4905112237761046}
+  - {fileID: 4146852859328299}
+  - {fileID: 4942245699259375}
+  - {fileID: 4939844284864220}
+  - {fileID: 4862820593566265}
+  - {fileID: 4294465612880951}
+  - {fileID: 4955370347809557}
+  - {fileID: 4737169736045293}
+  - {fileID: 4714336473973236}
+  - {fileID: 4916213588631227}
+  - {fileID: 4187535226534297}
+  - {fileID: 4850829532841434}
+  - {fileID: 4113609822815262}
+  - {fileID: 4056973327512291}
+  - {fileID: 4868465920441148}
+  - {fileID: 4417386079827949}
+  - {fileID: 4646520437052004}
+  - {fileID: 4867897940455479}
+  - {fileID: 4435948371414994}
+  - {fileID: 4110927254949003}
+  - {fileID: 4675231226819115}
+  - {fileID: 4639684877912026}
+  - {fileID: 4811196357083452}
+  - {fileID: 4568727772737065}
+  - {fileID: 4477720549588621}
+  - {fileID: 4745911224795493}
+  - {fileID: 4004574257771678}
+  - {fileID: 4879086439289608}
+  - {fileID: 4633948281578948}
+  - {fileID: 4619585917563001}
+  - {fileID: 4674335600106121}
+  - {fileID: 4386712758075128}
+  - {fileID: 4999396352072976}
+  - {fileID: 4437875213274812}
+  - {fileID: 4837679166019069}
+  - {fileID: 4231342341328024}
+  - {fileID: 4720707211050752}
+  - {fileID: 4063844917993294}
+  - {fileID: 4847131271479704}
+  - {fileID: 4296116564060491}
+  - {fileID: 4858166217029341}
+  - {fileID: 4153410203298892}
+  - {fileID: 4393651455432987}
+  - {fileID: 4219649702622217}
+  - {fileID: 4901092103968625}
+  - {fileID: 4960447680175204}
+  - {fileID: 4325150456384652}
+  - {fileID: 4480254601561763}
+  m_AABB:
+    m_Center: {x: -51.41897, y: 26.007534, z: 26.135315}
+    m_Extent: {x: 91.59063, y: 79.42491, z: 82.80046}
+  m_DirtyAABB: 0
+--- !u!1 &1347236087665530
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4437875213274812}
+  m_Layer: 0
+  m_Name: heavysamurai:samurai_hip_jnt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4437875213274812
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1347236087665530}
+  m_LocalRotation: {x: -1.9428903E-16, y: -2.2204459E-16, z: -0.020873245, w: 0.99978215}
+  m_LocalPosition: {x: 8.159951, y: -0.34087217, z: 2.5285877E-15}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: -2.1727925E-14, y: 2.5903613E-14, z: 2.3920715}
+  m_Children:
+  - {fileID: 4901092103968625}
+  - {fileID: 4325150456384652}
+  - {fileID: 4837679166019069}
+  - {fileID: 4296116564060491}
+  m_Father: {fileID: 4618934210359180}
+--- !u!1 &1000536961805816
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4901092103968625}
+  m_Layer: 0
+  m_Name: heavysamurai:LeftSkirt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4901092103968625
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000536961805816}
+  m_LocalRotation: {x: -0.10066464, y: 0.6590862, z: 0.7366109, w: 0.1134742}
+  m_LocalPosition: {x: -7.1974463, y: 0.111121185, z: 13.473885}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 83.326004, y: -17.330309, z: -177.93008}
+  m_Children:
+  - {fileID: 4960447680175204}
+  m_Father: {fileID: 4437875213274812}
+--- !u!1 &1340211391449962
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4960447680175204}
+  m_Layer: 0
+  m_Name: heavysamurai:LeftSkirt1
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4960447680175204
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1340211391449962}
+  m_LocalRotation: {x: 0.032874756, y: 0.04478746, z: -0.59080803, w: 0.804897}
+  m_LocalPosition: {x: -15.921364, y: 2.6645353E-15, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 2.1041309E-07, y: -6.3697314, z: 72.5586}
+  m_Children: []
+  m_Father: {fileID: 4901092103968625}
+--- !u!1 &1074054929582766
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4325150456384652}
+  m_Layer: 0
+  m_Name: heavysamurai:RightSkirt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4325150456384652
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1074054929582766}
+  m_LocalRotation: {x: -0.10066464, y: 0.6590862, z: 0.7366109, w: 0.1134742}
+  m_LocalPosition: {x: -7.19741, y: 0.1111211, z: -13.4739}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 83.326004, y: -17.330309, z: -177.93008}
+  m_Children:
+  - {fileID: 4480254601561763}
+  m_Father: {fileID: 4437875213274812}
+--- !u!1 &1136239825514125
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4480254601561763}
+  m_Layer: 0
+  m_Name: heavysamurai:RightSkirt1
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4480254601561763
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1136239825514125}
+  m_LocalRotation: {x: 0.053087942, y: 0.01638097, z: 0.0051079122, w: 0.9984424}
+  m_LocalPosition: {x: -13.095837, y: -8.993278, z: -1.0523314}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 6.0982, y: -1.8434415, z: -0.6844349}
+  m_Children: []
+  m_Father: {fileID: 4325150456384652}
+--- !u!1 &1436633484950875
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4837679166019069}
+  m_Layer: 0
+  m_Name: heavysamurai:samurai_lf_upLeg_jnt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4837679166019069
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1436633484950875}
+  m_LocalRotation: {x: 1.6773376E-21, y: -8.941742E-15, z: 0.9998093, w: -0.01952732}
+  m_LocalPosition: {x: 7.867781, y: -0.045650456, z: 10.194258}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: -1.0244528E-12, y: -2.0008441E-14, z: 177.76219}
+  m_Children:
+  - {fileID: 4231342341328024}
+  m_Father: {fileID: 4437875213274812}
+--- !u!1 &1868007647910561
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4231342341328024}
+  m_Layer: 0
+  m_Name: heavysamurai:samurai_lf_knee_jnt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4231342341328024
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1868007647910561}
+  m_LocalRotation: {x: -1.5793197E-21, y: -4.684922E-15, z: -0.14618659, w: 0.98925704}
+  m_LocalPosition: {x: -10.173302, y: -2.60788E-14, z: 2.6467143E-15}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 7.8480455E-14, y: 5.3108516E-13, z: 16.811996}
+  m_Children:
+  - {fileID: 4720707211050752}
+  m_Father: {fileID: 4837679166019069}
+--- !u!1 &1106237056687186
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4720707211050752}
+  m_Layer: 0
+  m_Name: heavysamurai:samurai_lf_ankle_jnt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4720707211050752
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1106237056687186}
+  m_LocalRotation: {x: 0, y: 0, z: 0.55341643, w: 0.8329047}
+  m_LocalPosition: {x: -10.250877, y: -1.2976462E-15, z: -9.674234E-14}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -67.20342}
+  m_Children:
+  - {fileID: 4063844917993294}
+  m_Father: {fileID: 4231342341328024}
+--- !u!1 &1941076182808097
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4063844917993294}
+  m_Layer: 0
+  m_Name: heavysamurai:samurai_lf_ball_jnt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4063844917993294
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1941076182808097}
+  m_LocalRotation: {x: -3.9691783E-23, y: -2.9332059E-15, z: 0.32065654, w: 0.9471956}
+  m_LocalPosition: {x: -4.757633, y: -4.2057097E-16, z: -1.2848496E-14}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: -1.0777927E-13, y: 3.1837193E-13, z: -37.405266}
+  m_Children:
+  - {fileID: 4847131271479704}
+  m_Father: {fileID: 4720707211050752}
+--- !u!1 &1479753731991139
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4847131271479704}
+  m_Layer: 0
+  m_Name: heavysamurai:samurai_lf_toe_jnt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4847131271479704
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1479753731991139}
+  m_LocalRotation: {x: 0.70710653, y: -0.00066729035, z: -0.70710653, w: -0.00066729035}
+  m_LocalPosition: {x: -2.802632, y: -6.291114E-16, z: -1.4069893E-14}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: -179.89186, y: -90, z: 0}
+  m_Children: []
+  m_Father: {fileID: 4063844917993294}
+--- !u!1 &1513122296186578
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4296116564060491}
+  m_Layer: 0
+  m_Name: heavysamurai:samurai_rt_upLeg_jnt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4296116564060491
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1513122296186578}
+  m_LocalRotation: {x: 1.0918777E-08, y: 2.1325676E-10, z: 0.0195275, w: 0.9998093}
+  m_LocalPosition: {x: 7.867801, y: -0.04565049, z: -10.1943}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 1.2514383E-06, y: 3.7410254E-14, z: -2.237829}
+  m_Children:
+  - {fileID: 4858166217029341}
+  m_Father: {fileID: 4437875213274812}
+--- !u!1 &1230819504834779
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4858166217029341}
+  m_Layer: 0
+  m_Name: heavysamurai:samurai_rt_knee_jnt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4858166217029341
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1230819504834779}
+  m_LocalRotation: {x: 6.582143E-24, y: -1.5828472E-16, z: -0.14618699, w: 0.989257}
+  m_LocalPosition: {x: 10.173278, y: 1.1483793E-06, z: 3.5527137E-15}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 2.6515538E-15, y: 1.7943234E-14, z: 16.812042}
+  m_Children:
+  - {fileID: 4153410203298892}
+  m_Father: {fileID: 4296116564060491}
+--- !u!1 &1556550733020584
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4153410203298892}
+  m_Layer: 0
+  m_Name: heavysamurai:samurai_rt_ankle_jnt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4153410203298892
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1556550733020584}
+  m_LocalRotation: {x: -1.0318674E-08, y: 3.5515955E-09, z: 0.5534166, w: 0.8329046}
+  m_LocalPosition: {x: 10.250879, y: 4.37718E-06, z: 1.7763568E-15}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: -7.596227E-07, y: -9.933559E-07, z: -67.203445}
+  m_Children:
+  - {fileID: 4393651455432987}
+  m_Father: {fileID: 4858166217029341}
+--- !u!1 &1105581468825209
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4393651455432987}
+  m_Layer: 0
+  m_Name: heavysamurai:samurai_rt_ball_jnt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4393651455432987
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1105581468825209}
+  m_LocalRotation: {x: -3.499256E-09, y: 1.0336542E-08, z: 0.32065654, w: 0.9471956}
+  m_LocalPosition: {x: 4.75763, y: -4.9605533E-06, z: 1.7763568E-15}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 2.1937895E-15, y: -1.250513E-06, z: -37.405266}
+  m_Children:
+  - {fileID: 4219649702622217}
+  m_Father: {fileID: 4153410203298892}
+--- !u!1 &1248088319309511
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4219649702622217}
+  m_Layer: 0
+  m_Name: heavysamurai:samurai_rt_toe_jnt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4219649702622217
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1248088319309511}
+  m_LocalRotation: {x: 0.70710653, y: -0.00066729035, z: -0.70710653, w: -0.00066729035}
+  m_LocalPosition: {x: 2.802635, y: 4.869447E-07, z: 3.5527137E-15}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: -179.89186, y: -90, z: 0}
+  m_Children: []
+  m_Father: {fileID: 4393651455432987}
+--- !u!1 &1744382273237559
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4294044834452554}
+  m_Layer: 0
+  m_Name: heavysamurai:samurai_spine_mid_jnt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4294044834452554
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1744382273237559}
+  m_LocalRotation: {x: 0.9985531, y: 0.053775012, z: 3.6173E-16, w: 4.1840847E-17}
+  m_LocalPosition: {x: -5.7468324, y: -1.8429702E-14, z: -1.9123075E-15}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 180, y: 4.1133397E-14, z: -6.1651363}
+  m_Children:
+  - {fileID: 4905112237761046}
+  m_Father: {fileID: 4618934210359180}
+--- !u!1 &1039660913475262
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4905112237761046}
+  m_Layer: 0
+  m_Name: heavysamurai:samurai_spine_hi_jnt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4905112237761046
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1039660913475262}
+  m_LocalRotation: {x: -5.27356E-16, y: 1.7155052E-16, z: -0.040967345, w: 0.9991605}
+  m_LocalPosition: {x: -7.0330415, y: -4.440892E-15, z: 3.0879287E-15}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: -6.1185154E-14, y: -1.7166058E-14, z: 4.6958256}
+  m_Children:
+  - {fileID: 4146852859328299}
+  m_Father: {fileID: 4294044834452554}
+--- !u!1 &1225090358209383
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4146852859328299}
+  m_Layer: 0
+  m_Name: heavysamurai:samurai_spine_end_jnt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4146852859328299
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1225090358209383}
+  m_LocalRotation: {x: -1.7953166E-27, y: -1.6957388E-17, z: 0.13846758, w: 0.990367}
+  m_LocalPosition: {x: -6.718205, y: -5.450476E-15, z: 1.7954216E-15}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: -2.690665E-16, y: 1.9244546E-15, z: -15.918362}
+  m_Children:
+  - {fileID: 4737169736045293}
+  - {fileID: 4942245699259375}
+  - {fileID: 4675231226819115}
+  m_Father: {fileID: 4905112237761046}
+--- !u!1 &1305180003498043
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4737169736045293}
+  m_Layer: 0
+  m_Name: heavysamurai:samurai_lf_clavicle_jnt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4737169736045293
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1305180003498043}
+  m_LocalRotation: {x: -0.4905861, y: 0.6273152, z: -0.459091, w: -0.39374655}
+  m_LocalPosition: {x: -3.4294262, y: 0.15523098, z: -7.07406}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: -144.75409, y: 70.813484, z: 129.39487}
+  m_Children:
+  - {fileID: 4714336473973236}
+  m_Father: {fileID: 4146852859328299}
+--- !u!1 &1940356223060767
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4714336473973236}
+  m_Layer: 0
+  m_Name: heavysamurai:samurai_lf_upArm_jnt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4714336473973236
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1940356223060767}
+  m_LocalRotation: {x: 0.012875306, y: 0.12951325, z: -0.09808396, w: 0.9866307}
+  m_LocalPosition: {x: -9.635564, y: 5.68866E-16, z: 4.2482467E-15}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 2.9084509E-08, y: -14.956713, z: 11.3545885}
+  m_Children:
+  - {fileID: 4916213588631227}
+  m_Father: {fileID: 4737169736045293}
+--- !u!1 &1710669406481256
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4916213588631227}
+  m_Layer: 0
+  m_Name: heavysamurai:samurai_lf_elbow_jnt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4916213588631227
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1710669406481256}
+  m_LocalRotation: {x: 1.05735334E-23, y: 0.09415809, z: 1.4039643E-15, w: 0.99555725}
+  m_LocalPosition: {x: -17.922615, y: 1.35814415E-14, z: 3.2708622E-15}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 1.5421839E-14, y: -10.80573, z: -1.6305898E-13}
+  m_Children:
+  - {fileID: 4187535226534297}
+  m_Father: {fileID: 4714336473973236}
+--- !u!1 &1753925208713243
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4187535226534297}
+  m_Layer: 0
+  m_Name: heavysamurai:samurai_lf_wrist_jnt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4187535226534297
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1753925208713243}
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -9.941962, y: -1.4072882E-14, z: 2.3130073E-15}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: 0}
+  m_Children:
+  - {fileID: 4850829532841434}
+  m_Father: {fileID: 4916213588631227}
+--- !u!1 &1702357242923222
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4850829532841434}
+  m_Layer: 0
+  m_Name: heavysamurai:samurai_lf_hand_jnt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4850829532841434
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1702357242923222}
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0, y: -7.1054274E-15, z: -1.7763568E-15}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: 0}
+  m_Children:
+  - {fileID: 4646520437052004}
+  - {fileID: 4113609822815262}
+  m_Father: {fileID: 4187535226534297}
+--- !u!1 &1176131168550015
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4646520437052004}
+  m_Layer: 0
+  m_Name: heavysamurai:samurai_lf_index_a_jnt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4646520437052004
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1176131168550015}
+  m_LocalRotation: {x: -0.6972783, y: -0.23903053, z: 0.11748581, w: 0.6654806}
+  m_LocalPosition: {x: -5.1101437, y: -0.24711262, z: -0.010710032}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: -95.03221, y: 8.876186, z: -29.712389}
+  m_Children:
+  - {fileID: 4867897940455479}
+  m_Father: {fileID: 4850829532841434}
+--- !u!1 &1963965392762644
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4867897940455479}
+  m_Layer: 0
+  m_Name: heavysamurai:samurai_lf_index_b_jnt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4867897940455479
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1963965392762644}
+  m_LocalRotation: {x: -3.8857806E-16, y: -0.11129211, z: -9.020562E-17, w: 0.99378777}
+  m_LocalPosition: {x: -1.8698097, y: 1.7244592E-15, z: 1.3402798E-14}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: -4.419555E-14, y: 12.779611, z: 5.4520567E-15}
+  m_Children:
+  - {fileID: 4435948371414994}
+  m_Father: {fileID: 4646520437052004}
+--- !u!1 &1962700839746236
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4435948371414994}
+  m_Layer: 0
+  m_Name: heavysamurai:samurai_lf_index_c_jnt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4435948371414994
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1962700839746236}
+  m_LocalRotation: {x: 2.7755576E-16, y: -0.083644, z: -6.938894E-17, w: 0.9964957}
+  m_LocalPosition: {x: -2.4434443, y: 1.3322676E-15, z: -3.0965663E-15}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 3.2818393E-14, y: 9.596108, z: 1.0734064E-14}
+  m_Children:
+  - {fileID: 4110927254949003}
+  m_Father: {fileID: 4867897940455479}
+--- !u!1 &1606819180385605
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4110927254949003}
+  m_Layer: 0
+  m_Name: heavysamurai:samurai_lf_index_d_jnt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4110927254949003
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1606819180385605}
+  m_LocalRotation: {x: 0.63636005, y: 0.30829525, z: -0.30829525, w: 0.63636005}
+  m_LocalPosition: {x: -3.4345002, y: 1.7763568E-15, z: 1.0463742E-14}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 90, y: -51.69729, z: 0}
+  m_Children: []
+  m_Father: {fileID: 4435948371414994}
+--- !u!1 &1207524525443030
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4113609822815262}
+  m_Layer: 0
+  m_Name: heavysamurai:samurai_lf_thumb_a_jnt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4113609822815262
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1207524525443030}
+  m_LocalRotation: {x: 0.72119707, y: 0.26102424, z: -0.58586955, w: -0.26172128}
+  m_LocalPosition: {x: -2.4837525, y: -1.5236808, z: 2.4731827}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: -104.48345, y: -45.1068, z: -75.455444}
+  m_Children:
+  - {fileID: 4056973327512291}
+  m_Father: {fileID: 4850829532841434}
+--- !u!1 &1429311045593063
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4056973327512291}
+  m_Layer: 0
+  m_Name: heavysamurai:samurai_lf_thumb_b_jnt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4056973327512291
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1429311045593063}
+  m_LocalRotation: {x: 0.14235537, y: 0.29338682, z: -0.33703107, w: 0.88321525}
+  m_LocalPosition: {x: -2.80102, y: -4.1127693E-16, z: 8.405839E-15}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 3.9018793, y: -37.89409, z: 40.43332}
+  m_Children:
+  - {fileID: 4868465920441148}
+  m_Father: {fileID: 4113609822815262}
+--- !u!1 &1966464128751888
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4868465920441148}
+  m_Layer: 0
+  m_Name: heavysamurai:samurai_lf_thumb_c_jnt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4868465920441148
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1966464128751888}
+  m_LocalRotation: {x: 0.016278097, y: 0.08836101, z: 0.09444537, w: 0.99146736}
+  m_LocalPosition: {x: -1.8210437, y: 4.1857556E-15, z: -6.068655E-15}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 2.8494067, y: -9.912227, z: -11.130086}
+  m_Children:
+  - {fileID: 4417386079827949}
+  m_Father: {fileID: 4056973327512291}
+--- !u!1 &1872965187600086
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4417386079827949}
+  m_Layer: 0
+  m_Name: heavysamurai:samurai_lf_thumb_d_jnt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4417386079827949
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1872965187600086}
+  m_LocalRotation: {x: 0.6945388, y: 0.13272488, z: -0.31769758, w: 0.6317185}
+  m_LocalPosition: {x: -2.4428308, y: 8.944362E-16, z: -2.1750864E-14}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 90, y: -37.51695, z: 15.879619}
+  m_Children: []
+  m_Father: {fileID: 4868465920441148}
+--- !u!1 &1477273307610794
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4942245699259375}
+  m_Layer: 0
+  m_Name: heavysamurai:samurai_neck_jnt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4942245699259375
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1477273307610794}
+  m_LocalRotation: {x: 0.5187279, y: -0.48054278, z: 0.5187279, w: 0.48054278}
+  m_LocalPosition: {x: -10.029245, y: 3.5527137E-15, z: 2.224662E-15}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 94.376755, y: 90, z: 0}
+  m_Children:
+  - {fileID: 4939844284864220}
+  m_Father: {fileID: 4146852859328299}
+--- !u!1 &1001110504211658
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4939844284864220}
+  m_Layer: 0
+  m_Name: heavysamurai:samurai_head_a_jnt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4939844284864220
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1001110504211658}
+  m_LocalRotation: {x: 0.045624357, y: -2.866114E-25, z: 1.1615666E-16, w: 0.9989587}
+  m_LocalPosition: {x: -1.407658E-15, y: 4.185132, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 5.2299814, y: 6.0728625E-16, z: -1.32967105E-14}
+  m_Children:
+  - {fileID: 4862820593566265}
+  - {fileID: 4294465612880951}
+  - {fileID: 4955370347809557}
+  m_Father: {fileID: 4942245699259375}
+--- !u!1 &1975711211725236
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4862820593566265}
+  m_Layer: 0
+  m_Name: heavysamurai:samurai_head_b_jnt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4862820593566265
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1975711211725236}
+  m_LocalRotation: {x: -0.106250405, y: 1.3877788E-16, z: 3.0531133E-16, w: 0.9943394}
+  m_LocalPosition: {x: -1.3633504E-15, y: 5.8747025, z: 3.4002232E-16}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: -12.198425, y: -1.9530042E-14, z: -3.309838E-14}
+  m_Children: []
+  m_Father: {fileID: 4939844284864220}
+--- !u!1 &1307495813912416
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4294465612880951}
+  m_Layer: 0
+  m_Name: heavysamurai:samurai_lf_eye_jnt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4294465612880951
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1307495813912416}
+  m_LocalRotation: {x: -0.106250405, y: -2.4468794E-16, z: 3.0531133E-16, w: 0.9943394}
+  m_LocalPosition: {x: -1.7362223, y: 2.7438824, z: 2.916048}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: -12.198425, y: 2.4163167E-14, z: -3.7767234E-14}
+  m_Children: []
+  m_Father: {fileID: 4939844284864220}
+--- !u!1 &1212285031813129
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4955370347809557}
+  m_Layer: 0
+  m_Name: heavysamurai:samurai_rt_eye_jnt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4955370347809557
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1212285031813129}
+  m_LocalRotation: {x: -0.106250405, y: -3.9544916E-16, z: -7.18349E-26, w: 0.9943394}
+  m_LocalPosition: {x: 1.73622, y: 2.743884, z: 2.9160461}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: -12.198425, y: 4.5058626E-14, z: -4.8147517E-15}
+  m_Children: []
+  m_Father: {fileID: 4939844284864220}
+--- !u!1 &1153039661471866
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4675231226819115}
+  m_Layer: 0
+  m_Name: heavysamurai:samurai_rt_clavicle_jnt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4675231226819115
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1153039661471866}
+  m_LocalRotation: {x: 0.6273152, y: 0.4905861, z: 0.39374655, w: -0.459091}
+  m_LocalPosition: {x: -3.4294693, y: 0.15523413, z: 7.07406}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: -144.75409, y: 70.813484, z: -50.605137}
+  m_Children:
+  - {fileID: 4639684877912026}
+  m_Father: {fileID: 4146852859328299}
+--- !u!1 &1210074607307735
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4639684877912026}
+  m_Layer: 0
+  m_Name: heavysamurai:samurai_rt_upArm_jnt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4639684877912026
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1210074607307735}
+  m_LocalRotation: {x: 0.012875306, y: 0.12951325, z: -0.09808396, w: 0.9866307}
+  m_LocalPosition: {x: 9.635569, y: 4.6857676E-05, z: 8.875178E-07}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 2.9084509E-08, y: -14.956713, z: 11.3545885}
+  m_Children:
+  - {fileID: 4811196357083452}
+  m_Father: {fileID: 4675231226819115}
+--- !u!1 &1761576545264306
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4811196357083452}
+  m_Layer: 0
+  m_Name: heavysamurai:samurai_rt_elbow_jnt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4811196357083452
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1761576545264306}
+  m_LocalRotation: {x: -3.1757861E-25, y: 0.09415809, z: -6.151642E-17, w: 0.99555725}
+  m_LocalPosition: {x: 17.922623, y: -2.1316282E-14, z: 3.5254786E-06}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: -6.7572683E-16, y: -10.80573, z: 7.14463E-15}
+  m_Children:
+  - {fileID: 4568727772737065}
+  m_Father: {fileID: 4639684877912026}
+--- !u!1 &1731975328449881
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4568727772737065}
+  m_Layer: 0
+  m_Name: heavysamurai:samurai_rt_wrist_jnt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4568727772737065
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1731975328449881}
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 9.941928, y: -7.1054274E-15, z: -1.1539093E-05}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: 0}
+  m_Children:
+  - {fileID: 4477720549588621}
+  m_Father: {fileID: 4811196357083452}
+--- !u!1 &1444178656986766
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4477720549588621}
+  m_Layer: 0
+  m_Name: heavysamurai:samurai_rt_hand_jnt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4477720549588621
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1444178656986766}
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 7.1054274E-15, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: 0}
+  m_Children:
+  - {fileID: 4793219203557693}
+  - {fileID: 4619585917563001}
+  - {fileID: 4745911224795493}
+  m_Father: {fileID: 4568727772737065}
+--- !u!1 &1855285885700417
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4793219203557693}
+  m_Layer: 0
+  m_Name: heavysamurai:prop1
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4793219203557693
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1855285885700417}
+  m_LocalRotation: {x: 0.9960461, y: -3.921548E-16, z: 0.08883755, w: -2.5528704E-17}
+  m_LocalPosition: {x: 5.416553, y: 8.508817, z: 0.19318843}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: -180, y: 10.193471, z: 4.5741832E-14}
+  m_Children: []
+  m_Father: {fileID: 4477720549588621}
+--- !u!1 &1534742160560214
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4619585917563001}
+  m_Layer: 0
+  m_Name: heavysamurai:samurai_rt_index_a_jnt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4619585917563001
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1534742160560214}
+  m_LocalRotation: {x: -0.6972783, y: -0.23903053, z: 0.11748581, w: 0.6654806}
+  m_LocalPosition: {x: 5.110163, y: 0.2471, z: 0.010717965}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: -95.03221, y: 8.876186, z: -29.712389}
+  m_Children:
+  - {fileID: 4674335600106121}
+  m_Father: {fileID: 4477720549588621}
+--- !u!1 &1255512958659053
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4674335600106121}
+  m_Layer: 0
+  m_Name: heavysamurai:samurai_rt_index_b_jnt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4674335600106121
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1255512958659053}
+  m_LocalRotation: {x: -8.317919E-26, y: -0.11129211, z: 2.2603757E-17, w: 0.99378777}
+  m_LocalPosition: {x: 1.8698622, y: -2.6645353E-15, z: 9.827358E-06}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: -2.9559115E-16, y: 12.779611, z: -2.639494E-15}
+  m_Children:
+  - {fileID: 4386712758075128}
+  m_Father: {fileID: 4619585917563001}
+--- !u!1 &1664055970636675
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4386712758075128}
+  m_Layer: 0
+  m_Name: heavysamurai:samurai_rt_index_c_jnt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4386712758075128
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1664055970636675}
+  m_LocalRotation: {x: -1.5254367E-26, y: -0.083644, z: 1.7803713E-17, w: 0.9964957}
+  m_LocalPosition: {x: 2.443421, y: -1.7763568E-15, z: 3.823093E-05}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: -1.7306843E-16, y: 9.596108, z: -2.0618567E-15}
+  m_Children:
+  - {fileID: 4999396352072976}
+  m_Father: {fileID: 4674335600106121}
+--- !u!1 &1329944801046715
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4999396352072976}
+  m_Layer: 0
+  m_Name: heavysamurai:samurai_rt_index_d_jnt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4999396352072976
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1329944801046715}
+  m_LocalRotation: {x: 0.63636005, y: 0.30829525, z: -0.30829525, w: 0.63636005}
+  m_LocalPosition: {x: 3.434515, y: -3.1086245E-15, z: -4.076214E-05}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 90, y: -51.69729, z: 0}
+  m_Children: []
+  m_Father: {fileID: 4386712758075128}
+--- !u!1 &1350802995627346
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4745911224795493}
+  m_Layer: 0
+  m_Name: heavysamurai:samurai_rt_thumb_a_jnt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4745911224795493
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1350802995627346}
+  m_LocalRotation: {x: 0.72119707, y: 0.26102424, z: -0.58586955, w: -0.26172128}
+  m_LocalPosition: {x: 2.483789, y: 1.5237, z: -2.4731755}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: -104.48345, y: -45.1068, z: -75.455444}
+  m_Children:
+  - {fileID: 4004574257771678}
+  m_Father: {fileID: 4477720549588621}
+--- !u!1 &1764197071038627
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4004574257771678}
+  m_Layer: 0
+  m_Name: heavysamurai:samurai_rt_thumb_b_jnt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4004574257771678
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1764197071038627}
+  m_LocalRotation: {x: 0.14235537, y: 0.29338682, z: -0.33703107, w: 0.88321525}
+  m_LocalPosition: {x: 2.8009737, y: 4.857994E-05, z: -3.8461032E-05}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 3.9018793, y: -37.89409, z: 40.43332}
+  m_Children:
+  - {fileID: 4879086439289608}
+  m_Father: {fileID: 4745911224795493}
+--- !u!1 &1398460819420756
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4879086439289608}
+  m_Layer: 0
+  m_Name: heavysamurai:samurai_rt_thumb_c_jnt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4879086439289608
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1398460819420756}
+  m_LocalRotation: {x: 0.016278097, y: 0.08836101, z: 0.09444537, w: 0.99146736}
+  m_LocalPosition: {x: 1.8210211, y: 2.9026826E-06, z: 5.8282985E-05}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 2.8494067, y: -9.912227, z: -11.130086}
+  m_Children:
+  - {fileID: 4633948281578948}
+  m_Father: {fileID: 4004574257771678}
+--- !u!1 &1005490158585553
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4633948281578948}
+  m_Layer: 0
+  m_Name: heavysamurai:samurai_rt_thumb_d_jnt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4633948281578948
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1005490158585553}
+  m_LocalRotation: {x: 0.6945388, y: 0.13272488, z: -0.31769758, w: 0.6317185}
+  m_LocalPosition: {x: 2.4428694, y: -1.1187929E-05, z: -3.4400164E-05}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 90, y: -37.51695, z: 15.879619}
+  m_Children: []
+  m_Father: {fileID: 4879086439289608}
+--- !u!1 &1846037344577838
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4141061681729082}
+  m_Layer: 0
+  m_Name: heavysamurai:weightSpine_grp
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4141061681729082
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1846037344577838}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+  m_Children: []
+  m_Father: {fileID: 4885786395065249}

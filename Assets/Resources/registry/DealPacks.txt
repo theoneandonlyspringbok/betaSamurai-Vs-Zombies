@@ -1,0 +1,115 @@
+
+[available]
+	/ Special Events always on top
+	pack_olympics
+	pack_julyforth
+	
+	/ Normal packs
+	pack1
+	pack2
+	pack3
+	pack4
+	/pack5	
+	
+/--------------------------------------------------------------------
+/	Packs Descriptions
+/--------------------------------------------------------------------
+
+[pack1]
+	displayName = @dealpack1_name
+	description = @dealpack1_desc
+	icon = Sprites/Icons/consume_beginners_pack
+	cost = 0,25
+	[content]
+		balls = 50
+		revivePotion = 2
+		healthSmall = 2
+		healthBig = 1
+		leadershipSmall = 2
+		leadershipBig = 1
+		luck = 5
+		friend_panzer = 1
+		friend_spearman = 1
+
+[pack2]
+	displayName = @dealpack2_name
+	description = @dealpack2_desc
+	icon = Sprites/Icons/consume_deal_pack
+	cost = 0,35
+	[content]
+		balls = 100
+		revivePotion = 2
+		healthSmall = 5
+		leadershipSmall = 5
+		power = 2
+		wealth = 2
+		
+
+[pack3]
+	displayName = @dealpack3_name
+	description = @dealpack3_desc
+	icon = Sprites/Icons/consume_deal_pack
+	cost = 0,45
+	[content]
+		balls = 100
+		revivePotion = 2
+		healthBig = 3
+		leadershipBig = 3
+		luck = 3
+		haste = 3
+
+
+[pack4]
+	displayName = @dealpack4_name
+	description = @dealpack4_desc
+	icon = Sprites/Icons/consume_deal_pack
+	cost = 0,200
+	[content]
+		balls = 200
+		revivePotion = 5
+		healthBig = 10
+		leadershipBig = 10
+		healthSmall = 10
+		leadershipSmall = 10
+		power = 5
+		luck = 5
+		friendship = 2
+		friend_panzer = 2
+		friend_spearman = 2
+		wealth = 5
+		haste = 5
+		peace = 5
+ 		
+[pack5]
+	displayName = @dealpack5_name
+	description = @dealpack5_desc
+	icon = Sprites/Icons/consume_deal_pack
+	cost = 0,100
+	[content]
+		friendship = 5
+		friend_panzer = 5
+		friend_spearman = 5
+		balls = 500	
+		
+[pack_olympics]
+	displayName = @dealpackolympics_name
+	description = @dealpackolympics_desc
+	icon = Sprites/Icons/consume_deal_pack_olympic
+	cost = 0,50
+	eventID = olympics
+	[content]
+		charm_olympics+berserk = 5
+		healthBig = 1
+		leadershipBig = 1
+		
+[pack_julyforth]
+	displayName = @dealpackjulyforth_name
+	description = @dealpackjulyforth_desc
+	icon = Sprites/Icons/consume_deal_pack_4th
+	cost = 0,50
+	eventID = julyforth
+	[content]
+		charm_julyforth+berserk = 5
+		healthBig = 1
+		leadershipBig = 1
+

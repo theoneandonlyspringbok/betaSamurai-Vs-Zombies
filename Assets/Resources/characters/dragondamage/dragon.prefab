@@ -1,0 +1,1223 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  serializedVersion: 2
+  m_ObjectHideFlags: 1
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1225095345649550}
+  m_IsPrefabParent: 1
+  m_IsExploded: 0
+--- !u!1 &1225095345649550
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4690197381611457}
+  - 111: {fileID: 111810961414221720}
+  - 114: {fileID: 114300097395866884}
+  m_Layer: 0
+  m_Name: dragon
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4690197381611457
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1225095345649550}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+  m_Children:
+  - {fileID: 4675090976189917}
+  - {fileID: 4597092503332704}
+  m_Father: {fileID: 0}
+--- !u!111 &111810961414221720
+Animation:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1225095345649550}
+  m_Enabled: 1
+  m_Animation: {fileID: 7400000, guid: 1b7ef3c81c5556d41a79568161c4fe4a, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: 1b7ef3c81c5556d41a79568161c4fe4a, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 1
+  m_UserAABB:
+    m_Center: {x: 0, y: 0, z: 0}
+    m_Extent: {x: 0, y: 0, z: 0}
+--- !u!114 &114300097395866884
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1225095345649550}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbee05443b9b67f14985305ef056de27, type: 3}
+  m_Name:
+  sourcePrefabPath: Assets/Resources/Characters/DragonDamage/dragon.fbx
+  basePrefabPath:
+  exemptObjects: []
+--- !u!1 &1020166924004013
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4675090976189917}
+  m_Layer: 0
+  m_Name: dragon:body_mesh
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4675090976189917
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1020166924004013}
+  m_LocalRotation: {x: 0, y: -0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 4690197381611457}
+--- !u!1 &1987414972437177
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4597092503332704}
+  m_Layer: 0
+  m_Name: dragon:MasterGp
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4597092503332704
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1987414972437177}
+  m_LocalRotation: {x: 0, y: -0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children:
+  - {fileID: 4245895253616296}
+  m_Father: {fileID: 4690197381611457}
+--- !u!1 &1589593677153050
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4245895253616296}
+  m_Layer: 0
+  m_Name: dragon:Master
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4245895253616296
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1589593677153050}
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: 0}
+  m_Children:
+  - {fileID: 4881564867154648}
+  m_Father: {fileID: 4597092503332704}
+--- !u!1 &1490417122210979
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4881564867154648}
+  m_Layer: 0
+  m_Name: dragon:F:Dragdam_Skeleton_grp
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4881564867154648
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1490417122210979}
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: 0}
+  m_Children:
+  - {fileID: 4648095318686703}
+  m_Father: {fileID: 4245895253616296}
+--- !u!1 &1575308376995569
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4648095318686703}
+  m_Layer: 0
+  m_Name: dragon:F:weightSpine_grp
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4648095318686703
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1575308376995569}
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: 0}
+  m_Children:
+  - {fileID: 4478261149161071}
+  m_Father: {fileID: 4881564867154648}
+--- !u!1 &1409497765003848
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4478261149161071}
+  - 137: {fileID: 137402277888300439}
+  m_Layer: 0
+  m_Name: dragon:NeckJnt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 4294967295
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4478261149161071
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1409497765003848}
+  m_LocalRotation: {x: 0.16881542, y: -0.6866596, z: -0.16881542, w: 0.6866596}
+  m_LocalPosition: {x: -1.4003212, y: 102.45422, z: 144.4591}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 90.00001, y: 62.375504, z: 90.00001}
+  m_Children:
+  - {fileID: 4135471114762375}
+  - {fileID: 4656833107548787}
+  m_Father: {fileID: 4648095318686703}
+--- !u!137 &137402277888300439
+SkinnedMeshRenderer:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1409497765003848}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 2100000, guid: e1c903814d232854ba095fb976436b27, type: 2}
+  m_SubsetIndices: []
+  m_StaticBatchRoot: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_Quality: 0
+  m_UpdateWhenOffscreen: 0
+  m_Mesh: {fileID: 4300000, guid: 699dfcbebd7d4d54ebbbe2de716c406d, type: 2}
+  m_Bones:
+  - {fileID: 4478261149161071}
+  - {fileID: 4656833107548787}
+  - {fileID: 4941766250263304}
+  - {fileID: 4786494491508116}
+  - {fileID: 4735181806208468}
+  - {fileID: 4771099027846159}
+  - {fileID: 4756592156367526}
+  - {fileID: 4026106394339728}
+  - {fileID: 4521979685543540}
+  - {fileID: 4844546155874186}
+  - {fileID: 4800710199371841}
+  - {fileID: 4141425569106548}
+  - {fileID: 4212201877564422}
+  - {fileID: 4487309798963104}
+  - {fileID: 4060083156739355}
+  - {fileID: 4867042827906492}
+  - {fileID: 4690723878434712}
+  - {fileID: 4685810495246262}
+  - {fileID: 4748509925019473}
+  - {fileID: 4248656087703918}
+  - {fileID: 4615559666777842}
+  - {fileID: 4685564621355113}
+  - {fileID: 4022946897152330}
+  - {fileID: 4886660105517833}
+  - {fileID: 4827940937532347}
+  - {fileID: 4524991068539755}
+  - {fileID: 4017649118878357}
+  - {fileID: 4762981974897861}
+  - {fileID: 4434942900459785}
+  - {fileID: 4135471114762375}
+  - {fileID: 4259551058125440}
+  m_AABB:
+    m_Center: {x: -134.35306, y: -63.59375, z: 5.5215683}
+    m_Extent: {x: 279.37198, y: 330.06073, z: 97.114235}
+  m_DirtyAABB: 0
+--- !u!1 &1746570321925077
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4135471114762375}
+  m_Layer: 0
+  m_Name: dragon:HeadJnt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4135471114762375
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1746570321925077}
+  m_LocalRotation: {x: -0.16881542, y: 0.6866596, z: 0.16881542, w: 0.6866596}
+  m_LocalPosition: {x: 6.4800086, y: 17.583832, z: -1.4003212}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: -27.624496, y: -90, z: 0}
+  m_Children:
+  - {fileID: 4259551058125440}
+  m_Father: {fileID: 4478261149161071}
+--- !u!1 &1139656918499714
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4259551058125440}
+  m_Layer: 0
+  m_Name: dragon:JawJnt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4259551058125440
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1139656918499714}
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 7.756432E-12, y: -30.919313, z: -1.3741918}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 4135471114762375}
+--- !u!1 &1579415347297939
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4656833107548787}
+  m_Layer: 0
+  m_Name: dragon:HumpJnt1
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4656833107548787
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1579415347297939}
+  m_LocalRotation: {x: 0, y: 0, z: 0.5676837, w: 0.8232468}
+  m_LocalPosition: {x: -40.504345, y: 2.842171E-14, z: 4.440892E-16}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -69.17772}
+  m_Children:
+  - {fileID: 4410506363222346}
+  - {fileID: 4941766250263304}
+  m_Father: {fileID: 4478261149161071}
+--- !u!1 &1949405223293899
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4410506363222346}
+  m_Layer: 0
+  m_Name: dragon:F:Dragdam_spine_low_jnt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4410506363222346
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1949405223293899}
+  m_LocalRotation: {x: -1.6072847E-13, y: 4.707857E-15, z: 0.898782, w: -0.43839586}
+  m_LocalPosition: {x: -53.32182, y: -54.970097, z: -1.4003212}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 8.559306E-12, y: -1.6317373E-11, z: 127.99685}
+  m_Children:
+  - {fileID: 4022946897152330}
+  m_Father: {fileID: 4656833107548787}
+--- !u!1 &1285053341952968
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4022946897152330}
+  m_Layer: 0
+  m_Name: dragon:F:Dragdam_hip_jnt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4022946897152330
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1285053341952968}
+  m_LocalRotation: {x: 2.4177168E-15, y: -8.787867E-14, z: -0.02686059, w: 0.9996392}
+  m_LocalPosition: {x: 3.7389667, y: -0.20107937, z: -6.5959374E-13}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 5.4744024E-13, y: 1.00590794E-11, z: 3.078367}
+  m_Children:
+  - {fileID: 4886660105517833}
+  - {fileID: 4017649118878357}
+  m_Father: {fileID: 4410506363222346}
+--- !u!1 &1717257365924973
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4886660105517833}
+  m_Layer: 0
+  m_Name: dragon:F:Dragdam_lf_upLeg_jnt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4886660105517833
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1717257365924973}
+  m_LocalRotation: {x: 1.3152627E-21, y: -9.036636E-15, z: 0.9999632, w: -0.008579135}
+  m_LocalPosition: {x: 1.7641975, y: -0.15527765, z: 12.204212}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: -1.0354842E-12, y: -8.883733E-15, z: 179.01689}
+  m_Children:
+  - {fileID: 4827940937532347}
+  m_Father: {fileID: 4022946897152330}
+--- !u!1 &1957749388269147
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4827940937532347}
+  m_Layer: 0
+  m_Name: dragon:F:Dragdam_lf_knee_jnt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4827940937532347
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1957749388269147}
+  m_LocalRotation: {x: -2.0556585E-21, y: -9.051062E-15, z: -0.1586563, w: 0.9873339}
+  m_LocalPosition: {x: -22.912825, y: -2.7180974E-14, z: 1.8599628E-15}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 1.6455415E-13, y: 1.0240383E-12, z: 18.257822}
+  m_Children:
+  - {fileID: 4524991068539755}
+  m_Father: {fileID: 4886660105517833}
+--- !u!1 &1752662822231815
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4524991068539755}
+  m_Layer: 0
+  m_Name: dragon:F:Dragdam_lf_ankle_jnt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4524991068539755
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1752662822231815}
+  m_LocalRotation: {x: 0, y: 0, z: 0.6971348, w: 0.71694005}
+  m_LocalPosition: {x: -14.018473, y: 1.3322713E-15, z: -2.4862886E-13}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -88.39516}
+  m_Children: []
+  m_Father: {fileID: 4827940937532347}
+--- !u!1 &1897809897580913
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4017649118878357}
+  m_Layer: 0
+  m_Name: dragon:F:Dragdam_rt_upLeg_jnt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4017649118878357
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1897809897580913}
+  m_LocalRotation: {x: 5.7574643E-25, y: -6.0888467E-18, z: 0.008579065, w: 0.9999632}
+  m_LocalPosition: {x: 1.7641937, y: -0.1552777, z: -12.2042}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: -5.985809E-18, y: 6.977048E-16, z: -0.98310053}
+  m_Children:
+  - {fileID: 4762981974897861}
+  m_Father: {fileID: 4022946897152330}
+--- !u!1 &1799750750183678
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4762981974897861}
+  m_Layer: 0
+  m_Name: dragon:F:Dragdam_rt_knee_jnt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4762981974897861
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1799750750183678}
+  m_LocalRotation: {x: 1.0403252E-08, y: -1.6717209E-09, z: -0.15865628, w: 0.9873339}
+  m_LocalPosition: {x: 22.91285, y: -2.878895E-06, z: -1.7763568E-15}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 1.2074182E-06, y: 6.230491E-13, z: 18.257822}
+  m_Children:
+  - {fileID: 4434942900459785}
+  m_Father: {fileID: 4017649118878357}
+--- !u!1 &1410026516614744
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4434942900459785}
+  m_Layer: 0
+  m_Name: dragon:F:Dragdam_rt_ankle_jnt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4434942900459785
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1410026516614744}
+  m_LocalRotation: {x: 1.4187744E-08, y: 1.4776794E-08, z: 0.6971348, w: 0.71694005}
+  m_LocalPosition: {x: 14.018455, y: -3.1613606E-06, z: 6.927792E-14}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 2.3460536E-06, y: -8.059284E-08, z: -88.39516}
+  m_Children: []
+  m_Father: {fileID: 4762981974897861}
+--- !u!1 &1902092555095875
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4941766250263304}
+  m_Layer: 0
+  m_Name: dragon:ValleyJnt1
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4941766250263304
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1902092555095875}
+  m_LocalRotation: {x: 0, y: 0, z: -0.5300984, w: 0.84793615}
+  m_LocalPosition: {x: -75.54513, y: 0, z: -1.110223E-14}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: 64.02421}
+  m_Children:
+  - {fileID: 4786494491508116}
+  m_Father: {fileID: 4656833107548787}
+--- !u!1 &1696696915276580
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4786494491508116}
+  m_Layer: 0
+  m_Name: dragon:HumpJnt2
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4786494491508116
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1696696915276580}
+  m_LocalRotation: {x: 0, y: 0, z: 0.36397696, w: 0.9314079}
+  m_LocalPosition: {x: -49.1198, y: 0.006491075, z: 1.7763568E-15}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -42.689274}
+  m_Children:
+  - {fileID: 4834270044862284}
+  - {fileID: 4735181806208468}
+  m_Father: {fileID: 4941766250263304}
+--- !u!1 &1091288293428573
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4834270044862284}
+  m_Layer: 0
+  m_Name: dragon:Dragdam_spine_low_jnt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4834270044862284
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1091288293428573}
+  m_LocalRotation: {x: 1.4444842E-13, y: -4.2356717E-15, z: -0.8020985, w: 0.59719175}
+  m_LocalPosition: {x: -18.714502, y: -41.24959, z: -1.4003212}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 1.0274374E-11, y: -1.2986931E-11, z: 106.661934}
+  m_Children:
+  - {fileID: 4867042827906492}
+  m_Father: {fileID: 4786494491508116}
+--- !u!1 &1520540079336545
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4867042827906492}
+  m_Layer: 0
+  m_Name: dragon:Dragdam_hip_jnt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4867042827906492
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1520540079336545}
+  m_LocalRotation: {x: 2.4177168E-15, y: -8.787867E-14, z: -0.02686059, w: 0.9996392}
+  m_LocalPosition: {x: 3.7389667, y: -0.20107937, z: -6.5959374E-13}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 5.4744024E-13, y: 1.00590794E-11, z: 3.078367}
+  m_Children:
+  - {fileID: 4690723878434712}
+  - {fileID: 4248656087703918}
+  m_Father: {fileID: 4834270044862284}
+--- !u!1 &1810188792359210
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4690723878434712}
+  m_Layer: 0
+  m_Name: dragon:Dragdam_lf_upLeg_jnt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4690723878434712
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1810188792359210}
+  m_LocalRotation: {x: 1.3374372E-21, y: -9.036636E-15, z: 0.9999632, w: -0.008579135}
+  m_LocalPosition: {x: 1.7641975, y: -0.15527765, z: 12.204212}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: -1.0354842E-12, y: -8.883731E-15, z: 179.01689}
+  m_Children:
+  - {fileID: 4685810495246262}
+  m_Father: {fileID: 4867042827906492}
+--- !u!1 &1509343319266920
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4685810495246262}
+  m_Layer: 0
+  m_Name: dragon:Dragdam_lf_knee_jnt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4685810495246262
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1509343319266920}
+  m_LocalRotation: {x: -2.0556585E-21, y: -9.051062E-15, z: -0.1586563, w: 0.9873339}
+  m_LocalPosition: {x: -22.912825, y: -2.7180974E-14, z: 1.8599628E-15}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 1.6455415E-13, y: 1.0240383E-12, z: 18.257822}
+  m_Children:
+  - {fileID: 4748509925019473}
+  m_Father: {fileID: 4690723878434712}
+--- !u!1 &1448641446871085
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4748509925019473}
+  m_Layer: 0
+  m_Name: dragon:Dragdam_lf_ankle_jnt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4748509925019473
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1448641446871085}
+  m_LocalRotation: {x: 0, y: 0, z: 0.6971348, w: 0.71694005}
+  m_LocalPosition: {x: -14.018473, y: 1.3322713E-15, z: -2.4862886E-13}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -88.39516}
+  m_Children: []
+  m_Father: {fileID: 4685810495246262}
+--- !u!1 &1959887364702701
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4248656087703918}
+  m_Layer: 0
+  m_Name: dragon:Dragdam_rt_upLeg_jnt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4248656087703918
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1959887364702701}
+  m_LocalRotation: {x: 5.797976E-25, y: -6.0888467E-18, z: 0.008579064, w: 0.9999632}
+  m_LocalPosition: {x: 1.7641937, y: -0.1552777, z: -12.2042}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: -5.9858077E-18, y: 6.977048E-16, z: -0.9831004}
+  m_Children:
+  - {fileID: 4615559666777842}
+  m_Father: {fileID: 4867042827906492}
+--- !u!1 &1774276284388343
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4615559666777842}
+  m_Layer: 0
+  m_Name: dragon:Dragdam_rt_knee_jnt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4615559666777842
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1774276284388343}
+  m_LocalRotation: {x: 1.0403252E-08, y: -1.6717209E-09, z: -0.15865628, w: 0.9873339}
+  m_LocalPosition: {x: 22.91285, y: -2.878895E-06, z: -1.7763568E-15}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 1.2074182E-06, y: 6.230491E-13, z: 18.257822}
+  m_Children:
+  - {fileID: 4685564621355113}
+  m_Father: {fileID: 4248656087703918}
+--- !u!1 &1340887459311563
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4685564621355113}
+  m_Layer: 0
+  m_Name: dragon:Dragdam_rt_ankle_jnt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4685564621355113
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1340887459311563}
+  m_LocalRotation: {x: 1.4187744E-08, y: 1.4776794E-08, z: 0.6971348, w: 0.71694005}
+  m_LocalPosition: {x: 14.018455, y: -3.1613606E-06, z: 6.927792E-14}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 2.3460536E-06, y: -8.059284E-08, z: -88.39516}
+  m_Children: []
+  m_Father: {fileID: 4615559666777842}
+--- !u!1 &1128157786867563
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4735181806208468}
+  m_Layer: 0
+  m_Name: dragon:ValleyJnt2
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4735181806208468
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1128157786867563}
+  m_LocalRotation: {x: 0.049532007, y: 0.70536983, z: -0.19729428, w: 0.679025}
+  m_LocalPosition: {x: -56.350666, y: -0.006597869, z: -3.175238E-14}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: -90.00001, y: -77.81529, z: 110.2183}
+  m_Children:
+  - {fileID: 4771099027846159}
+  m_Father: {fileID: 4786494491508116}
+--- !u!1 &1845112929933765
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4771099027846159}
+  m_Layer: 0
+  m_Name: dragon:HumpJnt3
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4771099027846159
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1845112929933765}
+  m_LocalRotation: {x: -0.10032922, y: -0.6999529, z: 0.24580382, w: 0.66300863}
+  m_LocalPosition: {x: -2.4060235, y: 11.142695, z: -51.554356}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: -90.00001, y: 61.50119, z: -102.184715}
+  m_Children:
+  - {fileID: 4234059696989022}
+  - {fileID: 4756592156367526}
+  m_Father: {fileID: 4735181806208468}
+--- !u!1 &1473437240681955
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4234059696989022}
+  m_Layer: 0
+  m_Name: dragon:B:Dragdam_spine_low_jnt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4234059696989022
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1473437240681955}
+  m_LocalRotation: {x: 1.5365022E-13, y: -5.8745513E-15, z: -0.84312147, w: 0.53772324}
+  m_LocalPosition: {x: -20.228384, y: -31.226229, z: -1.4003212}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 1.00352695E-11, y: -1.4482872E-11, z: 114.94244}
+  m_Children:
+  - {fileID: 4521979685543540}
+  m_Father: {fileID: 4771099027846159}
+--- !u!1 &1076038701862588
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4521979685543540}
+  m_Layer: 0
+  m_Name: dragon:B:Dragdam_hip_jnt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4521979685543540
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1076038701862588}
+  m_LocalRotation: {x: 2.556495E-15, y: -9.0487696E-14, z: -0.02686059, w: 0.9996392}
+  m_LocalPosition: {x: 3.7389667, y: -0.20107937, z: -6.783662E-13}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 5.713679E-13, y: 1.0357516E-11, z: 3.078367}
+  m_Children:
+  - {fileID: 4844546155874186}
+  - {fileID: 4212201877564422}
+  m_Father: {fileID: 4234059696989022}
+--- !u!1 &1317580381856288
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4844546155874186}
+  m_Layer: 0
+  m_Name: dragon:B:Dragdam_lf_upLeg_jnt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4844546155874186
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1317580381856288}
+  m_LocalRotation: {x: 1.3152627E-21, y: -9.036636E-15, z: 0.9999632, w: -0.008579135}
+  m_LocalPosition: {x: 1.7641975, y: -0.15527765, z: 12.204212}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: -1.0354842E-12, y: -8.883733E-15, z: 179.01689}
+  m_Children:
+  - {fileID: 4800710199371841}
+  m_Father: {fileID: 4521979685543540}
+--- !u!1 &1908912540532510
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4800710199371841}
+  m_Layer: 0
+  m_Name: dragon:B:Dragdam_lf_knee_jnt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4800710199371841
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1908912540532510}
+  m_LocalRotation: {x: -2.0556585E-21, y: -9.051062E-15, z: -0.1586563, w: 0.9873339}
+  m_LocalPosition: {x: -22.912825, y: -2.7180974E-14, z: 1.8599628E-15}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 1.6455415E-13, y: 1.0240383E-12, z: 18.257822}
+  m_Children:
+  - {fileID: 4141425569106548}
+  m_Father: {fileID: 4844546155874186}
+--- !u!1 &1714411490940884
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4141425569106548}
+  m_Layer: 0
+  m_Name: dragon:B:Dragdam_lf_ankle_jnt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4141425569106548
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1714411490940884}
+  m_LocalRotation: {x: 0, y: 0, z: 0.6971348, w: 0.71694005}
+  m_LocalPosition: {x: -14.018473, y: 1.3322713E-15, z: -2.4862886E-13}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -88.39516}
+  m_Children: []
+  m_Father: {fileID: 4800710199371841}
+--- !u!1 &1849137716531974
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4212201877564422}
+  m_Layer: 0
+  m_Name: dragon:B:Dragdam_rt_upLeg_jnt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4212201877564422
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1849137716531974}
+  m_LocalRotation: {x: 5.797976E-25, y: -6.0888467E-18, z: 0.008579064, w: 0.9999632}
+  m_LocalPosition: {x: 1.7641937, y: -0.1552777, z: -12.2042}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: -5.9858077E-18, y: 6.977048E-16, z: -0.9831004}
+  m_Children:
+  - {fileID: 4487309798963104}
+  m_Father: {fileID: 4521979685543540}
+--- !u!1 &1475424397120824
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4487309798963104}
+  m_Layer: 0
+  m_Name: dragon:B:Dragdam_rt_knee_jnt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4487309798963104
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1475424397120824}
+  m_LocalRotation: {x: 1.0403252E-08, y: -1.6717209E-09, z: -0.15865628, w: 0.9873339}
+  m_LocalPosition: {x: 22.91285, y: -2.878895E-06, z: -1.7763568E-15}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 1.2074182E-06, y: 6.230491E-13, z: 18.257822}
+  m_Children:
+  - {fileID: 4060083156739355}
+  m_Father: {fileID: 4212201877564422}
+--- !u!1 &1770355805439215
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4060083156739355}
+  m_Layer: 0
+  m_Name: dragon:B:Dragdam_rt_ankle_jnt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4060083156739355
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1770355805439215}
+  m_LocalRotation: {x: 1.4187745E-08, y: 1.4776797E-08, z: 0.6971348, w: 0.71694005}
+  m_LocalPosition: {x: 14.018455, y: -3.1613606E-06, z: 6.927792E-14}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 2.3460539E-06, y: -8.059299E-08, z: -88.39516}
+  m_Children: []
+  m_Father: {fileID: 4487309798963104}
+--- !u!1 &1070721981129548
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4756592156367526}
+  m_Layer: 0
+  m_Name: dragon:TailJnt1
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4756592156367526
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1070721981129548}
+  m_LocalRotation: {x: 0.17404953, y: 0.68535155, z: -0.17404953, w: 0.68535155}
+  m_LocalPosition: {x: -43.018227, y: -0.0061965836, z: -9.969803E-14}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 28.498806, y: -90, z: 0}
+  m_Children:
+  - {fileID: 4026106394339728}
+  m_Father: {fileID: 4771099027846159}
+--- !u!1 &1357589125179393
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4026106394339728}
+  m_Layer: 0
+  m_Name: dragon:TailJnt1 1
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4026106394339728
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1357589125179393}
+  m_LocalRotation: {x: 0.13091145, y: -0.69488287, z: -0.13091145, w: 0.69488287}
+  m_LocalPosition: {x: -3.708145E-14, y: 1.4210855E-14, z: -40.97907}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 90, y: 68.66179, z: 90}
+  m_Children: []
+  m_Father: {fileID: 4756592156367526}

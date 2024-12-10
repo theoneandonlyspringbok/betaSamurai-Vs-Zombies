@@ -1,0 +1,114 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  serializedVersion: 2
+  m_ObjectHideFlags: 1
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1325813836331383}
+  m_IsPrefabParent: 1
+  m_IsExploded: 0
+--- !u!1 &1325813836331383
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4193958111802519}
+  - 33: {fileID: 33408554942599305}
+  - 23: {fileID: 23738962117139935}
+  - 111: {fileID: 111170179753046086}
+  - 114: {fileID: 114434729369180228}
+  m_Layer: 0
+  m_Name: tumbler
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 4294967295
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4193958111802519
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1325813836331383}
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1.3954396, y: -0.44076592, z: 0.1271923}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 0}
+--- !u!33 &33408554942599305
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1325813836331383}
+  m_Mesh: {fileID: 4300000, guid: fdbf1c68fe367d34188d5a452f96b48c, type: 2}
+--- !u!23 &23738962117139935
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1325813836331383}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 2100000, guid: 402c74f21baa0e64e90eafe1907f2b71, type: 2}
+  m_SubsetIndices: []
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ScaleInLightmap: 1
+--- !u!111 &111170179753046086
+Animation:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1325813836331383}
+  m_Enabled: 1
+  m_Animation: {fileID: 7400000, guid: 037d4494e6ff3c6419138fa49dbba357, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: 037d4494e6ff3c6419138fa49dbba357, type: 2}
+  - {fileID: 7400000, guid: 3fe3da110fb4aa24d9dc313cd490211a, type: 2}
+  - {fileID: 7400000, guid: 5c084135b07530c408b9063cd192f65e, type: 2}
+  - {fileID: 7400000, guid: 181550cd5536d564aaaa9164493d7ea8, type: 2}
+  - {fileID: 7400000, guid: 7606a1dec6c184245ac7e0aec199ac31, type: 2}
+  - {fileID: 7400000, guid: 0a9d1f65f6f3b354782a8771e062fcbc, type: 2}
+  - {fileID: 7400000, guid: 7c2557b885b89754d9ecafc44869ddc8, type: 2}
+  - {fileID: 7400000, guid: f4e3eaf75fac63241be8c63e19402ee1, type: 2}
+  - {fileID: 7400000, guid: ae391241e4a088a4a9d5f2021c1ce778, type: 2}
+  - {fileID: 7400000, guid: f250c583588a5a940bf7b3206c8792b1, type: 2}
+  - {fileID: 7400000, guid: 481ed2d9712966742b327691bd3cecfa, type: 2}
+  - {fileID: 7400000, guid: 1c8e24a6b1a62174fb88622ae3f581de, type: 2}
+  - {fileID: 7400000, guid: 6d5055109115161418b77a4bbdd85e53, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
+  m_UserAABB:
+    m_Center: {x: 0, y: 0, z: -5.9604645E-08}
+    m_Extent: {x: 2.8568563, y: 2.856856, z: 0.48363614}
+--- !u!114 &114434729369180228
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1325813836331383}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbee05443b9b67f14985305ef056de27, type: 3}
+  m_Name:
+  sourcePrefabPath: Assets/Resources/Levels/Pachinko/Props/Tumbler/tumbler.fbx
+  basePrefabPath:
+  exemptObjects: []

@@ -1,0 +1,1540 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  serializedVersion: 2
+  m_ObjectHideFlags: 1
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1906244118264222}
+  m_IsPrefabParent: 1
+  m_IsExploded: 0
+--- !u!1 &1906244118264222
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4930557119184640}
+  - 111: {fileID: 111645216734839447}
+  - 114: {fileID: 114291380233549393}
+  - 114: {fileID: 114837020805670798}
+  - 114: {fileID: 114194857890245804}
+  - 114: {fileID: 114612333310570510}
+  - 114: {fileID: 114516615807584606}
+  - 114: {fileID: 114166269795266218}
+  - 114: {fileID: 114325252782214548}
+  m_Layer: 0
+  m_Name: PFJurogumoBaby
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4930557119184640
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1906244118264222}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 842.30005, y: 715.1153, z: 1066.7974}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+  m_Children:
+  - {fileID: 4065479381260252}
+  m_Father: {fileID: 0}
+--- !u!111 &111645216734839447
+Animation:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1906244118264222}
+  m_Enabled: 1
+  m_Animation: {fileID: 7400000, guid: 2dbe091af206bfd48851692b1e1a06f6, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: 2dbe091af206bfd48851692b1e1a06f6, type: 2}
+  - {fileID: 7400000, guid: 98871a098c7d84d43a136a6a34a881bb, type: 2}
+  - {fileID: 7400000, guid: 1e0918f79f64ffc499713b9d76918b62, type: 2}
+  - {fileID: 7400000, guid: b661e2ed3083b8f47b54d4912aa9f6cc, type: 2}
+  - {fileID: 7400000, guid: d80b42c7cd17a49438ed7133a7b252b5, type: 2}
+  - {fileID: 7400000, guid: 92d3877a8cfa4784b99cf1437b33147d, type: 2}
+  - {fileID: 7400000, guid: 4498bd97606140e4db0f43f89559e8dd, type: 2}
+  - {fileID: 7400000, guid: 77159c8b34d1171489b55a9a4b89fadb, type: 2}
+  - {fileID: 7400000, guid: 0acf80e245eb7c442a68bc9bac5f6483, type: 2}
+  - {fileID: 7400000, guid: 1bf180b57ddac5b45825731fd70fdd00, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
+  m_UserAABB:
+    m_Center: {x: 0, y: 0, z: 0}
+    m_Extent: {x: 0, y: 0, z: 0}
+--- !u!114 &114291380233549393
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1906244118264222}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd6245a8adae9bb55440fcfe8cafc69a, type: 3}
+  m_Name:
+  jointAnimation: {fileID: 111022702877733715}
+  defaultBlendSpeed: 0.3
+  specificAnimSettings:
+  - clip: {fileID: 7400000, guid: 4498bd97606140e4db0f43f89559e8dd, type: 2}
+    overrideBlendSpeed: 1
+    blendSpeed: 0
+    jointMaskRoot: {fileID: 0}
+    onlyUseSingleJoint: 0
+  alsoPlayOnAllChildren: 0
+  animFrame: 0
+  extraAnimPlayers: []
+  extraTaggedAnimPlayers: []
+--- !u!114 &114837020805670798
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1906244118264222}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbee05443b9b67f14985305ef056de27, type: 3}
+  m_Name:
+  sourcePrefabPath: Assets/Resources/Characters/PFJurogumoBaby.prefab
+  basePrefabPath:
+  exemptObjects: []
+--- !u!114 &114194857890245804
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1906244118264222}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d23147a98738dd3f21f8523d6dbc0a95, type: 3}
+  m_Name:
+  joints:
+  - label: impact_target
+    joint: {fileID: 4543689939238061}
+    autoAttachPrefab: {fileID: 0}
+    transformOffset:
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0}
+      scale: {x: 0, y: 0, z: 0}
+  - label: buff_icon
+    joint: {fileID: 4415527905332276}
+    autoAttachPrefab: {fileID: 0}
+    transformOffset:
+      position: {x: 0, y: 170, z: 0}
+      rotation: {x: 0, y: 0, z: 0}
+      scale: {x: 0, y: 0, z: 0}
+--- !u!114 &114612333310570510
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1906244118264222}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82ef4aa966cbc2b226b4b1bfbc09eb3d, type: 3}
+  m_Name:
+  attackActive: 0
+  animatedWalkSpeed: 100
+  randomAnimSets:
+  - name: attack
+    clips:
+    - {fileID: 7400000, guid: 2dbe091af206bfd48851692b1e1a06f6, type: 2}
+    - {fileID: 7400000, guid: 98871a098c7d84d43a136a6a34a881bb, type: 2}
+    - {fileID: 7400000, guid: 1e0918f79f64ffc499713b9d76918b62, type: 2}
+    onlyRandomizeOnce: 0
+  arrowImpactEffect: {fileID: 0}
+  bladeImpactEffect: {fileID: 0}
+  bladeCriticalImpactEffect: {fileID: 0}
+  bluntImpactEffect: {fileID: 0}
+  bluntCriticalImpactEffect: {fileID: 0}
+  snapToGround: 1
+--- !u!114 &114516615807584606
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1906244118264222}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39dbae7d6e4503ccce4e243938d2e0ad, type: 3}
+  m_Name:
+  baseTheme: {fileID: 114286833836646290, guid: 15149cdb1fb000a4ca7ddb3e36345e07, type: 2}
+  defaultMinDistance: 1
+  defaultMaxDistance: 500
+  defaultCustomEffect: {fileID: 0}
+  positionOffset: {x: 0, y: 0, z: 0}
+  autoPlayEvent:
+  events: []
+--- !u!114 &114166269795266218
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1906244118264222}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9deb42e7ebc7d9000d6a75dff5974047, type: 3}
+  m_Name:
+  playRandomAnimAtStartup: 0
+  cameraShakeIntensityMult: 1
+--- !u!114 &114325252782214548
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1906244118264222}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name:
+--- !u!1 &1165637926606127
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4065479381260252}
+  - 111: {fileID: 111022702877733715}
+  - 114: {fileID: 114123900531399541}
+  m_Layer: 0
+  m_Name: jurogumo
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4065479381260252
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1165637926606127}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+  m_Children:
+  - {fileID: 4235967721683361}
+  - {fileID: 4415527905332276}
+  m_Father: {fileID: 4930557119184640}
+--- !u!111 &111022702877733715
+Animation:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1165637926606127}
+  m_Enabled: 1
+  m_Animation: {fileID: 7400000, guid: 5e6b20bc8f6240c40a716b9a2db2a7b8, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: 5e6b20bc8f6240c40a716b9a2db2a7b8, type: 2}
+  - {fileID: 7400000, guid: a0c835aabc48be34e9e13d5d139302f2, type: 2}
+  - {fileID: 7400000, guid: 2145cf5ee33cc5c4a87caec927a3c829, type: 2}
+  - {fileID: 7400000, guid: 9fd30f13740ee3b4aae7114b51e44ab1, type: 2}
+  - {fileID: 7400000, guid: 077b4cfdb558d214b9aff4274635c936, type: 2}
+  - {fileID: 7400000, guid: e67f513fb53b65e45844f160b412cb38, type: 2}
+  - {fileID: 7400000, guid: 12832c1b8c057294d8f323355edc46a8, type: 2}
+  - {fileID: 7400000, guid: 62f41744017ddca498d5736b6d308a5c, type: 2}
+  - {fileID: 7400000, guid: 904dd5677d1bdf24793585778cf2d228, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 1
+  m_UserAABB:
+    m_Center: {x: 0, y: 0, z: 0}
+    m_Extent: {x: 0, y: 0, z: 0}
+--- !u!114 &114123900531399541
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1165637926606127}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbee05443b9b67f14985305ef056de27, type: 3}
+  m_Name:
+  sourcePrefabPath: Assets/Resources/Characters/Jurogumo/jurogumo.fbx
+  basePrefabPath:
+  exemptObjects:
+  - {fileID: 114123900531399541}
+  - {fileID: 137353184881257165}
+--- !u!1 &1789784731449773
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4235967721683361}
+  m_Layer: 0
+  m_Name: jurogumo:Jurogumo
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4235967721683361
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1789784731449773}
+  m_LocalRotation: {x: 0, y: -0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 4065479381260252}
+--- !u!1 &1972260831607897
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4415527905332276}
+  m_Layer: 0
+  m_Name: jurogumo:jurogumo_Skeleton_grp
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4415527905332276
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1972260831607897}
+  m_LocalRotation: {x: 0, y: -0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children:
+  - {fileID: 4843701589909585}
+  m_Father: {fileID: 4065479381260252}
+--- !u!1 &1451495657392596
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4843701589909585}
+  - 137: {fileID: 137353184881257165}
+  m_Layer: 0
+  m_Name: jurogumo:jurogumo_spine_low_jnt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 4294967295
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4843701589909585
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1451495657392596}
+  m_LocalRotation: {x: 0.48647586, y: -0.51316786, z: -0.48647586, w: 0.51316786}
+  m_LocalPosition: {x: -0, y: 49.59736, z: -0.07265257}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 90, y: 3.0590415, z: 90}
+  m_Children:
+  - {fileID: 4796575910002355}
+  - {fileID: 4259493164925387}
+  m_Father: {fileID: 4415527905332276}
+--- !u!137 &137353184881257165
+SkinnedMeshRenderer:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1451495657392596}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 2100000, guid: d14af9f77e8baf245bc554f413f0913e, type: 2}
+  m_SubsetIndices: []
+  m_StaticBatchRoot: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_Quality: 0
+  m_UpdateWhenOffscreen: 0
+  m_Mesh: {fileID: 4300000, guid: c08238772eca6994bb84c4dbed746b60, type: 2}
+  m_Bones:
+  - {fileID: 4843701589909585}
+  - {fileID: 4259493164925387}
+  - {fileID: 4543689939238061}
+  - {fileID: 4791003236016041}
+  - {fileID: 4347145143789955}
+  - {fileID: 4073008431435590}
+  - {fileID: 4795557162168614}
+  - {fileID: 4347175962750500}
+  - {fileID: 4370247554329574}
+  - {fileID: 4650166330039844}
+  - {fileID: 4011928166828574}
+  - {fileID: 4514241683525236}
+  - {fileID: 4140060337113396}
+  - {fileID: 4731154351988198}
+  - {fileID: 4816665461702396}
+  - {fileID: 4866240409285169}
+  - {fileID: 4929372282652214}
+  - {fileID: 4522841666680314}
+  - {fileID: 4240420048648104}
+  - {fileID: 4976728997332201}
+  - {fileID: 4796575910002355}
+  - {fileID: 4398430652070247}
+  - {fileID: 4530832217754300}
+  - {fileID: 4531736431729866}
+  - {fileID: 4546276173234486}
+  - {fileID: 4011373696818024}
+  - {fileID: 4993232229883857}
+  - {fileID: 4314170562044007}
+  - {fileID: 4016557873872825}
+  - {fileID: 4750452428576472}
+  - {fileID: 4040825456906707}
+  - {fileID: 4295127178635938}
+  - {fileID: 4876008721143912}
+  - {fileID: 4726543514607113}
+  - {fileID: 4786492193741779}
+  - {fileID: 4355879035673990}
+  - {fileID: 4815566200981248}
+  - {fileID: 4447315580741252}
+  - {fileID: 4994449772140835}
+  m_AABB:
+    m_Center: {x: -12.691105, y: 12.126434, z: 0.84926605}
+    m_Extent: {x: 80.810394, y: 70.828445, z: 65.479485}
+  m_DirtyAABB: 0
+--- !u!1 &1468668698179939
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4796575910002355}
+  m_Layer: 0
+  m_Name: jurogumo:jurogumo_hip_jnt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4796575910002355
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1468668698179939}
+  m_LocalRotation: {x: -1.9428903E-16, y: -1.9428903E-16, z: -0.02546655, w: 0.9996757}
+  m_LocalPosition: {x: 6.413739, y: -0.32698983, z: 2.6667566E-15}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: -2.1689678E-14, y: 2.2823647E-14, z: 2.9185672}
+  m_Children:
+  - {fileID: 4314170562044007}
+  - {fileID: 4815566200981248}
+  - {fileID: 4040825456906707}
+  - {fileID: 4726543514607113}
+  - {fileID: 4398430652070247}
+  - {fileID: 4546276173234486}
+  m_Father: {fileID: 4843701589909585}
+--- !u!1 &1249803225696358
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4314170562044007}
+  m_Layer: 0
+  m_Name: jurogumo:joint1
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4314170562044007
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1249803225696358}
+  m_LocalRotation: {x: -0.2504816, y: 0.6612556, z: 0.6606395, w: 0.25210205}
+  m_LocalPosition: {x: 2.7676404, y: 3.0948968, z: 17.877363}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 90, y: -41.63354, z: -179.85953}
+  m_Children:
+  - {fileID: 4016557873872825}
+  m_Father: {fileID: 4796575910002355}
+--- !u!1 &1451541037578515
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4016557873872825}
+  m_Layer: 0
+  m_Name: jurogumo:joint2
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4016557873872825
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1451541037578515}
+  m_LocalRotation: {x: 0.92627865, y: 0.37683937, z: 2.3074741E-17, w: 5.671821E-17}
+  m_LocalPosition: {x: -28.69254, y: -1.7763568E-15, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 180, y: -1.8059207E-21, z: -44.276085}
+  m_Children:
+  - {fileID: 4750452428576472}
+  m_Father: {fileID: 4314170562044007}
+--- !u!1 &1592764310725077
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4750452428576472}
+  m_Layer: 0
+  m_Name: jurogumo:joint3
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4750452428576472
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1592764310725077}
+  m_LocalRotation: {x: 0.6906139, y: 0.7232236, z: 4.4284676E-17, w: 4.2287908E-17}
+  m_LocalPosition: {x: -17.227327, y: 1.1435297E-14, z: 1.703992E-22}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 180, y: -5.5395296E-23, z: -92.64255}
+  m_Children: []
+  m_Father: {fileID: 4016557873872825}
+--- !u!1 &1002849007197589
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4815566200981248}
+  m_Layer: 0
+  m_Name: jurogumo:joint4
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4815566200981248
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1002849007197589}
+  m_LocalRotation: {x: 0.24629676, y: -0.63304436, z: 0.691855, w: 0.24480486}
+  m_LocalPosition: {x: 3.0294373, y: 3.0325873, z: -19.370195}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: -84.16556, y: 40.598015, z: -177.96931}
+  m_Children:
+  - {fileID: 4447315580741252}
+  m_Father: {fileID: 4796575910002355}
+--- !u!1 &1894594164404158
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4447315580741252}
+  m_Layer: 0
+  m_Name: jurogumo:joint5
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4447315580741252
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1894594164404158}
+  m_LocalRotation: {x: 0.92312676, y: 0.38449588, z: 2.3543582E-17, w: 5.6525215E-17}
+  m_LocalPosition: {x: -27.44778, y: -1.2434498E-14, z: -3.3613838E-15}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 180, y: -2.5025543E-22, z: -45.22489}
+  m_Children:
+  - {fileID: 4994449772140835}
+  m_Father: {fileID: 4815566200981248}
+--- !u!1 &1308254363111736
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4994449772140835}
+  m_Layer: 0
+  m_Name: jurogumo:joint6
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4994449772140835
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1308254363111736}
+  m_LocalRotation: {x: 0, y: 0, z: -0.6784562, w: 0.73464096}
+  m_LocalPosition: {x: -17.480722, y: 2.6645353E-15, z: 1.5078004E-15}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: 85.446236}
+  m_Children: []
+  m_Father: {fileID: 4447315580741252}
+--- !u!1 &1703772708719575
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4040825456906707}
+  m_Layer: 0
+  m_Name: jurogumo:joint7
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4040825456906707
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1703772708719575}
+  m_LocalRotation: {x: -0.08675143, y: 0.29437843, z: 0.8978712, w: 0.31566256}
+  m_LocalPosition: {x: 3.2785664, y: -13.9720955, z: 14.579722}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 30.277924, y: -19.976318, z: -146.71584}
+  m_Children:
+  - {fileID: 4295127178635938}
+  m_Father: {fileID: 4796575910002355}
+--- !u!1 &1523188416177307
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4295127178635938}
+  m_Layer: 0
+  m_Name: jurogumo:joint8 1
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4295127178635938
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1523188416177307}
+  m_LocalRotation: {x: 0.93330187, y: 0.3590929, z: 2.1988098E-17, w: 5.714826E-17}
+  m_LocalPosition: {x: -26.243877, y: -1.7763568E-15, z: -7.888609E-31}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 180, y: -9.5135685E-23, z: -42.088993}
+  m_Children:
+  - {fileID: 4876008721143912}
+  m_Father: {fileID: 4040825456906707}
+--- !u!1 &1924805650459989
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4876008721143912}
+  m_Layer: 0
+  m_Name: jurogumo:joint9 1
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4876008721143912
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1924805650459989}
+  m_LocalRotation: {x: -0.4799747, y: -0.5192536, z: -0.4799747, w: 0.5192536}
+  m_LocalPosition: {x: -17.429754, y: 4.6629367E-15, z: 5.188244E-15}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: -85.49781, y: 90, z: 0}
+  m_Children: []
+  m_Father: {fileID: 4295127178635938}
+--- !u!1 &1521503878443195
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4726543514607113}
+  m_Layer: 0
+  m_Name: jurogumo:joint10
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4726543514607113
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1521503878443195}
+  m_LocalRotation: {x: 0.08895445, y: -0.18843938, z: 0.9262098, w: 0.31418642}
+  m_LocalPosition: {x: 3.2785664, y: -13.9720955, z: -15.66094}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: -17.799438, y: 16.450756, z: -145.11778}
+  m_Children:
+  - {fileID: 4786492193741779}
+  m_Father: {fileID: 4796575910002355}
+--- !u!1 &1431916199598716
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4786492193741779}
+  m_Layer: 0
+  m_Name: jurogumo:joint8
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4786492193741779
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1431916199598716}
+  m_LocalRotation: {x: 0.93330187, y: 0.3590929, z: 2.1988098E-17, w: 5.714826E-17}
+  m_LocalPosition: {x: -26.243877, y: -1.7763568E-15, z: -7.888609E-31}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 180, y: -9.5135685E-23, z: -42.088993}
+  m_Children:
+  - {fileID: 4355879035673990}
+  m_Father: {fileID: 4726543514607113}
+--- !u!1 &1707133598481566
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4355879035673990}
+  m_Layer: 0
+  m_Name: jurogumo:joint9
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4355879035673990
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1707133598481566}
+  m_LocalRotation: {x: -0.4799747, y: -0.5192536, z: -0.4799747, w: 0.5192536}
+  m_LocalPosition: {x: -17.429754, y: 4.6629367E-15, z: 5.188244E-15}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: -85.49781, y: 90, z: 0}
+  m_Children: []
+  m_Father: {fileID: 4786492193741779}
+--- !u!1 &1908633173241302
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4398430652070247}
+  m_Layer: 0
+  m_Name: jurogumo:jurogumo_lf_upLeg_jnt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4398430652070247
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1908633173241302}
+  m_LocalRotation: {x: -0.11617485, y: -0.38831085, z: 0.8764591, w: -0.25987974}
+  m_LocalPosition: {x: 1.9010847, y: 16.851566, z: 10.859454}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: -42.73274, y: -23.920788, z: 156.44362}
+  m_Children:
+  - {fileID: 4530832217754300}
+  m_Father: {fileID: 4796575910002355}
+--- !u!1 &1327928703135584
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4530832217754300}
+  m_Layer: 0
+  m_Name: jurogumo:jurogumo_lf_knee_jnt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4530832217754300
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1327928703135584}
+  m_LocalRotation: {x: 0, y: 0, z: -0.31743157, w: 0.9482812}
+  m_LocalPosition: {x: -26.563953, y: -3.9114215E-15, z: 4.4360848E-15}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: 37.015335}
+  m_Children:
+  - {fileID: 4531736431729866}
+  m_Father: {fileID: 4398430652070247}
+--- !u!1 &1268849245229763
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4531736431729866}
+  m_Layer: 0
+  m_Name: jurogumo:jurogumo_lf_ankle_jnt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4531736431729866
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1268849245229763}
+  m_LocalRotation: {x: 0, y: 0, z: 0.6354111, w: 0.7721741}
+  m_LocalPosition: {x: -16.067984, y: -1.0768378E-15, z: 2.2305692E-16}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -78.900955}
+  m_Children: []
+  m_Father: {fileID: 4530832217754300}
+--- !u!1 &1244365066632794
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4546276173234486}
+  m_Layer: 0
+  m_Name: jurogumo:jurogumo_rt_upLeg_jnt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4546276173234486
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1244365066632794}
+  m_LocalRotation: {x: -0.38831088, y: 0.11617486, z: 0.25987974, w: 0.8764592}
+  m_LocalPosition: {x: 1.9011295, y: 16.851597, z: -10.8595}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: -42.73274, y: -23.920788, z: -23.55638}
+  m_Children:
+  - {fileID: 4011373696818024}
+  m_Father: {fileID: 4796575910002355}
+--- !u!1 &1816013860045608
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4011373696818024}
+  m_Layer: 0
+  m_Name: jurogumo:jurogumo_rt_knee_jnt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4011373696818024
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1816013860045608}
+  m_LocalRotation: {x: 0, y: 0, z: -0.31743157, w: 0.9482812}
+  m_LocalPosition: {x: 26.563908, y: -2.503894E-05, z: 5.5491502E-05}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: 37.015335}
+  m_Children:
+  - {fileID: 4993232229883857}
+  m_Father: {fileID: 4546276173234486}
+--- !u!1 &1962640460321455
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4993232229883857}
+  m_Layer: 0
+  m_Name: jurogumo:jurogumo_rt_ankle_jnt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4993232229883857
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1962640460321455}
+  m_LocalRotation: {x: 0, y: 0, z: 0.6354111, w: 0.7721741}
+  m_LocalPosition: {x: 16.067957, y: 4.147026E-05, z: -6.307397E-05}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -78.900955}
+  m_Children: []
+  m_Father: {fileID: 4011373696818024}
+--- !u!1 &1557046519540571
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4259493164925387}
+  m_Layer: 0
+  m_Name: jurogumo:jurogumo_spine_mid_jnt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4259493164925387
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1557046519540571}
+  m_LocalRotation: {x: 0.99999624, y: 0.0027469052, z: 1.6609046E-16, w: 6.0776335E-17}
+  m_LocalPosition: {x: -6.9494295, y: -8.437695E-15, z: -4.239631E-15}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 180, y: 1.9013362E-14, z: -0.31477255}
+  m_Children:
+  - {fileID: 4543689939238061}
+  m_Father: {fileID: 4843701589909585}
+--- !u!1 &1497169814542637
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4543689939238061}
+  m_Layer: 0
+  m_Name: jurogumo:jurogumo_spine_hi_jnt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4543689939238061
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1497169814542637}
+  m_LocalRotation: {x: -1.6653345E-16, y: 2.220446E-16, z: 0.029437799, w: 0.9995666}
+  m_LocalPosition: {x: -6.288751, y: -1.3411494E-13, z: 3.498814E-15}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: -1.8326029E-14, y: -2.5995182E-14, z: -3.3738108}
+  m_Children:
+  - {fileID: 4791003236016041}
+  m_Father: {fileID: 4259493164925387}
+--- !u!1 &1947785053546291
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4791003236016041}
+  m_Layer: 0
+  m_Name: jurogumo:jurogumo_spine_end_jnt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4791003236016041
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1947785053546291}
+  m_LocalRotation: {x: 0, y: 0, z: 0.1645169, w: 0.98637426}
+  m_LocalPosition: {x: -4.8425665, y: 4.032247E-16, z: 1.3440823E-15}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -18.938343}
+  m_Children:
+  - {fileID: 4370247554329574}
+  - {fileID: 4347145143789955}
+  - {fileID: 4816665461702396}
+  m_Father: {fileID: 4543689939238061}
+--- !u!1 &1921161084258058
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4370247554329574}
+  m_Layer: 0
+  m_Name: jurogumo:jurogumo_lf_clavicle_jnt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4370247554329574
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1921161084258058}
+  m_LocalRotation: {x: 0.43710068, y: -0.6163163, z: 0.3824079, w: 0.5318471}
+  m_LocalPosition: {x: -1.2778753, y: 0.43847013, z: -3.8643816}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: -177.40498, y: 81.83923, z: 111.559845}
+  m_Children:
+  - {fileID: 4650166330039844}
+  m_Father: {fileID: 4791003236016041}
+--- !u!1 &1442582836194730
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4650166330039844}
+  m_Layer: 0
+  m_Name: jurogumo:jurogumo_lf_upArm_jnt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4650166330039844
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1442582836194730}
+  m_LocalRotation: {x: 0.005313619, y: 0.059127178, z: 0.08289201, w: 0.99478877}
+  m_LocalPosition: {x: -6.7400994, y: -1.6442605E-14, z: -5.8744437E-15}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 1.1754771, y: -6.7049875, z: -9.595337}
+  m_Children:
+  - {fileID: 4011928166828574}
+  m_Father: {fileID: 4370247554329574}
+--- !u!1 &1907171132488645
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4011928166828574}
+  m_Layer: 0
+  m_Name: jurogumo:jurogumo_lf_elbow_jnt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4011928166828574
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1907171132488645}
+  m_LocalRotation: {x: 0.0050915033, y: 0.029182883, z: -3.081433E-05, w: 0.99956113}
+  m_LocalPosition: {x: -12.418458, y: -2.0806436E-14, z: 1.5217937E-15}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0.58408916, y: -3.3445616, z: -0.013520073}
+  m_Children:
+  - {fileID: 4731154351988198}
+  - {fileID: 4514241683525236}
+  - {fileID: 4765032141775537}
+  m_Father: {fileID: 4650166330039844}
+--- !u!1 &1912571190958688
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4731154351988198}
+  m_Layer: 0
+  m_Name: jurogumo:joint11
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4731154351988198
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1912571190958688}
+  m_LocalRotation: {x: -0.0015424283, y: -0.017818158, z: -0.08622864, w: 0.99611485}
+  m_LocalPosition: {x: -9.960911, y: -5.9613442, z: 1.743452}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: -1.7903782E-08, y: 2.0495558, z: 9.894947}
+  m_Children: []
+  m_Father: {fileID: 4011928166828574}
+--- !u!1 &1507808420121192
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4514241683525236}
+  m_Layer: 0
+  m_Name: jurogumo:jurogumo_lf_wrist_jnt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4514241683525236
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1507808420121192}
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -13.30293, y: 2.1198385E-14, z: 1.5205266E-14}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: 0}
+  m_Children:
+  - {fileID: 4140060337113396}
+  m_Father: {fileID: 4011928166828574}
+--- !u!1 &1220834461390307
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4140060337113396}
+  m_Layer: 0
+  m_Name: jurogumo:jurogumo_lf_hand_jnt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4140060337113396
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1220834461390307}
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 3.5527137E-15, y: 1.4210855E-14, z: 8.881784E-16}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 4514241683525236}
+--- !u!1 &1521088223521945
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4765032141775537}
+  m_Layer: 0
+  m_Name: jurogumo:nurbsCircle1
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4765032141775537
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1521088223521945}
+  m_LocalRotation: {x: -0.0015424283, y: -0.017818158, z: -0.08622864, w: 0.99611485}
+  m_LocalPosition: {x: -9.960911, y: -5.9613442, z: 1.743452}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: -1.7903782E-08, y: 2.0495558, z: 9.894947}
+  m_Children: []
+  m_Father: {fileID: 4011928166828574}
+--- !u!1 &1270399370583898
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4347145143789955}
+  m_Layer: 0
+  m_Name: jurogumo:jurogumo_neck_jnt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4347145143789955
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1270399370583898}
+  m_LocalRotation: {x: 0.44795364, y: -0.54711753, z: 0.44795364, w: 0.54711753}
+  m_LocalPosition: {x: -4.1510487, y: -3.5527137E-15, z: 1.7436478E-15}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 78.61795, y: 90, z: 0}
+  m_Children:
+  - {fileID: 4073008431435590}
+  m_Father: {fileID: 4791003236016041}
+--- !u!1 &1830560268288786
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4073008431435590}
+  m_Layer: 0
+  m_Name: jurogumo:jurogumo_head_a_jnt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4073008431435590
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1830560268288786}
+  m_LocalRotation: {x: 0.04049914, y: 3.3744435E-15, z: -4.7721624E-16, w: 0.9991796}
+  m_LocalPosition: {x: 1.6956836E-15, y: 5.791831, z: 3.5527137E-15}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 4.6421294, y: -3.885802E-13, z: 3.8979772E-14}
+  m_Children:
+  - {fileID: 4347175962750500}
+  - {fileID: 4795557162168614}
+  m_Father: {fileID: 4347145143789955}
+--- !u!1 &1710625043017495
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4347175962750500}
+  m_Layer: 0
+  m_Name: jurogumo:joint13
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4347175962750500
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1710625043017495}
+  m_LocalRotation: {x: 1.9539603E-09, y: 0, z: -0, w: 1}
+  m_LocalPosition: {x: 8.7081885E-14, y: -3.120515, z: -12.002073}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 2.2390736E-07, y: -0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 4073008431435590}
+--- !u!1 &1998503343138484
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4795557162168614}
+  m_Layer: 0
+  m_Name: jurogumo:jurogumo_head_b_jnt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4795557162168614
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1998503343138484}
+  m_LocalRotation: {x: -0.106250405, y: 0, z: -0, w: 0.9943394}
+  m_LocalPosition: {x: -3.4897364E-13, y: 56.210148, z: -10.246467}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: -12.198425, y: -0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 4073008431435590}
+--- !u!1 &1577965868667226
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4816665461702396}
+  m_Layer: 0
+  m_Name: jurogumo:jurogumo_rt_clavicle_jnt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4816665461702396
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1577965868667226}
+  m_LocalRotation: {x: 0.6163163, y: 0.43710068, z: 0.5318471, w: -0.3824079}
+  m_LocalPosition: {x: -1.2778636, y: 0.43846622, z: 3.86438}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: -177.40498, y: 81.839226, z: -68.44013}
+  m_Children:
+  - {fileID: 4866240409285169}
+  m_Father: {fileID: 4791003236016041}
+--- !u!1 &1381657308842573
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4866240409285169}
+  m_Layer: 0
+  m_Name: jurogumo:jurogumo_rt_upArm_jnt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4866240409285169
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1381657308842573}
+  m_LocalRotation: {x: 0.005313619, y: 0.059127178, z: 0.08289201, w: 0.99478877}
+  m_LocalPosition: {x: 6.740073, y: -6.0832688E-05, z: 7.0675674E-06}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 1.1754771, y: -6.7049875, z: -9.595337}
+  m_Children:
+  - {fileID: 4929372282652214}
+  m_Father: {fileID: 4816665461702396}
+--- !u!1 &1063996401996423
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4929372282652214}
+  m_Layer: 0
+  m_Name: jurogumo:jurogumo_rt_elbow_jnt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4929372282652214
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1063996401996423}
+  m_LocalRotation: {x: 0.0050915033, y: 0.029182883, z: -3.081433E-05, w: 0.99956113}
+  m_LocalPosition: {x: 12.41854, y: 1.6496313E-05, z: -6.3989687E-06}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0.58408916, y: -3.3445616, z: -0.013520073}
+  m_Children:
+  - {fileID: 4976728997332201}
+  - {fileID: 4522841666680314}
+  - {fileID: 4725731864201448}
+  m_Father: {fileID: 4866240409285169}
+--- !u!1 &1819013107304730
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4976728997332201}
+  m_Layer: 0
+  m_Name: jurogumo:joint12
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4976728997332201
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1819013107304730}
+  m_LocalRotation: {x: 0.99611485, y: -0.08622864, z: 0.017818158, w: 0.0015424283}
+  m_LocalPosition: {x: 10.025375, y: 6.045786, z: -1.7416974}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 180, y: 2.0495558, z: 9.894947}
+  m_Children: []
+  m_Father: {fileID: 4929372282652214}
+--- !u!1 &1260304575232761
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4522841666680314}
+  m_Layer: 0
+  m_Name: jurogumo:jurogumo_rt_wrist_jnt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4522841666680314
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1260304575232761}
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 13.302872, y: 5.05025E-06, z: -5.082497E-06}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: 0}
+  m_Children:
+  - {fileID: 4240420048648104}
+  m_Father: {fileID: 4929372282652214}
+--- !u!1 &1835562947396703
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4240420048648104}
+  m_Layer: 0
+  m_Name: jurogumo:jurogumo_rt_hand_jnt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4240420048648104
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1835562947396703}
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -3.5527137E-15, y: 1.4210855E-14, z: 8.881784E-16}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 4522841666680314}
+--- !u!1 &1711156063058104
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4725731864201448}
+  m_Layer: 0
+  m_Name: jurogumo:nurbsCircle2
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4725731864201448
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1711156063058104}
+  m_LocalRotation: {x: 0.99611485, y: -0.08622864, z: 0.017818158, w: 0.0015424283}
+  m_LocalPosition: {x: 10.025375, y: 6.045786, z: -1.7416974}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 180, y: 2.0495558, z: 9.894947}
+  m_Children: []
+  m_Father: {fileID: 4929372282652214}

@@ -1,0 +1,1544 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  serializedVersion: 2
+  m_ObjectHideFlags: 1
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1368498404954186}
+  m_IsPrefabParent: 1
+  m_IsExploded: 0
+--- !u!1 &1368498404954186
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4073269504159087}
+  - 111: {fileID: 111432021845196403}
+  - 114: {fileID: 114949027610906973}
+  - 114: {fileID: 114812202153185841}
+  - 114: {fileID: 114232658320115723}
+  - 114: {fileID: 114377234339891437}
+  - 114: {fileID: 114698014140837385}
+  - 114: {fileID: 114903838048332314}
+  - 114: {fileID: 114064630438159055}
+  m_Layer: 0
+  m_Name: PFNobosumaAlt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4073269504159087
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1368498404954186}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 740.2433, y: 231.24518, z: 3021.6697}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+  m_Children:
+  - {fileID: 4118141227896301}
+  m_Father: {fileID: 0}
+--- !u!111 &111432021845196403
+Animation:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1368498404954186}
+  m_Enabled: 1
+  m_Animation: {fileID: 7400000, guid: 9d06c550ad68172429b9f5431e42c995, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: 9d06c550ad68172429b9f5431e42c995, type: 2}
+  - {fileID: 7400000, guid: d4e8e64b20b9150468b33bc4ea34b0a7, type: 2}
+  - {fileID: 7400000, guid: 9d1c8e0ab254a7b4fa5ed499fe46de27, type: 2}
+  - {fileID: 7400000, guid: 7c490b3580bc633449ef56bfd98ec9c3, type: 2}
+  - {fileID: 7400000, guid: 77bb91f3e861f294e8e1a8a384564c0c, type: 2}
+  - {fileID: 7400000, guid: 1bf180b57ddac5b45825731fd70fdd00, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
+  m_UserAABB:
+    m_Center: {x: 0, y: 0, z: 0}
+    m_Extent: {x: 0, y: 0, z: 0}
+--- !u!114 &114949027610906973
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1368498404954186}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd6245a8adae9bb55440fcfe8cafc69a, type: 3}
+  m_Name:
+  jointAnimation: {fileID: 111066553207348786}
+  defaultBlendSpeed: 0.1
+  specificAnimSettings: []
+  alsoPlayOnAllChildren: 0
+  animFrame: 0
+  extraAnimPlayers: []
+  extraTaggedAnimPlayers: []
+--- !u!114 &114812202153185841
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1368498404954186}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbee05443b9b67f14985305ef056de27, type: 3}
+  m_Name:
+  sourcePrefabPath: Assets/Resources/Characters/PFNobosumaAlt.prefab
+  basePrefabPath:
+  exemptObjects: []
+--- !u!114 &114232658320115723
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1368498404954186}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d23147a98738dd3f21f8523d6dbc0a95, type: 3}
+  m_Name:
+  joints:
+  - label: impact_target
+    joint: {fileID: 4600009630766706}
+    autoAttachPrefab: {fileID: 0}
+    transformOffset:
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0}
+      scale: {x: 0, y: 0, z: 0}
+  - label: buff_icon
+    joint: {fileID: 4315343222524196}
+    autoAttachPrefab: {fileID: 0}
+    transformOffset:
+      position: {x: 0, y: 250, z: 0}
+      rotation: {x: 0, y: 0, z: 0}
+      scale: {x: 0, y: 0, z: 0}
+  - label: head_effect
+    joint: {fileID: 4600009630766706}
+    autoAttachPrefab: {fileID: 0}
+    transformOffset:
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0}
+      scale: {x: 0, y: 0, z: 0}
+--- !u!114 &114377234339891437
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1368498404954186}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82ef4aa966cbc2b226b4b1bfbc09eb3d, type: 3}
+  m_Name:
+  attackActive: 0
+  animatedWalkSpeed: 100
+  randomAnimSets: []
+  arrowImpactEffect: {fileID: 1458610661264296, guid: 1bd326fc5a84d2f49b241e9f9989d39b, type: 2}
+  bladeImpactEffect: {fileID: 1458610661264296, guid: 1bd326fc5a84d2f49b241e9f9989d39b, type: 2}
+  bladeCriticalImpactEffect: {fileID: 1911028123085192, guid: de75bead0ccdc8344818783b1ff15d85, type: 2}
+  bluntImpactEffect: {fileID: 0}
+  bluntCriticalImpactEffect: {fileID: 0}
+  snapToGround: 1
+--- !u!114 &114698014140837385
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1368498404954186}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39dbae7d6e4503ccce4e243938d2e0ad, type: 3}
+  m_Name:
+  baseTheme: {fileID: 114164761018112897, guid: b65abaf1fe1a7f947abe8632b8e24681, type: 2}
+  defaultMinDistance: 250
+  defaultMaxDistance: 5000
+  defaultCustomEffect: {fileID: 0}
+  positionOffset: {x: 0, y: 0, z: 0}
+  autoPlayEvent: Spawn
+  events:
+  - name: Spawn
+    clips:
+    - {fileID: 8300000, guid: 14323f59bed61b14b8a0f72d49689b76, type: 3}
+    - {fileID: 8300000, guid: 14323f59bed61b14b8a0f72d49689b76, type: 3}
+    - {fileID: 8300000, guid: d6994b43b4014004591220f571ff8113, type: 3}
+    percentChanceNone: 0
+    pitchVariance: 0
+    volume: 0
+    isVoice: 0
+    playLimit: 0
+    priority: 0
+    trackPositionAndLifetime: 0
+    fadeInTime: 0
+    fadeOutTime: 0
+    customEffect: {fileID: 0}
+    loop: 0
+    minDistanceOverride: 0
+    maxDistanceOverride: 0
+    useLogarithmicRolloff: 0
+--- !u!114 &114903838048332314
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1368498404954186}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9deb42e7ebc7d9000d6a75dff5974047, type: 3}
+  m_Name:
+  playRandomAnimAtStartup: 0
+  cameraShakeIntensityMult: 1
+--- !u!114 &114064630438159055
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1368498404954186}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name:
+--- !u!1 &1880624163805089
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4118141227896301}
+  - 111: {fileID: 111066553207348786}
+  - 114: {fileID: 114096144136170605}
+  m_Layer: 0
+  m_Name: nobusuma
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4118141227896301
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1880624163805089}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+  m_Children:
+  - {fileID: 4773624947431023}
+  - {fileID: 4315343222524196}
+  - {fileID: 4010000169397309}
+  m_Father: {fileID: 4073269504159087}
+--- !u!111 &111066553207348786
+Animation:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1880624163805089}
+  m_Enabled: 1
+  m_Animation: {fileID: 7400000, guid: f269a60926989b54c8e11185f0674101, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: f269a60926989b54c8e11185f0674101, type: 2}
+  - {fileID: 7400000, guid: 2fa74b16d3efa514fb11f96aba76e3b3, type: 2}
+  - {fileID: 7400000, guid: db9fd48ecf6cba94abe5cd6417d84164, type: 2}
+  - {fileID: 7400000, guid: 13a3fc9dbc7fe2543ac65de07642c894, type: 2}
+  - {fileID: 7400000, guid: e2a6b759708a5264e8e4ba9463e42fa9, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 1
+  m_UserAABB:
+    m_Center: {x: -12.369896, y: 128.2252, z: 17.649643}
+    m_Extent: {x: 48.698112, y: 147.95457, z: 216.07625}
+--- !u!114 &114096144136170605
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1880624163805089}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbee05443b9b67f14985305ef056de27, type: 3}
+  m_Name:
+  sourcePrefabPath: Assets/Resources/Characters/Nobosuma/nobusuma.fbx
+  basePrefabPath:
+  exemptObjects:
+  - {fileID: 114096144136170605}
+  - {fileID: 137918043757069327}
+--- !u!1 &1856677872065732
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4773624947431023}
+  m_Layer: 0
+  m_Name: nobusuma:Nobo_rig_grp
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4773624947431023
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1856677872065732}
+  m_LocalRotation: {x: 0, y: -0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children:
+  - {fileID: 4738008666007236}
+  - {fileID: 4943479743034329}
+  m_Father: {fileID: 4118141227896301}
+--- !u!1 &1136991460026361
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4738008666007236}
+  m_Layer: 0
+  m_Name: nobusuma:Nobo_root_ctrl
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4738008666007236
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1136991460026361}
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0, y: 0, z: 5.6569705}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 4773624947431023}
+--- !u!1 &1769264429278427
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4943479743034329}
+  m_Layer: 0
+  m_Name: nobusuma:Nobo_spine_rig_grp
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4943479743034329
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1769264429278427}
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: 0}
+  m_Children:
+  - {fileID: 4018340197642866}
+  m_Father: {fileID: 4773624947431023}
+--- !u!1 &1268250148965250
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4018340197642866}
+  m_Layer: 0
+  m_Name: nobusuma:Nobo_lowSpineCtrl_space_grp
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4018340197642866
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1268250148965250}
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: 0}
+  m_Children:
+  - {fileID: 4620418047120846}
+  m_Father: {fileID: 4943479743034329}
+--- !u!1 &1621490275961584
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4620418047120846}
+  m_Layer: 0
+  m_Name: nobusuma:Nobo_spineLow_ctrl
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4620418047120846
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1621490275961584}
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0, y: 17.424898, z: 5.6569705}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 4018340197642866}
+--- !u!1 &1257295565857928
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4315343222524196}
+  m_Layer: 0
+  m_Name: nobusuma:Nobo_Skeleton_grp
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4315343222524196
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1257295565857928}
+  m_LocalRotation: {x: 0, y: -0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children:
+  - {fileID: 4520387403190661}
+  m_Father: {fileID: 4118141227896301}
+--- !u!1 &1527868981180707
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4520387403190661}
+  - 137: {fileID: 137918043757069327}
+  m_Layer: 0
+  m_Name: nobusuma:Nobo_spine_low_jnt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 4294967295
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4520387403190661
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1527868981180707}
+  m_LocalRotation: {x: 0.48836958, y: -0.51136595, z: -0.48836958, w: 0.51136595}
+  m_LocalPosition: {x: -0, y: 17.424898, z: 5.6569705}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 90, y: 2.6354218, z: 90}
+  m_Children:
+  - {fileID: 4612929478642489}
+  - {fileID: 4378185472823611}
+  m_Father: {fileID: 4315343222524196}
+--- !u!137 &137918043757069327
+SkinnedMeshRenderer:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1527868981180707}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 2100000, guid: 5c18814a62c80ab4db50f24e188fd665, type: 2}
+  m_SubsetIndices: []
+  m_StaticBatchRoot: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_Quality: 0
+  m_UpdateWhenOffscreen: 0
+  m_Mesh: {fileID: 4300000, guid: 716a25f3338d7ea45ba9c7147b77a4e5, type: 2}
+  m_Bones:
+  - {fileID: 4520387403190661}
+  - {fileID: 4378185472823611}
+  - {fileID: 4709291471766915}
+  - {fileID: 4462486106880714}
+  - {fileID: 4228164534790329}
+  - {fileID: 4600009630766706}
+  - {fileID: 4409459332451683}
+  - {fileID: 4310896156671997}
+  - {fileID: 4153081970319990}
+  - {fileID: 4047778600825956}
+  - {fileID: 4342577023182870}
+  - {fileID: 4352806201849823}
+  - {fileID: 4450056714548444}
+  - {fileID: 4771837335166469}
+  - {fileID: 4590011222466422}
+  - {fileID: 4448108181010180}
+  - {fileID: 4828611854628593}
+  - {fileID: 4909927265489553}
+  - {fileID: 4530105377068915}
+  - {fileID: 4555056998069340}
+  - {fileID: 4143930781912056}
+  - {fileID: 4551062842100353}
+  - {fileID: 4799386058507371}
+  - {fileID: 4612929478642489}
+  - {fileID: 4633246162565378}
+  - {fileID: 4199053285539847}
+  - {fileID: 4083824688208674}
+  - {fileID: 4153446447173158}
+  - {fileID: 4351944736535830}
+  - {fileID: 4663279037608846}
+  - {fileID: 4475707326778639}
+  - {fileID: 4886527715910242}
+  - {fileID: 4836084017557452}
+  - {fileID: 4243198958861931}
+  - {fileID: 4982460806927492}
+  - {fileID: 4138948748250590}
+  m_AABB:
+    m_Center: {x: 20.788326, y: -16.9996, z: 0.61055183}
+    m_Extent: {x: 85.16232, y: 84.287, z: 34.97618}
+  m_DirtyAABB: 0
+--- !u!1 &1771023081455635
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4612929478642489}
+  m_Layer: 0
+  m_Name: nobusuma:Nobo_hip_jnt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4612929478642489
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1771023081455635}
+  m_LocalRotation: {x: 0.9974407, y: -0.071498916, z: -1.0420758E-16, w: -6.88593E-17}
+  m_LocalPosition: {x: 3.7816026, y: -0.54494864, z: 2.5795548E-15}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: -180, y: -1.2474923E-14, z: 8.20017}
+  m_Children:
+  - {fileID: 4633246162565378}
+  - {fileID: 4351944736535830}
+  - {fileID: 4836084017557452}
+  m_Father: {fileID: 4520387403190661}
+--- !u!1 &1865902732750476
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4633246162565378}
+  m_Layer: 0
+  m_Name: nobusuma:Nobo_lf_upLeg_jnt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4633246162565378
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1865902732750476}
+  m_LocalRotation: {x: 0.14085446, y: 0.4594989, z: 0.85940176, w: -0.17449753}
+  m_LocalPosition: {x: 3.4763718, y: 0.5938661, z: -5.734113}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 54.00295, y: 23.732306, z: 169.26712}
+  m_Children:
+  - {fileID: 4199053285539847}
+  m_Father: {fileID: 4612929478642489}
+--- !u!1 &1903092734744654
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4199053285539847}
+  m_Layer: 0
+  m_Name: nobusuma:Nobo_lf_knee_jnt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4199053285539847
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1903092734744654}
+  m_LocalRotation: {x: 0.9894579, y: 0.0002706726, z: 0.06918159, w: -0.12722778}
+  m_LocalPosition: {x: -2.476575, y: -1.2417615E-15, z: -7.623508E-16}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: -165.27791, y: 7.872749, z: 0.9872783}
+  m_Children:
+  - {fileID: 4083824688208674}
+  m_Father: {fileID: 4633246162565378}
+--- !u!1 &1297379285157934
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4083824688208674}
+  m_Layer: 0
+  m_Name: nobusuma:Nobo_lf_ankle_jnt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4083824688208674
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1297379285157934}
+  m_LocalRotation: {x: 0.8769383, y: -0.022140117, z: -0.24002868, w: -0.41578278}
+  m_LocalPosition: {x: -2.5451958, y: -3.9510596E-16, z: -1.7657317E-15}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: -126.87344, y: -26.065071, z: -10.309809}
+  m_Children:
+  - {fileID: 4153446447173158}
+  m_Father: {fileID: 4199053285539847}
+--- !u!1 &1616813972366674
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4153446447173158}
+  m_Layer: 0
+  m_Name: nobusuma:Nobo_lf_ball_jnt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4153446447173158
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1616813972366674}
+  m_LocalRotation: {x: 0.2144682, y: -0.35607922, z: 0.4199015, w: 0.80677986}
+  m_LocalPosition: {x: -3.7755547, y: 1.3025343E-15, z: -8.988692E-16}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 4.109695, y: 48.996204, z: -53.117523}
+  m_Children: []
+  m_Father: {fileID: 4083824688208674}
+--- !u!1 &1711583546213811
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4351944736535830}
+  m_Layer: 0
+  m_Name: nobusuma:Nobo_rt_upLeg_jnt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4351944736535830
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1711583546213811}
+  m_LocalRotation: {x: 0.4594989, y: -0.14085445, z: 0.17449757, w: 0.85940176}
+  m_LocalPosition: {x: 3.476408, y: 0.593858, z: 5.73411}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 54.00295, y: 23.732306, z: -10.732884}
+  m_Children:
+  - {fileID: 4663279037608846}
+  m_Father: {fileID: 4612929478642489}
+--- !u!1 &1872848424092208
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4663279037608846}
+  m_Layer: 0
+  m_Name: nobusuma:Nobo_rt_knee_jnt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4663279037608846
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1872848424092208}
+  m_LocalRotation: {x: 0.9894579, y: 0.0002706726, z: 0.06918159, w: -0.12722778}
+  m_LocalPosition: {x: 2.4765499, y: 2.5865971E-05, z: -2.3433747E-06}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: -165.27791, y: 7.872749, z: 0.9872783}
+  m_Children:
+  - {fileID: 4475707326778639}
+  m_Father: {fileID: 4351944736535830}
+--- !u!1 &1355633599817591
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4475707326778639}
+  m_Layer: 0
+  m_Name: nobusuma:Nobo_rt_ankle_jnt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4475707326778639
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1355633599817591}
+  m_LocalRotation: {x: 0.8769383, y: -0.022140117, z: -0.24002868, w: -0.41578278}
+  m_LocalPosition: {x: 2.5451906, y: 3.1144898E-06, z: -1.836352E-06}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: -126.87344, y: -26.065071, z: -10.309809}
+  m_Children:
+  - {fileID: 4886527715910242}
+  m_Father: {fileID: 4663279037608846}
+--- !u!1 &1455800849415040
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4886527715910242}
+  m_Layer: 0
+  m_Name: nobusuma:Nobo_rt_ball_jnt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4886527715910242
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1455800849415040}
+  m_LocalRotation: {x: 0.2144682, y: -0.35607922, z: 0.4199015, w: 0.80677986}
+  m_LocalPosition: {x: 3.7755532, y: 3.2620026E-06, z: -6.387435E-07}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 4.109695, y: 48.996204, z: -53.117523}
+  m_Children: []
+  m_Father: {fileID: 4475707326778639}
+--- !u!1 &1550774208441080
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4836084017557452}
+  m_Layer: 0
+  m_Name: nobusuma:tail01jt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4836084017557452
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1550774208441080}
+  m_LocalRotation: {x: 0.6970756, y: -0.11868292, z: 0.6970756, w: 0.11868292}
+  m_LocalPosition: {x: 5.059405, y: 3.6722193, z: -3.9202425E-15}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 160.67514, y: 90, z: 0}
+  m_Children:
+  - {fileID: 4243198958861931}
+  m_Father: {fileID: 4612929478642489}
+--- !u!1 &1973676729580362
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4243198958861931}
+  m_Layer: 0
+  m_Name: nobusuma:tail02jt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4243198958861931
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1973676729580362}
+  m_LocalRotation: {x: -0.5269996, y: 0, z: -0, w: 0.8498656}
+  m_LocalPosition: {x: -2.2327691E-15, y: -20.1383, z: -10.319242}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: -63.6059, y: -0, z: 0}
+  m_Children:
+  - {fileID: 4982460806927492}
+  m_Father: {fileID: 4836084017557452}
+--- !u!1 &1422426893720979
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4982460806927492}
+  m_Layer: 0
+  m_Name: nobusuma:tail03jt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4982460806927492
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1422426893720979}
+  m_LocalRotation: {x: 0.34463584, y: 0, z: -0, w: 0.9387365}
+  m_LocalPosition: {x: 2.8731857E-15, y: 17.277075, z: -8.310895}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 40.319134, y: -0, z: 0}
+  m_Children:
+  - {fileID: 4138948748250590}
+  m_Father: {fileID: 4243198958861931}
+--- !u!1 &1959014817943449
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4138948748250590}
+  m_Layer: 0
+  m_Name: nobusuma:tail04jt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4138948748250590
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1959014817943449}
+  m_LocalRotation: {x: 0.32368514, y: 0, z: -0, w: 0.9461649}
+  m_LocalPosition: {x: -6.6575685E-17, y: -5.176992, z: -18.151255}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 37.771866, y: -0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 4982460806927492}
+--- !u!1 &1917732374841358
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4378185472823611}
+  m_Layer: 0
+  m_Name: nobusuma:Nobo_spine_mid_jnt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4378185472823611
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1917732374841358}
+  m_LocalRotation: {x: 0.9991907, y: 0.040224176, z: 6.534959E-17, w: 5.8651175E-17}
+  m_LocalPosition: {x: -5.3227215, y: 1.7763568E-15, z: -1.7437755E-15}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 180, y: 7.212107E-15, z: -4.6105947}
+  m_Children:
+  - {fileID: 4709291471766915}
+  m_Father: {fileID: 4520387403190661}
+--- !u!1 &1506800482221515
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4709291471766915}
+  m_Layer: 0
+  m_Name: nobusuma:Nobo_spine_hi_jnt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4709291471766915
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1506800482221515}
+  m_LocalRotation: {x: -1.11022296E-16, y: -1.0208672E-16, z: 0.15367699, w: 0.98812115}
+  m_LocalPosition: {x: -3.285856, y: -3.5527137E-15, z: 1.5364791E-15}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: -1.4368848E-14, y: 9.6042025E-15, z: -17.680147}
+  m_Children:
+  - {fileID: 4462486106880714}
+  m_Father: {fileID: 4378185472823611}
+--- !u!1 &1261308826017469
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4462486106880714}
+  m_Layer: 0
+  m_Name: nobusuma:Nobo_spine_end_jnt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4462486106880714
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1261308826017469}
+  m_LocalRotation: {x: 0, y: 0, z: 0.17952359, w: 0.9837537}
+  m_LocalPosition: {x: -3.5401208, y: 1.3756133E-15, z: 1.5461323E-15}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -20.684023}
+  m_Children:
+  - {fileID: 4047778600825956}
+  - {fileID: 4228164534790329}
+  - {fileID: 4828611854628593}
+  m_Father: {fileID: 4709291471766915}
+--- !u!1 &1414039280499330
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4047778600825956}
+  m_Layer: 0
+  m_Name: nobusuma:Nobo_lf_clavicle_jnt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4047778600825956
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1414039280499330}
+  m_LocalRotation: {x: 0.35106662, y: -0.6916901, z: 0.33418125, w: 0.53538764}
+  m_LocalPosition: {x: 0.042218186, y: 0.09498543, z: -3.90705}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: -156.98506, y: 77.23498, z: 144.65355}
+  m_Children:
+  - {fileID: 4342577023182870}
+  m_Father: {fileID: 4462486106880714}
+--- !u!1 &1434238116676920
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4342577023182870}
+  m_Layer: 0
+  m_Name: nobusuma:Nobo_lf_upArm_jnt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4342577023182870
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1434238116676920}
+  m_LocalRotation: {x: 0.006745059, y: 0.15333529, z: -0.04384396, w: 0.9871781}
+  m_LocalPosition: {x: -3.6695669, y: -2.72404E-15, z: 1.4156165E-16}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: -0.007726722, y: -17.657715, z: 5.0872607}
+  m_Children:
+  - {fileID: 4352806201849823}
+  m_Father: {fileID: 4047778600825956}
+--- !u!1 &1332259463098183
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4352806201849823}
+  m_Layer: 0
+  m_Name: nobusuma:Nobo_lf_elbow_jnt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4352806201849823
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1332259463098183}
+  m_LocalRotation: {x: 4.3168635E-05, y: -0.10188596, z: -5.7317298E-08, w: 0.9947961}
+  m_LocalPosition: {x: -4.901668, y: -1.1473904E-15, z: 2.0743599E-16}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0.005026036, y: 11.695566, z: 0.0005213637}
+  m_Children:
+  - {fileID: 4450056714548444}
+  m_Father: {fileID: 4342577023182870}
+--- !u!1 &1590809827000071
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4450056714548444}
+  m_Layer: 0
+  m_Name: nobusuma:Nobo_lf_wrist_jnt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4450056714548444
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1590809827000071}
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -4.708537, y: -1.0043472E-15, z: -2.4183091E-15}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: 0}
+  m_Children:
+  - {fileID: 4771837335166469}
+  m_Father: {fileID: 4352806201849823}
+--- !u!1 &1607478556236452
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4771837335166469}
+  m_Layer: 0
+  m_Name: nobusuma:Nobo_lf_hand_jnt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4771837335166469
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1607478556236452}
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -7.1054274E-15, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: 0}
+  m_Children:
+  - {fileID: 4448108181010180}
+  - {fileID: 4590011222466422}
+  m_Father: {fileID: 4450056714548444}
+--- !u!1 &1058761531915798
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4448108181010180}
+  m_Layer: 0
+  m_Name: nobusuma:Nobo_lf_index_a_jnt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4448108181010180
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1058761531915798}
+  m_LocalRotation: {x: -0.6961088, y: 0.23917134, z: -0.40786698, w: 0.5402539}
+  m_LocalPosition: {x: -1.177584, y: 0.61692905, z: 0.061483562}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: -95.04003, y: 18.023863, z: 54.4499}
+  m_Children: []
+  m_Father: {fileID: 4771837335166469}
+--- !u!1 &1642468273206393
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4590011222466422}
+  m_Layer: 0
+  m_Name: nobusuma:Nobo_lf_thumb_a_jnt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4590011222466422
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1642468273206393}
+  m_LocalRotation: {x: 0.6323778, y: 0.2282021, z: -0.5900812, w: -0.44701937}
+  m_LocalPosition: {x: -0.7671997, y: -1.8602922, z: 0.8766647}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: -83.43604, y: -32.83946, z: -76.26727}
+  m_Children: []
+  m_Father: {fileID: 4771837335166469}
+--- !u!1 &1270344901371146
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4228164534790329}
+  m_Layer: 0
+  m_Name: nobusuma:Nobo_neck_jnt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4228164534790329
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1270344901371146}
+  m_LocalRotation: {x: 0.5182008, y: -0.48111114, z: 0.5182008, w: 0.48111114}
+  m_LocalPosition: {x: -4.39972, y: 5.3290705E-15, z: 1.6727133E-15}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 94.25114, y: 90, z: 0}
+  m_Children:
+  - {fileID: 4600009630766706}
+  m_Father: {fileID: 4462486106880714}
+--- !u!1 &1977649332927544
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4600009630766706}
+  m_Layer: 0
+  m_Name: nobusuma:Nobo_head_a_jnt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4600009630766706
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1977649332927544}
+  m_LocalRotation: {x: 0.059101716, y: 1.0989812E-25, z: -4.2373366E-17, w: 0.998252}
+  m_LocalPosition: {x: 2.424267E-16, y: 3.5463657, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 6.776507, y: -2.8697609E-16, z: 4.8471422E-15}
+  m_Children:
+  - {fileID: 4409459332451683}
+  - {fileID: 4310896156671997}
+  - {fileID: 4153081970319990}
+  m_Father: {fileID: 4228164534790329}
+--- !u!1 &1791334466639945
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4409459332451683}
+  m_Layer: 0
+  m_Name: nobusuma:Nobo_head_b_jnt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4409459332451683
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1791334466639945}
+  m_LocalRotation: {x: -0.35955548, y: -1.110223E-16, z: -1.3877788E-16, w: 0.9331237}
+  m_LocalPosition: {x: 1.3120912E-15, y: 15.509611, z: 5.7646238E-15}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: -42.145798, y: 1.7589334E-14, z: 1.0264911E-14}
+  m_Children: []
+  m_Father: {fileID: 4600009630766706}
+--- !u!1 &1095383169668768
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4310896156671997}
+  m_Layer: 0
+  m_Name: nobusuma:Nobo_lf_eye_jnt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4310896156671997
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1095383169668768}
+  m_LocalRotation: {x: -0.35955548, y: -3.9224214E-16, z: 1.3877786E-16, w: 0.9331237}
+  m_LocalPosition: {x: -8.649141, y: 9.081541, z: -1.5783036}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: -42.145798, y: 3.6223777E-14, z: -3.1000423E-14}
+  m_Children: []
+  m_Father: {fileID: 4600009630766706}
+--- !u!1 &1802219307197402
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4153081970319990}
+  m_Layer: 0
+  m_Name: nobusuma:Nobo_rt_eye_jnt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4153081970319990
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1802219307197402}
+  m_LocalRotation: {x: -0.35955548, y: -1.8809043E-16, z: 6.5089194E-25, w: 0.9331237}
+  m_LocalPosition: {x: 8.64914, y: 9.0815325, z: -1.5782689}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: -42.145798, y: 2.0112152E-14, z: -7.749706E-15}
+  m_Children: []
+  m_Father: {fileID: 4600009630766706}
+--- !u!1 &1121777205238622
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4828611854628593}
+  m_Layer: 0
+  m_Name: nobusuma:Nobo_rt_clavicle_jnt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4828611854628593
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1121777205238622}
+  m_LocalRotation: {x: 0.6916901, y: 0.35106668, z: 0.53538764, w: -0.33418128}
+  m_LocalPosition: {x: 0.04224449, y: 0.094970874, z: 3.90705}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: -156.98506, y: 77.23498, z: -35.346447}
+  m_Children:
+  - {fileID: 4909927265489553}
+  m_Father: {fileID: 4462486106880714}
+--- !u!1 &1890098631399510
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4909927265489553}
+  m_Layer: 0
+  m_Name: nobusuma:Nobo_rt_upArm_jnt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4909927265489553
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1890098631399510}
+  m_LocalRotation: {x: 0.006745059, y: 0.15333529, z: -0.04384396, w: 0.9871781}
+  m_LocalPosition: {x: 3.6695588, y: -6.538299E-05, z: -4.1504522E-06}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: -0.007726722, y: -17.657715, z: 5.0872607}
+  m_Children:
+  - {fileID: 4530105377068915}
+  m_Father: {fileID: 4828611854628593}
+--- !u!1 &1558498324842797
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4530105377068915}
+  m_Layer: 0
+  m_Name: nobusuma:Nobo_rt_elbow_jnt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4530105377068915
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1558498324842797}
+  m_LocalRotation: {x: 4.316864E-05, y: -0.10188596, z: -5.7316885E-08, w: 0.9947961}
+  m_LocalPosition: {x: 4.901655, y: 7.652745E-05, z: 3.6864042E-06}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0.0050260364, y: 11.695566, z: 0.0005213637}
+  m_Children:
+  - {fileID: 4555056998069340}
+  m_Father: {fileID: 4909927265489553}
+--- !u!1 &1179958642120025
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4555056998069340}
+  m_Layer: 0
+  m_Name: nobusuma:Nobo_rt_wrist_jnt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4555056998069340
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1179958642120025}
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 4.70857, y: -4.7282797E-06, z: -7.509368E-06}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: 0}
+  m_Children:
+  - {fileID: 4143930781912056}
+  m_Father: {fileID: 4530105377068915}
+--- !u!1 &1964822404253386
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4143930781912056}
+  m_Layer: 0
+  m_Name: nobusuma:Nobo_rt_hand_jnt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4143930781912056
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1964822404253386}
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0, y: 0, z: 8.881784E-16}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: 0}
+  m_Children:
+  - {fileID: 4799386058507371}
+  - {fileID: 4551062842100353}
+  m_Father: {fileID: 4555056998069340}
+--- !u!1 &1226251896822021
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4799386058507371}
+  m_Layer: 0
+  m_Name: nobusuma:Nobo_rt_index_a_jnt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4799386058507371
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1226251896822021}
+  m_LocalRotation: {x: -0.6961088, y: 0.23917134, z: -0.40786698, w: 0.5402539}
+  m_LocalPosition: {x: 1.1775476, y: -0.61700106, z: -0.061475463}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: -95.04003, y: 18.023863, z: 54.4499}
+  m_Children: []
+  m_Father: {fileID: 4143930781912056}
+--- !u!1 &1582868332616662
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4551062842100353}
+  m_Layer: 0
+  m_Name: nobusuma:Nobo_rt_thumb_a_jnt
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4551062842100353
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1582868332616662}
+  m_LocalRotation: {x: 0.6323778, y: 0.2282021, z: -0.5900812, w: -0.44701937}
+  m_LocalPosition: {x: 0.76714337, y: 1.8602252, z: -0.8766613}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: -83.43604, y: -32.83946, z: -76.26727}
+  m_Children: []
+  m_Father: {fileID: 4143930781912056}
+--- !u!1 &1095380784855147
+GameObject:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4010000169397309}
+  m_Layer: 0
+  m_Name: nobusuma:nobusuma_Nobasuma
+  m_TagString: Untagged
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+  m_Icon: {fileID: 0}
+--- !u!4 &4010000169397309
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1095380784855147}
+  m_LocalRotation: {x: 0, y: -0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 4118141227896301}
