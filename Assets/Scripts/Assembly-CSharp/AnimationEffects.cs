@@ -33,7 +33,7 @@ public class AnimationEffects : MonoBehaviour
 		{
 			return;
 		}
-		Animation animation = base.animation;
+		Animation animation = base.GetComponent<Animation>();
 		if (!(animation != null))
 		{
 			return;

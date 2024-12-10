@@ -5,9 +5,9 @@ public class WaterSimple : MonoBehaviour
 {
 	private void Update()
 	{
-		if ((bool)base.renderer)
+		if ((bool)base.GetComponent<Renderer>())
 		{
-			Material sharedMaterial = base.renderer.sharedMaterial;
+			Material sharedMaterial = base.GetComponent<Renderer>().sharedMaterial;
 			if ((bool)sharedMaterial)
 			{
 				Vector4 vector = sharedMaterial.GetVector("WaveSpeed");

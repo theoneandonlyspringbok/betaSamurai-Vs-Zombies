@@ -35,22 +35,22 @@ public class PrizeTrigger : MonoBehaviour
 		switch (mMyColor)
 		{
 		case PrizeColor.Red:
-			base.renderer.material.color = Color.red;
+			base.GetComponent<Renderer>().material.color = Color.red;
 			break;
 		case PrizeColor.Green:
-			base.renderer.material.color = Color.green;
+			base.GetComponent<Renderer>().material.color = Color.green;
 			break;
 		case PrizeColor.Blue:
-			base.renderer.material.color = Color.blue;
+			base.GetComponent<Renderer>().material.color = Color.blue;
 			break;
 		case PrizeColor.Magenta:
-			base.renderer.material.color = Color.magenta;
+			base.GetComponent<Renderer>().material.color = Color.magenta;
 			break;
 		case PrizeColor.Gold:
-			base.renderer.material.color = Color.yellow;
+			base.GetComponent<Renderer>().material.color = Color.yellow;
 			break;
 		case PrizeColor.Cyan:
-			base.renderer.material.color = Color.cyan;
+			base.GetComponent<Renderer>().material.color = Color.cyan;
 			break;
 		}
 	}

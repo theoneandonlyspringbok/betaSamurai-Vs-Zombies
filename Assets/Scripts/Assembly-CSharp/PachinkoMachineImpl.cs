@@ -497,26 +497,26 @@ public class PachinkoMachineImpl : WeakGlobalSceneBehavior<PachinkoMachineImpl>
 
 	private IEnumerator FlashWinnerLights()
 	{
-		WinnerLightsOff.renderer.enabled = false;
+		WinnerLightsOff.GetComponent<Renderer>().enabled = false;
 		BumperLeft.paused = false;
 		BumperRight.paused = false;
 		for (int i = 0; i < WinnerMaxFlashes; i++)
 		{
 			if (i % 2 > 0)
 			{
-				WinnerLightsGreen.renderer.enabled = true;
-				WinnerLightsRed.renderer.enabled = false;
+				WinnerLightsGreen.GetComponent<Renderer>().enabled = true;
+				WinnerLightsRed.GetComponent<Renderer>().enabled = false;
 			}
 			else
 			{
-				WinnerLightsGreen.renderer.enabled = false;
-				WinnerLightsRed.renderer.enabled = true;
+				WinnerLightsGreen.GetComponent<Renderer>().enabled = false;
+				WinnerLightsRed.GetComponent<Renderer>().enabled = true;
 			}
 			yield return new WaitForSeconds(WinnerLightFlashFrequency);
 		}
-		WinnerLightsGreen.renderer.enabled = false;
-		WinnerLightsRed.renderer.enabled = false;
-		WinnerLightsOff.renderer.enabled = true;
+		WinnerLightsGreen.GetComponent<Renderer>().enabled = false;
+		WinnerLightsRed.GetComponent<Renderer>().enabled = false;
+		WinnerLightsOff.GetComponent<Renderer>().enabled = true;
 		BumperLeft.paused = true;
 		BumperRight.paused = true;
 	}

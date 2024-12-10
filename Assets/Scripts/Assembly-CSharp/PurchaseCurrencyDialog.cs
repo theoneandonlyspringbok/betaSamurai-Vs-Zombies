@@ -221,7 +221,7 @@ public class PurchaseCurrencyDialog : IDialog
 		{
 			Singleton<PlayHavenTowerControl>.instance.InvokeContent("tj_closed");
 			mTapJoyActivated = false;
-			Camera.mainCamera.GetComponent<AudioSource>().volume = mMusicVolume;
+			Camera.main.GetComponent<AudioSource>().volume = mMusicVolume;
 		}
 		if (Input.GetKeyUp(KeyCode.Escape))
 		{
@@ -428,8 +428,8 @@ public class PurchaseCurrencyDialog : IDialog
 	{
 		if (Application.internetReachability != 0)
 		{
-			mMusicVolume = Camera.mainCamera.GetComponent<AudioSource>().volume;
-			Camera.mainCamera.GetComponent<AudioSource>().volume = 0f;
+			mMusicVolume = Camera.main.GetComponent<AudioSource>().volume;
+			Camera.main.GetComponent<AudioSource>().volume = 0f;
 			AAds.Tapjoy.Launch();
 			mTapJoyActivated = true;
 		}

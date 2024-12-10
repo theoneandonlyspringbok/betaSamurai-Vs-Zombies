@@ -136,27 +136,6 @@ public class SUIScreen : WeakGlobalInstance<SUIScreen>, SUIProcess
 		mIs_iPhone4 = Screen.width == 960 && Screen.height == 640;
 		m_screenDpi = 0;
 		m_screenDensity = 1f;
-		AndroidJavaClass androidJavaClass = new AndroidJavaClass("com.unity3d.player.UnityPlayer");
-		AndroidJavaObject androidJavaObject = new AndroidJavaObject("android.util.DisplayMetrics");
-		if (androidJavaClass != null && androidJavaObject != null)
-		{
-			AndroidJavaObject @static = androidJavaClass.GetStatic<AndroidJavaObject>("currentActivity");
-			if (@static != null)
-			{
-				AndroidJavaObject androidJavaObject2 = @static.Call<AndroidJavaObject>("getWindowManager", new object[0]);
-				if (androidJavaObject2 != null)
-				{
-					AndroidJavaObject androidJavaObject3 = androidJavaObject2.Call<AndroidJavaObject>("getDefaultDisplay", new object[0]);
-					if (androidJavaObject3 != null)
-					{
-						androidJavaObject3.Call("getMetrics", androidJavaObject);
-						m_screenDpi = androidJavaObject.Get<int>("densityDpi");
-						m_screenDensity = androidJavaObject.Get<float>("density");
-					}
-				}
-			}
-		}
-		Debug.Log("Screen Density Dpi: " + m_screenDpi + ", Density: " + m_screenDensity);
 	}
 
 	public void Update()

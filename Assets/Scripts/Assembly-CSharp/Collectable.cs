@@ -90,7 +90,7 @@ public class Collectable
 		mStartPos = startPos;
 		mTargetPos = targetPos;
 		mObject = (GameObject)Object.Instantiate(template.prefab, startPos, Quaternion.identity);
-		mAnimPlayer = mObject.animation;
+		mAnimPlayer = mObject.GetComponent<Animation>();
 		mTransform = mObject.transform;
 		mMaterial = mObject.GetComponentInChildren<Renderer>().material;
 		mState = CollectableState.MoveToGround;

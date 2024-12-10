@@ -328,14 +328,14 @@ public class SUILabel : SUIWidget
 		string prefab = Singleton<FontSetFinder>.instance.GetPrefab(fontFile);
 		if (prefab == string.Empty)
 		{
-			mTextSprite = (GUIText)mGameObject.AddComponent("GUIText");
+			mTextSprite = (GUIText)mGameObject.AddComponent<GUIText>();
 		}
 		else
 		{
 			Object.Destroy(mGameObject);
 			mGameObject = Object.Instantiate(Resources.Load(prefab)) as GameObject;
 			mGOTransformRef = mGameObject.transform;
-			mTextSprite = mGameObject.guiText;
+			mTextSprite = mGameObject.GetComponent<GUIText>();
 		}
 		string path = Singleton<FontSetFinder>.instance.basePath + fontFile;
 		Font font = null;

@@ -33,11 +33,11 @@ public class CaptureBackground : MonoBehaviour
 		if ((bool)postMaterial)
 		{
 			m_PostCamera = new GameObject(base.name + " __PostCaptureBackground__", typeof(Camera));
-			m_PostCamera.camera.CopyFrom((Camera)GetComponent(typeof(Camera)));
+			m_PostCamera.GetComponent<Camera>().CopyFrom((Camera)GetComponent(typeof(Camera)));
 			m_PostCamera.transform.parent = base.transform;
-			m_PostCamera.camera.clearFlags = CameraClearFlags.Nothing;
-			m_PostCamera.camera.cullingMask = postLayer.value;
-			m_PostCamera.camera.depth += 1f;
+			m_PostCamera.GetComponent<Camera>().clearFlags = CameraClearFlags.Nothing;
+			m_PostCamera.GetComponent<Camera>().cullingMask = postLayer.value;
+			m_PostCamera.GetComponent<Camera>().depth += 1f;
 		}
 		StartCoroutine(ChangeClearFlags());
 	}

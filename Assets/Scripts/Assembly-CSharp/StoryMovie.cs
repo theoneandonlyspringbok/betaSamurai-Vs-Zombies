@@ -28,6 +28,6 @@ public class StoryMovie : MonoBehaviour
 	{
 		string text = "SvZRough.mp4";
 		Debug.Log("Playing movie: " + text);
-		iPhoneUtils.PlayMovie(text, Color.black, iPhoneMovieControlMode.CancelOnTouch, iPhoneMovieScalingMode.AspectFit);
+		//Handheld.PlayFullScreenMovie(text, Color.black, FullScreenMovieControlMode.CancelOnTouch, FullScreenMovieScalingMode.AspectFit);
 	}
 }

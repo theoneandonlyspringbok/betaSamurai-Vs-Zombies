@@ -147,7 +147,7 @@ public class SUISprite : SUIWidget
 			}
 		}
 		texture2D.Apply();
-		mTexture = (GUITexture)mGameObject.AddComponent("GUITexture");
+		mTexture = (GUITexture)mGameObject.AddComponent<GUITexture>();
 		mTexture.texture = texture2D;
 		mTexture.transform.localScale = Vector3.zero;
 	}
@@ -184,7 +184,7 @@ public class SUISprite : SUIWidget
 	{
 		if (mTexture == null)
 		{
-			mTexture = (GUITexture)mGameObject.AddComponent("GUITexture");
+			mTexture = (GUITexture)mGameObject.AddComponent<GUITexture>();
 		}
 		Texture2D texture2D = null;
 		if (SUIScreen.isDevice_iPad3)

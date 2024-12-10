@@ -20,7 +20,7 @@ public class ParColorAnimBehavior : MonoBehaviour
 
 	private void Update()
 	{
-		Particle[] particles = base.particleEmitter.particles;
+		Particle[] particles = base.GetComponent<ParticleEmitter>().particles;
 		x = 0;
 		Particle[] array = particles;
 		for (int i = 0; i < array.Length; i++)
@@ -30,6 +30,6 @@ public class ParColorAnimBehavior : MonoBehaviour
 			particles[x].color = new Color(RCurve.Evaluate(lifePerc), GCurve.Evaluate(lifePerc), BCurve.Evaluate(lifePerc), ACurve.Evaluate(lifePerc));
 			x++;
 		}
-		base.particleEmitter.particles = particles;
+		base.GetComponent<ParticleEmitter>().particles = particles;
 	}
 }

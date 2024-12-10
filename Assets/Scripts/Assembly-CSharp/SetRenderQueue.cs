@@ -10,12 +10,12 @@ public class SetRenderQueue : MonoBehaviour
 
 	protected void Start()
 	{
-		if ((bool)base.renderer && (bool)base.renderer.sharedMaterial && queues != null)
+		if ((bool)base.GetComponent<Renderer>() && (bool)base.GetComponent<Renderer>().sharedMaterial && queues != null)
 		{
-			base.renderer.sharedMaterial.renderQueue = queue;
-			for (int i = 0; i < queues.Length && i < base.renderer.sharedMaterials.Length; i++)
+			base.GetComponent<Renderer>().sharedMaterial.renderQueue = queue;
+			for (int i = 0; i < queues.Length && i < base.GetComponent<Renderer>().sharedMaterials.Length; i++)
 			{
-				base.renderer.sharedMaterials[i].renderQueue = queues[i];
+				base.GetComponent<Renderer>().sharedMaterials[i].renderQueue = queues[i];
 			}
 		}
 	}

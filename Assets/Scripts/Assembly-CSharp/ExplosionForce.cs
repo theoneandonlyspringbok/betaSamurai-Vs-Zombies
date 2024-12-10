@@ -19,9 +19,9 @@ public class ExplosionForce : MonoBehaviour
 		Collider[] array2 = array;
 		foreach (Collider collider in array2)
 		{
-			if ((bool)collider && (bool)collider.rigidbody)
+			if ((bool)collider && (bool)collider.GetComponent<Rigidbody>())
 			{
-				collider.rigidbody.AddExplosionForce(ExplosionPower, position, Radius, UpwardsModifier);
+				collider.GetComponent<Rigidbody>().AddExplosionForce(ExplosionPower, position, Radius, UpwardsModifier);
 				float num = Random.Range(DebrisMinLifeTime, DebrisMaxLifeTime);
 				Object.Destroy(collider, num);
 				Object.Destroy(collider.gameObject, num + 1f);

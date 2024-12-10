@@ -13,9 +13,9 @@ public class water : MonoBehaviour
 	private void LateUpdate()
 	{
 		uvOffset += uvAnimationRate * Time.deltaTime;
-		if (base.renderer.enabled)
+		if (base.GetComponent<Renderer>().enabled)
 		{
-			base.renderer.materials[materialIndex].SetTextureOffset(textureName, uvOffset);
+			base.GetComponent<Renderer>().materials[materialIndex].SetTextureOffset(textureName, uvOffset);
 		}
 	}
 }

@@ -26,7 +26,7 @@ public class PachinkoBall : MonoBehaviour
 
 	private void FixedUpdate()
 	{
-		if (base.rigidbody.IsSleeping())
+		if (base.GetComponent<Rigidbody>().IsSleeping())
 		{
 			mAtRestTime += Time.deltaTime;
 			if (mAtRestTime >= 2f)

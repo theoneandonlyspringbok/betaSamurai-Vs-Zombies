@@ -22,7 +22,7 @@ public class ParAttractorBehavior : MonoBehaviour
 
 	private void Update()
 	{
-		Particle[] particles = base.particleEmitter.particles;
+		Particle[] particles = base.GetComponent<ParticleEmitter>().particles;
 		if (UseWorldSpace)
 		{
 			pVector = AttractorLoc;
@@ -43,6 +43,6 @@ public class ParAttractorBehavior : MonoBehaviour
 			}
 			x++;
 		}
-		base.particleEmitter.particles = particles;
+		base.GetComponent<ParticleEmitter>().particles = particles;
 	}
 }

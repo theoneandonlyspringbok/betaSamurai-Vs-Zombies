@@ -624,7 +624,7 @@ public class InGameImpl : WeakGlobalSceneBehavior<InGameImpl>
 
 	private void CreateWinDialog()
 	{
-		Camera.mainCamera.GetComponent<AudioSource>().volume = 0f;
+		Camera.main.GetComponent<AudioSource>().volume = 0f;
 		if (useSlowMoFinisher)
 		{
 			mBaseTimeScale = 0.1f;
@@ -669,7 +669,7 @@ public class InGameImpl : WeakGlobalSceneBehavior<InGameImpl>
 
 	private void CreateLoseDialog()
 	{
-		Camera.mainCamera.GetComponent<AudioSource>().volume = 0f;
+		Camera.main.GetComponent<AudioSource>().volume = 0f;
 		WinLoseDisplay winLoseDisplay = new WinLoseDisplay(Singleton<PlayModesManager>.instance.selectedModeData["layout_LoseMessage"]);
 		winLoseDisplay.onPlayerPressed = onFinishGameRequest;
 		SetDialogHandler(new DialogHandler(500f, winLoseDisplay));

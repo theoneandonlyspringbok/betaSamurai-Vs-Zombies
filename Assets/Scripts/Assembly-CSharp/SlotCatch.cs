@@ -15,7 +15,7 @@ public class SlotCatch : MonoBehaviour
 			{
 				Debug.Log("child named: " + item.name);
 			}
-			MeshRenderer meshRenderer = (MeshRenderer)gameObject.transform.Find("Visuals/Multiplier").renderer;
+			MeshRenderer meshRenderer = (MeshRenderer)gameObject.transform.Find("Visuals/Multiplier").GetComponent<Renderer>();
 			meshRenderer.enabled = true;
 			switch (WeakGlobalSceneBehavior<PachinkoMachineImpl>.instance.multiplier)
 			{

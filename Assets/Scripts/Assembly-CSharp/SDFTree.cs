@@ -57,7 +57,7 @@ public class SDFTree
 
 	public static SDFTreeNode LoadFromBundle(AssetBundle bundle, string filename)
 	{
-		TextAsset textAsset = (TextAsset)bundle.Load(filename, typeof(TextAsset));
+		TextAsset textAsset = (TextAsset)bundle.LoadAsset(filename, typeof(TextAsset));
 		if (textAsset == null)
 		{
 			Debug.Log("ERROR: Unable to load the SDF file from provided bundle: '" + filename + "'");

@@ -23,13 +23,13 @@ public class ParSizeAnimBehavior : MonoBehaviour
 		{
 			sizeArray[x] = Random.Range(minSize, maxSize);
 		}
-		base.particleEmitter.minSize = 0f;
-		base.particleEmitter.maxSize = 0f;
+		base.GetComponent<ParticleEmitter>().minSize = 0f;
+		base.GetComponent<ParticleEmitter>().maxSize = 0f;
 	}
 
 	private void Update()
 	{
-		Particle[] particles = base.particleEmitter.particles;
+		Particle[] particles = base.GetComponent<ParticleEmitter>().particles;
 		x = 0;
 		Particle[] array = particles;
 		for (int i = 0; i < array.Length; i++)
@@ -39,6 +39,6 @@ public class ParSizeAnimBehavior : MonoBehaviour
 			particles[x].size = sizeArray[x] * SizeCurve.Evaluate(lifePerc);
 			x++;
 		}
-		base.particleEmitter.particles = particles;
+		base.GetComponent<ParticleEmitter>().particles = particles;
 	}
 }

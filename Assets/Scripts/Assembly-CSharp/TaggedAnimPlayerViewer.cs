@@ -54,12 +54,12 @@ public class TaggedAnimPlayerViewer : MonoBehaviour
 			modelViewed.transform.position = new Vector3(55f, -72.65f, 322f);
 			modelViewed.transform.eulerAngles = new Vector3(0f, 180f, 0f);
 			animPlayer = modelViewed.GetComponent<TaggedAnimPlayer>();
-			animPlayer.animation.playAutomatically = false;
+			animPlayer.GetComponent<Animation>().playAutomatically = false;
 			animPlayer.jointAnimation.playAutomatically = false;
 			animPlayer.SetBaseAnim("idle");
 			selectedAnim = 0;
 			animNames = new List<string>();
-			foreach (AnimationState item in modelViewed.animation)
+			foreach (AnimationState item in modelViewed.GetComponent<Animation>())
 			{
 				if (!animNames.Contains(item.clip.name))
 				{

@@ -551,7 +551,7 @@ public class MainMenuImpl : SceneBehaviour
 			menuJump();
 		};
 		WeakGlobalInstance<SUIScreen>.instance.fader.FadeToBlack();
-		base.audio.PlayOneShot(ClickSFX);
+		base.GetComponent<AudioSource>().PlayOneShot(ClickSFX);
 		WeakGlobalInstance<SUIScreen>.instance.inputs.processInputs = false;
 	}
 

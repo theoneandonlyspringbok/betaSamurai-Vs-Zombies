@@ -829,10 +829,10 @@ public class Character : Weakable
 			if (component != null)
 			{
 				component.enabled = value;
-				if (!value && component.audio != null && component.audio.isPlaying)
+				if (!value && component.GetComponent<AudioSource>() != null && component.GetComponent<AudioSource>().isPlaying)
 				{
-					component.audio.enabled = false;
-					component.audio.Stop();
+					component.GetComponent<AudioSource>().enabled = false;
+					component.GetComponent<AudioSource>().Stop();
 				}
 			}
 		}

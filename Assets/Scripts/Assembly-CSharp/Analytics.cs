@@ -30,27 +30,20 @@ public class Analytics : Singleton<Analytics>
 
 	public Analytics()
 	{
-		AFlurry.SetDebug(Debug.isDebugBuild);
-		StartSession();
-		AJavaTools.LogFlurryOBB();
-		AJavaTools.LogFlurryDataRestored();
-		AFlurry.LogEvent("DEVICE_IS_ROOTED", AJavaTools.IsRooted().ToString());
 	}
 
 	public void LogEvent(string eventTypeId, string info = "", int eventValue = 0, int eventRefrence = 0)
 	{
-		AFlurry.LogEvent(eventTypeId, "info", info, "eventValue", eventValue.ToString(), "externalRef", eventRefrence.ToString());
+		Debug.Log(eventTypeId + ": " + info + ", " + eventValue + ", " + eventRefrence);
 	}
 
 	public void StartSession()
 	{
 		Debug.Log("*** FLURRY StartSession ***");
-		AFlurry.StartSession(FLURRY_ID);
 	}
 
 	public void EndSession()
 	{
 		Debug.Log("*** FLURRY EndSession ***");
-		AFlurry.EndSession();
 	}
 }

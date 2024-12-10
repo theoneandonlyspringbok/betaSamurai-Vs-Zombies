@@ -14,7 +14,7 @@ public class HideByPlatform : MonoBehaviour
 
 	private bool mAlreadyHidden;
 
-	private static iPhoneGeneration? mGen;
+	private static UnityEngine.iOS.DeviceGeneration? mGen;
 
 	private void Awake()
 	{
@@ -78,16 +78,16 @@ public class HideByPlatform : MonoBehaviour
 		}
 	}
 
-	private static iPhoneGeneration GetGeneration()
+	private static UnityEngine.iOS.DeviceGeneration GetGeneration()
 	{
-		iPhoneGeneration? iPhoneGeneration = mGen;
+		UnityEngine.iOS.DeviceGeneration? iPhoneGeneration = mGen;
 		if (!iPhoneGeneration.HasValue)
 		{
-			mGen = iPhoneSettings.generation;
-			iPhoneGeneration? iPhoneGeneration2 = mGen;
-			if (iPhoneGeneration2.GetValueOrDefault() == UnityEngine.iPhoneGeneration.Unknown && iPhoneGeneration2.HasValue && SUIScreen.isDevice_iPhone4)
+			mGen = UnityEngine.iOS.Device.generation;
+			UnityEngine.iOS.DeviceGeneration? iPhoneGeneration2 = mGen;
+			if (iPhoneGeneration2.GetValueOrDefault() == UnityEngine.iOS.DeviceGeneration.Unknown && iPhoneGeneration2.HasValue && SUIScreen.isDevice_iPhone4)
 			{
-				mGen = UnityEngine.iPhoneGeneration.iPhone4;
+				mGen = UnityEngine.iOS.DeviceGeneration.iPhone4;
 			}
 		}
 		return mGen.Value;

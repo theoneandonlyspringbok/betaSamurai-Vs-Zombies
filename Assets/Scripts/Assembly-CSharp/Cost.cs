@@ -80,7 +80,7 @@ public struct Cost
 		hard = (int)((float)preSaleHard * (1f - salePercentage));
 	}
 
-	public Cost(string str, float salePercentage)
+	public Cost(string str, float salePercentage) : this()
 	{
 		preSaleSoft = 0;
 		preSaleHard = 0;

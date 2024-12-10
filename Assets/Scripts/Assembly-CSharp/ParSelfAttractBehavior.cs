@@ -16,7 +16,7 @@ public class ParSelfAttractBehavior : MonoBehaviour
 
 	private void Update()
 	{
-		Particle[] particles = base.particleEmitter.particles;
+		Particle[] particles = base.GetComponent<ParticleEmitter>().particles;
 		x = 0;
 		Particle[] array = particles;
 		for (int i = 0; i < array.Length; i++)
@@ -34,6 +34,6 @@ public class ParSelfAttractBehavior : MonoBehaviour
 			}
 			x++;
 		}
-		base.particleEmitter.particles = particles;
+		base.GetComponent<ParticleEmitter>().particles = particles;
 	}
 }

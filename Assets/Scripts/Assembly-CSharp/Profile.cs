@@ -279,10 +279,6 @@ public class Profile : Singleton<Profile>
 	{
 		get
 		{
-			if (GWalletHelper.GetBalance() >= 0)
-			{
-				return GWalletHelper.GetBalance();
-			}
 			return mSavedData.GetValueInt("gems");
 		}
 		set
@@ -990,18 +986,7 @@ public class Profile : Singleton<Profile>
 	{
 		get
 		{
-			string path;
-			using (AndroidJavaClass androidJavaClass = new AndroidJavaClass("com.unity3d.player.UnityPlayer"))
-			{
-				using (AndroidJavaObject androidJavaObject = androidJavaClass.GetStatic<AndroidJavaObject>("currentActivity"))
-				{
-					using (AndroidJavaObject androidJavaObject2 = androidJavaObject.Call<AndroidJavaObject>("getFilesDir", new object[0]))
-					{
-						path = androidJavaObject2.Call<string>("getPath", new object[0]);
-					}
-				}
-			}
-			return Path.Combine(path, "save.data");
+			return Path.Combine(Application.persistentDataPath, "save.data");
 		}
 	}
 
@@ -1021,18 +1006,7 @@ public class Profile : Singleton<Profile>
 	{
 		get
 		{
-			string path;
-			using (AndroidJavaClass androidJavaClass = new AndroidJavaClass("com.unity3d.player.UnityPlayer"))
-			{
-				using (AndroidJavaObject androidJavaObject = androidJavaClass.GetStatic<AndroidJavaObject>("currentActivity"))
-				{
-					using (AndroidJavaObject androidJavaObject2 = androidJavaObject.Call<AndroidJavaObject>("getFilesDir", new object[0]))
-					{
-						path = androidJavaObject2.Call<string>("getPath", new object[0]);
-					}
-				}
-			}
-			return Path.Combine(path, "prevsave.data");
+			return Path.Combine(Application.persistentDataPath, "prevsave.data");
 		}
 	}
 

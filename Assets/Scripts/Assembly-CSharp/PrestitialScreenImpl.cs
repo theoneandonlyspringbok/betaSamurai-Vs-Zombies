@@ -26,7 +26,7 @@ public class PrestitialScreenImpl : SceneBehaviour
 		mGold = (SUIButton)mLayout["goldbutton"];
 		mGold.onButtonPressed = delegate
 		{
-			base.audio.PlayOneShot(ClickSFX);
+			base.GetComponent<AudioSource>().PlayOneShot(ClickSFX);
 			if (Debug.isDebugBuild)
 			{
 				Debug.Log("Gold Pressed...");
@@ -37,7 +37,7 @@ public class PrestitialScreenImpl : SceneBehaviour
 		mSilver = (SUIButton)mLayout["silverbutton"];
 		mSilver.onButtonPressed = delegate
 		{
-			base.audio.PlayOneShot(ClickSFX);
+			base.GetComponent<AudioSource>().PlayOneShot(ClickSFX);
 			if (Debug.isDebugBuild)
 			{
 				Debug.Log("Silver Pressed...");
@@ -48,7 +48,7 @@ public class PrestitialScreenImpl : SceneBehaviour
 		mBenefits = (SUIButton)mLayout["benefitsbutton"];
 		mBenefits.onButtonPressed = delegate
 		{
-			base.audio.PlayOneShot(ClickSFX);
+			base.GetComponent<AudioSource>().PlayOneShot(ClickSFX);
 			if (Debug.isDebugBuild)
 			{
 				Debug.Log("OnBenefit");

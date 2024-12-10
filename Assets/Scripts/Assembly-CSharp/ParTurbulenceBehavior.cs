@@ -31,7 +31,7 @@ public class ParTurbulenceBehavior : MonoBehaviour
 	private void Update()
 	{
 		rtime = Time.time;
-		Particle[] particles = base.particleEmitter.particles;
+		Particle[] particles = base.GetComponent<ParticleEmitter>().particles;
 		x = 0;
 		Particle[] array = particles;
 		for (int i = 0; i < array.Length; i++)
@@ -43,6 +43,6 @@ public class ParTurbulenceBehavior : MonoBehaviour
 			particles[x].velocity += new Vector3(wobblex, wobbley, wobblez);
 			x++;
 		}
-		base.particleEmitter.particles = particles;
+		base.GetComponent<ParticleEmitter>().particles = particles;
 	}
 }

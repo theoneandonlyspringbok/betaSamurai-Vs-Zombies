@@ -28,6 +28,6 @@ public class PachinkoBallLauncher : MonoBehaviour
 		}
 		GameObject gameObject = Object.Instantiate(PachinkoBall, base.transform.position, Quaternion.identity) as GameObject;
 		Vector3 force = new Vector3(BaseXForce + forceScalar * AdditionalXForce, BaseYForce + forceScalar * AdditionalYForce, 0f);
-		gameObject.rigidbody.AddForce(force);
+		gameObject.GetComponent<Rigidbody>().AddForce(force);
 	}
 }

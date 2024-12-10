@@ -455,7 +455,7 @@ public class TaggedAnimPlayer : MonoBehaviour
 
 	private void Awake()
 	{
-		mTaggedAnimation = base.animation;
+		mTaggedAnimation = base.GetComponent<Animation>();
 		TaggedAnimPlayer[] componentsInChildren = GetComponentsInChildren<TaggedAnimPlayer>(true);
 		TaggedAnimPlayer[] array = componentsInChildren;
 		foreach (TaggedAnimPlayer taggedAnimPlayer in array)

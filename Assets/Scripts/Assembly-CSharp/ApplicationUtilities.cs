@@ -187,23 +187,11 @@ public class ApplicationUtilities : MonoBehaviour
 				GameObject gameObject = new GameObject("ApplicationUtilities", typeof(ApplicationUtilities));
 				This = gameObject.GetComponent<ApplicationUtilities>();
 				UnityEngine.Object.DontDestroyOnLoad(gameObject);
-				AAds.Init();
-				Screen.sleepTimeout = 0f;
+				Screen.sleepTimeout = 0;
 				if (Debug.isDebugBuild)
 				{
 					Debug.Log("ApplicationUtilities instance");
 				}
-				if (IsBuildType("amazon"))
-				{
-					GWalletHelper.SetupGWallet("com.glu.samuzombie_amazon");
-				}
-				else
-				{
-					GWalletHelper.SetupGWallet("com.glu.samuzombie");
-				}
-				GWalletHelper.SetupPrestitial(string.Empty, string.Empty, string.Empty, string.Empty, string.Empty, string.Empty);
-				GWalletHelper.SetupGGN("samuzombie", string.Empty, string.Empty, string.Empty);
-				This.gameObject.AddComponent("GWalletHelper");
 			}
 			return This;
 		}
@@ -263,50 +251,31 @@ public class ApplicationUtilities : MonoBehaviour
 
 	public static bool IsBuildType(string bt)
 	{
-		return string.Compare(AJavaTools.GetProperty("BUILD_TYPE", "google"), bt, true) == 0;
+		return false;
 	}
 
 	public int GGN_BUG()
 	{
-		return GWalletHelper.ggncount;
+		return 0;
 	}
 
 	public static bool IsGWalletAvailable()
 	{
-		return GWallet.IsDeviceSupported();
+		return false;
 	}
 
 	public static void GWalletBalance(int change, string desc, string activity)
 	{
 		if (change != 0)
 		{
-			bool flag = false;
-			if ((change <= 0) ? GWalletHelper.SubtractCurrency(-change, activity, desc) : GWalletHelper.AddCurrency(change, activity, desc))
-			{
-				PlayerPrefs.SetInt("asvz.gems", Singleton<Profile>.instance.gems);
-			}
-			else
-			{
-				Singleton<Profile>.instance.gems += change;
-			}
+			Singleton<Profile>.instance.gems += change;
+			PlayerPrefs.SetInt("asvz.gems", Singleton<Profile>.instance.gems);
 		}
 	}
 
 	public static bool GWalletIsSubscriberToPlan(string plan)
 	{
-		if (!GWalletHelper.IsSubscriptionRecommendationAvailable())
-		{
-			return false;
-		}
-		for (int i = 0; i < GWalletHelper.subscription_recommendations.Length; i++)
-		{
-			GWSubscriptionRecommendation_Unity gWSubscriptionRecommendation_Unity = GWalletHelper.subscription_recommendations[i];
-			if (gWSubscriptionRecommendation_Unity.m_storeSkuCode.LastIndexOf(plan) != -1)
-			{
-				return false;
-			}
-		}
-		return true;
+		return false;
 	}
 
 	public static OnlineItemsManager.Item GWalletGetSubscriptionRecommendationAtIndex(int idx)
@@ -373,38 +342,11 @@ public class ApplicationUtilities : MonoBehaviour
 
 	public void IAPSyncTransactions()
 	{
-		if (AInAppPurchase.BillingSupported)
-		{
-			Debug.Log("IAP -> Requesting Pending Purchases....");
-			AInAppPurchase.RequestPendingPurchases();
-		}
 	}
 
 	private IEnumerator Init3rdPartyPlugins()
 	{
-		if (Application.platform == RuntimePlatform.IPhonePlayer)
-		{
-			if (Debug.isDebugBuild)
-			{
-				Debug.Log("Initalizing ApplicationUtilities");
-			}
-		}
-		else if (Application.platform == RuntimePlatform.Android)
-		{
-			if (Debug.isDebugBuild)
-			{
-				Debug.Log("Initalizing ApplicationUtilities");
-			}
-			AAds.Tapjoy.Init(base.gameObject.name, TJ_APP_ID, TJ_SECRET_KEY);
-			AAds.PlayHaven.Init(base.gameObject.name, lockToken, lockSecret);
-			AAds.Amazon.Init("bba485770422404aa943de6efe007e84");
-			if (Debug.isDebugBuild)
-			{
-				Debug.Log("SERVER_NOTIFICATION_URL = " + SERVER_NOTIFICATION_URL);
-			}
-			ANotificationManager.Init(true, Debug.isDebugBuild, SERVER_NOTIFICATION_URL, GAME_SKU);
-		}
-		yield return null;
+		yield break;
 	}
 
 	public void ShowAchievments()
@@ -436,7 +378,6 @@ public class ApplicationUtilities : MonoBehaviour
 					Debug.Log("Game is being launched/resumed from the background, Sending game_launch from ApplicationUtilities::OnApplicationPause()");
 				}
 				mShowGameLauchPlayHavenAds = true;
-				TapjoyInterface.OnResume();
 				PushNotification(false);
 				StartCoroutine(CheckVersion());
 			}
@@ -547,7 +488,6 @@ public class ApplicationUtilities : MonoBehaviour
 
 	private void FixedUpdate()
 	{
-		TapjoyInterface.Update();
 	}
 
 	private void OnDestroy()
@@ -555,7 +495,6 @@ public class ApplicationUtilities : MonoBehaviour
 		DestroyPlugins();
 		Singleton<Analytics>.instance.LogEvent("CoinsOnExit", PlayerPrefs.GetInt("asvz.coins").ToString());
 		Singleton<Analytics>.instance.LogEvent("GemsOnExit", PlayerPrefs.GetInt("asvz.gems").ToString());
-		AInAppPurchase.Destroy();
 	}
 
 	private void OnApplicationQuit()
@@ -587,7 +526,6 @@ public class ApplicationUtilities : MonoBehaviour
 
 	public void ShowAds(AdPosition adPosition)
 	{
-		GWalletHelper.ShowAd("MAIN_GAME_SCREEN", (int)((double)Screen.width / 1.7), 0, 81);
 	}
 
 	public void ShowAds(int x, int y)
@@ -596,7 +534,6 @@ public class ApplicationUtilities : MonoBehaviour
 
 	public void HideAds()
 	{
-		GWalletHelper.HideAd();
 	}
 
 	public void PrecacheAd()
@@ -626,8 +563,6 @@ public class ApplicationUtilities : MonoBehaviour
 	{
 		if (!state)
 		{
-			ANotificationManager.ClearScheduledNotifications();
-			ANotificationManager.ClearActiveNotifications();
 		}
 		else
 		{
@@ -640,18 +575,15 @@ public class ApplicationUtilities : MonoBehaviour
 		Singleton<Profile>.instance.timeStamp = Time.time;
 		Singleton<Profile>.instance.Save();
 		int time = 86400;
-		ANotificationManager.ScheduleNotificationSecFromNow(time, Singleton<Localizer>.instance.Get("Push_Notification_Message_Text"), string.Empty);
 	}
 
 	private void onBillingSupported(string supported)
 	{
-		AInAppPurchase.BillingSupported = bool.Parse(supported);
 		Debug.Log("Unity: onBillingSupported: " + supported);
 	}
 
 	private void onSubscriptionSupported(string supported)
 	{
-		AInAppPurchase.SubscriptionSupported = bool.Parse(supported);
 		Debug.Log("Unity: onSubscriptionSupported: " + supported);
 	}
 
@@ -689,26 +621,17 @@ public class ApplicationUtilities : MonoBehaviour
 				{
 					Singleton<Analytics>.instance.LogEvent("IapRecovered", (!AJavaTools.IsTablet()) ? "phone" : "tablet");
 				}
-				AAds.PlayHaven.ReportResolution("buy");
 				if (text4.ToLower().Equals("subscription"))
 				{
 					Debug.Log("*** HANDLED PURCHASED SUBSCRIPTION: " + text5);
-					GWallet.Subscribe(text5, AInAppPurchase.UserID);
 					Singleton<Analytics>.instance.LogEvent("SUBSCRIPTION_PURCHASED", text3);
 					Singleton<Analytics>.instance.LogEvent("SUBSCRIPTION_DEVICE", (!AJavaTools.IsTablet()) ? "phone" : "tablet");
 					if (IsBuildType("amazon"))
 					{
-						if (text3.ToLower().Contains("gold"))
-						{
-							AAds.Tapjoy.ActionComplete("563b9955-00db-47ac-840b-3e7232545260");
-						}
-						AInAppPurchase.ConfirmPurchase(text);
-						AInAppPurchase.RequestedIAP = false;
 						return;
 					}
 					if (text3.ToLower().Contains("gold"))
 					{
-						AAds.Tapjoy.ActionComplete("10c3bb91-ad16-4a61-8264-e6b8b4464712");
 					}
 				}
 				Singleton<OnlineItemsManager>.instance.CompletePurchase(text3);
@@ -716,7 +639,6 @@ public class ApplicationUtilities : MonoBehaviour
 			else if (text2.Equals("CANCELED"))
 			{
 				msg = "CANCELED";
-				AAds.PlayHaven.ReportResolution("error");
 			}
 			else if (text2.Equals("REFUNDED"))
 			{
@@ -726,11 +648,8 @@ public class ApplicationUtilities : MonoBehaviour
 			else if (text2.Equals("FAILED") || text2.Equals("INVALID_SKU"))
 			{
 				Debug.Log("HANDLE Failed: " + text3 + ": " + text4);
-				AAds.PlayHaven.ReportResolution("error");
 			}
-			AInAppPurchase.ConfirmPurchase(text);
 			PurchaseCurrencyDialog.instance.OnIAPError(0, msg);
-			AInAppPurchase.RequestedIAP = false;
 		}
 	}
 
@@ -744,12 +663,10 @@ public class ApplicationUtilities : MonoBehaviour
 		else if (response.Equals("RESULT_USER_CANCELED"))
 		{
 			Debug.Log("HANDLE REQUEST CANCELED BY USER");
-			AAds.PlayHaven.ReportResolution("cancel");
 		}
 		else
 		{
 			Debug.Log("HANDLE REQUEST ERRORED OUT");
-			AAds.PlayHaven.ReportResolution("error");
 		}
 		PurchaseCurrencyDialog.instance.OnIAPError(0, response);
 	}
@@ -773,10 +690,8 @@ public class ApplicationUtilities : MonoBehaviour
 		Debug.Log("Unity: onTapJoyPointsReceived: " + num);
 		if (num > 0)
 		{
-			GWalletBalance(num, "Tapjoy", "CREDIT_TAPJOY_AWARD");
 			Singleton<Profile>.instance.purchasedGems += num;
 			Singleton<Profile>.instance.Save();
-			AAds.Tapjoy.ClearPoints();
 		}
 	}
 
@@ -797,21 +712,10 @@ public class ApplicationUtilities : MonoBehaviour
 
 	private IEnumerator CheckForTJPoints()
 	{
-		yield return new WaitForSeconds(1.5f);
-		AAds.Tapjoy.GetPoints();
+		yield break;
 	}
 
 	private void onPlayHavenShouldMakePurchase(string info)
 	{
-		Debug.Log("Unity: onPlayHavenShouldMakePurchase: " + info);
-		if (info.Equals("com.glu.tapjoy"))
-		{
-			AAds.Tapjoy.Launch(false);
-			AAds.PlayHaven.ReportResolution("buy");
-		}
-		else
-		{
-			AInAppPurchase.RequestPurchase(info, string.Empty);
-		}
 	}
 }

@@ -42,7 +42,7 @@ public class FlowerCatch : MonoBehaviour
 		}
 		if (WeakGlobalSceneBehavior<PachinkoMachineImpl>.instance.multiplier > 1)
 		{
-			MeshRenderer meshRenderer = (MeshRenderer)gameObject.transform.Find("Visuals/Multiplier").renderer;
+			MeshRenderer meshRenderer = (MeshRenderer)gameObject.transform.Find("Visuals/Multiplier").GetComponent<Renderer>();
 			meshRenderer.enabled = true;
 			switch (WeakGlobalSceneBehavior<PachinkoMachineImpl>.instance.multiplier)
 			{

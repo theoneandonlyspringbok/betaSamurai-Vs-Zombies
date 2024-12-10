@@ -11,7 +11,7 @@ public class ParLineAgeBehavior : MonoBehaviour
 
 	private void Update()
 	{
-		Particle[] particles = base.particleEmitter.particles;
+		Particle[] particles = base.GetComponent<ParticleEmitter>().particles;
 		List<Particle> list = new List<Particle>();
 		list.AddRange(particles);
 		list.Sort((Particle thing1, Particle thing2) => thing1.energy.CompareTo(thing2.energy));

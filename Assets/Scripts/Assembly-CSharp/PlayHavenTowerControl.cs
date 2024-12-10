@@ -30,12 +30,7 @@ public class PlayHavenTowerControl : Singleton<PlayHavenTowerControl>
 			return;
 		}
 		SceneBehaviour.sceneBehaviourInstance.justShownPlayHaven = true;
-		AAds.PlayHaven.Show(contentType);
-		if (contentType == "game_launch")
-		{
-			AAds.PlayHaven.Show(GWallet.IsSubscriber() ? "subscriber" : "non_subscriber");
-		}
-		else if (contentType == "more_games" && ApplicationUtilities.IsBuildType("amazon"))
+		if (contentType == "more_games" && ApplicationUtilities.IsBuildType("amazon"))
 		{
 			Application.OpenURL("http://gcs.glu.com/gcs/fe?wsid=2&cid=157873&src=svz_app");
 		}

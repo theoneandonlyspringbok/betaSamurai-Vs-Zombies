@@ -115,8 +115,8 @@ public class SoundThemePlayer : MonoBehaviour
 				{
 					gameObject = Object.Instantiate(soundThemeCustomEffect3.gameObject) as GameObject;
 					gameObject.name = "SFX(" + theName + "-" + gameObject.name + ")";
-					audioSource = gameObject.audio;
-					gameObject.audio.clip = audioClip;
+					audioSource = gameObject.GetComponent<AudioSource>();
+					gameObject.GetComponent<AudioSource>().clip = audioClip;
 					soundThemeCustomEffect3 = gameObject.GetComponent<SoundThemeCustomEffect>();
 				}
 				else
@@ -212,7 +212,7 @@ public class SoundThemePlayer : MonoBehaviour
 		SoundThemeCustomEffect[] array = componentsInChildren;
 		foreach (SoundThemeCustomEffect soundThemeCustomEffect in array)
 		{
-			if (!(soundThemeCustomEffect.gameObject == base.gameObject) && soundThemeCustomEffect.sfxEvent != null && soundThemeCustomEffect.sfxEvent.name == theName && soundThemeCustomEffect.audio.isPlaying)
+			if (!(soundThemeCustomEffect.gameObject == base.gameObject) && soundThemeCustomEffect.sfxEvent != null && soundThemeCustomEffect.sfxEvent.name == theName && soundThemeCustomEffect.GetComponent<AudioSource>().isPlaying)
 			{
 				return soundThemeCustomEffect;
 			}

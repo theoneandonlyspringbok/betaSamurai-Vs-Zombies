@@ -133,7 +133,7 @@ public class PotionsDatabase : Singleton<PotionsDatabase>
 		{
 		default:
 		{
-			int num;
+			int num = 0;
 			if (num == 1)
 			{
 				if (WeakGlobalSceneBehavior<InGameImpl>.instance.hero.health == WeakGlobalSceneBehavior<InGameImpl>.instance.hero.maxHealth)

@@ -112,7 +112,7 @@ public class SoundThemeCustomEffect : MonoBehaviour
 		{
 			if (mAudioSource == null)
 			{
-				mAudioSource = base.audio;
+				mAudioSource = base.GetComponent<AudioSource>();
 			}
 			mEventData = eventData;
 			if (mEventData.playLimit != 0)

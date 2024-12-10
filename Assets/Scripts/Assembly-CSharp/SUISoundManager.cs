@@ -51,7 +51,7 @@ public class SUISoundManager : Singleton<SUISoundManager>
 		{
 			return component;
 		}
-		obj.AddComponent("AudioSource");
+		obj.AddComponent<AudioSource>();
 		return obj.GetComponent<AudioSource>();
 	}
 
