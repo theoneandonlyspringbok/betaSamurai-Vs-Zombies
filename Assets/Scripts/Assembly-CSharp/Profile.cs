@@ -279,6 +279,10 @@ public class Profile : Singleton<Profile>
 	{
 		get
 		{
+			if (GWalletHelper.GetBalance() >= 0)
+			{
+				return GWalletHelper.GetBalance();
+			}
 			return mSavedData.GetValueInt("gems");
 		}
 		set

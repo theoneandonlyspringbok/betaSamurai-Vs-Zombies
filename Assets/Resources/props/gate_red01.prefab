@@ -9,19 +9,19 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1812698151410635}
+  m_RootGameObject: {fileID: 1847544120233810}
   m_IsPrefabParent: 1
   m_IsExploded: 0
---- !u!1 &1812698151410635
+--- !u!1 &1847544120233810
 GameObject:
   serializedVersion: 3
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_Component:
-  - 4: {fileID: 4291713901081803}
-  - 111: {fileID: 111339969704232412}
-  - 114: {fileID: 114441931825365677}
+  - 4: {fileID: 4188499040182106}
+  - 111: {fileID: 111644135282576282}
+  - 114: {fileID: 114608670976683527}
   m_Layer: 0
   m_Name: gate_red01
   m_TagString: Untagged
@@ -29,26 +29,26 @@ GameObject:
   m_StaticEditorFlags: 0
   m_IsActive: 1
   m_Icon: {fileID: 0}
---- !u!4 &4291713901081803
+--- !u!4 &4188499040182106
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1812698151410635}
+  m_GameObject: {fileID: 1847544120233810}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: -0, z: 0}
   m_Children:
-  - {fileID: 4399719909268549}
+  - {fileID: 4074812050220227}
   m_Father: {fileID: 0}
---- !u!111 &111339969704232412
+--- !u!111 &111644135282576282
 Animation:
   serializedVersion: 3
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1812698151410635}
+  m_GameObject: {fileID: 1847544120233810}
   m_Enabled: 1
   m_Animation: {fileID: 0}
   m_Animations: []
@@ -59,12 +59,12 @@ Animation:
   m_UserAABB:
     m_Center: {x: 0, y: 0, z: 0}
     m_Extent: {x: 0, y: 0, z: 0}
---- !u!114 &114441931825365677
+--- !u!114 &114608670976683527
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1812698151410635}
+  m_GameObject: {fileID: 1847544120233810}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bbee05443b9b67f14985305ef056de27, type: 3}
@@ -72,16 +72,16 @@ MonoBehaviour:
   sourcePrefabPath: Assets/Resources/Props/gate_red01.fbx
   basePrefabPath:
   exemptObjects: []
---- !u!1 &1154216118989130
+--- !u!1 &1999142611385758
 GameObject:
   serializedVersion: 3
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_Component:
-  - 4: {fileID: 4399719909268549}
-  - 33: {fileID: 33046901745548953}
-  - 23: {fileID: 23735864521052679}
+  - 4: {fileID: 4074812050220227}
+  - 33: {fileID: 33543951766929373}
+  - 23: {fileID: 23325849508389964}
   m_Layer: 0
   m_Name: gate_red1
   m_TagString: Untagged
@@ -89,31 +89,31 @@ GameObject:
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
   m_Icon: {fileID: 0}
---- !u!4 &4399719909268549
+--- !u!4 &4074812050220227
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1154216118989130}
+  m_GameObject: {fileID: 1999142611385758}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: -0, z: 0}
   m_Children: []
-  m_Father: {fileID: 4291713901081803}
---- !u!33 &33046901745548953
+  m_Father: {fileID: 4188499040182106}
+--- !u!33 &33543951766929373
 MeshFilter:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1154216118989130}
-  m_Mesh: {fileID: 4300000, guid: 331793c70eff3e241aad8e6fd508c206, type: 2}
---- !u!23 &23735864521052679
+  m_GameObject: {fileID: 1999142611385758}
+  m_Mesh: {fileID: 4300000, guid: fdadcf97d08a9c440ab0dd4d30c7722a, type: 2}
+--- !u!23 &23325849508389964
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1154216118989130}
+  m_GameObject: {fileID: 1999142611385758}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1

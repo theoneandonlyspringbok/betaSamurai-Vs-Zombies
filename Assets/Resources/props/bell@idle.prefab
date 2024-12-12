@@ -9,19 +9,19 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1519807907095744}
+  m_RootGameObject: {fileID: 1513522850997984}
   m_IsPrefabParent: 1
   m_IsExploded: 0
---- !u!1 &1519807907095744
+--- !u!1 &1513522850997984
 GameObject:
   serializedVersion: 3
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_Component:
-  - 4: {fileID: 4973966545406669}
-  - 111: {fileID: 111486569678128289}
-  - 114: {fileID: 114165356267836270}
+  - 4: {fileID: 4304445766346795}
+  - 111: {fileID: 111059619325263981}
+  - 114: {fileID: 114988215750729316}
   m_Layer: 0
   m_Name: bell@idle
   m_TagString: Untagged
@@ -29,26 +29,26 @@ GameObject:
   m_StaticEditorFlags: 0
   m_IsActive: 1
   m_Icon: {fileID: 0}
---- !u!4 &4973966545406669
+--- !u!4 &4304445766346795
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1519807907095744}
+  m_GameObject: {fileID: 1513522850997984}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0, y: 218.93723, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: -0, z: 0}
   m_Children:
-  - {fileID: 4957878739893751}
+  - {fileID: 4983043975822241}
   m_Father: {fileID: 0}
---- !u!111 &111486569678128289
+--- !u!111 &111059619325263981
 Animation:
   serializedVersion: 3
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1519807907095744}
+  m_GameObject: {fileID: 1513522850997984}
   m_Enabled: 1
   m_Animation: {fileID: 0}
   m_Animations: []
@@ -59,12 +59,12 @@ Animation:
   m_UserAABB:
     m_Center: {x: 0, y: 0, z: 0}
     m_Extent: {x: 0, y: 0, z: 0}
---- !u!114 &114165356267836270
+--- !u!114 &114988215750729316
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1519807907095744}
+  m_GameObject: {fileID: 1513522850997984}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bbee05443b9b67f14985305ef056de27, type: 3}
@@ -72,16 +72,16 @@ MonoBehaviour:
   sourcePrefabPath: Assets/Resources/Props/bell@idle.fbx
   basePrefabPath:
   exemptObjects: []
---- !u!1 &1958773885611633
+--- !u!1 &1518685231753018
 GameObject:
   serializedVersion: 3
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_Component:
-  - 4: {fileID: 4957878739893751}
-  - 33: {fileID: 33835290870606213}
-  - 23: {fileID: 23793381472571780}
+  - 4: {fileID: 4983043975822241}
+  - 33: {fileID: 33580573357752057}
+  - 23: {fileID: 23170380428176407}
   m_Layer: 0
   m_Name: bell:BellRinger
   m_TagString: Untagged
@@ -89,31 +89,31 @@ GameObject:
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
   m_Icon: {fileID: 0}
---- !u!4 &4957878739893751
+--- !u!4 &4983043975822241
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1958773885611633}
+  m_GameObject: {fileID: 1518685231753018}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 1.1444092E-05, y: -72.87784, z: -3.0517578E-05}
   m_LocalScale: {x: 1.1, y: 1.2, z: 1.1}
   m_LocalEulerAnglesHint: {x: 0, y: -0, z: 0}
   m_Children: []
-  m_Father: {fileID: 4973966545406669}
---- !u!33 &33835290870606213
+  m_Father: {fileID: 4304445766346795}
+--- !u!33 &33580573357752057
 MeshFilter:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1958773885611633}
-  m_Mesh: {fileID: 4300000, guid: ec77657ddf227ef4abe5828e50f8670f, type: 2}
---- !u!23 &23793381472571780
+  m_GameObject: {fileID: 1518685231753018}
+  m_Mesh: {fileID: 4300000, guid: ae29294aa9ea4c74ca92df98f8c6f5c6, type: 2}
+--- !u!23 &23170380428176407
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1958773885611633}
+  m_GameObject: {fileID: 1518685231753018}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1

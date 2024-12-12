@@ -9,24 +9,24 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1807736314481494}
+  m_RootGameObject: {fileID: 1584485355252505}
   m_IsPrefabParent: 1
   m_IsExploded: 0
---- !u!1 &1807736314481494
+--- !u!1 &1584485355252505
 GameObject:
   serializedVersion: 3
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_Component:
-  - 4: {fileID: 4787134761926913}
-  - 114: {fileID: 114568080904208025}
-  - 111: {fileID: 111676048177648926}
-  - 114: {fileID: 114923591953234015}
-  - 114: {fileID: 114388554408953058}
-  - 114: {fileID: 114487388788347718}
-  - 114: {fileID: 114014534761026050}
-  - 114: {fileID: 114932921277915738}
+  - 4: {fileID: 4099992361514366}
+  - 114: {fileID: 114392358645921713}
+  - 111: {fileID: 111343269958392067}
+  - 114: {fileID: 114585943065502017}
+  - 114: {fileID: 114709436537853454}
+  - 114: {fileID: 114751740475261288}
+  - 114: {fileID: 114116186193663965}
+  - 114: {fileID: 114340889252652164}
   m_Layer: 0
   m_Name: PachinkoPickup
   m_TagString: Untagged
@@ -34,25 +34,25 @@ GameObject:
   m_StaticEditorFlags: 0
   m_IsActive: 1
   m_Icon: {fileID: 0}
---- !u!4 &4787134761926913
+--- !u!4 &4099992361514366
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1807736314481494}
+  m_GameObject: {fileID: 1584485355252505}
   m_LocalRotation: {x: 0.04932491, y: -0.7053844, z: 0.04932491, w: 0.7053843}
   m_LocalPosition: {x: -73.22176, y: 48.2519, z: 292.43127}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 7.999941, y: 89.99999, z: 0}
   m_Children:
-  - {fileID: 4038295692512168}
+  - {fileID: 4109032300751134}
   m_Father: {fileID: 0}
---- !u!114 &114568080904208025
+--- !u!114 &114392358645921713
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1807736314481494}
+  m_GameObject: {fileID: 1584485355252505}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bbee05443b9b67f14985305ef056de27, type: 3}
@@ -60,20 +60,20 @@ MonoBehaviour:
   sourcePrefabPath: Assets/Resources/FX/PachinkoPickup.prefab
   basePrefabPath: Assets/Resources/FX/CoinPickup.prefab
   exemptObjects:
-  - {fileID: 114014534761026050}
-  - {fileID: 23334876224565882}
---- !u!111 &111676048177648926
+  - {fileID: 114116186193663965}
+  - {fileID: 23479793300519414}
+--- !u!111 &111343269958392067
 Animation:
   serializedVersion: 3
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1807736314481494}
+  m_GameObject: {fileID: 1584485355252505}
   m_Enabled: 1
-  m_Animation: {fileID: 7400000, guid: 0ffdbb744b649f14f8c3db9c83be55ba, type: 2}
+  m_Animation: {fileID: 7400000, guid: 6ae4b299846df204b98508b0fe0b2c17, type: 2}
   m_Animations:
-  - {fileID: 7400000, guid: 7bd746a7de17b9240aed5a0471ab26e3, type: 2}
-  - {fileID: 7400000, guid: 0ffdbb744b649f14f8c3db9c83be55ba, type: 2}
+  - {fileID: 7400000, guid: 6bb34ad7b9d838e46ab8563d6315e826, type: 2}
+  - {fileID: 7400000, guid: 6ae4b299846df204b98508b0fe0b2c17, type: 2}
   - {fileID: 0}
   m_WrapMode: 0
   m_PlayAutomatically: 1
@@ -82,52 +82,52 @@ Animation:
   m_UserAABB:
     m_Center: {x: 0, y: 0, z: 0}
     m_Extent: {x: 0, y: 0, z: 0}
---- !u!114 &114923591953234015
+--- !u!114 &114585943065502017
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1807736314481494}
+  m_GameObject: {fileID: 1584485355252505}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d23147a98738dd3f21f8523d6dbc0a95, type: 3}
   m_Name:
   joints:
   - label: Visuals
-    joint: {fileID: 4038295692512168}
+    joint: {fileID: 4109032300751134}
     autoAttachPrefab: {fileID: 0}
     transformOffset:
       position: {x: 0, y: 0, z: 0}
       rotation: {x: 0, y: 0, z: 0}
       scale: {x: 0, y: 0, z: 0}
---- !u!114 &114388554408953058
+--- !u!114 &114709436537853454
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1807736314481494}
+  m_GameObject: {fileID: 1584485355252505}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9deb42e7ebc7d9000d6a75dff5974047, type: 3}
   m_Name:
   playRandomAnimAtStartup: 0
   cameraShakeIntensityMult: 1
---- !u!114 &114487388788347718
+--- !u!114 &114751740475261288
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1807736314481494}
+  m_GameObject: {fileID: 1584485355252505}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 30ac76d5c958184d09bab5d0901acb79, type: 3}
   m_Name:
---- !u!114 &114014534761026050
+--- !u!114 &114116186193663965
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1807736314481494}
+  m_GameObject: {fileID: 1584485355252505}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 39dbae7d6e4503ccce4e243938d2e0ad, type: 3}
@@ -141,7 +141,7 @@ MonoBehaviour:
   events:
   - name: Collected
     clips:
-    - {fileID: 8300000, guid: 81b0bb5f8afcd6c4dbafd2c666ae763f, type: 3}
+    - {fileID: 8300000, guid: 6d18e249f7838174486fa0c79b96452f, type: 3}
     percentChanceNone: 0
     pitchVariance: 0
     volume: 0
@@ -156,26 +156,26 @@ MonoBehaviour:
     minDistanceOverride: 0
     maxDistanceOverride: 0
     useLogarithmicRolloff: 0
---- !u!114 &114932921277915738
+--- !u!114 &114340889252652164
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1807736314481494}
+  m_GameObject: {fileID: 1584485355252505}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 0}
   m_Name:
---- !u!1 &1199500340086487
+--- !u!1 &1646597639796562
 GameObject:
   serializedVersion: 3
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_Component:
-  - 4: {fileID: 4038295692512168}
-  - 33: {fileID: 33026504507450125}
-  - 23: {fileID: 23334876224565882}
+  - 4: {fileID: 4109032300751134}
+  - 33: {fileID: 33989005217351178}
+  - 23: {fileID: 23479793300519414}
   m_Layer: 0
   m_Name: Visuals
   m_TagString: Untagged
@@ -183,56 +183,56 @@ GameObject:
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
   m_Icon: {fileID: 0}
---- !u!4 &4038295692512168
+--- !u!4 &4109032300751134
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1199500340086487}
+  m_GameObject: {fileID: 1646597639796562}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
   m_Children:
-  - {fileID: 4754093131373143}
-  m_Father: {fileID: 4787134761926913}
---- !u!33 &33026504507450125
+  - {fileID: 4783684752465477}
+  m_Father: {fileID: 4099992361514366}
+--- !u!33 &33989005217351178
 MeshFilter:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1199500340086487}
-  m_Mesh: {fileID: 4300000, guid: c79b8e05d94d7c9459925ddb6e86b9f9, type: 2}
---- !u!23 &23334876224565882
+  m_GameObject: {fileID: 1646597639796562}
+  m_Mesh: {fileID: 4300000, guid: f0875f9f47690b34fb9d0457dc0554b2, type: 2}
+--- !u!23 &23479793300519414
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1199500340086487}
+  m_GameObject: {fileID: 1646597639796562}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: da058a12824705843b15a49cd7eaddb3, type: 2}
+  - {fileID: 2100000, guid: 5afb7b9ef1d0f5c488b32bca42dfa8a2, type: 2}
   m_SubsetIndices: []
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
   m_StaticBatchRoot: {fileID: 0}
   m_ScaleInLightmap: 1
---- !u!1 &1932383735775457
+--- !u!1 &1891252154621369
 GameObject:
   serializedVersion: 3
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_Component:
-  - 4: {fileID: 4754093131373143}
-  - 15: {fileID: 15204090222797973}
-  - 12: {fileID: 12569270748472482}
-  - 26: {fileID: 26323982874410968}
+  - 4: {fileID: 4783684752465477}
+  - 15: {fileID: 15301434084820250}
+  - 12: {fileID: 12226222416281766}
+  - 26: {fileID: 26497396560101501}
   m_Layer: 0
   m_Name: Sparkles
   m_TagString: Untagged
@@ -240,25 +240,25 @@ GameObject:
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
   m_Icon: {fileID: 0}
---- !u!4 &4754093131373143
+--- !u!4 &4783684752465477
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1932383735775457}
+  m_GameObject: {fileID: 1891252154621369}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
   m_Children: []
-  m_Father: {fileID: 4038295692512168}
---- !u!15 &15204090222797973
+  m_Father: {fileID: 4109032300751134}
+--- !u!15 &15301434084820250
 EllipsoidParticleEmitter:
   serializedVersion: 2
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1932383735775457}
+  m_GameObject: {fileID: 1891252154621369}
   m_Enabled: 1
   m_Emit: 1
   minSize: 12
@@ -279,12 +279,12 @@ EllipsoidParticleEmitter:
   m_OneShot: 0
   m_Ellipsoid: {x: 30, y: 30, z: 30}
   m_MinEmitterRange: 0
---- !u!12 &12569270748472482
+--- !u!12 &12226222416281766
 ParticleAnimator:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1932383735775457}
+  m_GameObject: {fileID: 1891252154621369}
   Does Animate Color?: 1
   colorAnimation[0]:
     serializedVersion: 2
@@ -309,20 +309,20 @@ ParticleAnimator:
   damping: 1
   stopSimulation: 0
   autodestruct: 0
---- !u!26 &26323982874410968
+--- !u!26 &26497396560101501
 ParticleRenderer:
   serializedVersion: 2
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1932383735775457}
+  m_GameObject: {fileID: 1891252154621369}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: a3a0d562c8ede7e42b9a35b065d72b2c, type: 2}
+  - {fileID: 2100000, guid: 388c8a8bf4615b946ae7f62175e55ebc, type: 2}
   m_SubsetIndices: []
   m_StaticBatchRoot: {fileID: 0}
   m_ScaleInLightmap: 1

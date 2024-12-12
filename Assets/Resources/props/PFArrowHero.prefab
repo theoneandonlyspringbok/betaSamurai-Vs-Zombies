@@ -9,23 +9,23 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1118855439557010}
+  m_RootGameObject: {fileID: 1163009011902195}
   m_IsPrefabParent: 1
   m_IsExploded: 0
---- !u!1 &1118855439557010
+--- !u!1 &1163009011902195
 GameObject:
   serializedVersion: 3
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_Component:
-  - 4: {fileID: 4279826623684097}
-  - 33: {fileID: 33809180654970257}
-  - 23: {fileID: 23891356255905641}
-  - 111: {fileID: 111697628447211794}
-  - 114: {fileID: 114227625511900033}
-  - 114: {fileID: 114886811841216959}
-  - 114: {fileID: 114207899091942986}
+  - 4: {fileID: 4444352501932241}
+  - 33: {fileID: 33308263641428917}
+  - 23: {fileID: 23381228311280861}
+  - 111: {fileID: 111378768251803628}
+  - 114: {fileID: 114519033547641810}
+  - 114: {fileID: 114615720161002311}
+  - 114: {fileID: 114639708107698667}
   m_Layer: 0
   m_Name: PFArrowHero
   m_TagString: Untagged
@@ -33,51 +33,51 @@ GameObject:
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
   m_Icon: {fileID: 0}
---- !u!4 &4279826623684097
+--- !u!4 &4444352501932241
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1118855439557010}
+  m_GameObject: {fileID: 1163009011902195}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -97.66473, y: 35.689865, z: 753.58203}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: -0, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
---- !u!33 &33809180654970257
+--- !u!33 &33308263641428917
 MeshFilter:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1118855439557010}
-  m_Mesh: {fileID: 4300000, guid: 29c550d63660f4844ae8fbcaa1b63a14, type: 2}
---- !u!23 &23891356255905641
+  m_GameObject: {fileID: 1163009011902195}
+  m_Mesh: {fileID: 4300000, guid: ba4060050bc2fa140b4ec8be1a96ca52, type: 2}
+--- !u!23 &23381228311280861
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1118855439557010}
+  m_GameObject: {fileID: 1163009011902195}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: 18379ec82b6a3b34d97f24307f1e5b8b, type: 2}
+  - {fileID: 2100000, guid: 2bbc7739ee11a0043869c13756aa4f81, type: 2}
   m_SubsetIndices: []
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
   m_StaticBatchRoot: {fileID: 0}
   m_ScaleInLightmap: 1
---- !u!111 &111697628447211794
+--- !u!111 &111378768251803628
 Animation:
   serializedVersion: 3
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1118855439557010}
+  m_GameObject: {fileID: 1163009011902195}
   m_Enabled: 1
   m_Animation: {fileID: 0}
   m_Animations: []
@@ -88,12 +88,12 @@ Animation:
   m_UserAABB:
     m_Center: {x: 0, y: 0, z: 0}
     m_Extent: {x: 0, y: 0, z: 0}
---- !u!114 &114227625511900033
+--- !u!114 &114519033547641810
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1118855439557010}
+  m_GameObject: {fileID: 1163009011902195}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bbee05443b9b67f14985305ef056de27, type: 3}
@@ -101,15 +101,15 @@ MonoBehaviour:
   sourcePrefabPath: Assets/Resources/Props/PFArrowHero.prefab
   basePrefabPath: Assets/Resources/Props/arrow.fbx
   exemptObjects:
-  - {fileID: 23891356255905641}
-  - {fileID: 114227625511900033}
-  - {fileID: 114886811841216959}
---- !u!114 &114886811841216959
+  - {fileID: 23381228311280861}
+  - {fileID: 114519033547641810}
+  - {fileID: 114615720161002311}
+--- !u!114 &114615720161002311
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1118855439557010}
+  m_GameObject: {fileID: 1163009011902195}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 39dbae7d6e4503ccce4e243938d2e0ad, type: 3}
@@ -123,9 +123,9 @@ MonoBehaviour:
   events:
   - name: Spawn
     clips:
-    - {fileID: 8300000, guid: 91947f923b140504bb92f4429971689f, type: 3}
-    - {fileID: 8300000, guid: 83309ee53e0c6b243806928446d4dae5, type: 3}
-    - {fileID: 8300000, guid: c1d5176e67aff0949bdfba4d978f65a8, type: 3}
+    - {fileID: 8300000, guid: 94bd7144450bbc64d92ba87e8c9f929d, type: 3}
+    - {fileID: 8300000, guid: 7c19da2f186d6cd4b9766de13f4d795e, type: 3}
+    - {fileID: 8300000, guid: ee6e3df212477db48af66e7baa96f98a, type: 3}
     percentChanceNone: 0
     pitchVariance: 0
     volume: 0
@@ -140,12 +140,12 @@ MonoBehaviour:
     minDistanceOverride: 0
     maxDistanceOverride: 0
     useLogarithmicRolloff: 0
---- !u!114 &114207899091942986
+--- !u!114 &114639708107698667
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1118855439557010}
+  m_GameObject: {fileID: 1163009011902195}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 0}

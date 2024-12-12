@@ -9,23 +9,23 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1934564324904056}
+  m_RootGameObject: {fileID: 1589918456343999}
   m_IsPrefabParent: 1
   m_IsExploded: 0
---- !u!1 &1934564324904056
+--- !u!1 &1589918456343999
 GameObject:
   serializedVersion: 3
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_Component:
-  - 4: {fileID: 4726441327695754}
-  - 114: {fileID: 114441001249008071}
-  - 64: {fileID: 64272815625166482}
-  - 54: {fileID: 54404958434896700}
-  - 114: {fileID: 114942406653035336}
-  - 114: {fileID: 114082868198916749}
-  - 114: {fileID: 114616209705683477}
+  - 4: {fileID: 4036487444998149}
+  - 114: {fileID: 114923084678109557}
+  - 64: {fileID: 64115736186056077}
+  - 54: {fileID: 54064828221247106}
+  - 114: {fileID: 114608283236645237}
+  - 114: {fileID: 114597885887244878}
+  - 114: {fileID: 114537083988325627}
   m_Layer: 0
   m_Name: PFBumper
   m_TagString: Untagged
@@ -33,25 +33,25 @@ GameObject:
   m_StaticEditorFlags: 0
   m_IsActive: 1
   m_Icon: {fileID: 0}
---- !u!4 &4726441327695754
+--- !u!4 &4036487444998149
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1934564324904056}
+  m_GameObject: {fileID: 1589918456343999}
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: -0.7071068}
   m_LocalPosition: {x: -1.9534445, y: -1.6456301, z: 1.678114}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: -0, y: 90, z: 0}
   m_Children:
-  - {fileID: 4385870225050999}
+  - {fileID: 4020027093894722}
   m_Father: {fileID: 0}
---- !u!114 &114441001249008071
+--- !u!114 &114923084678109557
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1934564324904056}
+  m_GameObject: {fileID: 1589918456343999}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bbee05443b9b67f14985305ef056de27, type: 3}
@@ -59,26 +59,26 @@ MonoBehaviour:
   sourcePrefabPath: Assets/Resources/Levels/Pachinko/Props/PFBumper.prefab
   basePrefabPath:
   exemptObjects: []
---- !u!64 &64272815625166482
+--- !u!64 &64115736186056077
 MeshCollider:
   serializedVersion: 2
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1934564324904056}
-  m_Material: {fileID: 13400000, guid: 04dc95c12dbca0b418f78ecec307beba, type: 2}
+  m_GameObject: {fileID: 1589918456343999}
+  m_Material: {fileID: 13400000, guid: 172105b92c922db49b66cb97b67efd83, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   m_SmoothSphereCollisions: 1
   m_Convex: 0
-  m_Mesh: {fileID: 4300000, guid: 42cb7e771719e534388ee7d67bb61543, type: 2}
---- !u!54 &54404958434896700
+  m_Mesh: {fileID: 4300000, guid: 9512b12f2d076c94a83009594a16c4c7, type: 2}
+--- !u!54 &54064828221247106
 Rigidbody:
   serializedVersion: 2
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1934564324904056}
+  m_GameObject: {fileID: 1589918456343999}
   m_Mass: 1
   m_Drag: 2
   m_AngularDrag: 1
@@ -87,12 +87,12 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 62
   m_CollisionDetection: 0
---- !u!114 &114942406653035336
+--- !u!114 &114608283236645237
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1934564324904056}
+  m_GameObject: {fileID: 1589918456343999}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 39dbae7d6e4503ccce4e243938d2e0ad, type: 3}
@@ -106,8 +106,8 @@ MonoBehaviour:
   events:
   - name: Hit
     clips:
-    - {fileID: 8300000, guid: bfce72e292a1b5e4e9f06ff3df2abfc9, type: 3}
-    - {fileID: 8300000, guid: c776e3ba8bfe6af49b071d8b0bd7e2d2, type: 3}
+    - {fileID: 8300000, guid: 0deb24cabb05c5343bc6f51a60c82663, type: 3}
+    - {fileID: 8300000, guid: d277d9c5afbbd61449c021b735a14a2a, type: 3}
     percentChanceNone: 0
     pitchVariance: 0
     volume: 0
@@ -122,39 +122,39 @@ MonoBehaviour:
     minDistanceOverride: 0
     maxDistanceOverride: 0
     useLogarithmicRolloff: 0
---- !u!114 &114082868198916749
+--- !u!114 &114597885887244878
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1934564324904056}
+  m_GameObject: {fileID: 1589918456343999}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c152b95b19a7462edb560444207fde40, type: 3}
   m_Name:
   ImpactEvent: Hit
---- !u!114 &114616209705683477
+--- !u!114 &114537083988325627
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1934564324904056}
+  m_GameObject: {fileID: 1589918456343999}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 0}
   m_Name:
---- !u!1 &1099677882101508
+--- !u!1 &1258708179002569
 GameObject:
   serializedVersion: 3
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_Component:
-  - 4: {fileID: 4385870225050999}
-  - 33: {fileID: 33196600801831127}
-  - 23: {fileID: 23884025464804015}
-  - 111: {fileID: 111772967617383438}
-  - 114: {fileID: 114808067340589177}
+  - 4: {fileID: 4020027093894722}
+  - 33: {fileID: 33624134807518968}
+  - 23: {fileID: 23824476110893420}
+  - 111: {fileID: 111040979146429389}
+  - 114: {fileID: 114403675498952169}
   m_Layer: 0
   m_Name: bumper
   m_TagString: Untagged
@@ -162,51 +162,51 @@ GameObject:
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
   m_Icon: {fileID: 0}
---- !u!4 &4385870225050999
+--- !u!4 &4020027093894722
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1099677882101508}
+  m_GameObject: {fileID: 1258708179002569}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
   m_Children: []
-  m_Father: {fileID: 4726441327695754}
---- !u!33 &33196600801831127
+  m_Father: {fileID: 4036487444998149}
+--- !u!33 &33624134807518968
 MeshFilter:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1099677882101508}
-  m_Mesh: {fileID: 4300000, guid: 42cb7e771719e534388ee7d67bb61543, type: 2}
---- !u!23 &23884025464804015
+  m_GameObject: {fileID: 1258708179002569}
+  m_Mesh: {fileID: 4300000, guid: 9512b12f2d076c94a83009594a16c4c7, type: 2}
+--- !u!23 &23824476110893420
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1099677882101508}
+  m_GameObject: {fileID: 1258708179002569}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: 34c6a33ca899b5b409ed2bdf2f5d18da, type: 2}
+  - {fileID: 2100000, guid: c86b98409275f774c94b2f13d3247261, type: 2}
   m_SubsetIndices: []
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
   m_StaticBatchRoot: {fileID: 0}
   m_ScaleInLightmap: 1
---- !u!111 &111772967617383438
+--- !u!111 &111040979146429389
 Animation:
   serializedVersion: 3
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1099677882101508}
+  m_GameObject: {fileID: 1258708179002569}
   m_Enabled: 1
   m_Animation: {fileID: 0}
   m_Animations: []
@@ -217,12 +217,12 @@ Animation:
   m_UserAABB:
     m_Center: {x: 0, y: 0, z: 0}
     m_Extent: {x: 0, y: 0, z: 0}
---- !u!114 &114808067340589177
+--- !u!114 &114403675498952169
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1099677882101508}
+  m_GameObject: {fileID: 1258708179002569}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bbee05443b9b67f14985305ef056de27, type: 3}
@@ -230,4 +230,4 @@ MonoBehaviour:
   sourcePrefabPath: Assets/Resources/Levels/Pachinko/Props/bumper.fbx
   basePrefabPath:
   exemptObjects:
-  - {fileID: 114808067340589177}
+  - {fileID: 114403675498952169}

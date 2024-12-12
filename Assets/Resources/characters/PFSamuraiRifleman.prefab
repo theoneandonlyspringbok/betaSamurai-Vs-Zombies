@@ -9,25 +9,25 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1608521725937338}
+  m_RootGameObject: {fileID: 1759745721319611}
   m_IsPrefabParent: 1
   m_IsExploded: 0
---- !u!1 &1608521725937338
+--- !u!1 &1759745721319611
 GameObject:
   serializedVersion: 3
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_Component:
-  - 4: {fileID: 4887824700204475}
-  - 114: {fileID: 114411961870420109}
-  - 114: {fileID: 114572903913580047}
-  - 111: {fileID: 111530466418965365}
-  - 114: {fileID: 114730122957899700}
-  - 114: {fileID: 114078349695376634}
-  - 114: {fileID: 114081084861643291}
-  - 114: {fileID: 114517683761433919}
-  - 114: {fileID: 114185521853846335}
+  - 4: {fileID: 4884388193339861}
+  - 114: {fileID: 114275624994823554}
+  - 114: {fileID: 114624062746147815}
+  - 111: {fileID: 111861425902830324}
+  - 114: {fileID: 114324744746279127}
+  - 114: {fileID: 114118032558186827}
+  - 114: {fileID: 114094123302769295}
+  - 114: {fileID: 114188003020242892}
+  - 114: {fileID: 114559281333399960}
   m_Layer: 0
   m_Name: PFSamuraiRifleman
   m_TagString: Untagged
@@ -35,96 +35,96 @@ GameObject:
   m_StaticEditorFlags: 0
   m_IsActive: 1
   m_Icon: {fileID: 0}
---- !u!4 &4887824700204475
+--- !u!4 &4884388193339861
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1608521725937338}
+  m_GameObject: {fileID: 1759745721319611}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -105.14084, y: -0.77619934, z: 513.02954}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
   m_Children:
-  - {fileID: 4521052971046531}
+  - {fileID: 4789758435592835}
   m_Father: {fileID: 0}
---- !u!114 &114411961870420109
+--- !u!114 &114275624994823554
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1608521725937338}
+  m_GameObject: {fileID: 1759745721319611}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d23147a98738dd3f21f8523d6dbc0a95, type: 3}
   m_Name:
   joints:
   - label: body_effect
-    joint: {fileID: 4780287037141338}
+    joint: {fileID: 4075346846389504}
     autoAttachPrefab: {fileID: 0}
     transformOffset:
       position: {x: 0, y: 0, z: 0}
       rotation: {x: 0, y: 0, z: 0}
       scale: {x: 0, y: 0, z: 0}
   - label: ranged_weapon
-    joint: {fileID: 4898518070191422}
+    joint: {fileID: 4057847823155308}
     autoAttachPrefab: {fileID: 0}
     transformOffset:
       position: {x: 0, y: 0, z: 0}
       rotation: {x: 0, y: 0, z: 0}
       scale: {x: 0, y: 0, z: 0}
   - label: impact_target
-    joint: {fileID: 4880030932578082}
+    joint: {fileID: 4764178473693343}
     autoAttachPrefab: {fileID: 0}
     transformOffset:
       position: {x: 0, y: 0, z: 0}
       rotation: {x: 0, y: 0, z: 0}
       scale: {x: 0, y: 0, z: 0}
   - label: muzzleflash
-    joint: {fileID: 4887824700204475}
+    joint: {fileID: 4884388193339861}
     autoAttachPrefab: {fileID: 0}
     transformOffset:
       position: {x: 0, y: 65.39184, z: 158.36269}
       rotation: {x: 0, y: 0, z: 0}
       scale: {x: 0, y: 0, z: 0}
   - label: buff_icon
-    joint: {fileID: 4780287037141338}
+    joint: {fileID: 4075346846389504}
     autoAttachPrefab: {fileID: 0}
     transformOffset:
       position: {x: 0, y: 170, z: 0}
       rotation: {x: 0, y: 0, z: 0}
       scale: {x: 0, y: 0, z: 0}
---- !u!114 &114572903913580047
+--- !u!114 &114624062746147815
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1608521725937338}
+  m_GameObject: {fileID: 1759745721319611}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9deb42e7ebc7d9000d6a75dff5974047, type: 3}
   m_Name:
   playRandomAnimAtStartup: 0
   cameraShakeIntensityMult: 1
---- !u!111 &111530466418965365
+--- !u!111 &111861425902830324
 Animation:
   serializedVersion: 3
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1608521725937338}
+  m_GameObject: {fileID: 1759745721319611}
   m_Enabled: 1
-  m_Animation: {fileID: 7400000, guid: 23eb84a36ddba364fbb6da3a92bbf0b4, type: 2}
+  m_Animation: {fileID: 7400000, guid: 4e92fa1e12308354796f075086da0cc9, type: 2}
   m_Animations:
-  - {fileID: 7400000, guid: d09e1b421527a694aa5989c73644959c, type: 2}
-  - {fileID: 7400000, guid: 23eb84a36ddba364fbb6da3a92bbf0b4, type: 2}
-  - {fileID: 7400000, guid: e96ef28db4e040846bcb80c86aa946c9, type: 2}
-  - {fileID: 7400000, guid: 5742cabff87d7444fac21936eb04c00b, type: 2}
-  - {fileID: 7400000, guid: 06c5bd90e86916a47ad3190544dc4384, type: 2}
-  - {fileID: 7400000, guid: 0a6e04e8c95cf9e4993bd894348daec1, type: 2}
-  - {fileID: 7400000, guid: a25122ee86c329343b9ea8e5e533011d, type: 2}
-  - {fileID: 7400000, guid: 6a64022db8a75ae47b04c556a422c41e, type: 2}
-  - {fileID: 7400000, guid: 3003f97c2e1ef474b86939e72cf184d4, type: 2}
+  - {fileID: 7400000, guid: 7eb986d446d8765459d8a5fb9d0c4220, type: 2}
+  - {fileID: 7400000, guid: 4e92fa1e12308354796f075086da0cc9, type: 2}
+  - {fileID: 7400000, guid: dea4d6b915eb59f4bbc5121a60eb9239, type: 2}
+  - {fileID: 7400000, guid: b3a427755601551448a82ff3111bd16c, type: 2}
+  - {fileID: 7400000, guid: 2b7ee406afa6a9744addfc72c1501ee9, type: 2}
+  - {fileID: 7400000, guid: e6407872ea1bb1b4a927072f0ff90a81, type: 2}
+  - {fileID: 7400000, guid: 210280806f11a044c9ed6e1c74572402, type: 2}
+  - {fileID: 7400000, guid: b07ec81a3c92c714ba2d1756031d09e4, type: 2}
+  - {fileID: 7400000, guid: ff8606028e8a0294892c61c1fb98f71c, type: 2}
   m_WrapMode: 0
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
@@ -132,29 +132,29 @@ Animation:
   m_UserAABB:
     m_Center: {x: 0, y: 0, z: 0}
     m_Extent: {x: 0, y: 0, z: 0}
---- !u!114 &114730122957899700
+--- !u!114 &114324744746279127
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1608521725937338}
+  m_GameObject: {fileID: 1759745721319611}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bd6245a8adae9bb55440fcfe8cafc69a, type: 3}
   m_Name:
-  jointAnimation: {fileID: 111735179823244888}
+  jointAnimation: {fileID: 111403535297038161}
   defaultBlendSpeed: 0.15
   specificAnimSettings: []
   alsoPlayOnAllChildren: 0
   animFrame: 0
   extraAnimPlayers: []
   extraTaggedAnimPlayers: []
---- !u!114 &114078349695376634
+--- !u!114 &114118032558186827
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1608521725937338}
+  m_GameObject: {fileID: 1759745721319611}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 82ef4aa966cbc2b226b4b1bfbc09eb3d, type: 3}
@@ -164,11 +164,11 @@ MonoBehaviour:
   randomAnimSets:
   - name: ranged_attack
     clips:
-    - {fileID: 7400000, guid: 92c89e7c671d6274f9ae33d019b16289, type: 2}
-    - {fileID: 7400000, guid: 585388af5f711c94abbb39da0509c696, type: 2}
-    - {fileID: 7400000, guid: 92c89e7c671d6274f9ae33d019b16289, type: 2}
-    - {fileID: 7400000, guid: 92c89e7c671d6274f9ae33d019b16289, type: 2}
-    - {fileID: 7400000, guid: 92c89e7c671d6274f9ae33d019b16289, type: 2}
+    - {fileID: 7400000, guid: 7e5a121cb2f7a6d45a94edbc570f9474, type: 2}
+    - {fileID: 7400000, guid: b3ba4442584acfb49bc8ae36ba7f8dd4, type: 2}
+    - {fileID: 7400000, guid: 7e5a121cb2f7a6d45a94edbc570f9474, type: 2}
+    - {fileID: 7400000, guid: 7e5a121cb2f7a6d45a94edbc570f9474, type: 2}
+    - {fileID: 7400000, guid: 7e5a121cb2f7a6d45a94edbc570f9474, type: 2}
     onlyRandomizeOnce: 0
   arrowImpactEffect: {fileID: 0}
   bladeImpactEffect: {fileID: 0}
@@ -176,12 +176,12 @@ MonoBehaviour:
   bluntImpactEffect: {fileID: 0}
   bluntCriticalImpactEffect: {fileID: 0}
   snapToGround: 1
---- !u!114 &114081084861643291
+--- !u!114 &114094123302769295
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1608521725937338}
+  m_GameObject: {fileID: 1759745721319611}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bbee05443b9b67f14985305ef056de27, type: 3}
@@ -189,43 +189,43 @@ MonoBehaviour:
   sourcePrefabPath: Assets/Resources/Characters/PFSamuraiRifleman.prefab
   basePrefabPath:
   exemptObjects: []
---- !u!114 &114517683761433919
+--- !u!114 &114188003020242892
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1608521725937338}
+  m_GameObject: {fileID: 1759745721319611}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 39dbae7d6e4503ccce4e243938d2e0ad, type: 3}
   m_Name:
-  baseTheme: {fileID: 114371064649831617, guid: 632aca7ae9bc52a42817b759e06d17d2, type: 2}
+  baseTheme: {fileID: 114768066861669020, guid: a29b58ac85244374cadeddb0d5a8f989, type: 2}
   defaultMinDistance: 1
   defaultMaxDistance: 500
   defaultCustomEffect: {fileID: 0}
   positionOffset: {x: 0, y: 0, z: 0}
   autoPlayEvent: Spawn
   events: []
---- !u!114 &114185521853846335
+--- !u!114 &114559281333399960
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1608521725937338}
+  m_GameObject: {fileID: 1759745721319611}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 0}
   m_Name:
---- !u!1 &1496292566014998
+--- !u!1 &1680094425628620
 GameObject:
   serializedVersion: 3
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_Component:
-  - 4: {fileID: 4521052971046531}
-  - 111: {fileID: 111735179823244888}
-  - 114: {fileID: 114699571515932613}
+  - 4: {fileID: 4789758435592835}
+  - 111: {fileID: 111403535297038161}
+  - 114: {fileID: 114344864827974259}
   m_Layer: 0
   m_Name: samurairifleman
   m_TagString: Untagged
@@ -233,39 +233,39 @@ GameObject:
   m_StaticEditorFlags: 0
   m_IsActive: 1
   m_Icon: {fileID: 0}
---- !u!4 &4521052971046531
+--- !u!4 &4789758435592835
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1496292566014998}
+  m_GameObject: {fileID: 1680094425628620}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
   m_Children:
-  - {fileID: 4780287037141338}
-  - {fileID: 4369486217348430}
-  m_Father: {fileID: 4887824700204475}
---- !u!111 &111735179823244888
+  - {fileID: 4075346846389504}
+  - {fileID: 4157010046989107}
+  m_Father: {fileID: 4884388193339861}
+--- !u!111 &111403535297038161
 Animation:
   serializedVersion: 3
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1496292566014998}
+  m_GameObject: {fileID: 1680094425628620}
   m_Enabled: 1
-  m_Animation: {fileID: 7400000, guid: 3cda3abbd71468a4c8afefc329b03f2e, type: 2}
+  m_Animation: {fileID: 7400000, guid: dd0b03d9166aaac4c817068b6bc36a31, type: 2}
   m_Animations:
-  - {fileID: 7400000, guid: 2ab23ebffc133504186ade55ee5ac548, type: 2}
-  - {fileID: 7400000, guid: 3cda3abbd71468a4c8afefc329b03f2e, type: 2}
-  - {fileID: 7400000, guid: 37b7c0536d98d7e4ab0b7e56ed3cf8a5, type: 2}
-  - {fileID: 7400000, guid: 0783d497ac83b7749bc99f855d0c9f6a, type: 2}
-  - {fileID: 7400000, guid: 92c89e7c671d6274f9ae33d019b16289, type: 2}
-  - {fileID: 7400000, guid: 585388af5f711c94abbb39da0509c696, type: 2}
-  - {fileID: 7400000, guid: 649115d10ba5cc44b878d660f1c8dc3d, type: 2}
-  - {fileID: 7400000, guid: f096820701e62304d89dea61011619b5, type: 2}
-  - {fileID: 7400000, guid: ebfcd8a266aa93d45b1f74926ab887f8, type: 2}
+  - {fileID: 7400000, guid: 0ab8cb25a0a0d2f43bf71fe61d7d9ba6, type: 2}
+  - {fileID: 7400000, guid: dd0b03d9166aaac4c817068b6bc36a31, type: 2}
+  - {fileID: 7400000, guid: 2b4cc46c6109757428bd2ea8c1676f52, type: 2}
+  - {fileID: 7400000, guid: e347627c75b5e6a4a90c179ac538c643, type: 2}
+  - {fileID: 7400000, guid: 7e5a121cb2f7a6d45a94edbc570f9474, type: 2}
+  - {fileID: 7400000, guid: b3ba4442584acfb49bc8ae36ba7f8dd4, type: 2}
+  - {fileID: 7400000, guid: 4c6b7249f398a0345a0f701e2b068bb7, type: 2}
+  - {fileID: 7400000, guid: 94a898c8a6a867f4f80cea22f548ff5c, type: 2}
+  - {fileID: 7400000, guid: 4f8ebb0e37e7e834b8e6683877dee79a, type: 2}
   m_WrapMode: 0
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
@@ -273,12 +273,12 @@ Animation:
   m_UserAABB:
     m_Center: {x: 0, y: 0, z: 0}
     m_Extent: {x: 0, y: 0, z: 0}
---- !u!114 &114699571515932613
+--- !u!114 &114344864827974259
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1496292566014998}
+  m_GameObject: {fileID: 1680094425628620}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bbee05443b9b67f14985305ef056de27, type: 3}
@@ -286,16 +286,16 @@ MonoBehaviour:
   sourcePrefabPath: Assets/Resources/Characters/SamuraiRifleman/samurairifleman.fbx
   basePrefabPath:
   exemptObjects:
-  - {fileID: 114699571515932613}
-  - {fileID: 137519283264915195}
---- !u!1 &1128877053917989
+  - {fileID: 114344864827974259}
+  - {fileID: 137153219865235615}
+--- !u!1 &1656127230297729
 GameObject:
   serializedVersion: 3
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_Component:
-  - 4: {fileID: 4780287037141338}
+  - 4: {fileID: 4075346846389504}
   m_Layer: 0
   m_Name: samurairifleman:Sam_Skeleton_grp
   m_TagString: Untagged
@@ -303,29 +303,29 @@ GameObject:
   m_StaticEditorFlags: 0
   m_IsActive: 1
   m_Icon: {fileID: 0}
---- !u!4 &4780287037141338
+--- !u!4 &4075346846389504
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1128877053917989}
+  m_GameObject: {fileID: 1656127230297729}
   m_LocalRotation: {x: 0, y: -0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
-  - {fileID: 4686723154795691}
-  - {fileID: 4129828805991190}
-  m_Father: {fileID: 4521052971046531}
---- !u!1 &1533313418777416
+  - {fileID: 4383491058255380}
+  - {fileID: 4514021781259719}
+  m_Father: {fileID: 4789758435592835}
+--- !u!1 &1265566012143868
 GameObject:
   serializedVersion: 3
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_Component:
-  - 4: {fileID: 4686723154795691}
-  - 137: {fileID: 137519283264915195}
+  - 4: {fileID: 4383491058255380}
+  - 137: {fileID: 137153219865235615}
   m_Layer: 0
   m_Name: samurairifleman:Sam_spine_low_jnt
   m_TagString: Untagged
@@ -333,88 +333,88 @@ GameObject:
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
   m_Icon: {fileID: 0}
---- !u!4 &4686723154795691
+--- !u!4 &4383491058255380
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1533313418777416}
+  m_GameObject: {fileID: 1265566012143868}
   m_LocalRotation: {x: 0.48912638, y: -0.5106421, z: -0.48912638, w: 0.5106421}
   m_LocalPosition: {x: -0, y: 39.283615, z: -0.048435047}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 90, y: 2.465711, z: 90}
   m_Children:
-  - {fileID: 4443470513625168}
-  - {fileID: 4880030932578082}
-  m_Father: {fileID: 4780287037141338}
---- !u!137 &137519283264915195
+  - {fileID: 4907902541001856}
+  - {fileID: 4764178473693343}
+  m_Father: {fileID: 4075346846389504}
+--- !u!137 &137153219865235615
 SkinnedMeshRenderer:
   serializedVersion: 2
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1533313418777416}
+  m_GameObject: {fileID: 1265566012143868}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: 6455ab142724b78419f0246fadcfc478, type: 2}
+  - {fileID: 2100000, guid: 26a911be7d12c3240b0b719877f35b3b, type: 2}
   m_SubsetIndices: []
   m_StaticBatchRoot: {fileID: 0}
   m_ScaleInLightmap: 1
   m_Quality: 0
   m_UpdateWhenOffscreen: 0
-  m_Mesh: {fileID: 4300000, guid: 36fc1d92f12463c48b2d9590719f0cf4, type: 2}
+  m_Mesh: {fileID: 4300000, guid: da8110eedf329464ca3fb388fe5cb815, type: 2}
   m_Bones:
-  - {fileID: 4686723154795691}
-  - {fileID: 4880030932578082}
-  - {fileID: 4934414432124822}
-  - {fileID: 4556642316086042}
-  - {fileID: 4777961442372377}
-  - {fileID: 4026161981707958}
-  - {fileID: 4672615153758921}
-  - {fileID: 4534624495314461}
-  - {fileID: 4539583610580494}
-  - {fileID: 4564836645856200}
-  - {fileID: 4182929875017076}
-  - {fileID: 4460992991349902}
-  - {fileID: 4303920062830887}
-  - {fileID: 4750980227699382}
-  - {fileID: 4898518070191422}
-  - {fileID: 4067696446486545}
-  - {fileID: 4783247013657112}
-  - {fileID: 4003797505711791}
-  - {fileID: 4294911727740042}
-  - {fileID: 4523805164449718}
-  - {fileID: 4515498336543474}
-  - {fileID: 4447956772382935}
-  - {fileID: 4443470513625168}
-  - {fileID: 4121613721369474}
-  - {fileID: 4772454381858521}
-  - {fileID: 4533552845332763}
-  - {fileID: 4029072274632413}
-  - {fileID: 4228577476860973}
-  - {fileID: 4346623781488600}
-  - {fileID: 4952545797442603}
-  - {fileID: 4828532872106964}
-  - {fileID: 4840496343551753}
-  - {fileID: 4639751340688288}
-  - {fileID: 4524745084341466}
-  - {fileID: 4784427193643689}
+  - {fileID: 4383491058255380}
+  - {fileID: 4764178473693343}
+  - {fileID: 4601923641274783}
+  - {fileID: 4112184810085053}
+  - {fileID: 4005122883284919}
+  - {fileID: 4602078959028077}
+  - {fileID: 4966271606124702}
+  - {fileID: 4615990766555778}
+  - {fileID: 4065905767681885}
+  - {fileID: 4550183147002971}
+  - {fileID: 4070008559366578}
+  - {fileID: 4710651740904227}
+  - {fileID: 4677361698380140}
+  - {fileID: 4031532412298216}
+  - {fileID: 4057847823155308}
+  - {fileID: 4483189950676483}
+  - {fileID: 4704572574128058}
+  - {fileID: 4055575502970567}
+  - {fileID: 4159602618833463}
+  - {fileID: 4700544123077285}
+  - {fileID: 4155729629591242}
+  - {fileID: 4728425900991482}
+  - {fileID: 4907902541001856}
+  - {fileID: 4358132869475603}
+  - {fileID: 4188970103889534}
+  - {fileID: 4351316583636970}
+  - {fileID: 4643322112020118}
+  - {fileID: 4036025744432278}
+  - {fileID: 4602037733190519}
+  - {fileID: 4939587040680974}
+  - {fileID: 4588243853083154}
+  - {fileID: 4897379111811512}
+  - {fileID: 4047089263976370}
+  - {fileID: 4368197108347108}
+  - {fileID: 4795563477168317}
   m_AABB:
     m_Center: {x: -40.870228, y: 14.357616, z: -12.893078}
     m_Extent: {x: 83.69383, y: 82.05568, z: 75.03345}
   m_DirtyAABB: 0
---- !u!1 &1228728939348949
+--- !u!1 &1849968683705166
 GameObject:
   serializedVersion: 3
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_Component:
-  - 4: {fileID: 4443470513625168}
+  - 4: {fileID: 4907902541001856}
   m_Layer: 0
   m_Name: samurairifleman:Sam_hip_jnt
   m_TagString: Untagged
@@ -422,30 +422,30 @@ GameObject:
   m_StaticEditorFlags: 0
   m_IsActive: 1
   m_Icon: {fileID: 0}
---- !u!4 &4443470513625168
+--- !u!4 &4907902541001856
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1228728939348949}
+  m_GameObject: {fileID: 1849968683705166}
   m_LocalRotation: {x: -2.4980018E-16, y: 5.551115E-17, z: -0.020873245, w: 0.99978215}
   m_LocalPosition: {x: 8.159951, y: -0.34087217, z: -9.461103E-17}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: -2.8751534E-14, y: -5.762227E-15, z: 2.3920715}
   m_Children:
-  - {fileID: 4524745084341466}
-  - {fileID: 4840496343551753}
-  - {fileID: 4121613721369474}
-  - {fileID: 4228577476860973}
-  m_Father: {fileID: 4686723154795691}
---- !u!1 &1054947380560744
+  - {fileID: 4368197108347108}
+  - {fileID: 4897379111811512}
+  - {fileID: 4358132869475603}
+  - {fileID: 4036025744432278}
+  m_Father: {fileID: 4383491058255380}
+--- !u!1 &1865166682963666
 GameObject:
   serializedVersion: 3
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_Component:
-  - 4: {fileID: 4524745084341466}
+  - 4: {fileID: 4368197108347108}
   m_Layer: 0
   m_Name: samurairifleman:LeftSkirt
   m_TagString: Untagged
@@ -453,27 +453,27 @@ GameObject:
   m_StaticEditorFlags: 0
   m_IsActive: 1
   m_Icon: {fileID: 0}
---- !u!4 &4524745084341466
+--- !u!4 &4368197108347108
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1054947380560744}
+  m_GameObject: {fileID: 1865166682963666}
   m_LocalRotation: {x: -0.10066464, y: 0.6590862, z: 0.7366109, w: 0.1134742}
   m_LocalPosition: {x: -7.1974463, y: 0.111121185, z: 13.473885}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 83.326004, y: -17.330309, z: -177.93008}
   m_Children:
-  - {fileID: 4784427193643689}
-  m_Father: {fileID: 4443470513625168}
---- !u!1 &1951995224136382
+  - {fileID: 4795563477168317}
+  m_Father: {fileID: 4907902541001856}
+--- !u!1 &1385652084158446
 GameObject:
   serializedVersion: 3
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_Component:
-  - 4: {fileID: 4784427193643689}
+  - 4: {fileID: 4795563477168317}
   m_Layer: 0
   m_Name: samurairifleman:LeftSkirt1
   m_TagString: Untagged
@@ -481,26 +481,26 @@ GameObject:
   m_StaticEditorFlags: 0
   m_IsActive: 1
   m_Icon: {fileID: 0}
---- !u!4 &4784427193643689
+--- !u!4 &4795563477168317
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1951995224136382}
+  m_GameObject: {fileID: 1385652084158446}
   m_LocalRotation: {x: 0.032874756, y: 0.04478746, z: -0.59080803, w: 0.804897}
   m_LocalPosition: {x: -15.921364, y: 2.6645353E-15, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 2.1041309E-07, y: -6.3697314, z: 72.5586}
   m_Children: []
-  m_Father: {fileID: 4524745084341466}
---- !u!1 &1818490508803198
+  m_Father: {fileID: 4368197108347108}
+--- !u!1 &1087512741557366
 GameObject:
   serializedVersion: 3
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_Component:
-  - 4: {fileID: 4840496343551753}
+  - 4: {fileID: 4897379111811512}
   m_Layer: 0
   m_Name: samurairifleman:RightSkirt
   m_TagString: Untagged
@@ -508,27 +508,27 @@ GameObject:
   m_StaticEditorFlags: 0
   m_IsActive: 1
   m_Icon: {fileID: 0}
---- !u!4 &4840496343551753
+--- !u!4 &4897379111811512
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1818490508803198}
+  m_GameObject: {fileID: 1087512741557366}
   m_LocalRotation: {x: -0.10066464, y: 0.6590862, z: 0.7366109, w: 0.1134742}
   m_LocalPosition: {x: -7.19741, y: 0.1111211, z: -13.4739}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 83.326004, y: -17.330309, z: -177.93008}
   m_Children:
-  - {fileID: 4639751340688288}
-  m_Father: {fileID: 4443470513625168}
---- !u!1 &1622993522240859
+  - {fileID: 4047089263976370}
+  m_Father: {fileID: 4907902541001856}
+--- !u!1 &1540819460266996
 GameObject:
   serializedVersion: 3
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_Component:
-  - 4: {fileID: 4639751340688288}
+  - 4: {fileID: 4047089263976370}
   m_Layer: 0
   m_Name: samurairifleman:RightSkirt1
   m_TagString: Untagged
@@ -536,26 +536,26 @@ GameObject:
   m_StaticEditorFlags: 0
   m_IsActive: 1
   m_Icon: {fileID: 0}
---- !u!4 &4639751340688288
+--- !u!4 &4047089263976370
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1622993522240859}
+  m_GameObject: {fileID: 1540819460266996}
   m_LocalRotation: {x: 0.053087942, y: 0.01638097, z: 0.0051079122, w: 0.9984424}
   m_LocalPosition: {x: -13.095837, y: -8.993278, z: -1.0523314}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 6.0982, y: -1.8434415, z: -0.6844349}
   m_Children: []
-  m_Father: {fileID: 4840496343551753}
---- !u!1 &1490716484299912
+  m_Father: {fileID: 4897379111811512}
+--- !u!1 &1702712635869655
 GameObject:
   serializedVersion: 3
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_Component:
-  - 4: {fileID: 4121613721369474}
+  - 4: {fileID: 4358132869475603}
   m_Layer: 0
   m_Name: samurairifleman:Sam_lf_upLeg_jnt
   m_TagString: Untagged
@@ -563,27 +563,27 @@ GameObject:
   m_StaticEditorFlags: 0
   m_IsActive: 1
   m_Icon: {fileID: 0}
---- !u!4 &4121613721369474
+--- !u!4 &4358132869475603
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1490716484299912}
+  m_GameObject: {fileID: 1702712635869655}
   m_LocalRotation: {x: 0.06093353, y: 0.8495969, z: -0.5226065, w: 0.036806602}
   m_LocalPosition: {x: 7.867781, y: -0.045650456, z: 10.194258}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: -117.04516, y: -7.251796, z: -176.23917}
   m_Children:
-  - {fileID: 4772454381858521}
-  m_Father: {fileID: 4443470513625168}
---- !u!1 &1502796579223526
+  - {fileID: 4188970103889534}
+  m_Father: {fileID: 4907902541001856}
+--- !u!1 &1167589782686163
 GameObject:
   serializedVersion: 3
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_Component:
-  - 4: {fileID: 4772454381858521}
+  - 4: {fileID: 4188970103889534}
   m_Layer: 0
   m_Name: samurairifleman:Sam_lf_knee_jnt
   m_TagString: Untagged
@@ -591,27 +591,27 @@ GameObject:
   m_StaticEditorFlags: 0
   m_IsActive: 1
   m_Icon: {fileID: 0}
---- !u!4 &4772454381858521
+--- !u!4 &4188970103889534
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1502796579223526}
+  m_GameObject: {fileID: 1167589782686163}
   m_LocalRotation: {x: 0.9803003, y: 0.025294444, z: -0.032698, w: 0.19313838}
   m_LocalPosition: {x: -9.9729185, y: 3.4099374E-15, z: -7.2518785E-15}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 157.7873, y: -4.2367787, z: -2.1240458}
   m_Children:
-  - {fileID: 4533552845332763}
-  m_Father: {fileID: 4121613721369474}
---- !u!1 &1462599720957284
+  - {fileID: 4351316583636970}
+  m_Father: {fileID: 4358132869475603}
+--- !u!1 &1508106425697635
 GameObject:
   serializedVersion: 3
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_Component:
-  - 4: {fileID: 4533552845332763}
+  - 4: {fileID: 4351316583636970}
   m_Layer: 0
   m_Name: samurairifleman:Sam_lf_ankle_jnt
   m_TagString: Untagged
@@ -619,27 +619,27 @@ GameObject:
   m_StaticEditorFlags: 0
   m_IsActive: 1
   m_Icon: {fileID: 0}
---- !u!4 &4533552845332763
+--- !u!4 &4351316583636970
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1462599720957284}
+  m_GameObject: {fileID: 1508106425697635}
   m_LocalRotation: {x: -0.36616313, y: 0.13962445, z: 0.4869857, w: 0.7805604}
   m_LocalPosition: {x: -10.411003, y: 2.4880263E-15, z: 1.9043679E-15}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: -32.159595, y: -35.07184, z: -53.51065}
   m_Children:
-  - {fileID: 4029072274632413}
-  m_Father: {fileID: 4772454381858521}
---- !u!1 &1089549688390577
+  - {fileID: 4643322112020118}
+  m_Father: {fileID: 4188970103889534}
+--- !u!1 &1993214060362049
 GameObject:
   serializedVersion: 3
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_Component:
-  - 4: {fileID: 4029072274632413}
+  - 4: {fileID: 4643322112020118}
   m_Layer: 0
   m_Name: samurairifleman:Sam_lf_ball_jnt
   m_TagString: Untagged
@@ -647,26 +647,26 @@ GameObject:
   m_StaticEditorFlags: 0
   m_IsActive: 1
   m_Icon: {fileID: 0}
---- !u!4 &4029072274632413
+--- !u!4 &4643322112020118
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1089549688390577}
+  m_GameObject: {fileID: 1993214060362049}
   m_LocalRotation: {x: 0.015475777, y: -0.042835686, z: 0.29712725, w: 0.953751}
   m_LocalPosition: {x: -4.771814, y: 2.185752E-15, z: -9.297118E-16}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0.23386355, y: 5.215714, z: -34.596672}
   m_Children: []
-  m_Father: {fileID: 4533552845332763}
---- !u!1 &1049748824845833
+  m_Father: {fileID: 4351316583636970}
+--- !u!1 &1619961094617475
 GameObject:
   serializedVersion: 3
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_Component:
-  - 4: {fileID: 4228577476860973}
+  - 4: {fileID: 4036025744432278}
   m_Layer: 0
   m_Name: samurairifleman:Sam_rt_upLeg_jnt
   m_TagString: Untagged
@@ -674,27 +674,27 @@ GameObject:
   m_StaticEditorFlags: 0
   m_IsActive: 1
   m_Icon: {fileID: 0}
---- !u!4 &4228577476860973
+--- !u!4 &4036025744432278
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1049748824845833}
+  m_GameObject: {fileID: 1619961094617475}
   m_LocalRotation: {x: -0.8495969, y: 0.060933623, z: 0.036806546, w: 0.52260655}
   m_LocalPosition: {x: 7.867801, y: -0.04565049, z: -10.1943}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: -117.04515, y: -7.251796, z: 3.7608457}
   m_Children:
-  - {fileID: 4346623781488600}
-  m_Father: {fileID: 4443470513625168}
---- !u!1 &1527340572502221
+  - {fileID: 4602037733190519}
+  m_Father: {fileID: 4907902541001856}
+--- !u!1 &1155412195200495
 GameObject:
   serializedVersion: 3
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_Component:
-  - 4: {fileID: 4346623781488600}
+  - 4: {fileID: 4602037733190519}
   m_Layer: 0
   m_Name: samurairifleman:Sam_rt_knee_jnt
   m_TagString: Untagged
@@ -702,27 +702,27 @@ GameObject:
   m_StaticEditorFlags: 0
   m_IsActive: 1
   m_Icon: {fileID: 0}
---- !u!4 &4346623781488600
+--- !u!4 &4602037733190519
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1527340572502221}
+  m_GameObject: {fileID: 1155412195200495}
   m_LocalRotation: {x: 0.9803003, y: 0.025294319, z: -0.032697845, w: 0.19313838}
   m_LocalPosition: {x: 9.972842, y: -6.319629E-05, z: -3.6754085E-05}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 157.7873, y: -4.2367587, z: -2.1240354}
   m_Children:
-  - {fileID: 4952545797442603}
-  m_Father: {fileID: 4228577476860973}
---- !u!1 &1735172566386515
+  - {fileID: 4939587040680974}
+  m_Father: {fileID: 4036025744432278}
+--- !u!1 &1017299426582433
 GameObject:
   serializedVersion: 3
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_Component:
-  - 4: {fileID: 4952545797442603}
+  - 4: {fileID: 4939587040680974}
   m_Layer: 0
   m_Name: samurairifleman:Sam_rt_ankle_jnt
   m_TagString: Untagged
@@ -730,27 +730,27 @@ GameObject:
   m_StaticEditorFlags: 0
   m_IsActive: 1
   m_Icon: {fileID: 0}
---- !u!4 &4952545797442603
+--- !u!4 &4939587040680974
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1735172566386515}
+  m_GameObject: {fileID: 1017299426582433}
   m_LocalRotation: {x: -0.3661632, y: 0.13962443, z: 0.48698568, w: 0.78056043}
   m_LocalPosition: {x: 10.411053, y: -2.0681748E-05, z: -4.056588E-05}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: -32.159607, y: -35.07184, z: -53.510647}
   m_Children:
-  - {fileID: 4828532872106964}
-  m_Father: {fileID: 4346623781488600}
---- !u!1 &1406489386037758
+  - {fileID: 4588243853083154}
+  m_Father: {fileID: 4602037733190519}
+--- !u!1 &1469183446957542
 GameObject:
   serializedVersion: 3
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_Component:
-  - 4: {fileID: 4828532872106964}
+  - 4: {fileID: 4588243853083154}
   m_Layer: 0
   m_Name: samurairifleman:Sam_rt_ball_jnt
   m_TagString: Untagged
@@ -758,26 +758,26 @@ GameObject:
   m_StaticEditorFlags: 0
   m_IsActive: 1
   m_Icon: {fileID: 0}
---- !u!4 &4828532872106964
+--- !u!4 &4588243853083154
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1406489386037758}
+  m_GameObject: {fileID: 1469183446957542}
   m_LocalRotation: {x: 0.015475766, y: -0.042835686, z: 0.29712725, w: 0.953751}
   m_LocalPosition: {x: 4.7718096, y: -4.2286038E-06, z: 9.63416E-07}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0.23386231, y: 5.2157135, z: -34.596672}
   m_Children: []
-  m_Father: {fileID: 4952545797442603}
---- !u!1 &1397903036793538
+  m_Father: {fileID: 4939587040680974}
+--- !u!1 &1450044626991740
 GameObject:
   serializedVersion: 3
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_Component:
-  - 4: {fileID: 4880030932578082}
+  - 4: {fileID: 4764178473693343}
   m_Layer: 0
   m_Name: samurairifleman:Sam_spine_mid_jnt
   m_TagString: Untagged
@@ -785,27 +785,27 @@ GameObject:
   m_StaticEditorFlags: 0
   m_IsActive: 1
   m_Icon: {fileID: 0}
---- !u!4 &4880030932578082
+--- !u!4 &4764178473693343
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1397903036793538}
+  m_GameObject: {fileID: 1450044626991740}
   m_LocalRotation: {x: 0.9985531, y: 0.053775012, z: -2.8005563E-17, w: 6.282925E-17}
   m_LocalPosition: {x: -5.7468324, y: -2.3536728E-14, z: 1.7721548E-18}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 180, y: -3.5917217E-15, z: -6.1651363}
   m_Children:
-  - {fileID: 4934414432124822}
-  m_Father: {fileID: 4686723154795691}
---- !u!1 &1791055746147558
+  - {fileID: 4601923641274783}
+  m_Father: {fileID: 4383491058255380}
+--- !u!1 &1472672266424275
 GameObject:
   serializedVersion: 3
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_Component:
-  - 4: {fileID: 4934414432124822}
+  - 4: {fileID: 4601923641274783}
   m_Layer: 0
   m_Name: samurairifleman:Sam_spine_hi_jnt
   m_TagString: Untagged
@@ -813,27 +813,27 @@ GameObject:
   m_StaticEditorFlags: 0
   m_IsActive: 1
   m_Icon: {fileID: 0}
---- !u!4 &4934414432124822
+--- !u!4 &4601923641274783
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1791055746147558}
+  m_GameObject: {fileID: 1472672266424275}
   m_LocalRotation: {x: -5.27356E-16, y: -5.551116E-17, z: -0.040967345, w: 0.9991605}
   m_LocalPosition: {x: -7.0330415, y: 8.881784E-16, z: 5.4936265E-16}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: -6.011921E-14, y: 8.831448E-15, z: 4.6958256}
   m_Children:
-  - {fileID: 4556642316086042}
-  m_Father: {fileID: 4880030932578082}
---- !u!1 &1218916697191030
+  - {fileID: 4112184810085053}
+  m_Father: {fileID: 4764178473693343}
+--- !u!1 &1783774674578841
 GameObject:
   serializedVersion: 3
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_Component:
-  - 4: {fileID: 4556642316086042}
+  - 4: {fileID: 4112184810085053}
   m_Layer: 0
   m_Name: samurairifleman:Sam_spine_end_jnt
   m_TagString: Untagged
@@ -841,29 +841,29 @@ GameObject:
   m_StaticEditorFlags: 0
   m_IsActive: 1
   m_Icon: {fileID: 0}
---- !u!4 &4556642316086042
+--- !u!4 &4112184810085053
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1218916697191030}
+  m_GameObject: {fileID: 1783774674578841}
   m_LocalRotation: {x: 0, y: 0, z: 0.13846758, w: 0.990367}
   m_LocalPosition: {x: -6.718205, y: -5.450476E-15, z: 1.7954216E-15}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: -0, z: -15.918362}
   m_Children:
-  - {fileID: 4534624495314461}
-  - {fileID: 4777961442372377}
-  - {fileID: 4067696446486545}
-  m_Father: {fileID: 4934414432124822}
---- !u!1 &1790604589252919
+  - {fileID: 4615990766555778}
+  - {fileID: 4005122883284919}
+  - {fileID: 4483189950676483}
+  m_Father: {fileID: 4601923641274783}
+--- !u!1 &1786310540522172
 GameObject:
   serializedVersion: 3
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_Component:
-  - 4: {fileID: 4534624495314461}
+  - 4: {fileID: 4615990766555778}
   m_Layer: 0
   m_Name: samurairifleman:Sam_lf_clavicle_jnt
   m_TagString: Untagged
@@ -871,27 +871,27 @@ GameObject:
   m_StaticEditorFlags: 0
   m_IsActive: 1
   m_Icon: {fileID: 0}
---- !u!4 &4534624495314461
+--- !u!4 &4615990766555778
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1790604589252919}
+  m_GameObject: {fileID: 1786310540522172}
   m_LocalRotation: {x: -0.49094096, y: 0.6270376, z: -0.4588682, w: -0.39400616}
   m_LocalPosition: {x: -3.4294262, y: 0.15523098, z: -7.07406}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: -144.90654, y: 70.85082, z: 129.23346}
   m_Children:
-  - {fileID: 4539583610580494}
-  m_Father: {fileID: 4556642316086042}
---- !u!1 &1957762517886153
+  - {fileID: 4065905767681885}
+  m_Father: {fileID: 4112184810085053}
+--- !u!1 &1811915580656167
 GameObject:
   serializedVersion: 3
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_Component:
-  - 4: {fileID: 4539583610580494}
+  - 4: {fileID: 4065905767681885}
   m_Layer: 0
   m_Name: samurairifleman:Sam_lf_upArm_jnt
   m_TagString: Untagged
@@ -899,27 +899,27 @@ GameObject:
   m_StaticEditorFlags: 0
   m_IsActive: 1
   m_Icon: {fileID: 0}
---- !u!4 &4539583610580494
+--- !u!4 &4065905767681885
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1957762517886153}
+  m_GameObject: {fileID: 1811915580656167}
   m_LocalRotation: {x: 0.012774451, y: 0.12952325, z: -0.09773586, w: 0.98666525}
   m_LocalPosition: {x: -9.633381, y: -3.887888E-15, z: -1.9531347E-15}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: -0.0065187225, y: -14.956714, z: 11.315015}
   m_Children:
-  - {fileID: 4564836645856200}
-  m_Father: {fileID: 4534624495314461}
---- !u!1 &1224063106890963
+  - {fileID: 4550183147002971}
+  m_Father: {fileID: 4615990766555778}
+--- !u!1 &1681061970546611
 GameObject:
   serializedVersion: 3
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_Component:
-  - 4: {fileID: 4564836645856200}
+  - 4: {fileID: 4550183147002971}
   m_Layer: 0
   m_Name: samurairifleman:Sam_lf_elbow_jnt
   m_TagString: Untagged
@@ -927,27 +927,27 @@ GameObject:
   m_StaticEditorFlags: 0
   m_IsActive: 1
   m_Icon: {fileID: 0}
---- !u!4 &4564836645856200
+--- !u!4 &4550183147002971
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1224063106890963}
+  m_GameObject: {fileID: 1681061970546611}
   m_LocalRotation: {x: -3.978546E-05, y: 0.09415808, z: 3.334309E-06, w: 0.99555725}
   m_LocalPosition: {x: -17.922617, y: -7.760873E-15, z: 4.508157E-15}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: -0.0045841304, y: -10.805729, z: 4.9770377E-05}
   m_Children:
-  - {fileID: 4182929875017076}
-  m_Father: {fileID: 4539583610580494}
---- !u!1 &1787983727657844
+  - {fileID: 4070008559366578}
+  m_Father: {fileID: 4065905767681885}
+--- !u!1 &1554967284446844
 GameObject:
   serializedVersion: 3
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_Component:
-  - 4: {fileID: 4182929875017076}
+  - 4: {fileID: 4070008559366578}
   m_Layer: 0
   m_Name: samurairifleman:Sam_lf_wrist_jnt
   m_TagString: Untagged
@@ -955,27 +955,27 @@ GameObject:
   m_StaticEditorFlags: 0
   m_IsActive: 1
   m_Icon: {fileID: 0}
---- !u!4 &4182929875017076
+--- !u!4 &4070008559366578
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1787983727657844}
+  m_GameObject: {fileID: 1554967284446844}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -9.941963, y: -3.2090874E-15, z: 6.1596315E-18}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: -0, z: 0}
   m_Children:
-  - {fileID: 4460992991349902}
-  m_Father: {fileID: 4564836645856200}
---- !u!1 &1785635200387598
+  - {fileID: 4710651740904227}
+  m_Father: {fileID: 4550183147002971}
+--- !u!1 &1683206008893223
 GameObject:
   serializedVersion: 3
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_Component:
-  - 4: {fileID: 4460992991349902}
+  - 4: {fileID: 4710651740904227}
   m_Layer: 0
   m_Name: samurairifleman:Sam_lf_hand_jnt
   m_TagString: Untagged
@@ -983,29 +983,29 @@ GameObject:
   m_StaticEditorFlags: 0
   m_IsActive: 1
   m_Icon: {fileID: 0}
---- !u!4 &4460992991349902
+--- !u!4 &4710651740904227
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1785635200387598}
+  m_GameObject: {fileID: 1683206008893223}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0, y: 7.1054274E-15, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: -0, z: 0}
   m_Children:
-  - {fileID: 4898518070191422}
-  - {fileID: 4750980227699382}
-  - {fileID: 4303920062830887}
-  m_Father: {fileID: 4182929875017076}
---- !u!1 &1551771658384182
+  - {fileID: 4057847823155308}
+  - {fileID: 4031532412298216}
+  - {fileID: 4677361698380140}
+  m_Father: {fileID: 4070008559366578}
+--- !u!1 &1411842714441091
 GameObject:
   serializedVersion: 3
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_Component:
-  - 4: {fileID: 4898518070191422}
+  - 4: {fileID: 4057847823155308}
   m_Layer: 0
   m_Name: samurairifleman:prop
   m_TagString: Untagged
@@ -1013,26 +1013,26 @@ GameObject:
   m_StaticEditorFlags: 0
   m_IsActive: 1
   m_Icon: {fileID: 0}
---- !u!4 &4898518070191422
+--- !u!4 &4057847823155308
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1551771658384182}
+  m_GameObject: {fileID: 1411842714441091}
   m_LocalRotation: {x: 1.8619892E-05, y: -0.08883754, z: 0.00020876614, w: 0.9960461}
   m_LocalPosition: {x: -4.7506995, y: -8.533731, z: -0.07410321}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 8.423792E-11, y: 10.193471, z: -0.024017802}
   m_Children: []
-  m_Father: {fileID: 4460992991349902}
---- !u!1 &1740719445213215
+  m_Father: {fileID: 4710651740904227}
+--- !u!1 &1715301510442483
 GameObject:
   serializedVersion: 3
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_Component:
-  - 4: {fileID: 4750980227699382}
+  - 4: {fileID: 4031532412298216}
   m_Layer: 0
   m_Name: samurairifleman:Sam_lf_index_a_jnt
   m_TagString: Untagged
@@ -1040,26 +1040,26 @@ GameObject:
   m_StaticEditorFlags: 0
   m_IsActive: 1
   m_Icon: {fileID: 0}
---- !u!4 &4750980227699382
+--- !u!4 &4031532412298216
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1740719445213215}
+  m_GameObject: {fileID: 1715301510442483}
   m_LocalRotation: {x: -0.7180728, y: -0.12488512, z: 0.12503158, w: 0.6731586}
   m_LocalPosition: {x: -5.11003, y: -0.2721733, z: -0.010710032}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: -93.58066, y: -0.6548224, z: -20.347193}
   m_Children: []
-  m_Father: {fileID: 4460992991349902}
---- !u!1 &1850897679886117
+  m_Father: {fileID: 4710651740904227}
+--- !u!1 &1072955078081125
 GameObject:
   serializedVersion: 3
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_Component:
-  - 4: {fileID: 4303920062830887}
+  - 4: {fileID: 4677361698380140}
   m_Layer: 0
   m_Name: samurairifleman:Sam_lf_thumb_a_jnt
   m_TagString: Untagged
@@ -1067,26 +1067,26 @@ GameObject:
   m_StaticEditorFlags: 0
   m_IsActive: 1
   m_Icon: {fileID: 0}
---- !u!4 &4303920062830887
+--- !u!4 &4677361698380140
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1850897679886117}
+  m_GameObject: {fileID: 1072955078081125}
   m_LocalRotation: {x: 0.7551604, y: 0.105086066, z: -0.55192137, w: -0.33774644}
   m_LocalPosition: {x: -2.483104, y: -1.5476404, z: 2.4731827}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: -104.55994, y: -49.693356, z: -55.254204}
   m_Children: []
-  m_Father: {fileID: 4460992991349902}
---- !u!1 &1578910089146995
+  m_Father: {fileID: 4710651740904227}
+--- !u!1 &1692719069661968
 GameObject:
   serializedVersion: 3
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_Component:
-  - 4: {fileID: 4777961442372377}
+  - 4: {fileID: 4005122883284919}
   m_Layer: 0
   m_Name: samurairifleman:Sam_neck_jnt
   m_TagString: Untagged
@@ -1094,27 +1094,27 @@ GameObject:
   m_StaticEditorFlags: 0
   m_IsActive: 1
   m_Icon: {fileID: 0}
---- !u!4 &4777961442372377
+--- !u!4 &4005122883284919
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1578910089146995}
+  m_GameObject: {fileID: 1692719069661968}
   m_LocalRotation: {x: 0.5187279, y: -0.48054278, z: 0.5187279, w: 0.48054278}
   m_LocalPosition: {x: -10.029245, y: 3.5527137E-15, z: 2.224662E-15}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 94.376755, y: 90, z: 0}
   m_Children:
-  - {fileID: 4026161981707958}
-  m_Father: {fileID: 4556642316086042}
---- !u!1 &1891678222721535
+  - {fileID: 4602078959028077}
+  m_Father: {fileID: 4112184810085053}
+--- !u!1 &1141084922195280
 GameObject:
   serializedVersion: 3
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_Component:
-  - 4: {fileID: 4026161981707958}
+  - 4: {fileID: 4602078959028077}
   m_Layer: 0
   m_Name: samurairifleman:Sam_head_a_jnt
   m_TagString: Untagged
@@ -1122,27 +1122,27 @@ GameObject:
   m_StaticEditorFlags: 0
   m_IsActive: 1
   m_Icon: {fileID: 0}
---- !u!4 &4026161981707958
+--- !u!4 &4602078959028077
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1891678222721535}
+  m_GameObject: {fileID: 1141084922195280}
   m_LocalRotation: {x: 0.5054347, y: -0.4945056, z: 0.5054347, w: -0.4945056}
   m_LocalPosition: {x: -2.8229353E-15, y: 4.185132, z: -8.348877E-14}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: -90, y: 1.2524049, z: 90}
   m_Children:
-  - {fileID: 4672615153758921}
-  m_Father: {fileID: 4777961442372377}
---- !u!1 &1727737175667312
+  - {fileID: 4966271606124702}
+  m_Father: {fileID: 4005122883284919}
+--- !u!1 &1232870160597431
 GameObject:
   serializedVersion: 3
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_Component:
-  - 4: {fileID: 4672615153758921}
+  - 4: {fileID: 4966271606124702}
   m_Layer: 0
   m_Name: samurairifleman:Sam_head_b_jnt
   m_TagString: Untagged
@@ -1150,26 +1150,26 @@ GameObject:
   m_StaticEditorFlags: 0
   m_IsActive: 1
   m_Icon: {fileID: 0}
---- !u!4 &4672615153758921
+--- !u!4 &4966271606124702
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1727737175667312}
+  m_GameObject: {fileID: 1232870160597431}
   m_LocalRotation: {x: 0.4744475, y: -0.5243087, z: 0.4744475, w: 0.5243087}
   m_LocalPosition: {x: -47.32424, y: 9.7890115E-15, z: -1.0560342E-14}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 84.28396, y: 90, z: 0}
   m_Children: []
-  m_Father: {fileID: 4026161981707958}
---- !u!1 &1252032412543994
+  m_Father: {fileID: 4602078959028077}
+--- !u!1 &1355775457136093
 GameObject:
   serializedVersion: 3
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_Component:
-  - 4: {fileID: 4067696446486545}
+  - 4: {fileID: 4483189950676483}
   m_Layer: 0
   m_Name: samurairifleman:Sam_rt_clavicle_jnt
   m_TagString: Untagged
@@ -1177,27 +1177,27 @@ GameObject:
   m_StaticEditorFlags: 0
   m_IsActive: 1
   m_Icon: {fileID: 0}
---- !u!4 &4067696446486545
+--- !u!4 &4483189950676483
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1252032412543994}
+  m_GameObject: {fileID: 1355775457136093}
   m_LocalRotation: {x: 0.6270376, y: 0.490941, z: 0.3940062, w: -0.45886824}
   m_LocalPosition: {x: -3.4294693, y: 0.15523413, z: 7.07406}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: -144.90654, y: 70.85082, z: -50.766544}
   m_Children:
-  - {fileID: 4783247013657112}
-  m_Father: {fileID: 4556642316086042}
---- !u!1 &1970135436661055
+  - {fileID: 4704572574128058}
+  m_Father: {fileID: 4112184810085053}
+--- !u!1 &1265393755240971
 GameObject:
   serializedVersion: 3
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_Component:
-  - 4: {fileID: 4783247013657112}
+  - 4: {fileID: 4704572574128058}
   m_Layer: 0
   m_Name: samurairifleman:Sam_rt_upArm_jnt
   m_TagString: Untagged
@@ -1205,27 +1205,27 @@ GameObject:
   m_StaticEditorFlags: 0
   m_IsActive: 1
   m_Icon: {fileID: 0}
---- !u!4 &4783247013657112
+--- !u!4 &4704572574128058
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1970135436661055}
+  m_GameObject: {fileID: 1265393755240971}
   m_LocalRotation: {x: 0.012774451, y: 0.12952325, z: -0.09773586, w: 0.98666525}
   m_LocalPosition: {x: 9.633389, y: 6.45044E-05, z: 8.862536E-07}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: -0.0065187225, y: -14.956714, z: 11.315015}
   m_Children:
-  - {fileID: 4003797505711791}
-  m_Father: {fileID: 4067696446486545}
---- !u!1 &1460188900811456
+  - {fileID: 4055575502970567}
+  m_Father: {fileID: 4483189950676483}
+--- !u!1 &1943861551612278
 GameObject:
   serializedVersion: 3
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_Component:
-  - 4: {fileID: 4003797505711791}
+  - 4: {fileID: 4055575502970567}
   m_Layer: 0
   m_Name: samurairifleman:Sam_rt_elbow_jnt
   m_TagString: Untagged
@@ -1233,27 +1233,27 @@ GameObject:
   m_StaticEditorFlags: 0
   m_IsActive: 1
   m_Icon: {fileID: 0}
---- !u!4 &4003797505711791
+--- !u!4 &4055575502970567
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1460188900811456}
+  m_GameObject: {fileID: 1943861551612278}
   m_LocalRotation: {x: -3.978546E-05, y: 0.09415808, z: 3.334309E-06, w: 0.99555725}
   m_LocalPosition: {x: 17.922625, y: -6.696746E-05, z: 3.5255205E-06}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: -0.0045841304, y: -10.805729, z: 4.9770377E-05}
   m_Children:
-  - {fileID: 4294911727740042}
-  m_Father: {fileID: 4783247013657112}
---- !u!1 &1267672108765867
+  - {fileID: 4159602618833463}
+  m_Father: {fileID: 4704572574128058}
+--- !u!1 &1913790206573710
 GameObject:
   serializedVersion: 3
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_Component:
-  - 4: {fileID: 4294911727740042}
+  - 4: {fileID: 4159602618833463}
   m_Layer: 0
   m_Name: samurairifleman:Sam_rt_wrist_jnt
   m_TagString: Untagged
@@ -1261,27 +1261,27 @@ GameObject:
   m_StaticEditorFlags: 0
   m_IsActive: 1
   m_Icon: {fileID: 0}
---- !u!4 &4294911727740042
+--- !u!4 &4159602618833463
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1267672108765867}
+  m_GameObject: {fileID: 1913790206573710}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 9.941929, y: 6.755416E-05, z: -1.15380535E-05}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: -0, z: 0}
   m_Children:
-  - {fileID: 4523805164449718}
-  m_Father: {fileID: 4003797505711791}
---- !u!1 &1681876257937069
+  - {fileID: 4700544123077285}
+  m_Father: {fileID: 4055575502970567}
+--- !u!1 &1318122536923545
 GameObject:
   serializedVersion: 3
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_Component:
-  - 4: {fileID: 4523805164449718}
+  - 4: {fileID: 4700544123077285}
   m_Layer: 0
   m_Name: samurairifleman:Sam_rt_hand_jnt
   m_TagString: Untagged
@@ -1289,28 +1289,28 @@ GameObject:
   m_StaticEditorFlags: 0
   m_IsActive: 1
   m_Icon: {fileID: 0}
---- !u!4 &4523805164449718
+--- !u!4 &4700544123077285
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1681876257937069}
+  m_GameObject: {fileID: 1318122536923545}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 7.1054274E-15, y: 7.1054274E-15, z: -3.5527137E-15}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: -0, z: 0}
   m_Children:
-  - {fileID: 4447956772382935}
-  - {fileID: 4515498336543474}
-  m_Father: {fileID: 4294911727740042}
---- !u!1 &1888245840289800
+  - {fileID: 4728425900991482}
+  - {fileID: 4155729629591242}
+  m_Father: {fileID: 4159602618833463}
+--- !u!1 &1215269847263992
 GameObject:
   serializedVersion: 3
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_Component:
-  - 4: {fileID: 4447956772382935}
+  - 4: {fileID: 4728425900991482}
   m_Layer: 0
   m_Name: samurairifleman:Sam_rt_index_a_jnt
   m_TagString: Untagged
@@ -1318,26 +1318,26 @@ GameObject:
   m_StaticEditorFlags: 0
   m_IsActive: 1
   m_Icon: {fileID: 0}
---- !u!4 &4447956772382935
+--- !u!4 &4728425900991482
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1888245840289800}
+  m_GameObject: {fileID: 1215269847263992}
   m_LocalRotation: {x: -0.7180728, y: -0.12488512, z: 0.12503158, w: 0.6731586}
   m_LocalPosition: {x: 5.1100497, y: 0.2721421, z: 0.010717965}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: -93.58066, y: -0.6548224, z: -20.347193}
   m_Children: []
-  m_Father: {fileID: 4523805164449718}
---- !u!1 &1677799807342256
+  m_Father: {fileID: 4700544123077285}
+--- !u!1 &1069643616288116
 GameObject:
   serializedVersion: 3
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_Component:
-  - 4: {fileID: 4515498336543474}
+  - 4: {fileID: 4155729629591242}
   m_Layer: 0
   m_Name: samurairifleman:Sam_rt_thumb_a_jnt
   m_TagString: Untagged
@@ -1345,26 +1345,26 @@ GameObject:
   m_StaticEditorFlags: 0
   m_IsActive: 1
   m_Icon: {fileID: 0}
---- !u!4 &4515498336543474
+--- !u!4 &4155729629591242
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1677799807342256}
+  m_GameObject: {fileID: 1069643616288116}
   m_LocalRotation: {x: 0.7551604, y: 0.105086066, z: -0.55192137, w: -0.33774644}
   m_LocalPosition: {x: 2.4831405, y: 1.547641, z: -2.4731755}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: -104.55994, y: -49.693356, z: -55.254204}
   m_Children: []
-  m_Father: {fileID: 4523805164449718}
---- !u!1 &1283277303872366
+  m_Father: {fileID: 4700544123077285}
+--- !u!1 &1611821891780285
 GameObject:
   serializedVersion: 3
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_Component:
-  - 4: {fileID: 4129828805991190}
+  - 4: {fileID: 4514021781259719}
   m_Layer: 0
   m_Name: samurairifleman:weightSpine_grp
   m_TagString: Untagged
@@ -1372,26 +1372,26 @@ GameObject:
   m_StaticEditorFlags: 0
   m_IsActive: 1
   m_Icon: {fileID: 0}
---- !u!4 &4129828805991190
+--- !u!4 &4514021781259719
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1283277303872366}
+  m_GameObject: {fileID: 1611821891780285}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: -0, z: 0}
   m_Children: []
-  m_Father: {fileID: 4780287037141338}
---- !u!1 &1084556107356816
+  m_Father: {fileID: 4075346846389504}
+--- !u!1 &1415004984913558
 GameObject:
   serializedVersion: 3
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_Component:
-  - 4: {fileID: 4369486217348430}
+  - 4: {fileID: 4157010046989107}
   m_Layer: 0
   m_Name: samurairifleman:samuraiArcher_new:samuraiArcher
   m_TagString: Untagged
@@ -1399,15 +1399,15 @@ GameObject:
   m_StaticEditorFlags: 0
   m_IsActive: 1
   m_Icon: {fileID: 0}
---- !u!4 &4369486217348430
+--- !u!4 &4157010046989107
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1084556107356816}
+  m_GameObject: {fileID: 1415004984913558}
   m_LocalRotation: {x: 0, y: -0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
-  m_Father: {fileID: 4521052971046531}
+  m_Father: {fileID: 4789758435592835}

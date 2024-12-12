@@ -9,22 +9,22 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1251985233918905}
+  m_RootGameObject: {fileID: 1481592208624883}
   m_IsPrefabParent: 1
   m_IsExploded: 0
---- !u!1 &1251985233918905
+--- !u!1 &1481592208624883
 GameObject:
   serializedVersion: 3
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_Component:
-  - 4: {fileID: 4205834237319808}
-  - 114: {fileID: 114436556360296525}
-  - 114: {fileID: 114739073061750860}
-  - 114: {fileID: 114190187957108568}
-  - 114: {fileID: 114876065504623696}
-  - 114: {fileID: 114353220043159825}
+  - 4: {fileID: 4031724877766870}
+  - 114: {fileID: 114282313424830845}
+  - 114: {fileID: 114150582586375691}
+  - 114: {fileID: 114644373334076093}
+  - 114: {fileID: 114290918564282697}
+  - 114: {fileID: 114132919606454691}
   m_Layer: 0
   m_Name: MuzzleFlash
   m_TagString: Untagged
@@ -32,26 +32,26 @@ GameObject:
   m_StaticEditorFlags: 0
   m_IsActive: 1
   m_Icon: {fileID: 0}
---- !u!4 &4205834237319808
+--- !u!4 &4031724877766870
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1251985233918905}
+  m_GameObject: {fileID: 1481592208624883}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 620.36224, y: 122.84409, z: 362.60583}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
   m_Children:
-  - {fileID: 4107859336283540}
-  - {fileID: 4174545309266879}
+  - {fileID: 4647221722663681}
+  - {fileID: 4916266514931647}
   m_Father: {fileID: 0}
---- !u!114 &114436556360296525
+--- !u!114 &114282313424830845
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1251985233918905}
+  m_GameObject: {fileID: 1481592208624883}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bbee05443b9b67f14985305ef056de27, type: 3}
@@ -59,12 +59,12 @@ MonoBehaviour:
   sourcePrefabPath: Assets/Resources/FX/MuzzleFlash.prefab
   basePrefabPath:
   exemptObjects: []
---- !u!114 &114739073061750860
+--- !u!114 &114150582586375691
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1251985233918905}
+  m_GameObject: {fileID: 1481592208624883}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1425cfafe549424a6c5c0c3f2b407eaf, type: 3}
@@ -72,22 +72,22 @@ MonoBehaviour:
   deleteWhenAllChildrenDead: 1
   autoDeleteAfterTime: 0.7
   letParticlesFinishForTimedDelete: 1
---- !u!114 &114190187957108568
+--- !u!114 &114644373334076093
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1251985233918905}
+  m_GameObject: {fileID: 1481592208624883}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 30ac76d5c958184d09bab5d0901acb79, type: 3}
   m_Name:
---- !u!114 &114876065504623696
+--- !u!114 &114290918564282697
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1251985233918905}
+  m_GameObject: {fileID: 1481592208624883}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 39dbae7d6e4503ccce4e243938d2e0ad, type: 3}
@@ -101,9 +101,9 @@ MonoBehaviour:
   events:
   - name: Spawn
     clips:
-    - {fileID: 8300000, guid: 52af238fe86c5cc44b801939c625de64, type: 3}
-    - {fileID: 8300000, guid: 9bd9649ea00bc6f4f8fa363252b37d60, type: 3}
-    - {fileID: 8300000, guid: 7bd4a003b5d505a45819ed045a348d74, type: 3}
+    - {fileID: 8300000, guid: 908a7a8a4d0c234439612ecde7251ee9, type: 3}
+    - {fileID: 8300000, guid: 121ab777d4399d54781dca15ca846814, type: 3}
+    - {fileID: 8300000, guid: 91c5b297f4fbe5e48a9f13026a2378cc, type: 3}
     percentChanceNone: 0
     pitchVariance: 0.1
     volume: 0
@@ -118,28 +118,28 @@ MonoBehaviour:
     minDistanceOverride: 500
     maxDistanceOverride: 5000
     useLogarithmicRolloff: 0
---- !u!114 &114353220043159825
+--- !u!114 &114132919606454691
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1251985233918905}
+  m_GameObject: {fileID: 1481592208624883}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 0}
   m_Name:
---- !u!1 &1883400757128499
+--- !u!1 &1927087345248288
 GameObject:
   serializedVersion: 3
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_Component:
-  - 4: {fileID: 4107859336283540}
-  - 15: {fileID: 15464657778412786}
-  - 12: {fileID: 12941437725325364}
-  - 26: {fileID: 26262837418263861}
-  - 114: {fileID: 114581028141182915}
+  - 4: {fileID: 4647221722663681}
+  - 15: {fileID: 15999107048972074}
+  - 12: {fileID: 12740231249095245}
+  - 26: {fileID: 26900938608381662}
+  - 114: {fileID: 114254204260664586}
   m_Layer: 0
   m_Name: Blam
   m_TagString: Untagged
@@ -147,25 +147,25 @@ GameObject:
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
   m_Icon: {fileID: 0}
---- !u!4 &4107859336283540
+--- !u!4 &4647221722663681
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1883400757128499}
+  m_GameObject: {fileID: 1927087345248288}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 56}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
   m_Children: []
-  m_Father: {fileID: 4205834237319808}
---- !u!15 &15464657778412786
+  m_Father: {fileID: 4031724877766870}
+--- !u!15 &15999107048972074
 EllipsoidParticleEmitter:
   serializedVersion: 2
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1883400757128499}
+  m_GameObject: {fileID: 1927087345248288}
   m_Enabled: 1
   m_Emit: 1
   minSize: 80
@@ -186,12 +186,12 @@ EllipsoidParticleEmitter:
   m_OneShot: 1
   m_Ellipsoid: {x: 1, y: 1, z: 1}
   m_MinEmitterRange: 0
---- !u!12 &12941437725325364
+--- !u!12 &12740231249095245
 ParticleAnimator:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1883400757128499}
+  m_GameObject: {fileID: 1927087345248288}
   Does Animate Color?: 1
   colorAnimation[0]:
     serializedVersion: 2
@@ -216,20 +216,20 @@ ParticleAnimator:
   damping: 1
   stopSimulation: 0
   autodestruct: 1
---- !u!26 &26262837418263861
+--- !u!26 &26900938608381662
 ParticleRenderer:
   serializedVersion: 2
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1883400757128499}
+  m_GameObject: {fileID: 1927087345248288}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: a9914e51c7a15de41a172e1ae8bd5e69, type: 2}
+  - {fileID: 2100000, guid: 222d37f8f1a18fa4cbb92b215cf99279, type: 2}
   m_SubsetIndices: []
   m_StaticBatchRoot: {fileID: 0}
   m_ScaleInLightmap: 1
@@ -242,33 +242,33 @@ ParticleRenderer:
     x Tile: 1
     y Tile: 1
     cycles: 1
---- !u!114 &114581028141182915
+--- !u!114 &114254204260664586
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1883400757128499}
+  m_GameObject: {fileID: 1927087345248288}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dac5479c15acccf451f7d334db7f4f15, type: 3}
   m_Name:
   materials:
-  - {fileID: 2100000, guid: a9914e51c7a15de41a172e1ae8bd5e69, type: 2}
-  - {fileID: 2100000, guid: 768b9225235db1148840993285600d5c, type: 2}
-  - {fileID: 2100000, guid: e752a23978bfa4b4690c00131db37982, type: 2}
-  - {fileID: 2100000, guid: 907ec57b76d6d844fa3c8928ca55009d, type: 2}
---- !u!1 &1869292113099388
+  - {fileID: 2100000, guid: 222d37f8f1a18fa4cbb92b215cf99279, type: 2}
+  - {fileID: 2100000, guid: 92351045427adb24d952c9523d03c241, type: 2}
+  - {fileID: 2100000, guid: 95d01e5b923966d4d9e306dc83b8b689, type: 2}
+  - {fileID: 2100000, guid: 8f5f4cf120124464eba6c23e5ec8a44e, type: 2}
+--- !u!1 &1793767511263144
 GameObject:
   serializedVersion: 3
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_Component:
-  - 4: {fileID: 4174545309266879}
-  - 15: {fileID: 15546746287136484}
-  - 12: {fileID: 12129631803753467}
-  - 26: {fileID: 26191059502819053}
-  - 114: {fileID: 114655717296298884}
+  - 4: {fileID: 4916266514931647}
+  - 15: {fileID: 15181152389334488}
+  - 12: {fileID: 12312069281353944}
+  - 26: {fileID: 26252670896265297}
+  - 114: {fileID: 114388249913829175}
   m_Layer: 0
   m_Name: MuzzleFlashMain
   m_TagString: Untagged
@@ -276,25 +276,25 @@ GameObject:
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
   m_Icon: {fileID: 0}
---- !u!4 &4174545309266879
+--- !u!4 &4916266514931647
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1869292113099388}
+  m_GameObject: {fileID: 1793767511263144}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 56}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
   m_Children: []
-  m_Father: {fileID: 4205834237319808}
---- !u!15 &15546746287136484
+  m_Father: {fileID: 4031724877766870}
+--- !u!15 &15181152389334488
 EllipsoidParticleEmitter:
   serializedVersion: 2
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1869292113099388}
+  m_GameObject: {fileID: 1793767511263144}
   m_Enabled: 1
   m_Emit: 1
   minSize: 30
@@ -315,12 +315,12 @@ EllipsoidParticleEmitter:
   m_OneShot: 1
   m_Ellipsoid: {x: 1, y: 1, z: 1}
   m_MinEmitterRange: 0
---- !u!12 &12129631803753467
+--- !u!12 &12312069281353944
 ParticleAnimator:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1869292113099388}
+  m_GameObject: {fileID: 1793767511263144}
   Does Animate Color?: 1
   colorAnimation[0]:
     serializedVersion: 2
@@ -345,20 +345,20 @@ ParticleAnimator:
   damping: 1
   stopSimulation: 0
   autodestruct: 1
---- !u!26 &26191059502819053
+--- !u!26 &26252670896265297
 ParticleRenderer:
   serializedVersion: 2
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1869292113099388}
+  m_GameObject: {fileID: 1793767511263144}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: 83275795f6cea7e47a66e863b8a331e8, type: 2}
+  - {fileID: 2100000, guid: 816d7f63082941741ac65e5ad1f98049, type: 2}
   m_SubsetIndices: []
   m_StaticBatchRoot: {fileID: 0}
   m_ScaleInLightmap: 1
@@ -371,12 +371,12 @@ ParticleRenderer:
     x Tile: 1
     y Tile: 1
     cycles: 1
---- !u!114 &114655717296298884
+--- !u!114 &114388249913829175
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1869292113099388}
+  m_GameObject: {fileID: 1793767511263144}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4e70606b7f418d7ad0fe69fe0125f288, type: 3}

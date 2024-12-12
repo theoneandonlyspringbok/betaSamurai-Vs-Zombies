@@ -9,20 +9,20 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1636981341534337}
+  m_RootGameObject: {fileID: 1256411968315706}
   m_IsPrefabParent: 1
   m_IsExploded: 0
---- !u!1 &1636981341534337
+--- !u!1 &1256411968315706
 GameObject:
   serializedVersion: 3
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_Component:
-  - 4: {fileID: 4642690553842752}
-  - 114: {fileID: 114376127507471325}
-  - 114: {fileID: 114208269543981585}
-  - 114: {fileID: 114331890385884283}
+  - 4: {fileID: 4392125133974188}
+  - 114: {fileID: 114067816196833018}
+  - 114: {fileID: 114094836272151070}
+  - 114: {fileID: 114337811044077133}
   m_Layer: 0
   m_Name: TeleportEnemy
   m_TagString: Untagged
@@ -30,25 +30,25 @@ GameObject:
   m_StaticEditorFlags: 0
   m_IsActive: 1
   m_Icon: {fileID: 0}
---- !u!4 &4642690553842752
+--- !u!4 &4392125133974188
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1636981341534337}
+  m_GameObject: {fileID: 1256411968315706}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 1559.448, y: 909.4416, z: 467.36676}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
   m_Children:
-  - {fileID: 4027620946503674}
+  - {fileID: 4086565299009329}
   m_Father: {fileID: 0}
---- !u!114 &114376127507471325
+--- !u!114 &114067816196833018
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1636981341534337}
+  m_GameObject: {fileID: 1256411968315706}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bbee05443b9b67f14985305ef056de27, type: 3}
@@ -56,14 +56,14 @@ MonoBehaviour:
   sourcePrefabPath: Assets/Resources/FX/TeleportEnemy.prefab
   basePrefabPath: Assets/Resources/FX/TeleportAlly.prefab
   exemptObjects:
-  - {fileID: 114102664065217570, guid: 6ce54a27e80b3b14a95c90ada973552d, type: 2}
-  - {fileID: 12776861369596259}
---- !u!114 &114208269543981585
+  - {fileID: 114908250205698593, guid: 0fabd86539b4dbe468ef325ffb90a5ec, type: 2}
+  - {fileID: 12421293711484898}
+--- !u!114 &114094836272151070
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1636981341534337}
+  m_GameObject: {fileID: 1256411968315706}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1425cfafe549424a6c5c0c3f2b407eaf, type: 3}
@@ -71,27 +71,27 @@ MonoBehaviour:
   deleteWhenAllChildrenDead: 1
   autoDeleteAfterTime: 0
   letParticlesFinishForTimedDelete: 0
---- !u!114 &114331890385884283
+--- !u!114 &114337811044077133
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1636981341534337}
+  m_GameObject: {fileID: 1256411968315706}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 0}
   m_Name:
---- !u!1 &1403728898557504
+--- !u!1 &1114695659273578
 GameObject:
   serializedVersion: 3
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_Component:
-  - 4: {fileID: 4027620946503674}
-  - 15: {fileID: 15781531303581434}
-  - 12: {fileID: 12776861369596259}
-  - 26: {fileID: 26116570053534073}
+  - 4: {fileID: 4086565299009329}
+  - 15: {fileID: 15674998777377911}
+  - 12: {fileID: 12421293711484898}
+  - 26: {fileID: 26969939025100482}
   m_Layer: 0
   m_Name: InnerLight
   m_TagString: Untagged
@@ -99,25 +99,25 @@ GameObject:
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
   m_Icon: {fileID: 0}
---- !u!4 &4027620946503674
+--- !u!4 &4086565299009329
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1403728898557504}
+  m_GameObject: {fileID: 1114695659273578}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 19.922485, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
   m_Children: []
-  m_Father: {fileID: 4642690553842752}
---- !u!15 &15781531303581434
+  m_Father: {fileID: 4392125133974188}
+--- !u!15 &15674998777377911
 EllipsoidParticleEmitter:
   serializedVersion: 2
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1403728898557504}
+  m_GameObject: {fileID: 1114695659273578}
   m_Enabled: 1
   m_Emit: 1
   minSize: 40
@@ -138,12 +138,12 @@ EllipsoidParticleEmitter:
   m_OneShot: 1
   m_Ellipsoid: {x: 0, y: 0, z: 0}
   m_MinEmitterRange: 0
---- !u!12 &12776861369596259
+--- !u!12 &12421293711484898
 ParticleAnimator:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1403728898557504}
+  m_GameObject: {fileID: 1114695659273578}
   Does Animate Color?: 1
   colorAnimation[0]:
     serializedVersion: 2
@@ -168,20 +168,20 @@ ParticleAnimator:
   damping: 1
   stopSimulation: 0
   autodestruct: 1
---- !u!26 &26116570053534073
+--- !u!26 &26969939025100482
 ParticleRenderer:
   serializedVersion: 2
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1403728898557504}
+  m_GameObject: {fileID: 1114695659273578}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: 64a55e45cb2c7434b83bbb33f0e9a4f4, type: 2}
+  - {fileID: 2100000, guid: 263ad02ff632d424e897303b91ec91d0, type: 2}
   m_SubsetIndices: []
   m_StaticBatchRoot: {fileID: 0}
   m_ScaleInLightmap: 1

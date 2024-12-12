@@ -9,19 +9,19 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1683052350188791}
+  m_RootGameObject: {fileID: 1867443426195427}
   m_IsPrefabParent: 1
   m_IsExploded: 0
---- !u!1 &1683052350188791
+--- !u!1 &1867443426195427
 GameObject:
   serializedVersion: 3
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_Component:
-  - 4: {fileID: 4428406082418550}
-  - 111: {fileID: 111583516372148740}
-  - 114: {fileID: 114482257958053017}
+  - 4: {fileID: 4845230021007114}
+  - 111: {fileID: 111134616999756460}
+  - 114: {fileID: 114238719207295604}
   m_Layer: 0
   m_Name: farmersword
   m_TagString: Untagged
@@ -29,26 +29,26 @@ GameObject:
   m_StaticEditorFlags: 0
   m_IsActive: 1
   m_Icon: {fileID: 0}
---- !u!4 &4428406082418550
+--- !u!4 &4845230021007114
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1683052350188791}
+  m_GameObject: {fileID: 1867443426195427}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0, y: -8.881784E-16, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: -0, z: 0}
   m_Children:
-  - {fileID: 4965507644150485}
+  - {fileID: 4945078480836141}
   m_Father: {fileID: 0}
---- !u!111 &111583516372148740
+--- !u!111 &111134616999756460
 Animation:
   serializedVersion: 3
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1683052350188791}
+  m_GameObject: {fileID: 1867443426195427}
   m_Enabled: 1
   m_Animation: {fileID: 0}
   m_Animations: []
@@ -59,12 +59,12 @@ Animation:
   m_UserAABB:
     m_Center: {x: 0, y: 0, z: 0}
     m_Extent: {x: 0, y: 0, z: 0}
---- !u!114 &114482257958053017
+--- !u!114 &114238719207295604
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1683052350188791}
+  m_GameObject: {fileID: 1867443426195427}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bbee05443b9b67f14985305ef056de27, type: 3}
@@ -72,16 +72,16 @@ MonoBehaviour:
   sourcePrefabPath: Assets/Resources/Props/farmersword.fbx
   basePrefabPath:
   exemptObjects: []
---- !u!1 &1544318815575683
+--- !u!1 &1566365126893226
 GameObject:
   serializedVersion: 3
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_Component:
-  - 4: {fileID: 4965507644150485}
-  - 33: {fileID: 33016946521127399}
-  - 23: {fileID: 23358451447175614}
+  - 4: {fileID: 4945078480836141}
+  - 33: {fileID: 33841207929224819}
+  - 23: {fileID: 23029546716300682}
   m_Layer: 0
   m_Name: farmer_mesh:Blade
   m_TagString: Untagged
@@ -89,31 +89,31 @@ GameObject:
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
   m_Icon: {fileID: 0}
---- !u!4 &4965507644150485
+--- !u!4 &4945078480836141
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1544318815575683}
+  m_GameObject: {fileID: 1566365126893226}
   m_LocalRotation: {x: 0, y: 0, z: 0.73627335, w: 0.6766842}
   m_LocalPosition: {x: 0.6917564, y: -0.90808207, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: -0, z: -94.82984}
   m_Children: []
-  m_Father: {fileID: 4428406082418550}
---- !u!33 &33016946521127399
+  m_Father: {fileID: 4845230021007114}
+--- !u!33 &33841207929224819
 MeshFilter:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1544318815575683}
-  m_Mesh: {fileID: 4300000, guid: 5e27977080a79c846b7edee595498d9a, type: 2}
---- !u!23 &23358451447175614
+  m_GameObject: {fileID: 1566365126893226}
+  m_Mesh: {fileID: 4300000, guid: 198301321be57534b9c0f07e98d03688, type: 2}
+--- !u!23 &23029546716300682
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1544318815575683}
+  m_GameObject: {fileID: 1566365126893226}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1

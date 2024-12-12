@@ -9,22 +9,22 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1918856735237210}
+  m_RootGameObject: {fileID: 1567853798175884}
   m_IsPrefabParent: 1
   m_IsExploded: 0
---- !u!1 &1918856735237210
+--- !u!1 &1567853798175884
 GameObject:
   serializedVersion: 3
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_Component:
-  - 4: {fileID: 4051847875102161}
-  - 15: {fileID: 15672850148332282}
-  - 12: {fileID: 12169606962908400}
-  - 26: {fileID: 26394322662449801}
-  - 114: {fileID: 114376711036770383}
-  - 114: {fileID: 114842476868846477}
+  - 4: {fileID: 4998074237603654}
+  - 15: {fileID: 15329713156436311}
+  - 12: {fileID: 12631846728491613}
+  - 26: {fileID: 26244825137236307}
+  - 114: {fileID: 114721963841207959}
+  - 114: {fileID: 114669016062679050}
   m_Layer: 0
   m_Name: DustExplosion
   m_TagString: Untagged
@@ -32,25 +32,25 @@ GameObject:
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
   m_Icon: {fileID: 0}
---- !u!4 &4051847875102161
+--- !u!4 &4998074237603654
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1918856735237210}
+  m_GameObject: {fileID: 1567853798175884}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -266.11984, y: 18.534256, z: -25.247704}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
   m_Children: []
   m_Father: {fileID: 0}
---- !u!15 &15672850148332282
+--- !u!15 &15329713156436311
 EllipsoidParticleEmitter:
   serializedVersion: 2
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1918856735237210}
+  m_GameObject: {fileID: 1567853798175884}
   m_Enabled: 1
   m_Emit: 1
   minSize: 30
@@ -71,12 +71,12 @@ EllipsoidParticleEmitter:
   m_OneShot: 1
   m_Ellipsoid: {x: 1, y: 3, z: 1}
   m_MinEmitterRange: 0
---- !u!12 &12169606962908400
+--- !u!12 &12631846728491613
 ParticleAnimator:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1918856735237210}
+  m_GameObject: {fileID: 1567853798175884}
   Does Animate Color?: 1
   colorAnimation[0]:
     serializedVersion: 2
@@ -101,13 +101,13 @@ ParticleAnimator:
   damping: 1
   stopSimulation: 0
   autodestruct: 1
---- !u!26 &26394322662449801
+--- !u!26 &26244825137236307
 ParticleRenderer:
   serializedVersion: 2
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1918856735237210}
+  m_GameObject: {fileID: 1567853798175884}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -127,12 +127,12 @@ ParticleRenderer:
     x Tile: 1
     y Tile: 1
     cycles: 1
---- !u!114 &114376711036770383
+--- !u!114 &114721963841207959
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1918856735237210}
+  m_GameObject: {fileID: 1567853798175884}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bbee05443b9b67f14985305ef056de27, type: 3}
@@ -140,12 +140,12 @@ MonoBehaviour:
   sourcePrefabPath: Assets/Resources/FX/DustExplosion.prefab
   basePrefabPath:
   exemptObjects: []
---- !u!114 &114842476868846477
+--- !u!114 &114669016062679050
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1918856735237210}
+  m_GameObject: {fileID: 1567853798175884}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 0}

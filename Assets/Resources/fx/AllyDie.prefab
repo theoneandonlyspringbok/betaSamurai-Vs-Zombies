@@ -9,20 +9,20 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1915256596672170}
+  m_RootGameObject: {fileID: 1996344902828194}
   m_IsPrefabParent: 1
   m_IsExploded: 0
---- !u!1 &1915256596672170
+--- !u!1 &1996344902828194
 GameObject:
   serializedVersion: 3
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_Component:
-  - 4: {fileID: 4558414946854206}
-  - 114: {fileID: 114977639832954051}
-  - 114: {fileID: 114063120332183661}
-  - 114: {fileID: 114835469035022557}
+  - 4: {fileID: 4014922707902732}
+  - 114: {fileID: 114138174660732910}
+  - 114: {fileID: 114611125906456596}
+  - 114: {fileID: 114178613924914236}
   m_Layer: 0
   m_Name: AllyDie
   m_TagString: Untagged
@@ -30,25 +30,25 @@ GameObject:
   m_StaticEditorFlags: 0
   m_IsActive: 1
   m_Icon: {fileID: 0}
---- !u!4 &4558414946854206
+--- !u!4 &4014922707902732
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1915256596672170}
+  m_GameObject: {fileID: 1996344902828194}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 649.91034, y: 250.4755, z: 575.3436}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
   m_Children:
-  - {fileID: 4803201445164776}
+  - {fileID: 4911697332925127}
   m_Father: {fileID: 0}
---- !u!114 &114977639832954051
+--- !u!114 &114138174660732910
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1915256596672170}
+  m_GameObject: {fileID: 1996344902828194}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bbee05443b9b67f14985305ef056de27, type: 3}
@@ -56,12 +56,12 @@ MonoBehaviour:
   sourcePrefabPath: Assets/Resources/FX/AllyDie.prefab
   basePrefabPath:
   exemptObjects: []
---- !u!114 &114063120332183661
+--- !u!114 &114611125906456596
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1915256596672170}
+  m_GameObject: {fileID: 1996344902828194}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1425cfafe549424a6c5c0c3f2b407eaf, type: 3}
@@ -69,28 +69,28 @@ MonoBehaviour:
   deleteWhenAllChildrenDead: 1
   autoDeleteAfterTime: 0.1
   letParticlesFinishForTimedDelete: 1
---- !u!114 &114835469035022557
+--- !u!114 &114178613924914236
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1915256596672170}
+  m_GameObject: {fileID: 1996344902828194}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 0}
   m_Name:
---- !u!1 &1452846702044655
+--- !u!1 &1207145015710409
 GameObject:
   serializedVersion: 3
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_Component:
-  - 4: {fileID: 4803201445164776}
-  - 15: {fileID: 15821112157203851}
-  - 12: {fileID: 12100714354189213}
-  - 26: {fileID: 26363455336635440}
-  - 114: {fileID: 114975246834834428}
+  - 4: {fileID: 4911697332925127}
+  - 15: {fileID: 15688242813347533}
+  - 12: {fileID: 12470178381743293}
+  - 26: {fileID: 26045571874410190}
+  - 114: {fileID: 114159169477921179}
   m_Layer: 0
   m_Name: AllyDieMain
   m_TagString: Untagged
@@ -98,25 +98,25 @@ GameObject:
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
   m_Icon: {fileID: 0}
---- !u!4 &4803201445164776
+--- !u!4 &4911697332925127
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1452846702044655}
+  m_GameObject: {fileID: 1207145015710409}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
   m_Children: []
-  m_Father: {fileID: 4558414946854206}
---- !u!15 &15821112157203851
+  m_Father: {fileID: 4014922707902732}
+--- !u!15 &15688242813347533
 EllipsoidParticleEmitter:
   serializedVersion: 2
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1452846702044655}
+  m_GameObject: {fileID: 1207145015710409}
   m_Enabled: 1
   m_Emit: 1
   minSize: 300
@@ -137,12 +137,12 @@ EllipsoidParticleEmitter:
   m_OneShot: 0
   m_Ellipsoid: {x: 12, y: 12, z: 12}
   m_MinEmitterRange: 0
---- !u!12 &12100714354189213
+--- !u!12 &12470178381743293
 ParticleAnimator:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1452846702044655}
+  m_GameObject: {fileID: 1207145015710409}
   Does Animate Color?: 1
   colorAnimation[0]:
     serializedVersion: 2
@@ -167,20 +167,20 @@ ParticleAnimator:
   damping: 1
   stopSimulation: 0
   autodestruct: 0
---- !u!26 &26363455336635440
+--- !u!26 &26045571874410190
 ParticleRenderer:
   serializedVersion: 2
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1452846702044655}
+  m_GameObject: {fileID: 1207145015710409}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: 234c113843fd2b541b68ea1a9f550610, type: 2}
+  - {fileID: 2100000, guid: 055a5064e58e26045877a1e7962a61dc, type: 2}
   m_SubsetIndices: []
   m_StaticBatchRoot: {fileID: 0}
   m_ScaleInLightmap: 1
@@ -193,12 +193,12 @@ ParticleRenderer:
     x Tile: 1
     y Tile: 1
     cycles: 1
---- !u!114 &114975246834834428
+--- !u!114 &114159169477921179
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1452846702044655}
+  m_GameObject: {fileID: 1207145015710409}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4e70606b7f418d7ad0fe69fe0125f288, type: 3}

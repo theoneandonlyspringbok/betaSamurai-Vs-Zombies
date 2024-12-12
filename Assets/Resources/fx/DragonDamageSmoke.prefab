@@ -9,19 +9,19 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1072274767030674}
+  m_RootGameObject: {fileID: 1369558371271175}
   m_IsPrefabParent: 1
   m_IsExploded: 0
---- !u!1 &1072274767030674
+--- !u!1 &1369558371271175
 GameObject:
   serializedVersion: 3
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_Component:
-  - 4: {fileID: 4253822545727387}
-  - 114: {fileID: 114956115764992974}
-  - 114: {fileID: 114962866372459294}
+  - 4: {fileID: 4142710414407341}
+  - 114: {fileID: 114306485424087316}
+  - 114: {fileID: 114026448963026402}
   m_Layer: 0
   m_Name: DragonDamageSmoke
   m_TagString: Untagged
@@ -29,25 +29,25 @@ GameObject:
   m_StaticEditorFlags: 0
   m_IsActive: 1
   m_Icon: {fileID: 0}
---- !u!4 &4253822545727387
+--- !u!4 &4142710414407341
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1072274767030674}
+  m_GameObject: {fileID: 1369558371271175}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 79.797424, y: 215.61118, z: 1047.8944}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
   m_Children:
-  - {fileID: 4007472801855333}
+  - {fileID: 4473408503368282}
   m_Father: {fileID: 0}
---- !u!114 &114956115764992974
+--- !u!114 &114306485424087316
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1072274767030674}
+  m_GameObject: {fileID: 1369558371271175}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bbee05443b9b67f14985305ef056de27, type: 3}
@@ -55,27 +55,27 @@ MonoBehaviour:
   sourcePrefabPath: Assets/Resources/FX/DragonDamageSmoke.prefab
   basePrefabPath:
   exemptObjects: []
---- !u!114 &114962866372459294
+--- !u!114 &114026448963026402
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1072274767030674}
+  m_GameObject: {fileID: 1369558371271175}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 0}
   m_Name:
---- !u!1 &1303619478400113
+--- !u!1 &1947959134936331
 GameObject:
   serializedVersion: 3
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_Component:
-  - 4: {fileID: 4007472801855333}
-  - 15: {fileID: 15798144337638632}
-  - 12: {fileID: 12127656022862953}
-  - 26: {fileID: 26929443691622768}
+  - 4: {fileID: 4473408503368282}
+  - 15: {fileID: 15774765260907313}
+  - 12: {fileID: 12715044027200258}
+  - 26: {fileID: 26171830874657660}
   m_Layer: 0
   m_Name: Main
   m_TagString: Untagged
@@ -83,25 +83,25 @@ GameObject:
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
   m_Icon: {fileID: 0}
---- !u!4 &4007472801855333
+--- !u!4 &4473408503368282
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1303619478400113}
+  m_GameObject: {fileID: 1947959134936331}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
   m_Children: []
-  m_Father: {fileID: 4253822545727387}
---- !u!15 &15798144337638632
+  m_Father: {fileID: 4142710414407341}
+--- !u!15 &15774765260907313
 EllipsoidParticleEmitter:
   serializedVersion: 2
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1303619478400113}
+  m_GameObject: {fileID: 1947959134936331}
   m_Enabled: 1
   m_Emit: 1
   minSize: 100
@@ -122,12 +122,12 @@ EllipsoidParticleEmitter:
   m_OneShot: 0
   m_Ellipsoid: {x: 0, y: 0, z: 60}
   m_MinEmitterRange: 60
---- !u!12 &12127656022862953
+--- !u!12 &12715044027200258
 ParticleAnimator:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1303619478400113}
+  m_GameObject: {fileID: 1947959134936331}
   Does Animate Color?: 1
   colorAnimation[0]:
     serializedVersion: 2
@@ -152,20 +152,20 @@ ParticleAnimator:
   damping: 1
   stopSimulation: 0
   autodestruct: 0
---- !u!26 &26929443691622768
+--- !u!26 &26171830874657660
 ParticleRenderer:
   serializedVersion: 2
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1303619478400113}
+  m_GameObject: {fileID: 1947959134936331}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: 83275795f6cea7e47a66e863b8a331e8, type: 2}
+  - {fileID: 2100000, guid: 816d7f63082941741ac65e5ad1f98049, type: 2}
   m_SubsetIndices: []
   m_StaticBatchRoot: {fileID: 0}
   m_ScaleInLightmap: 1

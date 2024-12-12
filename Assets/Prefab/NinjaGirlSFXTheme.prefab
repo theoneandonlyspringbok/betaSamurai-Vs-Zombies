@@ -9,20 +9,20 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1163640606146970}
+  m_RootGameObject: {fileID: 1660380091271366}
   m_IsPrefabParent: 1
   m_IsExploded: 0
---- !u!1 &1163640606146970
+--- !u!1 &1660380091271366
 GameObject:
   serializedVersion: 3
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_Component:
-  - 4: {fileID: 4240368969208499}
-  - 114: {fileID: 114493686124933626}
-  - 114: {fileID: 114608398442709335}
-  - 114: {fileID: 114585938371997751}
+  - 4: {fileID: 4381289633493881}
+  - 114: {fileID: 114873548482862705}
+  - 114: {fileID: 114210907900613222}
+  - 114: {fileID: 114659731851847870}
   m_Layer: 0
   m_Name: NinjaGirlSFXTheme
   m_TagString: Untagged
@@ -30,35 +30,35 @@ GameObject:
   m_StaticEditorFlags: 0
   m_IsActive: 1
   m_Icon: {fileID: 0}
---- !u!4 &4240368969208499
+--- !u!4 &4381289633493881
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1163640606146970}
+  m_GameObject: {fileID: 1660380091271366}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 197.70033, y: 149.55113, z: 948.3019}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
   m_Children: []
   m_Father: {fileID: 0}
---- !u!114 &114493686124933626
+--- !u!114 &114873548482862705
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1163640606146970}
+  m_GameObject: {fileID: 1660380091271366}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c2a601efe3b0ca39d5e3b419a22b773e, type: 3}
   m_Name:
-  baseTheme: {fileID: 114022824857558698, guid: 89fe65b1fb40a094280d3271dfb14830, type: 2}
+  baseTheme: {fileID: 114249314497856133, guid: f3160de8891c8fb4ab10b772189e1ad8, type: 2}
   events:
   - name: WalkEmote
     clips:
-    - {fileID: 8300000, guid: be60e7f8524c8914db66aa26e3b0572d, type: 3}
-    - {fileID: 8300000, guid: 7b454f04957a35d4998bbb71c09b17f2, type: 3}
-    - {fileID: 8300000, guid: 9663627d81838f8428a676aa94ed8322, type: 3}
+    - {fileID: 8300000, guid: 3e26a3af4159d034ba6503c2e831e9e3, type: 3}
+    - {fileID: 8300000, guid: 5d5eed1e47e7b174fad20396eef11e09, type: 3}
+    - {fileID: 8300000, guid: 0f464da058c2a754b85e921c870dcbf2, type: 3}
     percentChanceNone: 95
     pitchVariance: 0
     volume: 1
@@ -75,9 +75,9 @@ MonoBehaviour:
     useLogarithmicRolloff: 0
   - name: AtkEmote
     clips:
-    - {fileID: 8300000, guid: 7b454f04957a35d4998bbb71c09b17f2, type: 3}
-    - {fileID: 8300000, guid: be60e7f8524c8914db66aa26e3b0572d, type: 3}
-    - {fileID: 8300000, guid: 9663627d81838f8428a676aa94ed8322, type: 3}
+    - {fileID: 8300000, guid: 5d5eed1e47e7b174fad20396eef11e09, type: 3}
+    - {fileID: 8300000, guid: 3e26a3af4159d034ba6503c2e831e9e3, type: 3}
+    - {fileID: 8300000, guid: 0f464da058c2a754b85e921c870dcbf2, type: 3}
     percentChanceNone: 0
     pitchVariance: 0
     volume: 1
@@ -110,9 +110,9 @@ MonoBehaviour:
     useLogarithmicRolloff: 0
   - name: DeathEmote
     clips:
-    - {fileID: 8300000, guid: bf88d5aba09c98a4c9ff34613f642c54, type: 3}
-    - {fileID: 8300000, guid: 012faf10a9f6d7b41bb5db76da8884be, type: 3}
-    - {fileID: 8300000, guid: b631164046e06544288bea15278a28db, type: 3}
+    - {fileID: 8300000, guid: fa9ebdd12c4f9d742856e3b24cf46723, type: 3}
+    - {fileID: 8300000, guid: 5df9ca4ae703cc14187245c162787f7d, type: 3}
+    - {fileID: 8300000, guid: 9deb0756086d8594e889f333e118f190, type: 3}
     percentChanceNone: 0
     pitchVariance: 0
     volume: 1
@@ -127,12 +127,12 @@ MonoBehaviour:
     minDistanceOverride: 0
     maxDistanceOverride: 0
     useLogarithmicRolloff: 0
---- !u!114 &114608398442709335
+--- !u!114 &114210907900613222
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1163640606146970}
+  m_GameObject: {fileID: 1660380091271366}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bbee05443b9b67f14985305ef056de27, type: 3}
@@ -140,12 +140,12 @@ MonoBehaviour:
   sourcePrefabPath: Assets/Game/Prefabs/SoundThemes/NinjaGirlSFXTheme.prefab
   basePrefabPath:
   exemptObjects: []
---- !u!114 &114585938371997751
+--- !u!114 &114659731851847870
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1163640606146970}
+  m_GameObject: {fileID: 1660380091271366}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 0}

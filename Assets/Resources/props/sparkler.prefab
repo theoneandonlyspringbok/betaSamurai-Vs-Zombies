@@ -9,19 +9,19 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1723501461048148}
+  m_RootGameObject: {fileID: 1009153061926648}
   m_IsPrefabParent: 1
   m_IsExploded: 0
---- !u!1 &1723501461048148
+--- !u!1 &1009153061926648
 GameObject:
   serializedVersion: 3
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_Component:
-  - 4: {fileID: 4812292308407387}
-  - 111: {fileID: 111521418619481876}
-  - 114: {fileID: 114913301905966098}
+  - 4: {fileID: 4607010610835223}
+  - 111: {fileID: 111112561081357617}
+  - 114: {fileID: 114778453787214222}
   m_Layer: 0
   m_Name: sparkler
   m_TagString: Untagged
@@ -29,26 +29,26 @@ GameObject:
   m_StaticEditorFlags: 0
   m_IsActive: 1
   m_Icon: {fileID: 0}
---- !u!4 &4812292308407387
+--- !u!4 &4607010610835223
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1723501461048148}
+  m_GameObject: {fileID: 1009153061926648}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0, y: 0, z: 0}
   m_LocalScale: {x: 0.01, y: 0.01, z: 0.01}
   m_LocalEulerAnglesHint: {x: 0, y: -0, z: 0}
   m_Children:
-  - {fileID: 4761456323075099}
+  - {fileID: 4139071858111869}
   m_Father: {fileID: 0}
---- !u!111 &111521418619481876
+--- !u!111 &111112561081357617
 Animation:
   serializedVersion: 3
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1723501461048148}
+  m_GameObject: {fileID: 1009153061926648}
   m_Enabled: 1
   m_Animation: {fileID: 0}
   m_Animations: []
@@ -59,12 +59,12 @@ Animation:
   m_UserAABB:
     m_Center: {x: 0, y: 0, z: 0}
     m_Extent: {x: 0, y: 0, z: 0}
---- !u!114 &114913301905966098
+--- !u!114 &114778453787214222
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1723501461048148}
+  m_GameObject: {fileID: 1009153061926648}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bbee05443b9b67f14985305ef056de27, type: 3}
@@ -72,16 +72,16 @@ MonoBehaviour:
   sourcePrefabPath: Assets/Resources/Props/sparkler.fbx
   basePrefabPath:
   exemptObjects: []
---- !u!1 &1882792802664106
+--- !u!1 &1746745188730465
 GameObject:
   serializedVersion: 3
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_Component:
-  - 4: {fileID: 4761456323075099}
-  - 33: {fileID: 33915206718405602}
-  - 23: {fileID: 23895063561538706}
+  - 4: {fileID: 4139071858111869}
+  - 33: {fileID: 33296745519269732}
+  - 23: {fileID: 23112658188802906}
   m_Layer: 0
   m_Name: Sparkler
   m_TagString: Untagged
@@ -89,38 +89,38 @@ GameObject:
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
   m_Icon: {fileID: 0}
---- !u!4 &4761456323075099
+--- !u!4 &4139071858111869
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1882792802664106}
+  m_GameObject: {fileID: 1746745188730465}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: -0, z: 0}
   m_Children: []
-  m_Father: {fileID: 4812292308407387}
---- !u!33 &33915206718405602
+  m_Father: {fileID: 4607010610835223}
+--- !u!33 &33296745519269732
 MeshFilter:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1882792802664106}
-  m_Mesh: {fileID: 4300000, guid: 1e3d92c5b42fdc448926830cbe4122ef, type: 2}
---- !u!23 &23895063561538706
+  m_GameObject: {fileID: 1746745188730465}
+  m_Mesh: {fileID: 4300000, guid: f701d9ec1f33cac43b40da715330f16f, type: 2}
+--- !u!23 &23112658188802906
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1882792802664106}
+  m_GameObject: {fileID: 1746745188730465}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: 0839ac8410f763043b5d671d56ea6ee2, type: 2}
+  - {fileID: 2100000, guid: 33ecabaa155a1e8478af472a1b6b4149, type: 2}
   m_SubsetIndices: []
   m_StaticBatchInfo:
     firstSubMesh: 0

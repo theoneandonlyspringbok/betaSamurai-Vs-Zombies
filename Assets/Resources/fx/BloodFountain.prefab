@@ -9,21 +9,21 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1821862527281482}
+  m_RootGameObject: {fileID: 1319443560048317}
   m_IsPrefabParent: 1
   m_IsExploded: 0
---- !u!1 &1821862527281482
+--- !u!1 &1319443560048317
 GameObject:
   serializedVersion: 3
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_Component:
-  - 4: {fileID: 4003870342412512}
-  - 114: {fileID: 114813315512510043}
-  - 114: {fileID: 114067511216938477}
-  - 114: {fileID: 114578946437922756}
-  - 114: {fileID: 114361387055220931}
+  - 4: {fileID: 4506213303479965}
+  - 114: {fileID: 114744694813279801}
+  - 114: {fileID: 114428677621506659}
+  - 114: {fileID: 114191770814271658}
+  - 114: {fileID: 114851091122702934}
   m_Layer: 0
   m_Name: BloodFountain
   m_TagString: Untagged
@@ -31,26 +31,26 @@ GameObject:
   m_StaticEditorFlags: 0
   m_IsActive: 1
   m_Icon: {fileID: 0}
---- !u!4 &4003870342412512
+--- !u!4 &4506213303479965
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1821862527281482}
+  m_GameObject: {fileID: 1319443560048317}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 3.5686646, y: 54.7583, z: 349.9229}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
   m_Children:
-  - {fileID: 4345542467983065}
-  - {fileID: 4912450112849800}
+  - {fileID: 4395505526712570}
+  - {fileID: 4921313346048360}
   m_Father: {fileID: 0}
---- !u!114 &114813315512510043
+--- !u!114 &114744694813279801
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1821862527281482}
+  m_GameObject: {fileID: 1319443560048317}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bbee05443b9b67f14985305ef056de27, type: 3}
@@ -58,17 +58,17 @@ MonoBehaviour:
   sourcePrefabPath: Assets/Resources/FX/BloodFountain.prefab
   basePrefabPath:
   exemptObjects: []
---- !u!114 &114067511216938477
+--- !u!114 &114428677621506659
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1821862527281482}
+  m_GameObject: {fileID: 1319443560048317}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 39dbae7d6e4503ccce4e243938d2e0ad, type: 3}
   m_Name:
-  baseTheme: {fileID: 114070568176726117, guid: 0e00d692dfd93294992f32e7c00df2fb, type: 2}
+  baseTheme: {fileID: 114176493053401705, guid: df72daf9599961f419ee24d36699ea9d, type: 2}
   defaultMinDistance: 50
   defaultMaxDistance: 2000
   defaultCustomEffect: {fileID: 0}
@@ -77,11 +77,11 @@ MonoBehaviour:
   events:
   - name: Bloodsplat
     clips:
-    - {fileID: 8300000, guid: 0cfbee9f99a6f2749bfb11891b7c64a4, type: 3}
-    - {fileID: 8300000, guid: 4bdfcb7f11499df4da8bc65f06587883, type: 3}
-    - {fileID: 8300000, guid: 8acd4d1ca56cf664f9c27dc1ce631175, type: 3}
-    - {fileID: 8300000, guid: bfee706121177224e904bec598658b5f, type: 3}
-    - {fileID: 8300000, guid: 726352ea2d1a471409f102e185c612b4, type: 3}
+    - {fileID: 8300000, guid: e90508201b4b27d4eb3ea8d75b882a51, type: 3}
+    - {fileID: 8300000, guid: 78c6cf36db3e54649b17d8d094f5d958, type: 3}
+    - {fileID: 8300000, guid: ef93027dd1fdfa648b27be9fdf8fe682, type: 3}
+    - {fileID: 8300000, guid: 737adbc679fe87844902cca328350daf, type: 3}
+    - {fileID: 8300000, guid: b4b6abbe81c67644eb4db04a7c807a75, type: 3}
     percentChanceNone: 0
     pitchVariance: 0
     volume: 0
@@ -96,12 +96,12 @@ MonoBehaviour:
     minDistanceOverride: 250
     maxDistanceOverride: 5000
     useLogarithmicRolloff: 0
---- !u!114 &114578946437922756
+--- !u!114 &114191770814271658
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1821862527281482}
+  m_GameObject: {fileID: 1319443560048317}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1425cfafe549424a6c5c0c3f2b407eaf, type: 3}
@@ -109,27 +109,27 @@ MonoBehaviour:
   deleteWhenAllChildrenDead: 1
   autoDeleteAfterTime: 1.7
   letParticlesFinishForTimedDelete: 1
---- !u!114 &114361387055220931
+--- !u!114 &114851091122702934
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1821862527281482}
+  m_GameObject: {fileID: 1319443560048317}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 0}
   m_Name:
---- !u!1 &1039635679267751
+--- !u!1 &1067253981939546
 GameObject:
   serializedVersion: 3
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_Component:
-  - 4: {fileID: 4345542467983065}
-  - 15: {fileID: 15139183090965403}
-  - 12: {fileID: 12820651853433596}
-  - 26: {fileID: 26204230992943397}
+  - 4: {fileID: 4395505526712570}
+  - 15: {fileID: 15311827783337990}
+  - 12: {fileID: 12655892078590760}
+  - 26: {fileID: 26087667814718539}
   m_Layer: 0
   m_Name: BloodSplatSmallBack
   m_TagString: Untagged
@@ -137,25 +137,25 @@ GameObject:
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
   m_Icon: {fileID: 0}
---- !u!4 &4345542467983065
+--- !u!4 &4395505526712570
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1039635679267751}
+  m_GameObject: {fileID: 1067253981939546}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 44.345245, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
   m_Children: []
-  m_Father: {fileID: 4003870342412512}
---- !u!15 &15139183090965403
+  m_Father: {fileID: 4506213303479965}
+--- !u!15 &15311827783337990
 EllipsoidParticleEmitter:
   serializedVersion: 2
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1039635679267751}
+  m_GameObject: {fileID: 1067253981939546}
   m_Enabled: 1
   m_Emit: 1
   minSize: 40
@@ -176,12 +176,12 @@ EllipsoidParticleEmitter:
   m_OneShot: 0
   m_Ellipsoid: {x: 3, y: 3, z: 3}
   m_MinEmitterRange: 0
---- !u!12 &12820651853433596
+--- !u!12 &12655892078590760
 ParticleAnimator:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1039635679267751}
+  m_GameObject: {fileID: 1067253981939546}
   Does Animate Color?: 1
   colorAnimation[0]:
     serializedVersion: 2
@@ -206,20 +206,20 @@ ParticleAnimator:
   damping: 1
   stopSimulation: 0
   autodestruct: 0
---- !u!26 &26204230992943397
+--- !u!26 &26087667814718539
 ParticleRenderer:
   serializedVersion: 2
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1039635679267751}
+  m_GameObject: {fileID: 1067253981939546}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: 9bf1c0376c36ab74095bf5286dfc636d, type: 2}
+  - {fileID: 2100000, guid: cb5f1e22a5f1f33498abde9098375fe9, type: 2}
   m_SubsetIndices: []
   m_StaticBatchRoot: {fileID: 0}
   m_ScaleInLightmap: 1
@@ -232,17 +232,17 @@ ParticleRenderer:
     x Tile: 1
     y Tile: 1
     cycles: 0
---- !u!1 &1459331601894822
+--- !u!1 &1653065828282502
 GameObject:
   serializedVersion: 3
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_Component:
-  - 4: {fileID: 4912450112849800}
-  - 15: {fileID: 15682357874577529}
-  - 12: {fileID: 12493658724928297}
-  - 26: {fileID: 26009225396042247}
+  - 4: {fileID: 4921313346048360}
+  - 15: {fileID: 15943550336862484}
+  - 12: {fileID: 12787177828433045}
+  - 26: {fileID: 26962050266172899}
   m_Layer: 0
   m_Name: BloodSplatSmallBlob
   m_TagString: Untagged
@@ -250,25 +250,25 @@ GameObject:
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
   m_Icon: {fileID: 0}
---- !u!4 &4912450112849800
+--- !u!4 &4921313346048360
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1459331601894822}
+  m_GameObject: {fileID: 1653065828282502}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
   m_Children: []
-  m_Father: {fileID: 4003870342412512}
---- !u!15 &15682357874577529
+  m_Father: {fileID: 4506213303479965}
+--- !u!15 &15943550336862484
 EllipsoidParticleEmitter:
   serializedVersion: 2
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1459331601894822}
+  m_GameObject: {fileID: 1653065828282502}
   m_Enabled: 1
   m_Emit: 1
   minSize: 3
@@ -289,12 +289,12 @@ EllipsoidParticleEmitter:
   m_OneShot: 0
   m_Ellipsoid: {x: 10, y: 30, z: 10}
   m_MinEmitterRange: 0
---- !u!12 &12493658724928297
+--- !u!12 &12787177828433045
 ParticleAnimator:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1459331601894822}
+  m_GameObject: {fileID: 1653065828282502}
   Does Animate Color?: 1
   colorAnimation[0]:
     serializedVersion: 2
@@ -319,20 +319,20 @@ ParticleAnimator:
   damping: 1
   stopSimulation: 0
   autodestruct: 0
---- !u!26 &26009225396042247
+--- !u!26 &26962050266172899
 ParticleRenderer:
   serializedVersion: 2
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1459331601894822}
+  m_GameObject: {fileID: 1653065828282502}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: c6c166adab10ae84b84eb765c1bf071b, type: 2}
+  - {fileID: 2100000, guid: 47aa5b887eca5f54080fd494c47f9225, type: 2}
   m_SubsetIndices: []
   m_StaticBatchRoot: {fileID: 0}
   m_ScaleInLightmap: 1

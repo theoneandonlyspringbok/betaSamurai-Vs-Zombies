@@ -9,20 +9,20 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1818954872620177}
+  m_RootGameObject: {fileID: 1142514277273975}
   m_IsPrefabParent: 1
   m_IsExploded: 0
---- !u!1 &1818954872620177
+--- !u!1 &1142514277273975
 GameObject:
   serializedVersion: 3
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_Component:
-  - 4: {fileID: 4670988156975625}
-  - 114: {fileID: 114517715285402134}
-  - 114: {fileID: 114494500681179441}
-  - 114: {fileID: 114334080272536347}
+  - 4: {fileID: 4064065078512508}
+  - 114: {fileID: 114562573659914408}
+  - 114: {fileID: 114998798659425531}
+  - 114: {fileID: 114859718845343985}
   m_Layer: 0
   m_Name: UndeadShogunSFXTheme
   m_TagString: Untagged
@@ -30,35 +30,35 @@ GameObject:
   m_StaticEditorFlags: 0
   m_IsActive: 1
   m_Icon: {fileID: 0}
---- !u!4 &4670988156975625
+--- !u!4 &4064065078512508
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1818954872620177}
+  m_GameObject: {fileID: 1142514277273975}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -13.49762, y: 158.83243, z: 273.0432}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
   m_Children: []
   m_Father: {fileID: 0}
---- !u!114 &114517715285402134
+--- !u!114 &114562573659914408
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1818954872620177}
+  m_GameObject: {fileID: 1142514277273975}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c2a601efe3b0ca39d5e3b419a22b773e, type: 3}
   m_Name:
-  baseTheme: {fileID: 114022824857558698, guid: 89fe65b1fb40a094280d3271dfb14830, type: 2}
+  baseTheme: {fileID: 114249314497856133, guid: f3160de8891c8fb4ab10b772189e1ad8, type: 2}
   events:
   - name: Spawn
     clips:
-    - {fileID: 8300000, guid: 2a068c79ee83fe04090aa78011856717, type: 3}
-    - {fileID: 8300000, guid: e4d4a6f741aed704fabdbee37a42af4b, type: 3}
-    - {fileID: 8300000, guid: e8bfb45708534654a91116fd3c837827, type: 3}
+    - {fileID: 8300000, guid: 4d0fd779ff99b304f9be83b16c3fb049, type: 3}
+    - {fileID: 8300000, guid: 5626c502581e87b408ba7923768de6cb, type: 3}
+    - {fileID: 8300000, guid: c1c2b174dfa60184db23a2caea8bcee5, type: 3}
     percentChanceNone: 0
     pitchVariance: 0
     volume: 1
@@ -75,9 +75,9 @@ MonoBehaviour:
     useLogarithmicRolloff: 0
   - name: AtkEmote
     clips:
-    - {fileID: 8300000, guid: 7aef68ef18920884e8de874f6be57a2a, type: 3}
-    - {fileID: 8300000, guid: 182a60d890c597541b6ca1ff2fc8e0f1, type: 3}
-    - {fileID: 8300000, guid: a709be9783ea2fd409213746cb01bf31, type: 3}
+    - {fileID: 8300000, guid: 49180c5573fa1e045ab1320a1d215370, type: 3}
+    - {fileID: 8300000, guid: ea286703db40316488b1c296aa3780dc, type: 3}
+    - {fileID: 8300000, guid: 65a9109626161b04d8f88e00eabe726a, type: 3}
     percentChanceNone: 0
     pitchVariance: 0
     volume: 1
@@ -94,8 +94,8 @@ MonoBehaviour:
     useLogarithmicRolloff: 0
   - name: DeathEmote
     clips:
-    - {fileID: 8300000, guid: 06eb613fde6480547a1a32e51b9e6ece, type: 3}
-    - {fileID: 8300000, guid: 402de3c79619a2746832efc32991e558, type: 3}
+    - {fileID: 8300000, guid: fe882506bb28fcd43be9577e10bccc44, type: 3}
+    - {fileID: 8300000, guid: 552b2d0ab82b90f48b003ddf8f839383, type: 3}
     percentChanceNone: 0
     pitchVariance: 0
     volume: 1
@@ -112,8 +112,8 @@ MonoBehaviour:
     useLogarithmicRolloff: 0
   - name: Idle
     clips:
-    - {fileID: 8300000, guid: e73eddf6a33ed614f8aa7da67d868096, type: 3}
-    - {fileID: 8300000, guid: 11a1d7a0c11624b45b1cf4cc7363ad7a, type: 3}
+    - {fileID: 8300000, guid: 09ad5d105ca65f44287720c40e211269, type: 3}
+    - {fileID: 8300000, guid: e5fa0933ddf60ce438e9b2e9e7951e22, type: 3}
     percentChanceNone: 75
     pitchVariance: 0
     volume: 1
@@ -130,9 +130,9 @@ MonoBehaviour:
     useLogarithmicRolloff: 0
   - name: Footstep
     clips:
-    - {fileID: 8300000, guid: 3d2bd66b03db49c4d9dafb837841d127, type: 3}
-    - {fileID: 8300000, guid: c09de52fede2f284f871543998338746, type: 3}
-    - {fileID: 8300000, guid: 70215cd4d3e2acb4c9f18d999485c51d, type: 3}
+    - {fileID: 8300000, guid: c3a9f7466bfeeb74885a065928e08e1c, type: 3}
+    - {fileID: 8300000, guid: 5bdd92fd6d08e1f4eb5d0bd216fd3397, type: 3}
+    - {fileID: 8300000, guid: a9c9d02078b418342b72a123f168a15a, type: 3}
     percentChanceNone: 0
     pitchVariance: 0
     volume: 1
@@ -149,8 +149,8 @@ MonoBehaviour:
     useLogarithmicRolloff: 0
   - name: Slam
     clips:
-    - {fileID: 8300000, guid: 494174cf830101f498bd35fc69dd15ae, type: 3}
-    - {fileID: 8300000, guid: 5f5606aea39a5ed4a97749f5e5969707, type: 3}
+    - {fileID: 8300000, guid: 8fa75debdedc1fc468dab6f490db54f6, type: 3}
+    - {fileID: 8300000, guid: 4703adbb28996da47be22112e68aed3e, type: 3}
     percentChanceNone: 0
     pitchVariance: 0
     volume: 1
@@ -165,12 +165,12 @@ MonoBehaviour:
     minDistanceOverride: 2000
     maxDistanceOverride: 2500
     useLogarithmicRolloff: 0
---- !u!114 &114494500681179441
+--- !u!114 &114998798659425531
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1818954872620177}
+  m_GameObject: {fileID: 1142514277273975}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bbee05443b9b67f14985305ef056de27, type: 3}
@@ -178,12 +178,12 @@ MonoBehaviour:
   sourcePrefabPath: Assets/Game/Prefabs/SoundThemes/UndeadShogunSFXTheme.prefab
   basePrefabPath:
   exemptObjects: []
---- !u!114 &114334080272536347
+--- !u!114 &114859718845343985
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1818954872620177}
+  m_GameObject: {fileID: 1142514277273975}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 0}

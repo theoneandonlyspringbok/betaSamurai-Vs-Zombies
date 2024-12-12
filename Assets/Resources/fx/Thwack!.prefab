@@ -9,23 +9,23 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1378390380197678}
+  m_RootGameObject: {fileID: 1204710351103949}
   m_IsPrefabParent: 1
   m_IsExploded: 0
---- !u!1 &1378390380197678
+--- !u!1 &1204710351103949
 GameObject:
   serializedVersion: 3
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_Component:
-  - 4: {fileID: 4652671115903473}
-  - 15: {fileID: 15889996836669911}
-  - 12: {fileID: 12249284653588808}
-  - 26: {fileID: 26395131138769086}
-  - 114: {fileID: 114717083707042470}
-  - 114: {fileID: 114609506730615794}
-  - 114: {fileID: 114975571696540174}
+  - 4: {fileID: 4530838561720721}
+  - 15: {fileID: 15541072153148661}
+  - 12: {fileID: 12150131224109022}
+  - 26: {fileID: 26796979753765960}
+  - 114: {fileID: 114923011668787421}
+  - 114: {fileID: 114461607186970437}
+  - 114: {fileID: 114576732284916865}
   m_Layer: 0
   m_Name: Thwack!
   m_TagString: Untagged
@@ -33,25 +33,25 @@ GameObject:
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
   m_Icon: {fileID: 0}
---- !u!4 &4652671115903473
+--- !u!4 &4530838561720721
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1378390380197678}
+  m_GameObject: {fileID: 1204710351103949}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -66.216, y: 130.2201, z: -486.74994}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
   m_Children: []
   m_Father: {fileID: 0}
---- !u!15 &15889996836669911
+--- !u!15 &15541072153148661
 EllipsoidParticleEmitter:
   serializedVersion: 2
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1378390380197678}
+  m_GameObject: {fileID: 1204710351103949}
   m_Enabled: 1
   m_Emit: 1
   minSize: 60
@@ -72,12 +72,12 @@ EllipsoidParticleEmitter:
   m_OneShot: 1
   m_Ellipsoid: {x: 1, y: 1, z: 1}
   m_MinEmitterRange: 0
---- !u!12 &12249284653588808
+--- !u!12 &12150131224109022
 ParticleAnimator:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1378390380197678}
+  m_GameObject: {fileID: 1204710351103949}
   Does Animate Color?: 1
   colorAnimation[0]:
     serializedVersion: 2
@@ -102,20 +102,20 @@ ParticleAnimator:
   damping: 1
   stopSimulation: 0
   autodestruct: 1
---- !u!26 &26395131138769086
+--- !u!26 &26796979753765960
 ParticleRenderer:
   serializedVersion: 2
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1378390380197678}
+  m_GameObject: {fileID: 1204710351103949}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: dbc454803e654444b963d854e6e335a6, type: 2}
+  - {fileID: 2100000, guid: 028ce52a220a2a342a4cc281c7b8890e, type: 2}
   m_SubsetIndices: []
   m_StaticBatchRoot: {fileID: 0}
   m_ScaleInLightmap: 1
@@ -128,12 +128,12 @@ ParticleRenderer:
     x Tile: 1
     y Tile: 1
     cycles: 1
---- !u!114 &114717083707042470
+--- !u!114 &114923011668787421
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1378390380197678}
+  m_GameObject: {fileID: 1204710351103949}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bbee05443b9b67f14985305ef056de27, type: 3}
@@ -141,27 +141,27 @@ MonoBehaviour:
   sourcePrefabPath: Assets/Resources/FX/Thwack!.prefab
   basePrefabPath:
   exemptObjects: []
---- !u!114 &114609506730615794
+--- !u!114 &114461607186970437
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1378390380197678}
+  m_GameObject: {fileID: 1204710351103949}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dac5479c15acccf451f7d334db7f4f15, type: 3}
   m_Name:
   materials:
-  - {fileID: 2100000, guid: dbc454803e654444b963d854e6e335a6, type: 2}
-  - {fileID: 2100000, guid: 08487daa0d8f70a419c1f04f7fe076ad, type: 2}
-  - {fileID: 2100000, guid: 40de4ab595b559b429fe1aaa5286e752, type: 2}
-  - {fileID: 2100000, guid: 4c22c848a03f4fc4e94a07c9d4a24ed4, type: 2}
---- !u!114 &114975571696540174
+  - {fileID: 2100000, guid: 028ce52a220a2a342a4cc281c7b8890e, type: 2}
+  - {fileID: 2100000, guid: 802931e152c3da34c87f862a58d84583, type: 2}
+  - {fileID: 2100000, guid: 3c764866e6cf05042be64ff5a6be186b, type: 2}
+  - {fileID: 2100000, guid: a5c6d3f75ee8e3f47be81b702a2746a3, type: 2}
+--- !u!114 &114576732284916865
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1378390380197678}
+  m_GameObject: {fileID: 1204710351103949}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 0}

@@ -9,21 +9,21 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1033798673442692}
+  m_RootGameObject: {fileID: 1875004163602503}
   m_IsPrefabParent: 1
   m_IsExploded: 0
---- !u!1 &1033798673442692
+--- !u!1 &1875004163602503
 GameObject:
   serializedVersion: 3
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_Component:
-  - 4: {fileID: 4602137724889192}
-  - 114: {fileID: 114684546590930387}
-  - 114: {fileID: 114744685891734804}
-  - 114: {fileID: 114348334578741587}
-  - 114: {fileID: 114089144022943361}
+  - 4: {fileID: 4339967342167953}
+  - 114: {fileID: 114330255194888097}
+  - 114: {fileID: 114991673729716702}
+  - 114: {fileID: 114629807770987016}
+  - 114: {fileID: 114044166359393926}
   m_Layer: 0
   m_Name: PFChickenSword
   m_TagString: Untagged
@@ -31,25 +31,25 @@ GameObject:
   m_StaticEditorFlags: 0
   m_IsActive: 1
   m_Icon: {fileID: 0}
---- !u!4 &4602137724889192
+--- !u!4 &4339967342167953
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1033798673442692}
+  m_GameObject: {fileID: 1875004163602503}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -228.72665, y: 266.5249, z: 1435.7823}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
   m_Children:
-  - {fileID: 4497192499729813}
+  - {fileID: 4257851562163246}
   m_Father: {fileID: 0}
---- !u!114 &114684546590930387
+--- !u!114 &114330255194888097
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1033798673442692}
+  m_GameObject: {fileID: 1875004163602503}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bbee05443b9b67f14985305ef056de27, type: 3}
@@ -57,12 +57,12 @@ MonoBehaviour:
   sourcePrefabPath: Assets/Resources/Props/PFChickenSword.prefab
   basePrefabPath:
   exemptObjects: []
---- !u!114 &114744685891734804
+--- !u!114 &114991673729716702
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1033798673442692}
+  m_GameObject: {fileID: 1875004163602503}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 39dbae7d6e4503ccce4e243938d2e0ad, type: 3}
@@ -76,9 +76,9 @@ MonoBehaviour:
   events:
   - name: Spawn
     clips:
-    - {fileID: 8300000, guid: 97c99fd916e49c3408a632e2b411cc82, type: 3}
-    - {fileID: 8300000, guid: c250126a6fe751343a4229ed20170c61, type: 3}
-    - {fileID: 8300000, guid: e86e0616b84a3fc4da70ce7c2a963d7d, type: 3}
+    - {fileID: 8300000, guid: 9575fd354e6724f4c93177f5055b7a77, type: 3}
+    - {fileID: 8300000, guid: 06f5646572273ba44b51f634310eede0, type: 3}
+    - {fileID: 8300000, guid: 83848b84819fd1147aae0a99145d2cc5, type: 3}
     percentChanceNone: 0
     pitchVariance: 0
     volume: 0
@@ -93,12 +93,12 @@ MonoBehaviour:
     minDistanceOverride: 100
     maxDistanceOverride: 5000
     useLogarithmicRolloff: 0
---- !u!114 &114348334578741587
+--- !u!114 &114629807770987016
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1033798673442692}
+  m_GameObject: {fileID: 1875004163602503}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 855bc5726c10690908b122ba54ace442, type: 3}
@@ -112,28 +112,28 @@ MonoBehaviour:
     playThisSfxEvent: Spawn
   - whenWielderStartsThisAnim: attack
     playThisSfxEvent: Spawn
---- !u!114 &114089144022943361
+--- !u!114 &114044166359393926
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1033798673442692}
+  m_GameObject: {fileID: 1875004163602503}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 0}
   m_Name:
---- !u!1 &1126216161352081
+--- !u!1 &1255555026466220
 GameObject:
   serializedVersion: 3
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_Component:
-  - 4: {fileID: 4497192499729813}
-  - 33: {fileID: 33475361795765367}
-  - 23: {fileID: 23391973610714481}
-  - 111: {fileID: 111704034990029741}
-  - 114: {fileID: 114215946130201592}
+  - 4: {fileID: 4257851562163246}
+  - 33: {fileID: 33444856427305665}
+  - 23: {fileID: 23590261693157201}
+  - 111: {fileID: 111566811776340682}
+  - 114: {fileID: 114692778680435148}
   m_Layer: 0
   m_Name: chickensword
   m_TagString: Untagged
@@ -141,51 +141,51 @@ GameObject:
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
   m_Icon: {fileID: 0}
---- !u!4 &4497192499729813
+--- !u!4 &4257851562163246
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1126216161352081}
+  m_GameObject: {fileID: 1255555026466220}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0, y: 3.6798377, z: 25.611055}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: -0, z: 0}
   m_Children: []
-  m_Father: {fileID: 4602137724889192}
---- !u!33 &33475361795765367
+  m_Father: {fileID: 4339967342167953}
+--- !u!33 &33444856427305665
 MeshFilter:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1126216161352081}
-  m_Mesh: {fileID: 4300000, guid: 240b9e379706f294ba9a94a46b58aef6, type: 2}
---- !u!23 &23391973610714481
+  m_GameObject: {fileID: 1255555026466220}
+  m_Mesh: {fileID: 4300000, guid: b756e184fbdc7b34797124f8426576f0, type: 2}
+--- !u!23 &23590261693157201
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1126216161352081}
+  m_GameObject: {fileID: 1255555026466220}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: 101343933423e974ca8801fe341aafa7, type: 2}
+  - {fileID: 2100000, guid: 82fe27210866889479b25424c1f41637, type: 2}
   m_SubsetIndices: []
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
   m_StaticBatchRoot: {fileID: 0}
   m_ScaleInLightmap: 1
---- !u!111 &111704034990029741
+--- !u!111 &111566811776340682
 Animation:
   serializedVersion: 3
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1126216161352081}
+  m_GameObject: {fileID: 1255555026466220}
   m_Enabled: 1
   m_Animation: {fileID: 0}
   m_Animations: []
@@ -196,12 +196,12 @@ Animation:
   m_UserAABB:
     m_Center: {x: 0, y: 0, z: 0}
     m_Extent: {x: 0, y: 0, z: 0}
---- !u!114 &114215946130201592
+--- !u!114 &114692778680435148
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1126216161352081}
+  m_GameObject: {fileID: 1255555026466220}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bbee05443b9b67f14985305ef056de27, type: 3}
@@ -209,4 +209,4 @@ MonoBehaviour:
   sourcePrefabPath: Assets/Resources/Props/chickensword.fbx
   basePrefabPath:
   exemptObjects:
-  - {fileID: 114215946130201592}
+  - {fileID: 114692778680435148}
