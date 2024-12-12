@@ -360,7 +360,6 @@ public class StoreImpl : SceneBehaviour
 		}
 		if (m_showTapjoyAds)
 		{
-			AAds.Tapjoy.ShowFeaturedApp();
 			Singleton<Profile>.instance.tapFeatureAdsCnt = 0;
 			m_showTapjoyAds = false;
 		}
@@ -410,14 +409,6 @@ public class StoreImpl : SceneBehaviour
 		}
 		else if (mListController.items[itemIndex].id == "vip")
 		{
-			if (!GWallet.IsSubscriber())
-			{
-				GWalletHelper.GoVIP();
-			}
-			else
-			{
-				GWalletHelper.LaunchGGNBenefits();
-			}
 		}
 		else
 		{
@@ -617,6 +608,5 @@ public class StoreImpl : SceneBehaviour
 
 	private void LaunchGGN()
 	{
-		GWalletHelper.LaunchGGN();
 	}
 }

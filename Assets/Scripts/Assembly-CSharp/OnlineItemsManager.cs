@@ -98,16 +98,15 @@ public class OnlineItemsManager : Singleton<OnlineItemsManager>
 		{
 		case ItemType.Coins:
 			Singleton<Profile>.instance.coins += item.amount;
-			GWalletHelper.AddSoftCurrency(item.amount, "CREDIT_SC", id);
 			Singleton<Profile>.instance.purchasedCoins += item.amount;
-			Singleton<Analytics>.instance.LogEvent("UserPurchasedCoins", (!AJavaTools.IsTablet()) ? "phone" : "tablet", item.amount);
+			Singleton<Analytics>.instance.LogEvent("UserPurchasedCoins", "tablet", item.amount);
 			Singleton<PlayHavenTowerControl>.instance.InvokeContent("iap_coins_" + item.amount);
 			Debug.Log("*** UserPurchasedCoins ***");
 			break;
 		case ItemType.Gems:
 			ApplicationUtilities.GWalletBalance(item.amount, id, "CREDIT_GC_PURCHASE");
 			Singleton<Profile>.instance.purchasedGems += item.amount;
-			Singleton<Analytics>.instance.LogEvent("UserPurchasedGems", (!AJavaTools.IsTablet()) ? "phone" : "tablet", item.amount);
+			Singleton<Analytics>.instance.LogEvent("UserPurchasedGems", "tablet", item.amount);
 			Singleton<PlayHavenTowerControl>.instance.InvokeContent("iap_gems_" + item.amount);
 			Debug.Log("*** UserPurchasedGems ***");
 			if (!Singleton<Profile>.instance.hasReportedGemPurchase)

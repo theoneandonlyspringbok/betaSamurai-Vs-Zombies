@@ -68,7 +68,6 @@ public class Smithy : WeakGlobalInstance<Smithy>
 			else if (coins > 0)
 			{
 				Singleton<Profile>.instance.coins -= coins;
-				GWalletHelper.SubtractSoftCurrency(coins, "DEBIT_SC", "Smithy Spend: " + helperId);
 			}
 		}
 	}

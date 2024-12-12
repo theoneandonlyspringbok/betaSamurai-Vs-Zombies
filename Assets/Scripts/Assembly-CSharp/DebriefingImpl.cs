@@ -45,18 +45,7 @@ public class DebriefingImpl : SceneBehaviour
 			Singleton<Profile>.instance.freeBoosterPacks++;
 		}
 		string text = Singleton<PlayModesManager>.instance.selectedModeData["layout_DebriefingMenu"];
-		if (ApplicationUtilities.IsGWalletAvailable() && !GWallet.IsSubscriber())
-		{
-			mLayout = new SUILayout(text + "_Android");
-			((SUIButton)mLayout["freeGluCreditsBtn"]).onButtonPressed = delegate
-			{
-				GWalletHelper.GoVIP();
-			};
-		}
-		else
-		{
-			mLayout = new SUILayout(text);
-		}
+		mLayout = new SUILayout(text);
 		if (Singleton<PlayStatistics>.instance.stats.lastWaveWon)
 		{
 			mSpoilsDisplay = new SpoilsDisplay(mLayout, null, "default18", new Vector2(SUIScreen.width / 2f, SUIScreen.height / 2f - 30f), 2f, 6, 160f, string.Empty);

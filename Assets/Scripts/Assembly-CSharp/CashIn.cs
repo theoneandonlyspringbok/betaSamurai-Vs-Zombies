@@ -27,7 +27,7 @@ public class CashIn
 		}
 		if (id == "coins" && gwType == "CREDIT_GC_PURCHASE")
 		{
-			GWalletHelper.AddSoftCurrency(int.Parse(val), "CREDIT_SC", gwDesc);
+			Singleton<Profile>.instance.coins += int.Parse(val);
 		}
 		return From(id, val);
 	}

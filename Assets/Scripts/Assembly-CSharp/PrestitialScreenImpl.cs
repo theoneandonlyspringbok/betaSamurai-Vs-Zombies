@@ -32,7 +32,6 @@ public class PrestitialScreenImpl : SceneBehaviour
 				Debug.Log("Gold Pressed...");
 			}
 			StartCoroutine(LoadScene("StoryMoviePre"));
-			AInAppPurchase.RequestPurchase("com.glu.samuzombie.gold.monthly", "subscription");
 		};
 		mSilver = (SUIButton)mLayout["silverbutton"];
 		mSilver.onButtonPressed = delegate
@@ -43,7 +42,6 @@ public class PrestitialScreenImpl : SceneBehaviour
 				Debug.Log("Silver Pressed...");
 			}
 			StartCoroutine(LoadScene("StoryMoviePre"));
-			AInAppPurchase.RequestPurchase("com.glu.samuzombie.silver.monthly", "subscription");
 		};
 		mBenefits = (SUIButton)mLayout["benefitsbutton"];
 		mBenefits.onButtonPressed = delegate

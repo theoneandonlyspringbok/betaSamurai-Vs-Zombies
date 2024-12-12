@@ -137,7 +137,6 @@ public struct Cost
 	public void Spend(string itemId)
 	{
 		Singleton<Profile>.instance.coins -= soft;
-		GWalletHelper.SubtractSoftCurrency(soft, "DEBIT_SC", itemId);
 		ApplicationUtilities.GWalletBalance(-hard, itemId, "DEBIT_IN_APP_PURCHASE");
 	}
 

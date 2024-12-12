@@ -104,7 +104,6 @@ public class OptionsImpl : SceneBehaviour
 			}
 			text += text2;
 		}
-		text = text + "\n" + AJavaTools.GetBuildTag();
 		mAboutDialog = new SUILayout("Layouts/AboutDialog");
 		((SUISprite)mAboutDialog["panel"]).scale = new Vector2(1f, 1.1f);
 		((SUILabel)mAboutDialog["text"]).text = text;

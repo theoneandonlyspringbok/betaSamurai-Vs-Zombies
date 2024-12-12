@@ -187,7 +187,6 @@ public class ApplicationUtilities : MonoBehaviour
 				GameObject gameObject = new GameObject("ApplicationUtilities", typeof(ApplicationUtilities));
 				This = gameObject.GetComponent<ApplicationUtilities>();
 				UnityEngine.Object.DontDestroyOnLoad(gameObject);
-				AAds.Init();
 				Screen.sleepTimeout = 0;
 				if (Debug.isDebugBuild)
 				{
@@ -252,7 +251,7 @@ public class ApplicationUtilities : MonoBehaviour
 
 	public static bool IsBuildType(string bt)
 	{
-		return string.Compare(AJavaTools.GetProperty("BUILD_TYPE", "google"), bt, true) == 0;
+		return false;
 	}
 
 	public int GGN_BUG()
@@ -280,24 +279,6 @@ public class ApplicationUtilities : MonoBehaviour
 	public static OnlineItemsManager.Item GWalletGetSubscriptionRecommendationAtIndex(int idx)
 	{
 		OnlineItemsManager.Item item = null;
-		if (!GWalletHelper.IsSubscriptionRecommendationAvailable())
-		{
-			return item;
-		}
-		if (idx < GWalletHelper.subscription_recommendations.Length)
-		{
-			GWSubscriptionRecommendation_Unity gWSubscriptionRecommendation_Unity = GWalletHelper.subscription_recommendations[idx];
-			OnlineItemsManager.ItemType type = OnlineItemsManager.ItemType.Vip_Gold;
-			if (gWSubscriptionRecommendation_Unity.m_planName.IndexOf("silver") != -1)
-			{
-				type = OnlineItemsManager.ItemType.Vip_Silver;
-			}
-			item = new OnlineItemsManager.Item(gWSubscriptionRecommendation_Unity.m_storeSkuCode.ToLower().Trim(), string.Empty, type, 0, "$0.00");
-		}
-		if (Debug.isDebugBuild)
-		{
-			Debug.Log("GWallet Get Item: " + idx + ", " + ((item != null) ? (item.id + ", " + item.type) : "null"));
-		}
 		return item;
 	}
 
@@ -325,14 +306,6 @@ public class ApplicationUtilities : MonoBehaviour
 				Debug.Log("? build");
 			}
 		}
-		if (IsBuildType("amazon"))
-		{
-			AInAppPurchase.Init(base.gameObject.name, "amazon", Debug.isDebugBuild);
-		}
-		else if (IsBuildType("google"))
-		{
-			AInAppPurchase.Init(base.gameObject.name, "google", Debug.isDebugBuild);
-		}
 		Singleton<Analytics>.instance.LogEvent("CoinsOnStartup", Singleton<Profile>.instance.coins.ToString());
 		Singleton<Analytics>.instance.LogEvent("GemsOnStartup", Singleton<Profile>.instance.gems.ToString());
 		StartCoroutine(Init3rdPartyPlugins());
@@ -341,11 +314,6 @@ public class ApplicationUtilities : MonoBehaviour
 
 	public void IAPSyncTransactions()
 	{
-		if (AInAppPurchase.BillingSupported)
-		{
-			Debug.Log("IAP -> Requesting Pending Purchases....");
-			AInAppPurchase.RequestPendingPurchases();
-		}
 	}
 
 	private IEnumerator Init3rdPartyPlugins()
@@ -363,14 +331,10 @@ public class ApplicationUtilities : MonoBehaviour
 			{
 				Debug.Log("Initalizing ApplicationUtilities");
 			}
-			AAds.Tapjoy.Init(base.gameObject.name, TJ_APP_ID, TJ_SECRET_KEY);
-			AAds.PlayHaven.Init(base.gameObject.name, lockToken, lockSecret);
-			AAds.Amazon.Init("bba485770422404aa943de6efe007e84");
 			if (Debug.isDebugBuild)
 			{
 				Debug.Log("SERVER_NOTIFICATION_URL = " + SERVER_NOTIFICATION_URL);
 			}
-			ANotificationManager.Init(true, Debug.isDebugBuild, SERVER_NOTIFICATION_URL, GAME_SKU);
 		}
 		yield return null;
 	}
@@ -523,7 +487,6 @@ public class ApplicationUtilities : MonoBehaviour
 		DestroyPlugins();
 		Singleton<Analytics>.instance.LogEvent("CoinsOnExit", PlayerPrefs.GetInt("asvz.coins").ToString());
 		Singleton<Analytics>.instance.LogEvent("GemsOnExit", PlayerPrefs.GetInt("asvz.gems").ToString());
-		AInAppPurchase.Destroy();
 	}
 
 	private void OnApplicationQuit()
@@ -555,7 +518,6 @@ public class ApplicationUtilities : MonoBehaviour
 
 	public void ShowAds(AdPosition adPosition)
 	{
-		GWalletHelper.ShowAd("MAIN_GAME_SCREEN", (int)((double)Screen.width / 1.7), 0, 81);
 	}
 
 	public void ShowAds(int x, int y)
@@ -564,7 +526,6 @@ public class ApplicationUtilities : MonoBehaviour
 
 	public void HideAds()
 	{
-		GWalletHelper.HideAd();
 	}
 
 	public void PrecacheAd()
@@ -592,15 +553,6 @@ public class ApplicationUtilities : MonoBehaviour
 
 	private void PushNotification(bool state)
 	{
-		if (!state)
-		{
-			ANotificationManager.ClearScheduledNotifications();
-			ANotificationManager.ClearActiveNotifications();
-		}
-		else
-		{
-			SaveTimeStampAndPushNotification();
-		}
 	}
 
 	private void SaveTimeStampAndPushNotification()
@@ -608,118 +560,29 @@ public class ApplicationUtilities : MonoBehaviour
 		Singleton<Profile>.instance.timeStamp = Time.time;
 		Singleton<Profile>.instance.Save();
 		int time = 86400;
-		ANotificationManager.ScheduleNotificationSecFromNow(time, Singleton<Localizer>.instance.Get("Push_Notification_Message_Text"), string.Empty);
 	}
 
 	private void onBillingSupported(string supported)
 	{
-		AInAppPurchase.BillingSupported = bool.Parse(supported);
 		Debug.Log("Unity: onBillingSupported: " + supported);
 	}
 
 	private void onSubscriptionSupported(string supported)
 	{
-		AInAppPurchase.SubscriptionSupported = bool.Parse(supported);
 		Debug.Log("Unity: onSubscriptionSupported: " + supported);
 	}
 
 	private void onGetUserIdResponse(string userID)
 	{
-		AInAppPurchase.UserID = userID;
 		Debug.Log("Unity: onGetUserIdResponse: " + userID);
 	}
 
 	private void onPurchaseStateChange(string response)
 	{
-		lock (processedIDs)
-		{
-			Debug.Log("Unity: onPurchaseStateChange: " + response);
-			string msg = null;
-			string[] array = response.Split('|');
-			string text = array[0];
-			string text2 = array[1];
-			string text3 = array[2];
-			string text4 = array[3];
-			string text5 = array[4];
-			if (processedIDs.Contains(text))
-			{
-				if (Debug.isDebugBuild)
-				{
-					Debug.Log("*** purchaseID = " + text + " already received will not process again... ***");
-				}
-				return;
-			}
-			processedIDs.Add(text);
-			if (text2.Equals("PURCHASED") || text2.Equals("SUCCESSFUL"))
-			{
-				msg = "SUCCESSFUL";
-				if (!AInAppPurchase.RequestedIAP)
-				{
-					Singleton<Analytics>.instance.LogEvent("IapRecovered", (!AJavaTools.IsTablet()) ? "phone" : "tablet");
-				}
-				AAds.PlayHaven.ReportResolution("buy");
-				if (text4.ToLower().Equals("subscription"))
-				{
-					Debug.Log("*** HANDLED PURCHASED SUBSCRIPTION: " + text5);
-					GWallet.Subscribe(text5, AInAppPurchase.UserID);
-					Singleton<Analytics>.instance.LogEvent("SUBSCRIPTION_PURCHASED", text3);
-					Singleton<Analytics>.instance.LogEvent("SUBSCRIPTION_DEVICE", (!AJavaTools.IsTablet()) ? "phone" : "tablet");
-					if (IsBuildType("amazon"))
-					{
-						if (text3.ToLower().Contains("gold"))
-						{
-							AAds.Tapjoy.ActionComplete("563b9955-00db-47ac-840b-3e7232545260");
-						}
-						AInAppPurchase.ConfirmPurchase(text);
-						AInAppPurchase.RequestedIAP = false;
-						return;
-					}
-					if (text3.ToLower().Contains("gold"))
-					{
-						AAds.Tapjoy.ActionComplete("10c3bb91-ad16-4a61-8264-e6b8b4464712");
-					}
-				}
-				Singleton<OnlineItemsManager>.instance.CompletePurchase(text3);
-			}
-			else if (text2.Equals("CANCELED"))
-			{
-				msg = "CANCELED";
-				AAds.PlayHaven.ReportResolution("error");
-			}
-			else if (text2.Equals("REFUNDED"))
-			{
-				msg = "REFUNDED";
-				Singleton<OnlineItemsManager>.instance.CompletePurchase(text3);
-			}
-			else if (text2.Equals("FAILED") || text2.Equals("INVALID_SKU"))
-			{
-				Debug.Log("HANDLE Failed: " + text3 + ": " + text4);
-				AAds.PlayHaven.ReportResolution("error");
-			}
-			AInAppPurchase.ConfirmPurchase(text);
-			PurchaseCurrencyDialog.instance.OnIAPError(0, msg);
-			AInAppPurchase.RequestedIAP = false;
-		}
 	}
 
 	private void onRequestPurchaseResponse(string response)
 	{
-		Debug.Log("onRequestPurchaseResponse: " + response);
-		if (response.Equals("RESULT_OK"))
-		{
-			Debug.Log("HANDLE REQUEST BEING PROCESSED");
-		}
-		else if (response.Equals("RESULT_USER_CANCELED"))
-		{
-			Debug.Log("HANDLE REQUEST CANCELED BY USER");
-			AAds.PlayHaven.ReportResolution("cancel");
-		}
-		else
-		{
-			Debug.Log("HANDLE REQUEST ERRORED OUT");
-			AAds.PlayHaven.ReportResolution("error");
-		}
-		PurchaseCurrencyDialog.instance.OnIAPError(0, response);
 	}
 
 	private void onRestoreTransactionsResponse(string response)
@@ -737,15 +600,6 @@ public class ApplicationUtilities : MonoBehaviour
 
 	private void onTapjoyPointsReceived(string info)
 	{
-		int num = Convert.ToInt32(info);
-		Debug.Log("Unity: onTapJoyPointsReceived: " + num);
-		if (num > 0)
-		{
-			GWalletBalance(num, "Tapjoy", "CREDIT_TAPJOY_AWARD");
-			Singleton<Profile>.instance.purchasedGems += num;
-			Singleton<Profile>.instance.Save();
-			AAds.Tapjoy.ClearPoints();
-		}
 	}
 
 	private void onCustomTap(string info)
@@ -765,21 +619,10 @@ public class ApplicationUtilities : MonoBehaviour
 
 	private IEnumerator CheckForTJPoints()
 	{
-		yield return new WaitForSeconds(1.5f);
-		AAds.Tapjoy.GetPoints();
+		yield break;
 	}
 
 	private void onPlayHavenShouldMakePurchase(string info)
 	{
-		Debug.Log("Unity: onPlayHavenShouldMakePurchase: " + info);
-		if (info.Equals("com.glu.tapjoy"))
-		{
-			AAds.Tapjoy.Launch(false);
-			AAds.PlayHaven.ReportResolution("buy");
-		}
-		else
-		{
-			AInAppPurchase.RequestPurchase(info, string.Empty);
-		}
 	}
 }

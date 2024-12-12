@@ -98,7 +98,6 @@ public class FileEncryptAndDecrypt
 			File.Copy(text, Profile.prevSaveFilePath, true);
 		}
 		File.Delete(text);
-		AJavaTools.DataChanged();
 	}
 
 	public static string DecryptFile(string inFile, bool prevCorrupted)

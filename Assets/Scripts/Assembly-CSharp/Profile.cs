@@ -279,10 +279,6 @@ public class Profile : Singleton<Profile>
 	{
 		get
 		{
-			if (GWalletHelper.GetBalance() >= 0)
-			{
-				return GWalletHelper.GetBalance();
-			}
 			return mSavedData.GetValueInt("gems");
 		}
 		set
@@ -1345,11 +1341,6 @@ public class Profile : Singleton<Profile>
 
 	public void ConvertLocalGemsToGWallet()
 	{
-		int valueInt = mSavedData.GetValueInt("gems");
-		if (valueInt > 0 && GWalletHelper.AddCurrency(valueInt, "CREDIT_BALANCE_CARRIED_FORWARD", "Pre-existing balance added to gWallet"))
-		{
-			mSavedData.SetValueInt("gems", 0);
-		}
 	}
 
 	public void Update()

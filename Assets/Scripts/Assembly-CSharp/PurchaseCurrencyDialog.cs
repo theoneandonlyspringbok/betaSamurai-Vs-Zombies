@@ -331,48 +331,6 @@ public class PurchaseCurrencyDialog : IDialog
 
 	private void InitOnlineStore()
 	{
-		Debug.Log("Test_UnityIAP.Start");
-		if (AInAppPurchase.BillingSupported)
-		{
-			int num = 0;
-			IAPItemDescriptor[] array = new IAPItemDescriptor[Singleton<OnlineItemsManager>.instance.items.Length];
-			OnlineItemsManager.Item[] items = Singleton<OnlineItemsManager>.instance.items;
-			foreach (OnlineItemsManager.Item item in items)
-			{
-				array[num++] = new IAPItemDescriptor(item.id, item.desc, string.Empty);
-			}
-			OnIAPItemsInfoReceived(array);
-			List<OnlineItemsManager.Item> list = new List<OnlineItemsManager.Item>();
-			for (int j = mSelectedTab * kEntriesInPreviousTabs; j < mSelectedTab * kEntriesInPreviousTabs + kEntriesPerTabs; j++)
-			{
-				if (ApplicationUtilities.IsGWalletAvailable())
-				{
-					if (Singleton<OnlineItemsManager>.instance.items[j].type == OnlineItemsManager.ItemType.Vip_Silver || Singleton<OnlineItemsManager>.instance.items[j].type == OnlineItemsManager.ItemType.Vip_Gold)
-					{
-						int idx = j - mSelectedTab * kEntriesInPreviousTabs;
-						OnlineItemsManager.Item item2 = ApplicationUtilities.GWalletGetSubscriptionRecommendationAtIndex(idx);
-						if (item2 != null)
-						{
-							list.Add(item2);
-						}
-						continue;
-					}
-				}
-				else if (Singleton<OnlineItemsManager>.instance.items[j].type == OnlineItemsManager.ItemType.Vip_Silver || Singleton<OnlineItemsManager>.instance.items[j].type == OnlineItemsManager.ItemType.Vip_Gold)
-				{
-					continue;
-				}
-				list.Add(Singleton<OnlineItemsManager>.instance.items[j]);
-			}
-			mListController = new IAPItemsListController(kPurchaseListArea, kCellSize, list.ToArray(), instance);
-			mPurchaseList = new SUIScrollList(mListController, kPurchaseListArea, kCellSize, SUIScrollList.ScrollDirection.Vertical, 2);
-			mPurchaseList.TransitInFromBelow();
-		}
-		else
-		{
-			Debug.Log("InAppPurchase is NOT available");
-			OnIAPError(0, Singleton<Localizer>.instance.Get("iap_error_unavailable"));
-		}
 	}
 
 	private void OnIAPItemsInfoReceived(IAPItemDescriptor[] items)
@@ -430,7 +388,6 @@ public class PurchaseCurrencyDialog : IDialog
 		{
 			mMusicVolume = Camera.main.GetComponent<AudioSource>().volume;
 			Camera.main.GetComponent<AudioSource>().volume = 0f;
-			AAds.Tapjoy.Launch();
 			mTapJoyActivated = true;
 		}
 	}
@@ -454,14 +411,6 @@ public class PurchaseCurrencyDialog : IDialog
 		{
 			TimeOutInSecs = 3f;
 			ApplicationUtilities.instance.bShouldTimeoutIAPs = true;
-		}
-		if (type == OnlineItemsManager.ItemType.Vip_Silver || type == OnlineItemsManager.ItemType.Vip_Gold)
-		{
-			AInAppPurchase.RequestPurchase(id, "subscription");
-		}
-		else
-		{
-			AInAppPurchase.RequestPurchase(id, string.Empty);
 		}
 		SetAllButtonsVisible(false);
 	}
