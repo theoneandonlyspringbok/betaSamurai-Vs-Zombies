@@ -1,100 +1,86 @@
-ÄShader "Griptonite/TwoDiffuseBlendWithMaskUnlit" {
-Properties {
- _MainColor ("Main Color", Color) = (1,1,1,1)
- _SecondColor ("Second Color", Color) = (1,1,1,1)
- _MainTex ("Base (RGB)", 2D) = "white" {}
- _SecondTex ("Second (RGB)", 2D) = "white" {}
- _BlendTex ("Mask (Alpha)", 2D) = "white" {}
- _ColorIntensity ("Color Intensity", Range(0,4)) = 1
-}
-SubShader { 
- Pass {
-  Fog { Mode Off }
-Program "vp" {
-SubProgram "gles " {
-"!!GLES
-#define SHADER_API_GLES 1
-#define tex2D texture2D
-
-
-#ifdef VERTEX
-#define gl_ModelViewProjectionMatrix glstate_matrix_mvp
-uniform mat4 glstate_matrix_mvp;
-
-varying lowp vec4 xlv_COLOR;
-varying highp vec2 xlv_TEXCOORD1;
-varying highp vec2 xlv_TEXCOORD0;
-
-attribute vec4 _glesMultiTexCoord1;
-attribute vec4 _glesMultiTexCoord0;
-attribute vec4 _glesColor;
-attribute vec4 _glesVertex;
-void main ()
+Shader "Griptonite/TwoDiffuseBlendWithMaskUnlit"
 {
-  gl_Position = (gl_ModelViewProjectionMatrix * _glesVertex);
-  xlv_TEXCOORD0 = _glesMultiTexCoord0.xy;
-  xlv_TEXCOORD1 = _glesMultiTexCoord1.xy;
-  xlv_COLOR = _glesColor;
-}
-
-
-
-#endif
-#ifdef FRAGMENT
-
-varying lowp vec4 xlv_COLOR;
-varying highp vec2 xlv_TEXCOORD1;
-varying highp vec2 xlv_TEXCOORD0;
-uniform sampler2D _SecondTex;
-uniform highp vec4 _SecondColor;
-uniform sampler2D _MainTex;
-uniform highp vec4 _MainColor;
-uniform highp float _ColorIntensity;
-uniform sampler2D _BlendTex;
-void main ()
-{
-  mediump vec4 c;
-  mediump vec4 b;
-  mediump vec4 c2;
-  mediump vec4 c1;
-  lowp vec4 tmpvar_1;
-  tmpvar_1 = texture2D (_MainTex, xlv_TEXCOORD0);
-  highp vec4 tmpvar_2;
-  tmpvar_2 = (tmpvar_1 * _MainColor);
-  c1 = tmpvar_2;
-  lowp vec4 tmpvar_3;
-  tmpvar_3 = texture2D (_SecondTex, xlv_TEXCOORD0);
-  highp vec4 tmpvar_4;
-  tmpvar_4 = (tmpvar_3 * _SecondColor);
-  c2 = tmpvar_4;
-  lowp vec4 tmpvar_5;
-  tmpvar_5 = texture2D (_BlendTex, xlv_TEXCOORD1);
-  b = tmpvar_5;
-  mediump float tmpvar_6;
-  if ((b.w <= 0.0)) {
-    tmpvar_6 = 0.0;
-  } else {
-    tmpvar_6 = max ((1.0 - ((1.0 - xlv_COLOR.w) / b.w)), 0.0);
-  };
-  mediump vec4 tmpvar_7;
-  tmpvar_7 = ((c1 * tmpvar_6) + (c2 * (1.0 - tmpvar_6)));
-  c = tmpvar_7;
-  highp vec3 tmpvar_8;
-  tmpvar_8 = (tmpvar_7.xyz * (xlv_COLOR.xyz * _ColorIntensity));
-  c.xyz = tmpvar_8;
-  gl_FragData[0] = c;
-}
-
-
-
-#endif"
-}
-}
-Program "fp" {
-SubProgram "gles " {
-"!!GLES"
-}
-}
- }
-}
+    Properties
+    {
+        _MainColor ("Main Color", Color) = (1,1,1,1)
+        _SecondColor ("Second Color", Color) = (1,1,1,1)
+        _MainTex ("Base (RGB)", 2D) = "white" {}
+        _SecondTex ("Second (RGB)", 2D) = "white" {}
+        _BlendTex ("Mask (Alpha)", 2D) = "white" {}
+        _ColorIntensity ("Color Intensity", Range(0,4)) = 1
+    }
+    SubShader
+    {
+        Pass
+        {
+            Fog { Mode Off }
+            CGPROGRAM
+            #pragma vertex vert
+            #pragma fragment frag
+            struct appdata_t
+            {
+                float4 texcoord1 : TEXCOORD1;
+                float4 texcoord0 : TEXCOORD0;
+                float4 color : COLOR;
+                float3 vertex : POSITION;
+            };
+            struct v2f
+            {
+                float4 color : COLOR;
+                float2 texcoord1 : TEXCOORD1;
+                float2 texcoord0 : TEXCOORD0;
+                float4 vertex : POSITION;
+            };
+            float4 _glesMultiTexCoord1;
+            float4 _glesMultiTexCoord0;
+            float4 _glesColor;
+            float4 _glesVertex;
+            sampler2D _SecondTex;
+            float4 _SecondColor;
+            sampler2D _MainTex;
+            float4 _MainColor;
+            float _ColorIntensity;
+            sampler2D _BlendTex;
+            v2f vert(appdata_t v)
+            {
+                v2f o;
+                o.vertex = UnityObjectToClipPos(v.vertex);
+                o.texcoord0 = v.texcoord0.xy;
+                o.texcoord1 = v.texcoord1.xy;
+                o.color = v.color;
+                return o;
+            }
+            float4 frag(v2f i) : SV_TARGET
+            {
+                float4 c;
+                float4 b;
+                float4 c2;
+                float4 c1;
+                float4 tmpvar_1;
+                tmpvar_1 = tex2D (_MainTex, i.texcoord0);
+                float4 tmpvar_2;
+                tmpvar_2 = (tmpvar_1 * _MainColor);
+                c1 = tmpvar_2;
+                float4 tmpvar_3;
+                tmpvar_3 = tex2D (_SecondTex, i.texcoord0);
+                float4 tmpvar_4;
+                tmpvar_4 = (tmpvar_3 * _SecondColor);
+                c2 = tmpvar_4;
+                float4 tmpvar_5;
+                tmpvar_5 = tex2D (_BlendTex, i.texcoord1);
+                b = tmpvar_5;
+                float tmpvar_6;
+                tmpvar_6 = 0.0;
+                tmpvar_6 = max ((1.0 - ((1.0 - i.color.w) / b.w)), 0.0);
+                float4 tmpvar_7;
+                tmpvar_7 = ((c1 * tmpvar_6) + (c2 * (1.0 - tmpvar_6)));
+                c = tmpvar_7;
+                float3 tmpvar_8;
+                tmpvar_8 = (tmpvar_7.xyz * (i.color.xyz * _ColorIntensity));
+                c.xyz = tmpvar_8;
+                return c;
+            }
+            ENDCG
+        }
+    }
 }

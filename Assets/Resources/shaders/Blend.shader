@@ -1,69 +1,56 @@
-¬
-Shader "AlphaBlend" {
-Properties {
- _MainTex ("Base", 2D) = "white" {}
- _TintColor ("TintColor", Color) = (1,1,1,0.2)
-}
-SubShader { 
- Tags { "QUEUE"="Transparent" "RenderType"="Transparent" "Reflection"="RenderReflectionTransparentBlend" }
- Pass {
-  Tags { "QUEUE"="Transparent" "RenderType"="Transparent" "Reflection"="RenderReflectionTransparentBlend" }
-  ZWrite Off
-  Fog { Mode Off }
-  Blend SrcAlpha OneMinusSrcAlpha
-Program "vp" {
-SubProgram "gles " {
-"!!GLES
-#define SHADER_API_GLES 1
-#define tex2D texture2D
-
-
-#ifdef VERTEX
-#define gl_ModelViewProjectionMatrix glstate_matrix_mvp
-uniform mat4 glstate_matrix_mvp;
-
-varying mediump vec2 xlv_TEXCOORD0;
-
-attribute vec4 _glesMultiTexCoord0;
-attribute vec4 _glesVertex;
-void main ()
+Shader "AlphaBlend"
 {
-  mediump vec4 tmpvar_1;
-  mediump vec2 tmpvar_2;
-  highp vec4 tmpvar_3;
-  tmpvar_3 = (gl_ModelViewProjectionMatrix * _glesVertex);
-  tmpvar_1 = tmpvar_3;
-  highp vec2 tmpvar_4;
-  tmpvar_4 = _glesMultiTexCoord0.xy;
-  tmpvar_2 = tmpvar_4;
-  gl_Position = tmpvar_1;
-  xlv_TEXCOORD0 = tmpvar_2;
-}
-
-
-
-#endif
-#ifdef FRAGMENT
-
-varying mediump vec2 xlv_TEXCOORD0;
-uniform lowp vec4 _TintColor;
-uniform sampler2D _MainTex;
-void main ()
-{
-  gl_FragData[0] = (texture2D (_MainTex, xlv_TEXCOORD0) * _TintColor);
-}
-
-
-
-#endif"
-}
-}
-Program "fp" {
-SubProgram "gles " {
-"!!GLES"
-}
-}
- }
-}
-Fallback Off
+    Properties
+    {
+        _MainTex ("Base", 2D) = "white" {}
+        _TintColor ("TintColor", Color) = (1,1,1,0.2)
+    }
+    SubShader
+    {
+        Tags { "QUEUE"="Transparent" "RenderType"="Transparent" "Reflection"="RenderReflectionTransparentBlend" }
+        Pass
+        {
+            Tags { "QUEUE"="Transparent" "RenderType"="Transparent" "Reflection"="RenderReflectionTransparentBlend" }
+            ZWrite Off
+            Fog { Mode Off }
+            Blend SrcAlpha OneMinusSrcAlpha
+            CGPROGRAM
+            #pragma vertex vert
+            #pragma fragment frag
+            struct appdata_t
+            {
+                float4 texcoord0 : TEXCOORD0;
+                float3 vertex : POSITION;
+            };
+            struct v2f
+            {
+                float2 texcoord0 : TEXCOORD0;
+                float4 vertex : POSITION;
+            };
+            float4 _glesMultiTexCoord0;
+            float4 _glesVertex;
+            float4 _TintColor;
+            sampler2D _MainTex;
+            v2f vert(appdata_t v)
+            {
+                v2f o;
+                float4 tmpvar_1;
+                float2 tmpvar_2;
+                float4 tmpvar_3;
+                tmpvar_3 = UnityObjectToClipPos(v.vertex);
+                tmpvar_1 = tmpvar_3;
+                float2 tmpvar_4;
+                tmpvar_4 = v.texcoord0.xy;
+                tmpvar_2 = tmpvar_4;
+                o.vertex = tmpvar_1;
+                o.texcoord0 = tmpvar_2;
+                return o;
+            }
+            float4 frag(v2f i) : SV_TARGET
+            {
+                return (tex2D (_MainTex, i.texcoord0) * _TintColor);
+            }
+            ENDCG
+        }
+    }
 }

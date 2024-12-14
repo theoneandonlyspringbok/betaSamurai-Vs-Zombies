@@ -1,85 +1,74 @@
-®Shader "Griptonite/TwoDiffuseBlendUnlit" {
-Properties {
- _MainColor ("Main Color", Color) = (1,1,1,1)
- _SecondColor ("Second Color", Color) = (1,1,1,1)
- _MainTex ("Base (RGB)", 2D) = "white" {}
- _SecondTex ("Second (RGB)", 2D) = "white" {}
- _ColorIntensity ("Color Intensity", Range(0,4)) = 1
-}
-SubShader { 
- Pass {
-  Fog { Mode Off }
-Program "vp" {
-SubProgram "gles " {
-"!!GLES
-#define SHADER_API_GLES 1
-#define tex2D texture2D
-
-
-#ifdef VERTEX
-#define gl_ModelViewProjectionMatrix glstate_matrix_mvp
-uniform mat4 glstate_matrix_mvp;
-
-varying highp vec2 xlv_TEXCOORD0;
-varying lowp vec4 xlv_COLOR;
-
-uniform highp vec4 _MainTex_ST;
-attribute vec4 _glesMultiTexCoord0;
-attribute vec4 _glesColor;
-attribute vec4 _glesVertex;
-void main ()
+Shader "Griptonite/TwoDiffuseBlendUnlit"
 {
-  gl_Position = (gl_ModelViewProjectionMatrix * _glesVertex);
-  xlv_COLOR = _glesColor;
-  xlv_TEXCOORD0 = ((_glesMultiTexCoord0.xy * _MainTex_ST.xy) + _MainTex_ST.zw);
-}
-
-
-
-#endif
-#ifdef FRAGMENT
-
-varying highp vec2 xlv_TEXCOORD0;
-varying lowp vec4 xlv_COLOR;
-uniform sampler2D _SecondTex;
-uniform highp vec4 _SecondColor;
-uniform sampler2D _MainTex;
-uniform highp vec4 _MainColor;
-uniform highp float _ColorIntensity;
-void main ()
-{
-  mediump vec4 c;
-  mediump vec4 c2;
-  mediump vec4 c1;
-  lowp vec4 tmpvar_1;
-  tmpvar_1 = texture2D (_MainTex, xlv_TEXCOORD0);
-  highp vec4 tmpvar_2;
-  tmpvar_2 = (tmpvar_1 * _MainColor);
-  c1 = tmpvar_2;
-  lowp vec4 tmpvar_3;
-  tmpvar_3 = texture2D (_SecondTex, xlv_TEXCOORD0);
-  highp vec4 tmpvar_4;
-  tmpvar_4 = (tmpvar_3 * _SecondColor);
-  c2 = tmpvar_4;
-  mediump vec4 tmpvar_5;
-  tmpvar_5 = ((c1 * xlv_COLOR.w) + (c2 * (1.0 - xlv_COLOR.w)));
-  c = tmpvar_5;
-  highp vec3 tmpvar_6;
-  tmpvar_6 = (tmpvar_5.xyz * (xlv_COLOR.xyz * _ColorIntensity));
-  c.xyz = tmpvar_6;
-  gl_FragData[0] = c;
-}
-
-
-
-#endif"
-}
-}
-Program "fp" {
-SubProgram "gles " {
-"!!GLES"
-}
-}
- }
-}
+    Properties
+    {
+        _MainColor ("Main Color", Color) = (1,1,1,1)
+        _SecondColor ("Second Color", Color) = (1,1,1,1)
+        _MainTex ("Base (RGB)", 2D) = "white" {}
+        _SecondTex ("Second (RGB)", 2D) = "white" {}
+        _ColorIntensity ("Color Intensity", Range(0,4)) = 1
+    }
+    SubShader
+    {
+        Pass
+        {
+            Fog { Mode Off }
+            CGPROGRAM
+            #pragma vertex vert
+            #pragma fragment frag
+            struct appdata_t
+            {
+                float4 texcoord0 : TEXCOORD0;
+                float4 color : COLOR;
+                float3 vertex : POSITION;
+            };
+            struct v2f
+            {
+                float2 texcoord0 : TEXCOORD0;
+                float4 color : COLOR;
+                float4 vertex : POSITION;
+            };
+            float4 _MainTex_ST;
+            float4 _glesMultiTexCoord0;
+            float4 _glesColor;
+            float4 _glesVertex;
+            sampler2D _SecondTex;
+            float4 _SecondColor;
+            sampler2D _MainTex;
+            float4 _MainColor;
+            float _ColorIntensity;
+            v2f vert(appdata_t v)
+            {
+                v2f o;
+                o.vertex = UnityObjectToClipPos(v.vertex);
+                o.color = v.color;
+                o.texcoord0 = ((v.texcoord0.xy * _MainTex_ST.xy) + _MainTex_ST.zw);
+                return o;
+            }
+            float4 frag(v2f i) : SV_TARGET
+            {
+                float4 c;
+                float4 c2;
+                float4 c1;
+                float4 tmpvar_1;
+                tmpvar_1 = tex2D (_MainTex, i.texcoord0);
+                float4 tmpvar_2;
+                tmpvar_2 = (tmpvar_1 * _MainColor);
+                c1 = tmpvar_2;
+                float4 tmpvar_3;
+                tmpvar_3 = tex2D (_SecondTex, i.texcoord0);
+                float4 tmpvar_4;
+                tmpvar_4 = (tmpvar_3 * _SecondColor);
+                c2 = tmpvar_4;
+                float4 tmpvar_5;
+                tmpvar_5 = ((c1 * i.color.w) + (c2 * (1.0 - i.color.w)));
+                c = tmpvar_5;
+                float3 tmpvar_6;
+                tmpvar_6 = (tmpvar_5.xyz * (i.color.xyz * _ColorIntensity));
+                c.xyz = tmpvar_6;
+                return c;
+            }
+            ENDCG
+        }
+    }
 }
