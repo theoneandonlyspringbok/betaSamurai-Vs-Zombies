@@ -1,4 +1,4 @@
-Shader "Griptonite/TextureVertColorsAlpha"
+Shader "Griptonite/TextureVertColorsAlpha_LM"
 {
     Properties
     {
