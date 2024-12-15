@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using Debug = UnityEngine.Debug;
 
 public class TutorialManager : IDialog
 {

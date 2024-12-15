@@ -1,3 +1,5 @@
+using Debug = UnityEngine.Debug;
+
 public class Localizer : Singleton<Localizer>
 {
 	private SDFTreeNode mData;

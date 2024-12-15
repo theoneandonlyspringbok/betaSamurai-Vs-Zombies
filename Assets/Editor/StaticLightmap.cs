@@ -209,7 +209,7 @@ public class StaticLightmap : Editor
 				case 2:
 					if (unIndented.StartsWith("- "))
 					{
-						if (lightmapIndex < 255)
+						if (lightmapIndex < 254)
 						{
 							string guid = unIndented.Substring(unIndented.IndexOf("guid: ") + 6);
 							guid = guid.Substring(0, guid.IndexOf(','));
@@ -250,10 +250,19 @@ public class StaticLightmap : Editor
 				}
 
 				Material original = AssetDatabase.LoadAssetAtPath<Material>(AssetDatabase.GUIDToAssetPath(guid));
-				Material material = new Material(Shader.Find(original.shader.name + "_LM"));
 
-				material.CopyPropertiesFromMaterial(original);
-				material.SetTexture("_LightMap", AssetDatabase.LoadAssetAtPath<Texture2D>(EditorSceneManager.GetActiveScene().path.Replace(".unity", "") + "/LightmapNear-" + index + ".png"));
+				if (Shader.Find(original.shader.name + "_LM") == null)
+				{
+					Debug.LogError("cannot find " + original.shader.name + "_LM");
+				}
+
+				Material material = new Material(original);
+
+				material.shader = Shader.Find(original.shader.name + "_LM");
+				material.SetTexture("_LightMap", AssetDatabase.LoadAssetAtPath<Texture2D>(EditorSceneManager.GetActiveScene().path.Replace(".unity", "") + "/LightmapFar-" + index + ".png"));
+
+				Debug.LogError(material.shader.name);
+				Debug.LogError(material.GetTexture("_LightMap"));
 
 				AssetDatabase.CreateAsset(material, "Assets/StaticLightmap/" + EditorSceneManager.GetActiveScene().name + "/" + original.name + "_" + index + ".mat");
 				materialMap[index].Add(guid, AssetDatabase.AssetPathToGUID(AssetDatabase.GetAssetPath(material)));
@@ -268,7 +277,7 @@ public class StaticLightmap : Editor
 		string[] sceneYaml = File.ReadAllLines(EditorSceneManager.GetActiveScene().path);
 		int state = 0;
 
-		int lightmapIndex = 255;
+		int lightmapIndex = 254;
 		List<string> materials = new List<string>();
 
 		List<RendererInstance> renderers = new List<RendererInstance>();
@@ -282,7 +291,7 @@ public class StaticLightmap : Editor
 			{
 				state = 0;
 				
-				if (lightmapIndex < 255)
+				if (lightmapIndex < 254)
 				{
 					List<string> takenMaterials = new List<string>();
 

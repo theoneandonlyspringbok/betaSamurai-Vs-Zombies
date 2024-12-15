@@ -1,4 +1,5 @@
 using PlayHaven;
+using Debug = UnityEngine.Debug;
 
 public class OnlinePurchaseDelegate : ICInAppPurchaseDelegate
 {

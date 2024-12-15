@@ -1,3 +1,5 @@
+using Debug = UnityEngine.Debug;
+
 public class CashIn
 {
 	public enum ItemType

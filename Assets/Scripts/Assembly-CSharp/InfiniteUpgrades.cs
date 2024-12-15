@@ -1,4 +1,5 @@
 using System;
+using Debug = UnityEngine.Debug;
 
 public class InfiniteUpgrades
 {

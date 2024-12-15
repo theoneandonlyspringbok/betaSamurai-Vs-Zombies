@@ -1,3 +1,5 @@
+using Debug = UnityEngine.Debug;
+
 public class Analytics : Singleton<Analytics>
 {
 	private const string google_flurry_live_id = "SMEMR3VMDANCMUCP3Y2M";
