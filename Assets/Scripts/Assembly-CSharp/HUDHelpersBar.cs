@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -19,6 +20,16 @@ public class HUDHelpersBar
 
 	public void Update()
 	{
+		if (!Application.isMobilePlatform)
+		{
+			for (int i = 0; i < 5; i++)
+			{
+				if (mHelperHUDs.Count > i && Input.GetKeyDown((KeyCode)Enum.Parse(typeof(KeyCode), "Alpha" + (i + 1))))
+				{
+					mHelperHUDs[i].Trigger();
+				}
+			}
+		}
 		if (WeakGlobalInstance<Smithy>.instance == null)
 		{
 			return;

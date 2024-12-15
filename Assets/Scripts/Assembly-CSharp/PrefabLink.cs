@@ -19,5 +19,11 @@ public class PrefabLink : MonoBehaviour
 		{
 			Object.DestroyImmediate(base.transform.root.gameObject);
 		}
+
+		//they're too loud and I don't want to save the scenes just in case
+		if (name == "GateMagic" || name == "Vortex")
+		{
+			GetComponent<AudioSource>().volume *= 0.4f;
+		}
 	}
 }

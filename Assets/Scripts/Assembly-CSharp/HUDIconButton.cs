@@ -168,6 +168,14 @@ public class HUDIconButton
 		return string.Format("Sprites/HUD/CoolDown/cool_down_{0:000}", num);
 	}
 
+	public void Trigger()
+	{
+		if (mOnTouchCallback != null)
+		{
+			mOnTouchCallback();
+		}
+	}
+
 	private void OnTouched()
 	{
 		if (visible && mOnTouchCallback != null)
