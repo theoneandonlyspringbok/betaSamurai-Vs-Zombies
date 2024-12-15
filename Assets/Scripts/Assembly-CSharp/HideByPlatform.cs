@@ -14,7 +14,7 @@ public class HideByPlatform : MonoBehaviour
 
 	private bool mAlreadyHidden;
 
-	private static UnityEngine.iOS.DeviceGeneration? mGen;
+	//private static UnityEngine.iOS.DeviceGeneration? mGen;
 
 	//nah
 	//private void Awake()
