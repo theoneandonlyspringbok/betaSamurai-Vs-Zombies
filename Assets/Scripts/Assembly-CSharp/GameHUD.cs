@@ -107,7 +107,7 @@ public class GameHUD
 		mBloodPulse = new HUDBloodPulse();
 		SUIButton sUIButton = (SUIButton)mLayout["cheats"];
 		sUIButton.scale = new Vector2(2f, 2f);
-		if (Debug.isDebugBuild)
+		if (/*Debug.isDebugBuild*/false)
 		{
 			sUIButton.onButtonPressed = WinTheWave;
 		}

@@ -53,7 +53,7 @@ public class MainMenuImpl : SceneBehaviour
 		mICloud.visible = false;
 		m_cheatsBtn = (SUIButton)mLayout["cheats"];
 		m_cheatsBtn.scale = new Vector2(2f, 2f);
-		if (Debug.isDebugBuild)
+		if (/*Debug.isDebugBuild*/false)
 		{
 			m_cheatsBtn.onButtonPressed = ShowCheatsScreen;
 		}
