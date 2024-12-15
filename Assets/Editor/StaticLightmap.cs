@@ -92,7 +92,7 @@ public class StaticLightmap : Editor
 
 						Material original = AssetDatabase.LoadAssetAtPath<Material>(AssetDatabase.GUIDToAssetPath(guid));
 
-						if (original == null)
+						if (original == null || !original.shader.name.EndsWith("_LM"))
 						{
 							continue;
 						}
@@ -260,9 +260,6 @@ public class StaticLightmap : Editor
 
 				material.shader = Shader.Find(original.shader.name + "_LM");
 				material.SetTexture("_LightMap", AssetDatabase.LoadAssetAtPath<Texture2D>(EditorSceneManager.GetActiveScene().path.Replace(".unity", "") + "/LightmapFar-" + index + ".png"));
-
-				Debug.LogError(material.shader.name);
-				Debug.LogError(material.GetTexture("_LightMap"));
 
 				AssetDatabase.CreateAsset(material, "Assets/StaticLightmap/" + EditorSceneManager.GetActiveScene().name + "/" + original.name + "_" + index + ".mat");
 				materialMap[index].Add(guid, AssetDatabase.AssetPathToGUID(AssetDatabase.GetAssetPath(material)));
