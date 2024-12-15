@@ -254,7 +254,7 @@ public class StoreImpl : SceneBehaviour
 			GoToMenu("MainMenu");
 		};
 		((SUIButton)mLayout["pachinkoButton"]).onButtonPressed = OnGamblingPressed;
-		((SUITouchArea)mLayout["buyCurrencyTouch"]).onAreaTouched = OnRequestCurrencyPurchase;
+		//((SUITouchArea)mLayout["buyCurrencyTouch"]).onAreaTouched = OnRequestCurrencyPurchase;
 		((SUITouchArea)mLayout["reviveTouch"]).onAreaTouched = OnPurchaseReviveShortcut;
 		if (Singleton<Profile>.instance.pachinkoBalls > 0)
 		{

@@ -46,7 +46,7 @@ public class BoosterPackStoreImpl : SceneBehaviour
 		mLayout = new SUILayout("Layouts/BoosterPackStoreLayout");
 		mLayout.AnimateIn();
 		((SUIButton)mLayout["continue"]).onButtonPressed = OnQuit;
-		((SUITouchArea)mLayout["buyCurrencyTouch"]).onAreaTouched = OnRequestCurrencyPurchase;
+		//((SUITouchArea)mLayout["buyCurrencyTouch"]).onAreaTouched = OnRequestCurrencyPurchase;
 		((SUIButton)mLayout["buyPackButton"]).onButtonPressed = OnPurchase;
 		mPackListController = new BoosterPackListController(kPackListArea, kPackListCellSize);
 		mPackScrollList = new SUIScrollList(mPackListController, kPackListArea, kPackListCellSize, SUIScrollList.ScrollDirection.Horizontal, 1);

@@ -132,39 +132,6 @@ transitionSpeed = 1.0
 /	Coin & Gem counter
 /-------------------------------------------------
 
-[bankIcon]
-	type = sprite
-	file = Sprites/Menus/bank_button
-	position = E-80, 48
-	priority = 600.1
-	[transition]
-		[position]
-			anim = BackOut
-			offset = 110, -110
-		[alpha]
-			alpha = 0.0
-
-[bankIconGlow]
-	type = sprite
-	file = Sprites/Menus/bank_button_glow
-	position = E-80, 48
-	priority = 600
-	[transition]
-		[position]
-			anim = BackOut
-			offset = 110, -110
-		[alpha]
-			alpha = 0.0
-	[effect]
-		[alphaPingPong]
-			min = 0.2
-			max = 1.0
-			speed = 1.0
-
-[buyCurrencyTouch]
-	type = touchArea
-	rect = 660, 0, 364, 80
-
 [currencyCounter]
 	type = label
 	font = default32
