@@ -12,6 +12,24 @@ using UnityEditor.SceneManagement;
 
 public class StaticMesh : Editor
 {
+    [MenuItem("Static Mesh Separation/Remove Stupidity")]
+    public static void RemoveStupidity()
+    {
+        List<MeshFilter> filters = FindObjectsOfType<MeshFilter>().ToList();
+        
+        Mesh combinedMesh = filters.Find(x => x.GetComponent<MeshRenderer>().isPartOfStaticBatch).sharedMesh;
+
+        foreach (MeshFilter filter in filters)
+        {
+            if (filter.gameObject.isStatic && filter.sharedMesh != combinedMesh)
+            {
+                filter.gameObject.isStatic = false;
+            }
+        }
+
+        EditorSceneManager.MarkSceneDirty(EditorSceneManager.GetActiveScene());
+    }
+
     [MenuItem("Static Mesh Separation/Split Scene")]
     public static void SplitScene()
     {
