@@ -263,7 +263,7 @@ public class StoreImpl : SceneBehaviour
 			objectData.AddEffect(e);
 		}
 		mPlayHaven = (SUIButton)mLayout["playHaven"];
-		mPlayHaven.onButtonPressed = OnOtherGames;
+		//mPlayHaven.onButtonPressed = OnOtherGames;
 		int num = 0;
 		while (mLayout.Exists("tab" + num))
 		{

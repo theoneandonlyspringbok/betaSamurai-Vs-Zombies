@@ -150,43 +150,6 @@ transitionSpeed = 1.0
 		[alpha]
 			alpha = 0.0
 
-[playHaven]
-	type = button
-	normalframe = Sprites/Localized/other_games
-	keepAspectRatio = false
-	priority = 50
-	position = C-160, E-60
-	offsetWhenPressed = 2, 2
-	[transition]
-		[position]
-			anim = BackOut
-			offset = 0, 300
-			animRange = 0.4, 1
-		[alpha]
-			alpha = 0
-			animRange = 0.4, 1
-
-[playHavenGlow]
-	type = sprite
-	file = Sprites/Localized/other_games_glow
-	keepAspectRatio = false
-	priority = 50
-	position = C-160, E-60
-	
-	[transition]
-		[position]
-			anim = BackOut
-			offset = 0, 300
-			animRange = 0.4, 1
-		[alpha]
-			alpha = 0
-			animRange = 0.4, 1
-	[effect]
-		[alphaPingPong]
-			min = 0.2
-			max = 1.0
-			speed = 1.0				
-
 /[dailyButton]
 /	type = button
 /	normalFrame = Sprites/Menus/daily_rewards_button
