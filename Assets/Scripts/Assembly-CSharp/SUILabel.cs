@@ -349,7 +349,7 @@ public class SUILabel : SUIWidget
 			Debug.Log("ERROR: Could not load font: " + fontFile);
 		}
 		mTextSprite.font = font;
-		mTextSprite.pixelOffset = new Vector2(0f, font.name == "default18" ? 20 : int.Parse(font.name.Replace("default", "")) * 0.875f);
+		mTextSprite.pixelOffset = new Vector2(0f, mTextSprite.font.lineHeight * 0.825f);
 	}
 
 	private void refreshDisplay(bool forceRefresh)
