@@ -28,6 +28,8 @@ public class PachinkoMachineImpl : WeakGlobalSceneBehavior<PachinkoMachineImpl>
 
 	public GameObject WinnerLightsGreen;
 
+	public SoundThemePlayer PachinkoSFX;
+
 	public int WinnerMaxFlashes = 20;
 
 	public float WinnerLightFlashFrequency = 0.125f;
@@ -327,8 +329,7 @@ public class PachinkoMachineImpl : WeakGlobalSceneBehavior<PachinkoMachineImpl>
 		TumblerSideDoors.PlayAnim("open", 1f, WrapMode.Once, 1f);
 		StartCoroutine(FlashWinnerLights());
 		mWinner.visible = true;
-		GameObject SpinSFX = GameObject.Find("PachinkoSFX");
-		SpinSFX.GetComponent<SoundThemePlayer>().PlaySoundEvent("Win");
+		PachinkoSFX.PlaySoundEvent("Win");
 		if (Singleton<CharmsDatabase>.instance.Contains(result))
 		{
 			mPrizeLabel.text = Singleton<Localizer>.instance.Parse(Singleton<CharmsDatabase>.instance.GetAttribute(result, "displayName"));
@@ -439,9 +440,8 @@ public class PachinkoMachineImpl : WeakGlobalSceneBehavior<PachinkoMachineImpl>
 
 	private void PlaySlotAnimation(string result)
 	{
-		GameObject gameObject = GameObject.Find("PachinkoSFX");
-		gameObject.GetComponent<SoundThemePlayer>().PlaySoundEvent("Spin");
-		gameObject.GetComponent<SoundThemePlayer>().PlaySoundEvent("SpinLoop");
+		PachinkoSFX.PlaySoundEvent("Spin");
+		PachinkoSFX.PlaySoundEvent("SpinLoop");
 		StartCoroutine(StopTumblers(result));
 	}
 
