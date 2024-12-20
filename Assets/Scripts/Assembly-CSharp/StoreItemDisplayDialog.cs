@@ -160,7 +160,7 @@ public class StoreItemDisplayDialog : IDialog
 	{
 		if (!mItemDesc.cost.canAfford)
 		{
-			ShowPurchaseCurrency(mItemDesc.cost);
+			//ShowPurchaseCurrency(mItemDesc.cost);
 			return;
 		}
 		mItemDesc.cost.Spend(mItemDesc.id);
