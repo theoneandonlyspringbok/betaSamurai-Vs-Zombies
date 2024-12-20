@@ -160,7 +160,12 @@ public class StoreItemDisplayDialog : IDialog
 	{
 		if (!mItemDesc.cost.canAfford)
 		{
+            WeakGlobalInstance<DialogHandler>.instance.PushCreator(() => new StoreNotEnoughDialog(mItemDesc)
+            {
+                priority = 9999
+            });
 			//ShowPurchaseCurrency(mItemDesc.cost);
+			Close();
 			return;
 		}
 		mItemDesc.cost.Spend(mItemDesc.id);

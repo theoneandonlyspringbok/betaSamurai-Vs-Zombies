@@ -157,8 +157,9 @@ public class StoreData
 			rightColumnTitle = string.Format(Singleton<Localizer>.instance.Get("stat_level"), rightLevel.ToString());
 		}
 
-		public void Render(SUILayout layout, bool locked)
+		public void Render(SUILayout layout, bool locked, bool isNotEnoughDialog = false)
 		{
+			if (isNotEnoughDialog) return;
 			if (mDescription != string.Empty)
 			{
 				SUILabel sUILabel = ((!mDescriptionIsSmall) ? ((SUILabel)layout["details"]) : ((SUILabel)layout["detailsSmall"]));
