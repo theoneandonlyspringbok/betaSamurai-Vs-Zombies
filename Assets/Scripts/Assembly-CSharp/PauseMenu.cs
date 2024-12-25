@@ -85,7 +85,10 @@ public class PauseMenu : IDialog
 
 	private void onResume()
 	{
-		mLayout.AnimateOut(0.7f * mLayout.defaultTransitionSpeed);
+        ((SUIButton)mLayout["resumeBtn"]).enabled = false;
+        ((SUIButton)mLayout["restartBtn"]).enabled = false;
+        ((SUIButton)mLayout["quitBtn"]).enabled = false;
+        mLayout.AnimateOut(0.7f * mLayout.defaultTransitionSpeed);
 		mLayout.onTransitionOver = onFadingDone;
 		if (WeakGlobalInstance<DialogHandler>.instance != null)
 		{
