@@ -19,13 +19,13 @@ public class PachinkoBallLauncher : MonoBehaviour
 		{
 			SingletonMonoBehaviour<Achievements>.instance.Award("SAMUZOMBIE_ACHIEVE_YOU_ARE_WINNER");
 		}
-		if (Application.platform == RuntimePlatform.WindowsPlayer || Application.platform == RuntimePlatform.WindowsEditor)
-		{
-			BaseXForce = -1800f;
-			BaseYForce = 1100f;
-			AdditionalXForce = -900f;
-			AdditionalYForce = 920f;
-		}
+		//if (Application.platform == RuntimePlatform.WindowsPlayer || Application.platform == RuntimePlatform.WindowsEditor)
+		//{
+		//	BaseXForce = -1800f;
+		//	BaseYForce = 1100f;
+		//	AdditionalXForce = -900f;
+		//	AdditionalYForce = 920f;
+		//}
 		GameObject gameObject = Object.Instantiate(PachinkoBall, base.transform.position, Quaternion.identity) as GameObject;
 		Vector3 force = new Vector3(BaseXForce + forceScalar * AdditionalXForce, BaseYForce + forceScalar * AdditionalYForce, 0f);
 		gameObject.GetComponent<Rigidbody>().AddForce(force);
