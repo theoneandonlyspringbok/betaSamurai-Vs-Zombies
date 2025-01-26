@@ -32,7 +32,7 @@ public class Localizer : Singleton<Localizer>
 		{
 			if (!Application.isMobilePlatform)
 			{
-				if (Singleton<GameVersion>.instance.language == "Default" && source.Substring(1).StartsWith("tutorial_ingame"))
+				if (Singleton<GameVersion>.instance.language == "Default" && source.Substring(1).StartsWith("tutorial_ingame") || source.Substring(1).StartsWith("waveselect_inst"))
 				{
 					return Get(source.Substring(1) + "_pc");
 				}
