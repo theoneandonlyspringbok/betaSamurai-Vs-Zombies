@@ -1,3 +1,4 @@
+using UnityEngine;
 using Debug = UnityEngine.Debug;
 
 public class Localizer : Singleton<Localizer>
@@ -29,6 +30,13 @@ public class Localizer : Singleton<Localizer>
 	{
 		if (source.Length > 0 && source[0] == '@')
 		{
+			if (!Application.isMobilePlatform)
+			{
+				if (Singleton<GameVersion>.instance.language == "Default" && source.Substring(1).StartsWith("tutorial_ingame"))
+				{
+					return Get(source.Substring(1) + "_pc");
+				}
+			}
 			return Get(source.Substring(1));
 		}
 		return source;
