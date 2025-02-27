@@ -89,6 +89,10 @@ public class HUDSmithy
 			UpdateBarScales();
 			UpdateResourceCounter();
 			UpdateLevelCounter();
+			if (!Application.isMobilePlatform)
+			{
+				UpdatePCControls();
+			}
 		}
 	}
 
@@ -104,6 +108,14 @@ public class HUDSmithy
 	private float ConvX(float origX, float factor)
 	{
 		return origX - (factor * WeakGlobalInstance<SUIScreen>.instance.autoScaler.aspectRatioModifier - factor);
+	}
+
+	private void UpdatePCControls()
+	{
+		if (Input.GetKeyDown(KeyCode.U))
+		{
+			OnTouched();
+		}
 	}
 
 	private void UpdateUpgradeState()
