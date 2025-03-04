@@ -1,8 +1,37 @@
 using UnityEngine;
+using UnityEngine.Video;
 
 public class IntroMovie : MonoBehaviour
 {
 	private int mStaggeredOperationsPerUpdates;
+
+	public VideoPlayer videoPlayer;
+
+    public AudioSource audioSource;
+
+    public VideoClip Glu_logo_1024x768;
+
+    public VideoClip Glu_logo_960x640;
+
+	public VideoClip Glu_logo_480x320;
+
+
+    bool isPlaying;
+
+	private void Start()
+	{
+        if (videoPlayer == null)
+        {
+            videoPlayer = GetComponent<VideoPlayer>();
+        }
+        if (audioSource == null)
+        {
+            audioSource = GetComponent<AudioSource>();
+        }
+
+        videoPlayer.audioOutputMode = VideoAudioOutputMode.AudioSource;
+        videoPlayer.SetTargetAudioSource(0, audioSource);
+    }
 
 	private void Update()
 	{
@@ -20,14 +49,24 @@ public class IntroMovie : MonoBehaviour
 			break;
 		case 21:
 			Debug.Log("IntroMovie: main menu load");
-			Application.LoadLevel("StoryMoviePre");
+			//Application.LoadLevel("StoryMoviePre");
 			break;
 		}
-	}
+
+        if (!isPlaying)
+        {
+            if (videoPlayer.isPlaying) isPlaying = true;
+            return;
+        }
+        if (!videoPlayer.isPlaying || Input.GetMouseButton(0) || Input.GetKeyDown(KeyCode.Space))
+		{
+            Application.LoadLevel("StoryMoviePre");
+        }
+    }
 
 	private void StartMovie()
 	{
-		string text = "1024x768";
+        /*string text = "1024x768";
 		switch (Screen.width)
 		{
 		case 640:
@@ -38,6 +77,26 @@ public class IntroMovie : MonoBehaviour
 			break;
 		}
 		string text2 = "Glu_logo_" + text + ".mp4";
-		Debug.Log("Playing movie:" + text2);
-	}
+		Debug.Log("Playing movie:" + text2);*/
+        if (Screen.width >= 1024)
+        {
+            videoPlayer.clip = Glu_logo_1024x768;
+            videoPlayer.Play();
+        }
+        else if (Screen.width >= 960 && Screen.width < 1024)
+		{
+			videoPlayer.clip = Glu_logo_960x640;
+			videoPlayer.Play();
+		}
+        else if (Screen.width >= 480 && Screen.width < 960)
+        {
+            videoPlayer.clip = Glu_logo_480x320;
+            videoPlayer.Play();
+        }
+		else
+		{
+            videoPlayer.clip = Glu_logo_480x320;
+            videoPlayer.Play();
+        }
+    }
 }
